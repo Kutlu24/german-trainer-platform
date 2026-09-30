@@ -1,0 +1,5636 @@
+[
+  {
+    "id": 1,
+    "wort": "schiefgehen",
+    "grammatik": "geht schief, ging schief, ist schiefgegangen",
+    "beispiel": "Gestern ging wirklich alles schief – was für ein Tag!",
+    "lektion": 1,
+    "audio": "1.opus",
+    "teil": 1
+  },
+  {
+    "id": 2,
+    "wort": "Wecker",
+    "grammatik": "der, Wecker",
+    "beispiel": "Ich hatte vergessen, den Wecker zu stellen.",
+    "lektion": 1,
+    "audio": "2.opus",
+    "teil": 1
+  },
+  {
+    "id": 3,
+    "wort": "im Laufe",
+    "grammatik": "+ Genitiv",
+    "beispiel": "Im Laufe des Tages ist mein Computer noch drei Mal abgestürzt.",
+    "lektion": 1,
+    "audio": "3.opus",
+    "teil": 1
+  },
+  {
+    "id": 4,
+    "wort": "kündigen",
+    "grammatik": "kündigt, kündigte, hat gekündigt",
+    "beispiel": "Vielleicht sollte ich meine Mitgliedschaft besser wieder kündigen!",
+    "lektion": 1,
+    "audio": "4.opus",
+    "teil": 1
+  },
+  {
+    "id": 5,
+    "wort": "routiniert",
+    "grammatik": "Adjektiv",
+    "beispiel": "Sie hat viel Erfahrung und erledigt ihre Arbeit routiniert.",
+    "lektion": 1,
+    "audio": "5.opus",
+    "teil": 1
+  },
+  {
+    "id": 6,
+    "wort": "Eintönigkeit",
+    "grammatik": "die",
+    "beispiel": "Um die Eintönigkeit des Alltags zu durchbrechen, geht er in den Bergen klettern.",
+    "lektion": 1,
+    "audio": "6.opus",
+    "teil": 1
+  },
+  {
+    "id": 7,
+    "wort": "meistern",
+    "grammatik": "meistert, meisterte, hat gemeistert",
+    "beispiel": "Als berufstätiger und alleinerziehender Vater von drei Kindern ist es manchmal schwierig, den Alltag zu meistern.",
+    "lektion": 1,
+    "audio": "7.opus",
+    "teil": 1
+  },
+  {
+    "id": 8,
+    "wort": "abschalten",
+    "grammatik": "schaltet ab, schaltete ab, hat abgeschaltet",
+    "beispiel": "Um abzuschalten, fährt sie am Wochenende an den See.",
+    "lektion": 1,
+    "audio": "8.opus",
+    "teil": 1
+  },
+  {
+    "id": 9,
+    "wort": "folglich",
+    "grammatik": "Adverb",
+    "beispiel": "Es hat viel geregnet, folglich sind die Stauseen voll.",
+    "lektion": 1,
+    "audio": "9.opus",
+    "teil": 2
+  },
+  {
+    "id": 10,
+    "wort": "andernfalls/sonst",
+    "grammatik": "Adverb",
+    "beispiel": "Das Medikament muss gemäss Anweisungen eingenommen werden, andernfalls/sonst kann es zu Nebenwirkungen kommen.",
+    "lektion": 1,
+    "audio": "10.opus",
+    "teil": 2
+  },
+  {
+    "id": 11,
+    "wort": "demnach",
+    "grammatik": "Adverb",
+    "beispiel": "Sie besuchte eine höhere Klasse in der Schule. Demnach ist sie älter als ich.",
+    "lektion": 1,
+    "audio": "11.opus",
+    "teil": 2
+  },
+  {
+    "id": 12,
+    "wort": "somit",
+    "grammatik": "Adverb",
+    "beispiel": "Das Auto gehört mir, somit kann ich frei darüber verfügen.",
+    "lektion": 1,
+    "audio": "12.opus",
+    "teil": 2
+  },
+  {
+    "id": 13,
+    "wort": "ausser wenn",
+    "grammatik": "Konjunktion",
+    "beispiel": "Sie trifft sich fast täglich mit Freunden, ausser wenn sie Überstunden machen muss.",
+    "lektion": 1,
+    "audio": "13.opus",
+    "teil": 2
+  },
+  {
+    "id": 14,
+    "wort": "es sei denn",
+    "grammatik": "Konjunktion",
+    "beispiel": "Er treibt täglich Sport, es sei denn, er hat sich verletzt.",
+    "lektion": 1,
+    "audio": "14.opus",
+    "teil": 2
+  },
+  {
+    "id": 15,
+    "wort": "Eindruck",
+    "grammatik": "der, Eindrücke",
+    "beispiel": "Wer wenig erlebt, hat den Eindruck, die Zeit sei schnell vergangen.",
+    "lektion": 1,
+    "audio": "15.opus",
+    "teil": 2
+  },
+  {
+    "id": 16,
+    "wort": "zukunftsorientiert",
+    "grammatik": "Adjektiv",
+    "beispiel": "Da wir sehr zukunftsorientiert sind, leben wir wenig in der Gegenwart.",
+    "lektion": 1,
+    "audio": "16.opus",
+    "teil": 2
+  },
+  {
+    "id": 17,
+    "wort": "damit",
+    "grammatik": "Pronominaladverb",
+    "beispiel": "Mein Portemonnaie wurde gefunden. Damit ist alles gut!",
+    "lektion": 1,
+    "audio": "17.opus",
+    "teil": 3
+  },
+  {
+    "id": 18,
+    "wort": "befragen",
+    "grammatik": "befragt, befragte, hat befragt",
+    "beispiel": "Die Mehrheit der Befragten gaben an, insgesamt zufrieden zu sein.",
+    "lektion": 1,
+    "audio": "18.opus",
+    "teil": 3
+  },
+  {
+    "id": 19,
+    "wort": "längs",
+    "grammatik": "+ Genitiv",
+    "beispiel": "Er besass ein Stück Land längs des Flusses.",
+    "lektion": 1,
+    "audio": "19.opus",
+    "teil": 3
+  },
+  {
+    "id": 20,
+    "wort": "sogar",
+    "grammatik": "Adverb",
+    "beispiel": "Sie übt täglich Geige, dies sogar während einer ganzen Stunde.",
+    "lektion": 1,
+    "audio": "20.opus",
+    "teil": 3
+  },
+  {
+    "id": 21,
+    "wort": "verweilen",
+    "grammatik": "verweilt, verweilte, hat verweilt",
+    "beispiel": "Der grosse Garten lädt zum Verweilen ein.",
+    "lektion": 1,
+    "audio": "21.opus",
+    "teil": 3
+  },
+  {
+    "id": 22,
+    "wort": "sich zeigen",
+    "grammatik": "zeigt sich, zeigte sich, hat sich gezeigt",
+    "beispiel": "Schaut man die Ergebnisse der Prüfung genauer an, zeigt sich, dass die Stellung des Verbs noch zu wenig beherrscht wird.",
+    "lektion": 1,
+    "audio": "22.opus",
+    "teil": 3
+  },
+  {
+    "id": 23,
+    "wort": "Bedeutung",
+    "grammatik": "die, an Bedeutung verlieren/gewinnen",
+    "beispiel": "Das Zeitungslesen hat offensichtlich in den letzten Jahren an Bedeutung verloren.",
+    "lektion": 1,
+    "audio": "23.opus",
+    "teil": 3
+  },
+  {
+    "id": 24,
+    "wort": "einschalten",
+    "grammatik": "schaltet ein, schaltete ein, hat eingeschaltet",
+    "beispiel": "Schalten Sie das Licht ein, indem Sie den Schalter betätigen.",
+    "lektion": 1,
+    "audio": "24.opus",
+    "teil": 3
+  },
+  {
+    "id": 25,
+    "wort": "Präfix, Vorsilbe",
+    "grammatik": "der Präfix, die Präfixe, die Vorsilbe, die Vorsilben",
+    "beispiel": "Bei untrennbaren Verben, wird die Präfixe nicht betont.",
+    "lektion": 1,
+    "audio": "25.opus",
+    "teil": 4
+  },
+  {
+    "id": 26,
+    "wort": "spielsüchtig",
+    "grammatik": "Adjektiv",
+    "beispiel": "Sind wir dabei, zu einer Gesellschaft der Spielsüchtigen zu werden?",
+    "lektion": 1,
+    "audio": "26.opus",
+    "teil": 4
+  },
+  {
+    "id": 27,
+    "wort": "scheitern",
+    "grammatik": "scheitert, scheiterte, ist gescheitert",
+    "beispiel": "Spielsucht führt dazu, dass Privat- und Berufsleben scheitern.",
+    "lektion": 1,
+    "audio": "27.opus",
+    "teil": 4
+  },
+  {
+    "id": 28,
+    "wort": "übermässig",
+    "grammatik": "Adverb",
+    "beispiel": "Manche Heranwachsende verändern sich durch übermässiges Spielen.",
+    "lektion": 1,
+    "audio": "28.opus",
+    "teil": 4
+  },
+  {
+    "id": 29,
+    "wort": "sich zerstreuen",
+    "grammatik": "zerstreut sich, zerstreute sich, hat sich zerstreut",
+    "beispiel": "Statt zwischenzeitlich nichts zu tun, wollen wir uns ständig maximal zerstreuen.",
+    "lektion": 1,
+    "audio": "29.opus",
+    "teil": 4
+  },
+  {
+    "id": 30,
+    "wort": "sich handeln",
+    "grammatik": "um + Akkusativ",
+    "beispiel": "Bei den Mobiltelefonen handelt es sich eigentlich um tragbare Onlinecomputer.",
+    "lektion": 1,
+    "audio": "30.opus",
+    "teil": 4
+  },
+  {
+    "id": 31,
+    "wort": "Reduktion",
+    "grammatik": "die, Reduktionen",
+    "beispiel": "Die Zukunft der Smartphones muss Reduktion heissen.",
+    "lektion": 1,
+    "audio": "31.opus",
+    "teil": 4
+  },
+  {
+    "id": 32,
+    "wort": "unterbrechen",
+    "grammatik": "unterbricht, unterbrach, hat unterbrochen",
+    "beispiel": "Früher haben die Menschen ihre Tätigkeiten nicht so häufig unterbrochen wie heute.",
+    "lektion": 1,
+    "audio": "32.opus",
+    "teil": 4
+  },
+  {
+    "id": 33,
+    "wort": "Heim",
+    "grammatik": "das, Heime",
+    "beispiel": "Für das Studium kehren junge Leute dem elterlichen Heim den Rücken.",
+    "lektion": 1,
+    "audio": "33.opus",
+    "teil": 5
+  },
+  {
+    "id": 34,
+    "wort": "Tipp",
+    "grammatik": "der, Tipps",
+    "beispiel": "Zu hören sind zehn Tipps, die das Zusammen-leben in WGs einfacher machen.",
+    "lektion": 1,
+    "audio": "34.opus",
+    "teil": 5
+  },
+  {
+    "id": 35,
+    "wort": "von vornherein",
+    "grammatik": "Adverbial",
+    "beispiel": "Er gibt Ratschläge, wie Probleme von vornherein zu vermeiden sind.",
+    "lektion": 1,
+    "audio": "35.opus",
+    "teil": 5
+  },
+  {
+    "id": 36,
+    "wort": "Tageslicht",
+    "grammatik": "das ans Tageslicht kommen",
+    "beispiel": "Dein wahrer Charakter kommt schneller ans Tageslicht, als du denkst.",
+    "lektion": 1,
+    "audio": "36.opus",
+    "teil": 5
+  },
+  {
+    "id": 37,
+    "wort": "Zettel",
+    "grammatik": "der, Zettel",
+    "beispiel": "Bitte keine Zettel mit Mahnungen, lieber Probleme offen ansprechen.",
+    "lektion": 1,
+    "audio": "37.opus",
+    "teil": 5
+  },
+  {
+    "id": 38,
+    "wort": "unternehmen",
+    "grammatik": "unternimmt, unternahm, hat unternommen",
+    "beispiel": "Wer zusammenlebt, sollte auch zusammen etwas unternehmen.",
+    "lektion": 1,
+    "audio": "38.opus",
+    "teil": 5
+  },
+  {
+    "id": 39,
+    "wort": "Nerv",
+    "grammatik": "der Nerv, Nerven / auf die Nerven gehen",
+    "beispiel": "Die vielen Gäste in der WG gehen ihm auf die Nerven, denn er will auch mal seine Ruhe.",
+    "lektion": 1,
+    "audio": "39.opus",
+    "teil": 5
+  },
+  {
+    "id": 40,
+    "wort": "sich beteiligen",
+    "grammatik": "an + Dativ",
+    "beispiel": "Sie beteiligt sich weder am Putzplan noch an den Kosten.",
+    "lektion": 1,
+    "audio": "40.opus",
+    "teil": 5
+  },
+  {
+    "id": 41,
+    "wort": "entstehen",
+    "grammatik": "entsteht, ist entstanden",
+    "beispiel": "Wohngemeinschaften entstehen heute aus den unterschiedlichsten Motiven.",
+    "lektion": 1,
+    "audio": "41.opus",
+    "teil": 6
+  },
+  {
+    "id": 42,
+    "wort": "Belastbarkeit",
+    "grammatik": "die",
+    "beispiel": "Flexibilität, Belastbarkeit und Mobilität werden in vielen Branchen von den Mitarbeitern verlangt.",
+    "lektion": 1,
+    "audio": "42.opus",
+    "teil": 6
+  },
+  {
+    "id": 43,
+    "wort": "anonym",
+    "grammatik": "",
+    "beispiel": "Viele haben keine Lust mehr auf anonyme Hotelzimmer oder Apartments.",
+    "lektion": 1,
+    "audio": "43.opus",
+    "teil": 6
+  },
+  {
+    "id": 44,
+    "wort": "kündbar",
+    "grammatik": "",
+    "beispiel": "Die Zimmer in der WG sind leichter und schneller kündbar.",
+    "lektion": 1,
+    "audio": "44.opus",
+    "teil": 6
+  },
+  {
+    "id": 45,
+    "wort": "Netzwerk",
+    "grammatik": "das Netzwerk",
+    "beispiel": "Hier kann man private und berufliche Netzwerke knüpfen.",
+    "lektion": 1,
+    "audio": "45.opus",
+    "teil": 6
+  },
+  {
+    "id": 46,
+    "wort": "Experiment",
+    "grammatik": "das Experiment",
+    "beispiel": "Er lebt dieses soziale Experiment bereits mehrere Jahre mit grossem Erfolg.",
+    "lektion": 1,
+    "audio": "46.opus",
+    "teil": 6
+  },
+  {
+    "id": 47,
+    "wort": "Luxus",
+    "grammatik": "der Luxus",
+    "beispiel": "Eine Wohngemeinschaft bietet den Luxus, überall mitentscheiden und mitgestalten zu können.",
+    "lektion": 1,
+    "audio": "47.opus",
+    "teil": 6
+  },
+  {
+    "id": 48,
+    "wort": "sich teilen",
+    "grammatik": "teilt sich, teilte sich, hat sich geteilt",
+    "beispiel": "Gemeinsam teilt man sich die Kosten für Einkäufe und die Unterstützung durch professionelle Kräfte",
+    "lektion": 1,
+    "audio": "48.opus",
+    "teil": 6
+  },
+  {
+    "id": 49,
+    "wort": "auftreten",
+    "grammatik": "tritt auf, trat auf, ist aufgetreten",
+    "beispiel": "Leider sind in unserer Wohnung seit mehreren Wochen einige Mängel auftreten",
+    "lektion": 1,
+    "audio": "49.opus",
+    "teil": 7
+  },
+  {
+    "id": 50,
+    "wort": "ausreichend",
+    "grammatik": "",
+    "beispiel": "Die Zimmer können nicht ausreichend beheizt werden.",
+    "lektion": 1,
+    "audio": "50.opus",
+    "teil": 7
+  },
+  {
+    "id": 51,
+    "wort": "ziehen",
+    "grammatik": "zieht, zog, hat gezogen",
+    "beispiel": "Es zieht in der Wohnung und es wird zu schnell kalt.",
+    "lektion": 1,
+    "audio": "51.opus",
+    "teil": 7
+  },
+  {
+    "id": 52,
+    "wort": "beseitigen",
+    "grammatik": "beseitigt, beseitigte, hat beseitigt",
+    "beispiel": "Unseres Erachtens wäre es dringend notwendig, die Mängel umgehend zu beseitigen.",
+    "lektion": 1,
+    "audio": "52.opus",
+    "teil": 7
+  },
+  {
+    "id": 53,
+    "wort": "hinweisen",
+    "grammatik": "weist hin, wies hin, hat hingewiesen",
+    "beispiel": "Den Hausmeister haben wir bereits mehrfach auf die Mängel hingewiesen.",
+    "lektion": 1,
+    "audio": "53.opus",
+    "teil": 7
+  },
+  {
+    "id": 54,
+    "wort": "beheben",
+    "grammatik": "behebt, behab, hat behoben",
+    "beispiel": "Wir möchten Sie bitten, die Mängel zu beheben.",
+    "lektion": 1,
+    "audio": "54.opus",
+    "teil": 7
+  },
+  {
+    "id": 55,
+    "wort": "auffallen",
+    "grammatik": "fällt auf, fiel auf, ist aufgefallen",
+    "beispiel": "Uns ist aufgefallen, dass die Heizung nicht einwandfrei funktioniert.",
+    "lektion": 1,
+    "audio": "55.opus",
+    "teil": 7
+  },
+  {
+    "id": 56,
+    "wort": "unternehmen",
+    "grammatik": "unternimmt, unternahm, hat unternommen",
+    "beispiel": "Zu unserer Enttäuschung wurde nichts gegen diese Mängel unternommen.",
+    "lektion": 1,
+    "audio": "56.opus",
+    "teil": 7
+  },
+  {
+    "id": 57,
+    "wort": "Folge leisten",
+    "grammatik": "leistet, leistete, hat geleistet",
+    "beispiel": "Die Soldaten leisteten dem Befehl unwillig Folge.",
+    "lektion": 1,
+    "audio": "57.opus",
+    "teil": 8
+  },
+  {
+    "id": 58,
+    "wort": "einreichen",
+    "grammatik": "reicht ein, reichte ein, hat eingereicht",
+    "beispiel": "Sie wird ihre Bewerbungsunterlagen gleich morgen einreichen.",
+    "lektion": 1,
+    "audio": "58.opus",
+    "teil": 8
+  },
+  {
+    "id": 59,
+    "wort": "durchführen",
+    "grammatik": "führt durch, führte durch, hat durchgeführt",
+    "beispiel": "Das Sportfest wurde trotz schlechten Wetters erfolgreich durchgeführt.",
+    "lektion": 1,
+    "audio": "59.opus",
+    "teil": 8
+  },
+  {
+    "id": 60,
+    "wort": "besprechen",
+    "grammatik": "bespricht, besprach, hat besprochen",
+    "beispiel": "Vor einer definitiven Zusage möchte ich zuerst die Anstellungsbedingungen besprechen.",
+    "lektion": 1,
+    "audio": "60.opus",
+    "teil": 8
+  },
+  {
+    "id": 61,
+    "wort": "ansprechen",
+    "grammatik": "spricht an, sprach an, hat angesprochen",
+    "beispiel": "Wenn es Probleme im Betrieb gibt, sollten sie angesprochen werden.",
+    "lektion": 1,
+    "audio": "61.opus",
+    "teil": 8
+  },
+  {
+    "id": 62,
+    "wort": "veranlassen",
+    "grammatik": "veranlasst, veranlasste, hat veranlasst",
+    "beispiel": "Wegen ihres Mobbingvorwurfes wurde eine interne Untersuchung veranlasst.",
+    "lektion": 1,
+    "audio": "62.opus",
+    "teil": 8
+  },
+  {
+    "id": 63,
+    "wort": "nachholen",
+    "grammatik": "holt nach, holte nach, hat nachgeholt",
+    "beispiel": "Wer eine schriftliche Aufgabe nicht termingerecht abgeben kann, sollte dies am nächsten Kurstag nachholen.",
+    "lektion": 1,
+    "audio": "63.opus",
+    "teil": 8
+  },
+  {
+    "id": 64,
+    "wort": "nachkommen",
+    "grammatik": "kommt nach, kam nach, ist nachgekommen",
+    "beispiel": "Der Aufforderung, die Füsse mit den dreckigen Schuhen von der Sitzbank zu entfernen, kam er nur zögernd nach.",
+    "lektion": 1,
+    "audio": "64.opus",
+    "teil": 8
+  },
+  {
+    "id": 65,
+    "wort": "wortwörtlich",
+    "grammatik": "",
+    "beispiel": "Die teilweise wortwörtliche Übereinstimmung der Beschreibungen verschiedener Prüfungskandidaten deutet darauf hin, dass sie voneinander abgeschrieben haben.",
+    "lektion": 2,
+    "audio": "65.opus",
+    "teil": 1
+  },
+  {
+    "id": 66,
+    "wort": "wortlos",
+    "grammatik": "",
+    "beispiel": "Der Verleger schickte keine Antwort, sondern kaufte ihr nur wortlos einige Gedichte ab.",
+    "lektion": 2,
+    "audio": "66.opus",
+    "teil": 1
+  },
+  {
+    "id": 67,
+    "wort": "wortgewandt",
+    "grammatik": "",
+    "beispiel": "Der Redner war für uns verständlich und wortgewandt, so dass er sein Publikum in Bann zog.",
+    "lektion": 2,
+    "audio": "67.opus",
+    "teil": 1
+  },
+  {
+    "id": 68,
+    "wort": "wortkarg",
+    "grammatik": "",
+    "beispiel": "Der Zeuge hat nur das Nötigste geschrieben, da er ein wortkarger Mensch ist.",
+    "lektion": 2,
+    "audio": "68.opus",
+    "teil": 1
+  },
+  {
+    "id": 69,
+    "wort": "sich zu Wort melden",
+    "grammatik": "meldet sich zu Wort, meldete sich zu Wort, hat sich zu Wort gemeldet",
+    "beispiel": "In einer Diskussion sollte man sich zu Wort melden, sobald man etwas sagen möchte.",
+    "lektion": 2,
+    "audio": "69.opus",
+    "teil": 1
+  },
+  {
+    "id": 70,
+    "wort": "zu Wort kommen",
+    "grammatik": "kommt zu Wort, kam zu Wort, ist zu Wort gekommen",
+    "beispiel": "Während der lebhaften Diskussion musste er sich lautstark bemerkbar machen, um zu Wort zu kommen.",
+    "lektion": 2,
+    "audio": "70.opus",
+    "teil": 1
+  },
+  {
+    "id": 71,
+    "wort": "beim Wort nehmen",
+    "grammatik": "nimmt beim Wort, nahm beim Wort, hat beim Wort genommen",
+    "beispiel": "Er hat die Politikerin beim Wort genommen und die sofortige Umsetzung der Reform gefordert.",
+    "lektion": 2,
+    "audio": "71.opus",
+    "teil": 1
+  },
+  {
+    "id": 72,
+    "wort": "umfassen",
+    "grammatik": "umfasst, umfasste, hat umfasst",
+    "beispiel": "Eine Abhandlung soll mindestens 350 Wörter umfassen.",
+    "lektion": 2,
+    "audio": "72.opus",
+    "teil": 1
+  },
+  {
+    "id": 73,
+    "wort": "laut",
+    "grammatik": "Genitiv oder Dativ  /Redewiedergabe: Präposition",
+    "beispiel": "Laut unseres Schreibens / Laut unserem Schreiben können wir Ihnen zum jetzigen Zeitpunkt keine Zusage erteilen.",
+    "lektion": 2,
+    "audio": "73.opus",
+    "teil": 2
+  },
+  {
+    "id": 74,
+    "wort": "nach",
+    "grammatik": "Redewiedergabe: Präposition",
+    "beispiel": "Meines Bruders Meinung nach sollte Vater keine anstrengende Reise mehr unternehmen.",
+    "lektion": 1,
+    "audio": "74.opus",
+    "teil": 2
+  },
+  {
+    "id": 75,
+    "wort": "zufolge",
+    "grammatik": "Redewiedergabe: Präposition",
+    "beispiel": "Dem Autor zufolge könnte ein Handyverbot in Schulen sinnvoll sein.",
+    "lektion": 2,
+    "audio": "75.opus",
+    "teil": 2
+  },
+  {
+    "id": 76,
+    "wort": "wie",
+    "grammatik": "Redewiedergabe: Nebensatz",
+    "beispiel": "Wie es im Text heisst, sollte man Krieg durch politische Verhandlungen verhindern.",
+    "lektion": 2,
+    "audio": "76.opus",
+    "teil": 2
+  },
+  {
+    "id": 77,
+    "wort": "wie",
+    "grammatik": "Redewiedergabe: Nebensatz",
+    "beispiel": "Wie mein Kollege berichtete, war die Gefahr durchaus voraussehbar / vorhersehbar.",
+    "lektion": 2,
+    "audio": "77.opus",
+    "teil": 2
+  },
+  {
+    "id": 78,
+    "wort": "Konjunktiv I Vergangenheit",
+    "grammatik": "indirekte Rede",
+    "beispiel": "Er behauptete, er sei nicht im Bild gewesen.",
+    "lektion": 2,
+    "audio": "78.opus",
+    "teil": 2
+  },
+  {
+    "id": 79,
+    "wort": "Infinitvsatz\nVergangenheit",
+    "grammatik": "indirekte Rede",
+    "beispiel": "Der Verdächtige behauptete, gestern den ganzen Abend zu Hause gewesen zu sein.",
+    "lektion": 2,
+    "audio": "79.opus",
+    "teil": 2
+  },
+  {
+    "id": 80,
+    "wort": "Konjunktiv II",
+    "grammatik": "indirekte Rede, nur, wenn nötig",
+    "beispiel": "Wir meinen, wir könnten diese Aufgaben",
+    "lektion": 2,
+    "audio": "80.opus",
+    "teil": 2
+  },
+  {
+    "id": 81,
+    "wort": "Vereinbarkeit",
+    "grammatik": "die",
+    "beispiel": "Ohne mobiles Büro wäre für mich die Vereinbarkeit von Beruf und Familie gar nicht möglich.",
+    "lektion": 2,
+    "audio": "81.opus",
+    "teil": 3
+  },
+  {
+    "id": 82,
+    "wort": "Daten",
+    "grammatik": "die (Pl.)",
+    "beispiel": "Es ist sehr hilfreich, ständig Zugriff zu seinen eigenen Daten zu haben.",
+    "lektion": 2,
+    "audio": "82.opus",
+    "teil": 3
+  },
+  {
+    "id": 83,
+    "wort": "sich treffen",
+    "grammatik": "mit",
+    "beispiel": "Man kann Projekte bearbeiten, ohne sich allzu oft mit den Mitarbeitern zu treffen.",
+    "lektion": 2,
+    "audio": "83.opus",
+    "teil": 3
+  },
+  {
+    "id": 84,
+    "wort": "Erreichbarkeit",
+    "grammatik": "die",
+    "beispiel": "Man sollte Zeiten für die eigene Erreichbarkeit definieren.",
+    "lektion": 2,
+    "audio": "84.opus",
+    "teil": 3
+  },
+  {
+    "id": 85,
+    "wort": "ständig",
+    "grammatik": "",
+    "beispiel": "Man sollte sich nicht verpflichtet fühlen, ständig erreichbar zu sein.",
+    "lektion": 2,
+    "audio": "85.opus",
+    "teil": 3
+  },
+  {
+    "id": 86,
+    "wort": "ausschalten",
+    "grammatik": "schaltet aus, schaltete aus, hat ausgeschaltet",
+    "beispiel": "Bei Besuch schalten wir das Handy aus.",
+    "lektion": 2,
+    "audio": "86.opus",
+    "teil": 3
+  },
+  {
+    "id": 87,
+    "wort": "voll und ganz",
+    "grammatik": "",
+    "beispiel": "Wenn ich immer für alle erreichbar bin, bin ich in Wahrheit nie voll und ganz für jemanden da.",
+    "lektion": 2,
+    "audio": "87.opus",
+    "teil": 3
+  },
+  {
+    "id": 88,
+    "wort": "verarbeiten",
+    "grammatik": "verarbeitet, verarbeitete, hat verarbeitet",
+    "beispiel": "Wenn man zu viele Informationen erhält, kann man sie kaum noch verarbeiten.",
+    "lektion": 2,
+    "audio": "88.opus",
+    "teil": 3
+  },
+  {
+    "id": 89,
+    "wort": "Opfer",
+    "grammatik": "das",
+    "beispiel": "Wer nicht Contra bieten kann, wird leicht zum Opfer von Hohn und Spott.",
+    "lektion": 2,
+    "audio": "89.opus",
+    "teil": 4
+  },
+  {
+    "id": 90,
+    "wort": "sprachlos",
+    "grammatik": "gegenüber + Dativ",
+    "beispiel": "Wem keine schnelle Antwort einfällt, der bleibt sprachlos gegenüber Frechheiten.",
+    "lektion": 2,
+    "audio": "90.opus",
+    "teil": 4
+  },
+  {
+    "id": 91,
+    "wort": "Hänselei",
+    "grammatik": "die, Hänseleien",
+    "beispiel": "In der Schule sind Hänseleien an der Tagesordnung.",
+    "lektion": 2,
+    "audio": "91.opus",
+    "teil": 4
+  },
+  {
+    "id": 92,
+    "wort": "gehen",
+    "grammatik": "um + Akkusativ",
+    "beispiel": "Meist geht es bei verbalen Angriffen um das Äussere.",
+    "lektion": 2,
+    "audio": "92.opus",
+    "teil": 4
+  },
+  {
+    "id": 93,
+    "wort": "versteckt",
+    "grammatik": "",
+    "beispiel": "Die Kommentare Erwachsener sind meist versteckter und subtiler.",
+    "lektion": 2,
+    "audio": "93.opus",
+    "teil": 4
+  },
+  {
+    "id": 94,
+    "wort": "Macht",
+    "grammatik": "die",
+    "beispiel": "Kinder demonstrieren ihre Macht mit «Du Fettkloss!», Erwachsene zum Beispiel mit «Gab es das Kostüm im Sonderschlussverkauf?»",
+    "lektion": 2,
+    "audio": "94.opus",
+    "teil": 4
+  },
+  {
+    "id": 95,
+    "wort": "Ausweg",
+    "grammatik": "der, Auswege",
+    "beispiel": "Gibt es Auswege aus einer solchen Situation?",
+    "lektion": 2,
+    "audio": "95.opus",
+    "teil": 4
+  },
+  {
+    "id": 96,
+    "wort": "Abwehr",
+    "grammatik": "die",
+    "beispiel": "Die beste Abwehr besteht darin, den Angreifer zu überraschen.",
+    "lektion": 2,
+    "audio": "96.opus",
+    "teil": 4
+  },
+  {
+    "id": 97,
+    "wort": "eine Sprache erlernen",
+    "grammatik": "Umwandlung in Nominalstil",
+    "beispiel": "das Erlernen einer Sprache",
+    "lektion": 2,
+    "audio": "97.opus",
+    "teil": 5
+  },
+  {
+    "id": 98,
+    "wort": "unsere gute Kommunikation",
+    "grammatik": "Umwandlung in den Verbalstil",
+    "beispiel": "Wir kommunizieren gut miteinander.",
+    "lektion": 2,
+    "audio": "98.opus",
+    "teil": 5
+  },
+  {
+    "id": 99,
+    "wort": "erwerben",
+    "grammatik": "erwirbt, erwarb, hat erworben",
+    "beispiel": "Im Ausland erwirbt man unbewusst Sprachkenntnisse beim Einkaufen.",
+    "lektion": 2,
+    "audio": "99.opus",
+    "teil": 5
+  },
+  {
+    "id": 100,
+    "wort": "Korrektur",
+    "grammatik": "die, Korrekturen (pl)",
+    "beispiel": "Es ist nicht nötig, dass Eltern die Sprachfehler ihrer Kinder korrigieren.",
+    "lektion": 2,
+    "audio": "100.opus",
+    "teil": 5
+  },
+  {
+    "id": 101,
+    "wort": "Aufbau",
+    "grammatik": "der",
+    "beispiel": "Das Ziel von Kindern beim Spracherwerb liegt im Aufbau von sozialen Kontakten.",
+    "lektion": 2,
+    "audio": "101.opus",
+    "teil": 5
+  },
+  {
+    "id": 102,
+    "wort": "Lernen",
+    "grammatik": "das",
+    "beispiel": "Lernen beschreibt bewusste und explizite Vorgänge mit einer klaren Steuerung.",
+    "lektion": 2,
+    "audio": "102.opus",
+    "teil": 5
+  },
+  {
+    "id": 103,
+    "wort": "Es ist ausreichende bewiesen, dass…",
+    "grammatik": "Umwandlung in den Verbalstil",
+    "beispiel": "Es gibt ausreichende Beweise, dass…",
+    "lektion": 2,
+    "audio": "103.opus",
+    "teil": 5
+  },
+  {
+    "id": 104,
+    "wort": "daher nimmt man an, dass",
+    "grammatik": "",
+    "beispiel": "Es besteht daher die Annahme, dass…",
+    "lektion": 2,
+    "audio": "104.opus",
+    "teil": 5
+  },
+  {
+    "id": 105,
+    "wort": "gelten",
+    "grammatik": "gilt, galt, hat gegolten",
+    "beispiel": "In Deutschland galt bis vor wenigen Jahren, wer Dialekt sprach, als ungebildet.",
+    "lektion": 2,
+    "audio": "105.opus",
+    "teil": 6
+  },
+  {
+    "id": 106,
+    "wort": "wirken",
+    "grammatik": "wirkt, wirkte, hat gewirkt",
+    "beispiel": "Karikaturisten benutzen den Dialekt, um komischer zu wirken.",
+    "lektion": 2,
+    "audio": "106.opus",
+    "teil": 6
+  },
+  {
+    "id": 107,
+    "wort": "im Grunde genommen",
+    "grammatik": "",
+    "beispiel": "Im Grunde genommen gibt es das Hochdeutsch in Reinform nur noch in der Tagesschau.",
+    "lektion": 2,
+    "audio": "107.opus",
+    "teil": 6
+  },
+  {
+    "id": 108,
+    "wort": "verbreiten",
+    "grammatik": "verbreitet, verbreitete, hat verbreitet",
+    "beispiel": "Das Radio hat nicht nur Nachrichten verbreitet, sondern auch das Hochdeutsche im Land.",
+    "lektion": 2,
+    "audio": "108.opus",
+    "teil": 6
+  },
+  {
+    "id": 109,
+    "wort": "rein",
+    "grammatik": "",
+    "beispiel": "Heute hören die Leute im Radio und Fernsehen keine reine Hochsprache mehr.",
+    "lektion": 2,
+    "audio": "109.opus",
+    "teil": 6
+  },
+  {
+    "id": 110,
+    "wort": "betonen",
+    "grammatik": "betont, betonte, hat betont",
+    "beispiel": "In unzähligen SMS schrieben viele Dialekt, um den Unterschied zu den beruflichen Nachrichten zu betonen.",
+    "lektion": 2,
+    "audio": "110.opus",
+    "teil": 6
+  },
+  {
+    "id": 111,
+    "wort": "zu tun haben",
+    "grammatik": "mit + Dativ",
+    "beispiel": "Die erneute Beliebtheit des Dialektes hat mit der Globalisierung zu tun.",
+    "lektion": 2,
+    "audio": "111.opus",
+    "teil": 6
+  },
+  {
+    "id": 112,
+    "wort": "sich sehnen",
+    "grammatik": "nach + Dativ",
+    "beispiel": "Viele sehnen sich nach einer kleineren Welt, in der sie sich zurechtfinden.",
+    "lektion": 2,
+    "audio": "112.opus",
+    "teil": 6
+  },
+  {
+    "id": 113,
+    "wort": "Meinung",
+    "grammatik": "die, einer Meinung sein",
+    "beispiel": "Viele Schweizer sind der Meinung, Hochdeutsch sei für sie eine Fremdsprache.",
+    "lektion": 2,
+    "audio": "113.opus",
+    "teil": 7
+  },
+  {
+    "id": 114,
+    "wort": "nachvollziehen",
+    "grammatik": "",
+    "beispiel": "Ich kann nicht nachvollziehen, warum sich Schweizer weigern, Hochdeutsch zu sprechen.",
+    "lektion": 2,
+    "audio": "114.opus",
+    "teil": 7
+  },
+  {
+    "id": 115,
+    "wort": "Ansicht",
+    "grammatik": "die",
+    "beispiel": "Ich vertrete die Ansicht, dass das Schweizer Hochdeutsch eine gleichwertige Varietät des Deutschen ist.",
+    "lektion": 2,
+    "audio": "115.opus",
+    "teil": 7
+  },
+  {
+    "id": 116,
+    "wort": "fest",
+    "grammatik": "",
+    "beispiel": "Wir sind der festen Überzeugung, dass der Dialekt den Schweizern nie als bäuerlich oder ungebildet vorkam.",
+    "lektion": 2,
+    "audio": "116.opus",
+    "teil": 7
+  },
+  {
+    "id": 117,
+    "wort": "einleuchtend",
+    "grammatik": "",
+    "beispiel": "Findest du es einleuchtend, dass Deutsch- und Welschschweizer sich oft auf Englisch unterhalten?",
+    "lektion": 2,
+    "audio": "117.opus",
+    "teil": 7
+  },
+  {
+    "id": 118,
+    "wort": "erhalten",
+    "grammatik": "erhält, erhielt, hat erhalten",
+    "beispiel": "Dialekte sind ein Teil der Kultur und müssen erhalten werden.",
+    "lektion": 2,
+    "audio": "118.opus",
+    "teil": 7
+  },
+  {
+    "id": 119,
+    "wort": "schaffen",
+    "grammatik": "schafft, schuf, hat geschaffen",
+    "beispiel": "Der Dialekt verbindet Menschen und schafft eine Gemeinschaft.",
+    "lektion": 2,
+    "audio": "119.opus",
+    "teil": 7
+  },
+  {
+    "id": 120,
+    "wort": "wichtig",
+    "grammatik": "für + Akkusativ",
+    "beispiel": "Gleichzeitig ist der Dialekt für die eigene Identität wichtig.",
+    "lektion": 2,
+    "audio": "120.opus",
+    "teil": 7
+  },
+  {
+    "id": 121,
+    "wort": "bei",
+    "grammatik": "+ Dativ",
+    "beispiel": "Er erklärt, was beim Deutschlernen helfen kann.",
+    "lektion": 2,
+    "audio": "121.opus",
+    "teil": 8
+  },
+  {
+    "id": 122,
+    "wort": "hauptsächlich",
+    "grammatik": "",
+    "beispiel": "Welche Fremdsprachen werden in deinem Land hauptsächlich gelernt?",
+    "lektion": 2,
+    "audio": "122.opus",
+    "teil": 8
+  },
+  {
+    "id": 123,
+    "wort": "Bedeutung",
+    "grammatik": "die, Bedeutungen",
+    "beispiel": "Welche Bedeutung haben Fremdsprachen heute?",
+    "lektion": 2,
+    "audio": "123.opus",
+    "teil": 8
+  },
+  {
+    "id": 124,
+    "wort": "beginnen",
+    "grammatik": "beginnt, begann, hat begonnen",
+    "beispiel": "Ich frage mich, wann man beginnen sollte, eine Fremdsprache zu lernen.",
+    "lektion": 2,
+    "audio": "124.opus",
+    "teil": 8
+  },
+  {
+    "id": 125,
+    "wort": "auffallen",
+    "grammatik": "an + Dativ",
+    "beispiel": "Was fällt dir an der Grafik besonders auf?",
+    "lektion": 2,
+    "audio": "125.opus",
+    "teil": 8
+  },
+  {
+    "id": 126,
+    "wort": "gehören",
+    "grammatik": "zu + Dativ",
+    "beispiel": "Obwohl die Band ausschliesslich auf Bairisch singt, gehört sie heute zu den populärsten Bands Deutschlands.",
+    "lektion": 2,
+    "audio": "126.opus",
+    "teil": 8
+  },
+  {
+    "id": 127,
+    "wort": "Körpergefühl",
+    "grammatik": "das",
+    "beispiel": "Der Bandleader erzählt von sich, bei seinen Ansagen auf Hochdeutsch habe er ein schlechtes Körpergefühl.",
+    "lektion": 2,
+    "audio": "127.opus",
+    "teil": 8
+  },
+  {
+    "id": 128,
+    "wort": "Rolle",
+    "grammatik": "die, Rollen",
+    "beispiel": "Im Schweizer Mundartrock spielt Berndeutsch eine besondere Rolle.",
+    "lektion": 2,
+    "audio": "128.opus",
+    "teil": 8
+  },
+  {
+    "id": 129,
+    "wort": "Lücke",
+    "grammatik": "die",
+    "beispiel": "Wessen Lebenslauf Lücken aufweist, der fürchtet sich vielleicht vor einem Bewerbungsgespräch.",
+    "lektion": 3,
+    "audio": "129.opus",
+    "teil": 1
+  },
+  {
+    "id": 130,
+    "wort": "vollziehen",
+    "grammatik": "vollzieht, vollzog, hat vollzogen",
+    "beispiel": "Wer in seiner Ausbildung Richtungswechsel vollzogen hat, hat sicher Erkenntnisse gewonnen.",
+    "lektion": 3,
+    "audio": "130.opus",
+    "teil": 1
+  },
+  {
+    "id": 131,
+    "wort": "revidieren",
+    "grammatik": "revidiert, revidierte, hat revidiert",
+    "beispiel": "Wenn man eine falsche Entscheidung trifft, kann man diese revidieren.",
+    "lektion": 3,
+    "audio": "131.opus",
+    "teil": 1
+  },
+  {
+    "id": 132,
+    "wort": "stören",
+    "grammatik": "stört, störte, hat gestört",
+    "beispiel": "Personalchefs stört ein Berufs- oder Studienwechsel in der Regel nicht so sehr.",
+    "lektion": 3,
+    "audio": "132.opus",
+    "teil": 1
+  },
+  {
+    "id": 133,
+    "wort": "Wahl",
+    "grammatik": "die",
+    "beispiel": "Die Wahl eines passenden Berufs ist sehr wichtig.",
+    "lektion": 3,
+    "audio": "133.opus",
+    "teil": 1
+  },
+  {
+    "id": 134,
+    "wort": "Ehrlichkeit",
+    "grammatik": "die",
+    "beispiel": "Personalchefs fordern Ehrlichkeit bei der Erläuterung von Lücken und Richtungswechseln.",
+    "lektion": 3,
+    "audio": "134.opus",
+    "teil": 1
+  },
+  {
+    "id": 135,
+    "wort": "Infinitivsatz",
+    "grammatik": "gleiches Subjekt",
+    "beispiel": "Viele Bewerber fürchten, vom Personalchef kritisiert zu werden.",
+    "lektion": 3,
+    "audio": "135.opus",
+    "teil": 1
+  },
+  {
+    "id": 136,
+    "wort": "Akkusativobjekt",
+    "grammatik": "zwei verschiedene Subjekte",
+    "beispiel": "Bewerber fürchten, dass der Personalchef ihren Berufswechsel kritisiert.",
+    "lektion": 3,
+    "audio": "136.opus",
+    "teil": 1
+  },
+  {
+    "id": 137,
+    "wort": "Lebenslauf",
+    "grammatik": "der",
+    "beispiel": "Ein Lebenslauf, der nur aus einer zeitlichen Aufzählung von Daten besteht, ist langweilig.",
+    "lektion": 3,
+    "audio": "137.opus",
+    "teil": 2
+  },
+  {
+    "id": 138,
+    "wort": "damals",
+    "grammatik": "",
+    "beispiel": "Was hat sich heute im Vergleich zu damals verändert?",
+    "lektion": 3,
+    "audio": "138.opus",
+    "teil": 2
+  },
+  {
+    "id": 139,
+    "wort": "sich inszenieren",
+    "grammatik": "inszeniert sich, inszenierte sich, hat sich inszeniert",
+    "beispiel": "Der grösste Unterschied ist, dass man sich heute viel stärker inszenieren muss.",
+    "lektion": 3,
+    "audio": "139.opus",
+    "teil": 2
+  },
+  {
+    "id": 140,
+    "wort": "Angebot",
+    "grammatik": "das, Angebote",
+    "beispiel": "Es gibt ein grosses Angebot an Ratgebern zum Thema «Bewerbung».",
+    "lektion": 3,
+    "audio": "140.opus",
+    "teil": 2
+  },
+  {
+    "id": 141,
+    "wort": "unvorbereitet",
+    "grammatik": "",
+    "beispiel": "Viel Bewerber gehen relativ unvorbereitet an die Sache heran.",
+    "lektion": 3,
+    "audio": "141.opus",
+    "teil": 2
+  },
+  {
+    "id": 142,
+    "wort": "Schwäche",
+    "grammatik": "die, Schwächen",
+    "beispiel": "Worin sehen Sie die grösste Schwäche der Bewerber?",
+    "lektion": 3,
+    "audio": "142.opus",
+    "teil": 2
+  },
+  {
+    "id": 143,
+    "wort": "Ware",
+    "grammatik": "die, Waren",
+    "beispiel": "Wer sich bewirbt, bietet eine Ware an, nämlich seine Kenntnisse und sein Wissen.",
+    "lektion": 3,
+    "audio": "143.opus",
+    "teil": 2
+  },
+  {
+    "id": 144,
+    "wort": "sich verhalten",
+    "grammatik": "verhält sich, verhielt sich, hat sich verhalten",
+    "beispiel": "Der Personalchef interessiert sich auch dafür, wie Sie sich in schwierigen Situationen verhalten.",
+    "lektion": 3,
+    "audio": "144.opus",
+    "teil": 2
+  },
+  {
+    "id": 145,
+    "wort": "voraussetzen",
+    "grammatik": "setzt voraus, setzte voraus, hat vorausgesetzt",
+    "beispiel": "Für bestimmte berufliche Positionen wird häufig ein Hochschulstudium vorausgesetzt.",
+    "lektion": 3,
+    "audio": "145.opus",
+    "teil": 3
+  },
+  {
+    "id": 146,
+    "wort": "gesellschaftlich",
+    "grammatik": "",
+    "beispiel": "Ein akademischer Titel hat gesellschaftlich einen hohen Stellenwert.",
+    "lektion": 3,
+    "audio": "146.opus",
+    "teil": 3
+  },
+  {
+    "id": 147,
+    "wort": "abhängen",
+    "grammatik": "von + Dativ\nhängt ab, hing ab, hat (ist) abgehangen",
+    "beispiel": "Heute hängt die berufliche Sicherheit von vielen Faktoren ab.",
+    "lektion": 3,
+    "audio": "147.opus",
+    "teil": 3
+  },
+  {
+    "id": 148,
+    "wort": "verbinden",
+    "grammatik": "mit + Dativ\nverbindet, verband, hat verbunden",
+    "beispiel": "Ein berufsbegleitendes Studium verbindet wissenschaftliche Theorie mit beruflicher Praxis.",
+    "lektion": 3,
+    "audio": "148.opus",
+    "teil": 3
+  },
+  {
+    "id": 149,
+    "wort": "fest",
+    "grammatik": "",
+    "beispiel": "Ich war jahrelang in einem festen Arbeitsverhältnis.",
+    "lektion": 3,
+    "audio": "149.opus",
+    "teil": 3
+  },
+  {
+    "id": 150,
+    "wort": "kündigen",
+    "grammatik": "kündigt, kündigte, hat gekündigt",
+    "beispiel": "Wegen einer Umstrukturierung aus betrieblichen Gründen wurde mir gekündigt.",
+    "lektion": 3,
+    "audio": "150.opus",
+    "teil": 3
+  },
+  {
+    "id": 151,
+    "wort": "Bescheid",
+    "grammatik": "der",
+    "beispiel": "Vor einer Woche habe ich einen positiven Bescheid bekommen.",
+    "lektion": 3,
+    "audio": "151.opus",
+    "teil": 3
+  },
+  {
+    "id": 152,
+    "wort": "eingehen",
+    "grammatik": "auf + Akkusativ\ngeht ein, ging ein, ist eingegangen",
+    "beispiel": "Sogar auf meine Gehaltsvorstellungen wurde eingegangen.",
+    "lektion": 3,
+    "audio": "152.opus",
+    "teil": 3
+  },
+  {
+    "id": 153,
+    "wort": "Nachteil",
+    "grammatik": "der, Erörterung",
+    "beispiel": "Es ist ein grosser Nachteil, wenn man während der Ausbildung finanziell von seinen Eltern abhängig ist.",
+    "lektion": 3,
+    "audio": "153.opus",
+    "teil": 4
+  },
+  {
+    "id": 154,
+    "wort": "Tatsache",
+    "grammatik": "die, Erörterung",
+    "beispiel": "Die Tatsache, dass man während des Studiums arbeitet, spricht für dieses Modell.",
+    "lektion": 3,
+    "audio": "154.opus",
+    "teil": 4
+  },
+  {
+    "id": 155,
+    "wort": "überwiegen",
+    "grammatik": "überwiegt, überwog, hat überwogen\nErörterung",
+    "beispiel": "In meinen Augen überwiegen die Nachteile eines berufsbegleitenden Studiums.",
+    "lektion": 3,
+    "audio": "155.opus",
+    "teil": 4
+  },
+  {
+    "id": 156,
+    "wort": "betrachten",
+    "grammatik": "betrachtet, betrachtete, hat betrachtet\nErörterung",
+    "beispiel": "Betrachtet man alle Argumente, fallen am meisten die besseren Berufsaussichten ins Gewicht.",
+    "lektion": 3,
+    "audio": "156.opus",
+    "teil": 4
+  },
+  {
+    "id": 157,
+    "wort": "sich wenden",
+    "grammatik": "an + Akkusativ",
+    "beispiel": "An wen kann ich mich während meiner Ausbildung mit Frage wenden?",
+    "lektion": 3,
+    "audio": "157.opus",
+    "teil": 4
+  },
+  {
+    "id": 158,
+    "wort": "Erstattung",
+    "grammatik": "die, von + Dativ",
+    "beispiel": "Eine Erstattung von Fahrtkosten erfolgt nicht.",
+    "lektion": 3,
+    "audio": "158.opus",
+    "teil": 4
+  },
+  {
+    "id": 159,
+    "wort": "Verhinderung",
+    "grammatik": "die",
+    "beispiel": "Bei krankheitsbedingter Verhinderung ist innerhalb von drei Tagen ein ärztliches Zeugnis vorzulegen.",
+    "lektion": 3,
+    "audio": "159.opus",
+    "teil": 4
+  },
+  {
+    "id": 160,
+    "wort": "fällig",
+    "grammatik": "",
+    "beispiel": "Die Vergütung wird jeweils auf Ende des Monats fällig.",
+    "lektion": 3,
+    "audio": "160.opus",
+    "teil": 4
+  },
+  {
+    "id": 161,
+    "wort": "ablenken",
+    "grammatik": "lenkt ab, lenkte ab, hat abgelenkt",
+    "beispiel": "Wer während des Autofahrens telefoniert, ist in jedem Fall abgelenkt.",
+    "lektion": 3,
+    "audio": "161.opus",
+    "teil": 5
+  },
+  {
+    "id": 162,
+    "wort": "führen",
+    "grammatik": "zu",
+    "beispiel": "Telefonieren beim Autofahren führt zu einem viermal so hohen Unfallrisiko.",
+    "lektion": 3,
+    "audio": "162.opus",
+    "teil": 5
+  },
+  {
+    "id": 163,
+    "wort": "Doppelbelastung",
+    "grammatik": "die",
+    "beispiel": "Das Gehirn ist einer Doppelbelastung nicht gewachsen.",
+    "lektion": 3,
+    "audio": "163.opus",
+    "teil": 5
+  },
+  {
+    "id": 164,
+    "wort": "Multitasking",
+    "grammatik": "der",
+    "beispiel": "Multitasking ist ein schneller Wechsel zwischen verschiedenen Aufgaben.",
+    "lektion": 3,
+    "audio": "164.opus",
+    "teil": 5
+  },
+  {
+    "id": 165,
+    "wort": "weshalb",
+    "grammatik": "weiterführender Nebensatz",
+    "beispiel": "Viele stehen unter Zeitdruck, weshalb sie es mit Multitasking versuchen.",
+    "lektion": 3,
+    "audio": "165.opus",
+    "teil": 5
+  },
+  {
+    "id": 166,
+    "wort": "was",
+    "grammatik": "weiterführender Nebensatz",
+    "beispiel": "Er versuchte mehreres gleichzeitig zu erledigen, was ihn aber nicht weiterbrachte.",
+    "lektion": 3,
+    "audio": "166.opus",
+    "teil": 5
+  },
+  {
+    "id": 167,
+    "wort": "wodurch",
+    "grammatik": "weiterführender Nebensatz",
+    "beispiel": "Man sollte ohne Unterbrechungen durcharbeiten können, wodurch man viele Kräfte sparen würde.",
+    "lektion": 3,
+    "audio": "167.opus",
+    "teil": 5
+  },
+  {
+    "id": 168,
+    "wort": "worin",
+    "grammatik": "weiterführender Nebensatz",
+    "beispiel": "Beim Multitasking erledigt man zumindest eine der Aufgaben höchstens mit halber Kraft, worin der Preis für das Multitasking besteht.",
+    "lektion": 3,
+    "audio": "168.opus",
+    "teil": 5
+  },
+  {
+    "id": 169,
+    "wort": "Ellenbogen",
+    "grammatik": "der",
+    "beispiel": "Ellenbogentypen, die nur den persönlichen Erfolg im Auge haben, sind heute nicht mehr gefragt.",
+    "lektion": 3,
+    "audio": "169.opus",
+    "teil": 6
+  },
+  {
+    "id": 170,
+    "wort": "Softskills",
+    "grammatik": "die",
+    "beispiel": "Wegen der Veränderungen in der Arbeitswelt werden Softskills heute als wichtiger betrachtet.",
+    "lektion": 3,
+    "audio": "170.opus",
+    "teil": 6
+  },
+  {
+    "id": 171,
+    "wort": "Bereitschaft",
+    "grammatik": "die",
+    "beispiel": "Da der technologische Fortschritt rasant ist, wird Veränderungsbereitschaft gefordert.",
+    "lektion": 3,
+    "audio": "171.opus",
+    "teil": 6
+  },
+  {
+    "id": 172,
+    "wort": "Ball",
+    "grammatik": "der, Bälle / am Ball bleiben",
+    "beispiel": "Um am Ball zu bleiben, muss man sich ständig weiterentwickeln.",
+    "lektion": 3,
+    "audio": "172.opus",
+    "teil": 6
+  },
+  {
+    "id": 173,
+    "wort": "interkulturell",
+    "grammatik": "",
+    "beispiel": "Interkulturelle Kompetenz verdankt ihre Beliebtheit der Globalisierung.",
+    "lektion": 3,
+    "audio": "173.opus",
+    "teil": 6
+  },
+  {
+    "id": 174,
+    "wort": "Zusammenhang",
+    "grammatik": "der, Zusammenhänge",
+    "beispiel": "Vernetztes Denken bedeutet, auch komplexe Zusammenhänge zu überblicken.",
+    "lektion": 3,
+    "audio": "174.opus",
+    "teil": 6
+  },
+  {
+    "id": 175,
+    "wort": "interpretieren",
+    "grammatik": "interpretiert, interpretierte, hat interpretiert",
+    "beispiel": "Wie Belastbarkeit zu interpretieren ist, im persönlichen Bewerbungsgespräch zu klären.",
+    "lektion": 3,
+    "audio": "175.opus",
+    "teil": 6
+  },
+  {
+    "id": 176,
+    "wort": "gelassen",
+    "grammatik": "",
+    "beispiel": "Wer belastbar ist, bleibt auch in hektischen Zeiten gelassen.",
+    "lektion": 3,
+    "audio": "176.opus",
+    "teil": 6
+  },
+  {
+    "id": 177,
+    "wort": "sich befassen",
+    "grammatik": "mit Dativ\nbefasst, befasste, hat befasst",
+    "beispiel": "In meinem Vortrag befasse ich mich mit dem Thema «Kinder und soziale Medien».",
+    "lektion": 3,
+    "audio": "177.opus",
+    "teil": 7
+  },
+  {
+    "id": 178,
+    "wort": "Erfahrung",
+    "grammatik": "die",
+    "beispiel": "Meine eigenen Erfahrungen haben mir gezeigt, dass in den sozialen Medien oft die Kontrolle über die Zeit verloren geht.",
+    "lektion": 3,
+    "audio": "178.opus",
+    "teil": 7
+  },
+  {
+    "id": 179,
+    "wort": "treffend",
+    "grammatik": "",
+    "beispiel": "Ein treffendes Beispiel für die Gefahren sozialer Medien sind die bekannten Mobbingfälle in Sekundarschulen.",
+    "lektion": 3,
+    "audio": "179.opus",
+    "teil": 7
+  },
+  {
+    "id": 180,
+    "wort": "Aschreiben",
+    "grammatik": "",
+    "beispiel": "Im Anschreiben stellt der Bewerber seinen Lebenslauf und seine Fähigkeiten in Bezug auf die ausgeschriebene Stelle vor.",
+    "lektion": 3,
+    "audio": "180.opus",
+    "teil": 7
+  },
+  {
+    "id": 181,
+    "wort": "beschreiben",
+    "grammatik": "beschreibt, beschrieb, hat beschrieben",
+    "beispiel": "In einem Anschreiben beschreibt man bespielhafte Situationen, in denen man seine Softskills schon eingesetzt hat.",
+    "lektion": 3,
+    "audio": "181.opus",
+    "teil": 7
+  },
+  {
+    "id": 182,
+    "wort": "bewerten",
+    "grammatik": "bewertet, bewertete, hat bewertet",
+    "beispiel": "Bei einem Assessment Center werden Beobachter eingesetzt, die das Verhalten des Bewerbers bewerten.",
+    "lektion": 3,
+    "audio": "182.opus",
+    "teil": 7
+  },
+  {
+    "id": 183,
+    "wort": "Innovativ",
+    "grammatik": "",
+    "beispiel": "Ein innovativer Charakter soll neuen Wind in ein eingespieltes Team bringen.",
+    "lektion": 3,
+    "audio": "183.opus",
+    "teil": 7
+  },
+  {
+    "id": 184,
+    "wort": "fortan",
+    "grammatik": "",
+    "beispiel": "In Bewerbungsverfahren kann man lernen, fortan besser mit seinen Stärken und Schwächen umzugehen.",
+    "lektion": 3,
+    "audio": "184.opus",
+    "teil": 7
+  },
+  {
+    "id": 185,
+    "wort": "Handarbeit",
+    "grammatik": "die",
+    "beispiel": "Zwei junge Männer gründeten ein erfolgreiches Handarbeitsunternehmen, das mittlerweile ca. 40 häkelnde Rentnerinnen beschäftigt.",
+    "lektion": 3,
+    "audio": "185.opus",
+    "teil": 8
+  },
+  {
+    "id": 186,
+    "wort": "Anleitung",
+    "grammatik": "die, Anleitungen",
+    "beispiel": "Auf einem Youtube-Kanal werden genaue Anleitungen für Fussballtricks gezeigt.",
+    "lektion": 3,
+    "audio": "186.opus",
+    "teil": 8
+  },
+  {
+    "id": 187,
+    "wort": "sich erkundigen",
+    "grammatik": "erkundigt sich, erkundigte sich, hat sich erkundigt",
+    "beispiel": "Eine angehende Studentin erkundigte sich nach den Zulassungsvoraussetzungen.",
+    "lektion": 3,
+    "audio": "187.opus",
+    "teil": 8
+  },
+  {
+    "id": 188,
+    "wort": "dauern",
+    "grammatik": "dauert, dauerte, hat gedauert",
+    "beispiel": "Das kaufmännische Praktikum soll mindestens zwölf Wochen dauern.",
+    "lektion": 3,
+    "audio": "188.opus",
+    "teil": 8
+  },
+  {
+    "id": 189,
+    "wort": "Frist",
+    "grammatik": "die, Fristen",
+    "beispiel": "Welche Bewerbungsfristen gelten, um die Unterlagen einzuschicken?",
+    "lektion": 3,
+    "audio": "189.opus",
+    "teil": 8
+  },
+  {
+    "id": 190,
+    "wort": "Kriterium",
+    "grammatik": "das, Kriterien",
+    "beispiel": "Die Bewerber werden nach bestimmten Kriterien ausgewählt.",
+    "lektion": 3,
+    "audio": "190.opus",
+    "teil": 8
+  },
+  {
+    "id": 191,
+    "wort": "Bescheid",
+    "grammatik": "der",
+    "beispiel": "Man erhält auf jeden Fall schriftlichen Bescheid.",
+    "lektion": 3,
+    "audio": "191.opus",
+    "teil": 8
+  },
+  {
+    "id": 192,
+    "wort": "Argument",
+    "grammatik": "das, Argumente",
+    "beispiel": "Welche Argumente sprechen für feste Arbeitszeiten?",
+    "lektion": 3,
+    "audio": "192.opus",
+    "teil": 8
+  },
+  {
+    "id": 193,
+    "wort": "Umsatz",
+    "grammatik": "der",
+    "beispiel": "Der Umsatz, auch Erlös genannt, ist der Gesamtwert aller verkauften Waren eines Unternehmens über einen bestimmten Zeitraum.",
+    "lektion": 4,
+    "audio": "193.opus",
+    "teil": 1
+  },
+  {
+    "id": 194,
+    "wort": "Aktie",
+    "grammatik": "die, Aktien",
+    "beispiel": "Eine Aktie ist ein Wertpapier, das einem einen Anteil an einer Aktiengesellschaft bestätigt.",
+    "lektion": 4,
+    "audio": "194.opus",
+    "teil": 1
+  },
+  {
+    "id": 195,
+    "wort": "Inflation",
+    "grammatik": "die",
+    "beispiel": "Wenn sich allgemein die Preise für Güter erhöhen und damit Ersparnisse an Wert verlieren, spricht man von Inflation.",
+    "lektion": 4,
+    "audio": "195.opus",
+    "teil": 1
+  },
+  {
+    "id": 196,
+    "wort": "Währung",
+    "grammatik": "die, Währungen",
+    "beispiel": "Bei der Währung handelt es sich um das gesetzliche Zahlungsmittel eines Landes.",
+    "lektion": 4,
+    "audio": "196.opus",
+    "teil": 1
+  },
+  {
+    "id": 197,
+    "wort": "Ökonomie",
+    "grammatik": "die",
+    "beispiel": "Die Ökonomie befasst sich mit der Produktion, der Verteilung und dem Konsum von Gütern und Dienstleistungen.",
+    "lektion": 4,
+    "audio": "197.opus",
+    "teil": 1
+  },
+  {
+    "id": 198,
+    "wort": "Devisen",
+    "grammatik": "die",
+    "beispiel": "Devisen sind Zahlungsmittel in ausländischer Währung.",
+    "lektion": 4,
+    "audio": "198.opus",
+    "teil": 1
+  },
+  {
+    "id": 199,
+    "wort": "Bonität",
+    "grammatik": "die",
+    "beispiel": "Banken gewähren Kunden Kredite, wenn deren Bonität/Zahlungsfähigkeit als genügend eingeschätzt wird.",
+    "lektion": 4,
+    "audio": "199.opus",
+    "teil": 1
+  },
+  {
+    "id": 200,
+    "wort": "erschrecken",
+    "grammatik": "über + Akkusativ erschrickt, erschrak, ist erschrocken",
+    "beispiel": "Als der Hirtenjunge in die Asche greifen wollte, erschrak er über die rotglühenden Steine.",
+    "lektion": 4,
+    "audio": "200.opus",
+    "teil": 1
+  },
+  {
+    "id": 201,
+    "wort": "Steinkohle",
+    "grammatik": "die",
+    "beispiel": "Abgestorbene Pflanzen werden zuerst in Torf und dann in Braun- oder Steinkohle verwandelt.",
+    "lektion": 4,
+    "audio": "201.opus",
+    "teil": 2
+  },
+  {
+    "id": 202,
+    "wort": "drastisch",
+    "grammatik": "",
+    "beispiel": "Nach dem Zweiten Weltkrieg veränderte sich die Trümmerlandschaft des Ruhrgebiets drastisch.",
+    "lektion": 4,
+    "audio": "202.opus",
+    "teil": 2
+  },
+  {
+    "id": 203,
+    "wort": "Bergbau",
+    "grammatik": "der",
+    "beispiel": "Es gab viele Arbeitsplätze im Bergbau, der in dieser Zeit seinen Höhepunkt erreichte.",
+    "lektion": 4,
+    "audio": "203.opus",
+    "teil": 2
+  },
+  {
+    "id": 204,
+    "wort": "Aushängeschild",
+    "grammatik": "das",
+    "beispiel": "Das Ruhrgebiet der Nachkriegszeit war das Aushängeschild der deutschen Wirtschaft.",
+    "lektion": 4,
+    "audio": "204.opus",
+    "teil": 2
+  },
+  {
+    "id": 205,
+    "wort": "Stahl",
+    "grammatik": "der",
+    "beispiel": "Seine Kohle und sein Stahl waren der Motor des Wirtschaftswunders.",
+    "lektion": 4,
+    "audio": "205.opus",
+    "teil": 2
+  },
+  {
+    "id": 206,
+    "wort": "Krise",
+    "grammatik": "die, Krisen",
+    "beispiel": "Die Kohlekrise begann damit, dass Kohle durch Öl und Erdgas ersetzt wurde.",
+    "lektion": 4,
+    "audio": "206.opus",
+    "teil": 2
+  },
+  {
+    "id": 207,
+    "wort": "umstellen",
+    "grammatik": "auf + Akkusativ, stellt um, stellte um, hat umgestellt",
+    "beispiel": "Die Deutsche Bundesbahn stellte ihre Züge auf elektrischen Betrieb um.",
+    "lektion": 4,
+    "audio": "207.opus",
+    "teil": 2
+  },
+  {
+    "id": 208,
+    "wort": "dicht",
+    "grammatik": "",
+    "beispiel": "Das Ruhrgebiet wurde zur dichtesten Hochschullandschaft Europas.",
+    "lektion": 4,
+    "audio": "208.opus",
+    "teil": 2
+  },
+  {
+    "id": 209,
+    "wort": "seit/seitdem",
+    "grammatik": "Nominal-/Verbform",
+    "beispiel": "seit Beginn des Kurses/seitdem der Kurs begann",
+    "lektion": 4,
+    "audio": "209.opus",
+    "teil": 3
+  },
+  {
+    "id": 210,
+    "wort": "nach/nachdem",
+    "grammatik": "Nominal-/Verbform",
+    "beispiel": "nach Beendigung der Arbeit/nachdem die Arbeit beendet wurde/beendet worden war",
+    "lektion": 4,
+    "audio": "210.opus",
+    "teil": 3
+  },
+  {
+    "id": 211,
+    "wort": "bei/als",
+    "grammatik": "Nominal-/Verbform",
+    "beispiel": "bei der Wahl zum Präsidenten/als man ihn zum Präsidenten wählte",
+    "lektion": 4,
+    "audio": "211.opus",
+    "teil": 3
+  },
+  {
+    "id": 212,
+    "wort": "bis zu/bis",
+    "grammatik": "Nominal-/Verbform",
+    "beispiel": "bis zu ihrer Pensionierung/bis sie pensioniert wurde",
+    "lektion": 4,
+    "audio": "212.opus",
+    "teil": 3
+  },
+  {
+    "id": 213,
+    "wort": "vor/bevor",
+    "grammatik": "Nominal-/Verbform",
+    "beispiel": "vor dem Hagelschlag/bevor es hagelte",
+    "lektion": 4,
+    "audio": "213.opus",
+    "teil": 3
+  },
+  {
+    "id": 214,
+    "wort": "während/während",
+    "grammatik": "Nominal-/Verbform",
+    "beispiel": "während des Sturms/während es stürmte",
+    "lektion": 4,
+    "audio": "214.opus",
+    "teil": 3
+  },
+  {
+    "id": 215,
+    "wort": "danach",
+    "grammatik": "Hauptsatz",
+    "beispiel": "Grosse Firmen wanderten ab. Danach stieg die Arbeitslosigkeit schnell.",
+    "lektion": 4,
+    "audio": "215.opus",
+    "teil": 3
+  },
+  {
+    "id": 216,
+    "wort": "seitdem",
+    "grammatik": "Hauptsatz",
+    "beispiel": "Er ernährt sich nun gesund. Seitdem fühlt er sich besser.",
+    "lektion": 4,
+    "audio": "216.opus",
+    "teil": 3
+  },
+  {
+    "id": 217,
+    "wort": "ausstehend",
+    "grammatik": "",
+    "beispiel": "Soll ich die Firma auf die ausstehende Rechnung aufmerksam machen?",
+    "lektion": 4,
+    "audio": "217.opus",
+    "teil": 4
+  },
+  {
+    "id": 218,
+    "wort": "bedenklich",
+    "grammatik": "",
+    "beispiel": "Halten Sie mein Handeln für bedenklich?",
+    "lektion": 4,
+    "audio": "218.opus",
+    "teil": 4
+  },
+  {
+    "id": 219,
+    "wort": "zustehen",
+    "grammatik": "steht zu, stand zu, ist zugestanden",
+    "beispiel": "Der Handwerker hat etwas geleistet, dafür steht ihm sein Geld zu.",
+    "lektion": 4,
+    "audio": "219.opus",
+    "teil": 4
+  },
+  {
+    "id": 220,
+    "wort": "unmoralisch",
+    "grammatik": "",
+    "beispiel": "Ich finde es nicht unmoralisch, wenn man den Kellner nicht auf den zu zahlenden Wein aufmerksam macht.",
+    "lektion": 4,
+    "audio": "220.opus",
+    "teil": 4
+  },
+  {
+    "id": 221,
+    "wort": "Instanz",
+    "grammatik": "die, Instanzen",
+    "beispiel": "Eine spezielle Instanz im menschlichen Bewusstsein sagt dem Menschen, wie er sein eigenes Handeln beurteilen soll.",
+    "lektion": 4,
+    "audio": "221.opus",
+    "teil": 4
+  },
+  {
+    "id": 222,
+    "wort": "Gewissen",
+    "grammatik": "das",
+    "beispiel": "Das Gewissen wird von Gefühlen, Willen und Vernunft gesteuert.",
+    "lektion": 4,
+    "audio": "222.opus",
+    "teil": 4
+  },
+  {
+    "id": 223,
+    "wort": "Stimme",
+    "grammatik": "die",
+    "beispiel": "Das Gewissen ist eine innere Stimme, die unser Handeln bestimmt.",
+    "lektion": 4,
+    "audio": "223.opus",
+    "teil": 4
+  },
+  {
+    "id": 224,
+    "wort": "Grundlage",
+    "grammatik": "für + Akkusativ, die, Grundlagen",
+    "beispiel": "Das Gewissen ist die Grundlage für verantwortungsbewusstes Handeln.",
+    "lektion": 4,
+    "audio": "224.opus",
+    "teil": 4
+  },
+  {
+    "id": 225,
+    "wort": "wegen/weil, da",
+    "grammatik": "Nominalisierung und Verbalisierung von Kausalsätzen",
+    "beispiel": "wegen der starken Konkurrenz/weil die Konkurrenz stark ist",
+    "lektion": 4,
+    "audio": "225.opus",
+    "teil": 5
+  },
+  {
+    "id": 226,
+    "wort": "durch/indem",
+    "grammatik": "Nominalisierung und Verbalisierung von Modalsätzen",
+    "beispiel": "durch die Verlegung der Produktion ins Ausland/indem sie die Produktion ins Ausland verlegen",
+    "lektion": 4,
+    "audio": "226.opus",
+    "teil": 5
+  },
+  {
+    "id": 227,
+    "wort": "durch/dadurch, dass",
+    "grammatik": "Nominalisierung und Verbalisierung von Modalsätzen",
+    "beispiel": "durch das grenzenlose Einkaufen im Internet/dadurch, dass man im Internet grenzenlos einkaufen kann.",
+    "lektion": 4,
+    "audio": "227.opus",
+    "teil": 5
+  },
+  {
+    "id": 228,
+    "wort": "Druck",
+    "grammatik": "der",
+    "beispiel": "Durch die Globalisierung steigt der Wettbewerbsdruck enorm.",
+    "lektion": 4,
+    "audio": "228.opus",
+    "teil": 5
+  },
+  {
+    "id": 229,
+    "wort": "verlegen",
+    "grammatik": "verlegt, verlegte, hat verlegt",
+    "beispiel": "Die Produktion wird ins Ausland verlegt, wo das Unternehmen von billigeren Arbeitskräften profitiert.",
+    "lektion": 4,
+    "audio": "229.opus",
+    "teil": 5
+  },
+  {
+    "id": 230,
+    "wort": "Rohstoff",
+    "grammatik": "der, Rohstoffe",
+    "beispiel": "Rohstoffe können weltweit zu den günstigsten Preisen gekauft werden.",
+    "lektion": 4,
+    "audio": "230.opus",
+    "teil": 5
+  },
+  {
+    "id": 231,
+    "wort": "Schattenseite",
+    "grammatik": "die",
+    "beispiel": "Die Globalisierung hat jedoch auch Schattenseiten.",
+    "lektion": 4,
+    "audio": "231.opus",
+    "teil": 5
+  },
+  {
+    "id": 232,
+    "wort": "gering",
+    "grammatik": "",
+    "beispiel": "In den Industrieländern verlieren Menschen mit geringen Qualifikationen ihre bisherige Arbeit.",
+    "lektion": 4,
+    "audio": "232.opus",
+    "teil": 5
+  },
+  {
+    "id": 233,
+    "wort": "Kredit",
+    "grammatik": "der, Kredite",
+    "beispiel": "Sie haben eine tolle Geschäftsidee, wollen aber keinen Kredit bei einer Bank aufnehmen.",
+    "lektion": 4,
+    "audio": "233.opus",
+    "teil": 6
+  },
+  {
+    "id": 234,
+    "wort": "Fremdfinanzierung",
+    "grammatik": "die",
+    "beispiel": "Crowdfunding ist eine alternative Fremdfinan-zierung.",
+    "lektion": 4,
+    "audio": "234.opus",
+    "teil": 6
+  },
+  {
+    "id": 235,
+    "wort": "erreichen",
+    "grammatik": "erreicht, erreichte, hat erreicht",
+    "beispiel": "Wird diese Summe nicht in der vorgegebenen Zeitspanne erreicht, erhalten die Kapitalgeber ihr Geld zurück.",
+    "lektion": 4,
+    "audio": "235.opus",
+    "teil": 6
+  },
+  {
+    "id": 236,
+    "wort": "begrenzen",
+    "grammatik": "begrenzt, begrenzte, hat begrenzt",
+    "beispiel": "Die Crowdfunding-Aktion muss zeitlich begrenzt werden.",
+    "lektion": 4,
+    "audio": "236.opus",
+    "teil": 6
+  },
+  {
+    "id": 237,
+    "wort": "ausgeben",
+    "grammatik": "gibt aus, gab aus, hat ausgegeben",
+    "beispiel": "Die Gelder müssen zweckgebunden ausgegeben werden.",
+    "lektion": 4,
+    "audio": "237.opus",
+    "teil": 6
+  },
+  {
+    "id": 238,
+    "wort": "präzis",
+    "grammatik": "",
+    "beispiel": "Bei einem Bankgespräch sollten Sie Ihr Produkt möglichst präzis beschreiben.",
+    "lektion": 4,
+    "audio": "238.opus",
+    "teil": 6
+  },
+  {
+    "id": 239,
+    "wort": "eingehen",
+    "grammatik": "auf + Akkusativ, geht ein, ging ein, ist eingegangen",
+    "beispiel": "Gehen Sie auf die Bedenken des Kreditgebers ein.",
+    "lektion": 4,
+    "audio": "239.opus",
+    "teil": 6
+  },
+  {
+    "id": 240,
+    "wort": "gelassen",
+    "grammatik": "",
+    "beispiel": "Auch wenn man Ihnen unangenehme Fragen stellt, sollten Sie gelassen bleiben.",
+    "lektion": 4,
+    "audio": "240.opus",
+    "teil": 6
+  },
+  {
+    "id": 241,
+    "wort": "Terminvereinbarung",
+    "grammatik": "die",
+    "beispiel": "Um die Ablehnung einer Terminvereinbarung zu verhindern, sollte man sich gut vorbereiten.",
+    "lektion": 4,
+    "audio": "241.opus",
+    "teil": 7
+  },
+  {
+    "id": 242,
+    "wort": "erstellen",
+    "grammatik": "erstellt, erstellte, hat erstellt",
+    "beispiel": "Vor einer Terminanfrage muss man einen Businessplan erstellt haben.",
+    "lektion": 4,
+    "audio": "242.opus",
+    "teil": 7
+  },
+  {
+    "id": 243,
+    "wort": "Höhe",
+    "grammatik": "die",
+    "beispiel": "Die Bank fragt nach der Höhe des benötigten Kredits.",
+    "lektion": 4,
+    "audio": "243.opus",
+    "teil": 7
+  },
+  {
+    "id": 244,
+    "wort": "Alleinstellungsmerkmal",
+    "grammatik": "das",
+    "beispiel": "Definieren Sie Ihr Alleinstellungsmerkmal anschaulich: Was habt Ihr Produkt von der Konkurrenz ab?",
+    "lektion": 4,
+    "audio": "244.opus",
+    "teil": 7
+  },
+  {
+    "id": 245,
+    "wort": "Bedenken",
+    "grammatik": "das",
+    "beispiel": "Wie können Sie die Bedenken Ihres Gegenübers zerstreuen?",
+    "lektion": 4,
+    "audio": "245.opus",
+    "teil": 7
+  },
+  {
+    "id": 246,
+    "wort": "Eindruck",
+    "grammatik": "der, Eindrücke",
+    "beispiel": "Ist der erste Eindruck entscheidend?",
+    "lektion": 4,
+    "audio": "246.opus",
+    "teil": 7
+  },
+  {
+    "id": 247,
+    "wort": "Erscheinungsbild",
+    "grammatik": "das",
+    "beispiel": "Für diese Position wird ein gepflegtes Erscheinungsbild erwartet.",
+    "lektion": 4,
+    "audio": "247.opus",
+    "teil": 7
+  },
+  {
+    "id": 248,
+    "wort": "rechnen",
+    "grammatik": "mit + Dativ",
+    "beispiel": "Fragen Sie, wann Sie mit einer Entscheidung rechnen können.",
+    "lektion": 4,
+    "audio": "248.opus",
+    "teil": 7
+  },
+  {
+    "id": 249,
+    "wort": "weichen",
+    "grammatik": "weicht, wich, ist gewichen",
+    "beispiel": "Die festen Büroplätze wichen flexiblen Arbeitsplatzmodellen.",
+    "lektion": 4,
+    "audio": "249.opus",
+    "teil": 8
+  },
+  {
+    "id": 250,
+    "wort": "aufnehmen",
+    "grammatik": "nimmt auf, nahm auf, hat aufgenommen",
+    "beispiel": "Diese Veränderungen wurden von den Mitarbeitenden positiv aufgenommen.",
+    "lektion": 4,
+    "audio": "250.opus",
+    "teil": 8
+  },
+  {
+    "id": 251,
+    "wort": "einbinden",
+    "grammatik": "bindet ein, band ein, hat eingebunden",
+    "beispiel": "Sie wollte die Mitarbeitenden aktiv in den Prozess einbinden.",
+    "lektion": 4,
+    "audio": "251.opus",
+    "teil": 8
+  },
+  {
+    "id": 252,
+    "wort": "gelingen",
+    "grammatik": "gelingt, gelang, ist gelungen",
+    "beispiel": "Es gelang ihr, als Frau in einer von Männern dominierten Branche erfolgreich zu sein.",
+    "lektion": 4,
+    "audio": "252.opus",
+    "teil": 8
+  },
+  {
+    "id": 253,
+    "wort": "golden",
+    "grammatik": "",
+    "beispiel": "Die grösste Herausforderung ist, den goldenen Mittelweg zu finden.",
+    "lektion": 4,
+    "audio": "253.opus",
+    "teil": 8
+  },
+  {
+    "id": 254,
+    "wort": "orientiert",
+    "grammatik": "an + Dativ",
+    "beispiel": "Der klassische Führungsstil ist an wirtschaftlichen Erfolgszielen orientiert.",
+    "lektion": 4,
+    "audio": "254.opus",
+    "teil": 8
+  },
+  {
+    "id": 255,
+    "wort": "Freude",
+    "grammatik": "an + Dativ",
+    "beispiel": "Ebenso wichtig ist, die Freude an der Arbeit zu erhalten.",
+    "lektion": 4,
+    "audio": "255.opus",
+    "teil": 8
+  },
+  {
+    "id": 256,
+    "wort": "vertrauensvoll",
+    "grammatik": "",
+    "beispiel": "Bei der Arbeit sollte ein vertrauensvolles Miteinander herrschen.",
+    "lektion": 4,
+    "audio": "256.opus",
+    "teil": 8
+  },
+  {
+    "id": 257,
+    "wort": "sich vornehmen",
+    "grammatik": "nimmt sich vor, nahm sich vor, hat sich vorgenommen",
+    "beispiel": "Um die Prüfung zu bestehen, hat sich sich vorgenommen, täglich Zeitung zu lesen.",
+    "lektion": 5,
+    "audio": "257.opus",
+    "teil": 1
+  },
+  {
+    "id": 258,
+    "wort": "erwerben",
+    "grammatik": "erwirbt, erwarb, hat erworben Kenntnisse erwerben in + Dativ",
+    "beispiel": "Trotz KI macht es Sinn, sich vielfältige Fremdsprachenkenntnisse zu erwerben.",
+    "lektion": 5,
+    "audio": "258.opus",
+    "teil": 1
+  },
+  {
+    "id": 259,
+    "wort": "sich einprägen",
+    "grammatik": "prägt sich ein, prägte sich ein, hat sich eingeprägt",
+    "beispiel": "Beim Lernen der Sätze präge ich mir auch Details wie zum Beispiel die Wortendungen genau ein.",
+    "lektion": 5,
+    "audio": "259.opus",
+    "teil": 1
+  },
+  {
+    "id": 260,
+    "wort": "sich entschliessen",
+    "grammatik": "zu + Dativ entschliesst sich, entschloss sich, hat sich entschlossen",
+    "beispiel": "Er hat sich dazu entschlossen, zunächst ein Praktikum zu absolvieren.",
+    "lektion": 5,
+    "audio": "260.opus",
+    "teil": 1
+  },
+  {
+    "id": 261,
+    "wort": "verwirklichen",
+    "grammatik": "verwirklicht, verwirklichte, hat verwirklicht",
+    "beispiel": "Ständig Pläne zu machen, ohne sie zu verwirklichen, ist auf die Dauer unbefriedigend.",
+    "lektion": 5,
+    "audio": "261.opus",
+    "teil": 1
+  },
+  {
+    "id": 262,
+    "wort": "zustande bringen",
+    "grammatik": "bringt, brachte, hat zustande gebracht",
+    "beispiel": "Dank guter Teamarbeit brachten sie eine spannende Veranstaltung zustande.",
+    "lektion": 5,
+    "audio": "262.opus",
+    "teil": 1
+  },
+  {
+    "id": 263,
+    "wort": "Entschluss",
+    "grammatik": "der, Entschlüsse einen Entschluss fassen",
+    "beispiel": "Nach mehrmaligem Versagen in der Abschlussprüfung fasste er den Entschluss, eine andere Ausbildung zu erwägen.",
+    "lektion": 5,
+    "audio": "263.opus",
+    "teil": 1
+  },
+  {
+    "id": 264,
+    "wort": "durchziehen",
+    "grammatik": "zieht durch, zog durch, hat durchgezogen",
+    "beispiel": "Was man beginnt, sollte man bis zum Ende durchziehen.",
+    "lektion": 5,
+    "audio": "264.opus",
+    "teil": 1
+  },
+  {
+    "id": 265,
+    "wort": "zu..., als dass",
+    "grammatik": "negativer Konsekutivsatz mit Konjunktiv II",
+    "beispiel": "Der Preis des Hauses ist zu hoch, als dass wir es kaufen könnten.",
+    "lektion": 5,
+    "audio": "265.opus",
+    "teil": 2
+  },
+  {
+    "id": 266,
+    "wort": "so..., dass... nicht",
+    "grammatik": "negativer Konsekutivsatz mit Indikativ",
+    "beispiel": "Das Haus ist so teuer, dass wir es nicht kaufen können.",
+    "lektion": 5,
+    "audio": "266.opus",
+    "teil": 2
+  },
+  {
+    "id": 267,
+    "wort": "Mensch",
+    "grammatik": "der, Menschen N-Deklination!",
+    "beispiel": "Die Schimpansen sind dem Menschen am nächsten verwandt.",
+    "lektion": 5,
+    "audio": "267.opus",
+    "teil": 2
+  },
+  {
+    "id": 268,
+    "wort": "umgehen",
+    "grammatik": "mit + Dativ geht um, ging um, ist umgegangen",
+    "beispiel": "Es ist ratsam, vorsichtig mit persönlichen Daten umzugehen.",
+    "lektion": 5,
+    "audio": "268.opus",
+    "teil": 2
+  },
+  {
+    "id": 269,
+    "wort": "bestehen",
+    "grammatik": "in + Dativ besteht, bestand, hat bestanden",
+    "beispiel": "Glück besteht darin, mit dem zufrieden zu sein, was man hat.",
+    "lektion": 5,
+    "audio": "269.opus",
+    "teil": 2
+  },
+  {
+    "id": 270,
+    "wort": "erleichtern",
+    "grammatik": "erleichtert, erleichterte, hat erleichtert",
+    "beispiel": "Optimales Networking erleichtert das Leben sowohl auf beruflicher als auch auf privater Ebene.",
+    "lektion": 5,
+    "audio": "270.opus",
+    "teil": 2
+  },
+  {
+    "id": 271,
+    "wort": "Schattenseite",
+    "grammatik": "die",
+    "beispiel": "Soziale Netzwerke haben auch ihre Schattenseiten, da sie sich von der realen Welt unterscheiden.",
+    "lektion": 5,
+    "audio": "271.opus",
+    "teil": 2
+  },
+  {
+    "id": 272,
+    "wort": "Grenze",
+    "grammatik": "die, Grenzen an ... Grenzen stossen",
+    "beispiel": "Viele Firmen stossen durch die E-Mail-Flut an ihre Grenzen.",
+    "lektion": 5,
+    "audio": "272.opus",
+    "teil": 2
+  },
+  {
+    "id": 273,
+    "wort": "sich trauen ",
+    "grammatik": "traut, traute sich, hat sich getraut",
+    "beispiel": "Viele haben zwar ambitionierte Ziele, trauen sich aber nicht, sie umzusetzen.",
+    "lektion": 5,
+    "audio": "273.ogg",
+    "teil": 3
+  },
+  {
+    "id": 274,
+    "wort": "darum",
+    "grammatik": "",
+    "beispiel": "In der Sendung geht es darum, wie man seine Ziele erreichen kann.",
+    "lektion": 5,
+    "audio": "274.ogg",
+    "teil": 3
+  },
+  {
+    "id": 275,
+    "wort": "vernetzen",
+    "grammatik": "",
+    "beispiel": "Ein Kommunikationswirt überlegt sich kreative Werbebotschaften und vernetzt sie auf allen Kommunikationskanälen einer Firma.",
+    "lektion": 5,
+    "audio": "275.ogg",
+    "teil": 3
+  },
+  {
+    "id": 276,
+    "wort": "verbringen",
+    "grammatik": " mit + Dativ verbringt, verbrachte, hat verbracht",
+    "beispiel": "Er verbringt den grössten Teil seiner Arbeitszeit mit Planen und Organisieren.",
+    "lektion": 5,
+    "audio": "276.ogg",
+    "teil": 3
+  },
+  {
+    "id": 277,
+    "wort": "erstaunlich",
+    "grammatik": "",
+    "beispiel": "Erstaunlich wenige Menschen probieren aus, was in ihnen steckt.",
+    "lektion": 5,
+    "audio": "277.ogg",
+    "teil": 3
+  },
+  {
+    "id": 278,
+    "wort": "Detail ",
+    "grammatik": "das, Details",
+    "beispiel": "Seine Vorhaben sollte man bis ins Detail planen.",
+    "lektion": 5,
+    "audio": "278.ogg",
+    "teil": 3
+  },
+  {
+    "id": 279,
+    "wort": "vorgehen",
+    "grammatik": "geht vor, ging vor, ist vorgegangen",
+    "beispiel": "Wie muss ich vorgehen, wenn ich mich beruflich verändern möchte?",
+    "lektion": 5,
+    "audio": "279.ogg",
+    "teil": 3
+  },
+  {
+    "id": 280,
+    "wort": "ausfüllen",
+    "grammatik": "füllt aus, füllte aus, hat ausgefüllt",
+    "beispiel": "Es macht Sinn, seine Arbeitszeit mit Dingen zu verbringen, die einen ausfüllen.",
+    "lektion": 5,
+    "audio": "280.ogg",
+    "teil": 3
+  },
+  {
+    "id": 281,
+    "wort": "sprechen",
+    "grammatik": "für/gegen + Akkusativ",
+    "beispiel": "Was spricht dafür, sich beruflich weiterzubilden, was dagegen?",
+    "lektion": 5,
+    "audio": "281.ogg",
+    "teil": 4
+  },
+  {
+    "id": 282,
+    "wort": "Vor- und Nachteile",
+    "grammatik": "",
+    "beispiel": "Weiterbildungen haben Vor- und Nachteile.",
+    "lektion": 5,
+    "audio": "282.ogg",
+    "teil": 4
+  },
+  {
+    "id": 283,
+    "wort": "eingehen",
+    "grammatik": "auf + Akkusativ",
+    "beispiel": "In der Folge werde ich auf Vor- und Nachteile einer Weiterbildung eingehen, um am Ende ein Fazit zu ziehen.",
+    "lektion": 5,
+    "audio": "283.ogg",
+    "teil": 4
+  },
+  {
+    "id": 284,
+    "wort": "bedenken",
+    "grammatik": "bedenkt, bedachte, hat bedacht",
+    "beispiel": "Zunächst ist zu bedenken, dass eine Weiterbildung enorme Verantwortung mit sich bringt, da man Job, Alltag und Fortbildung unter einen Hut bringen muss.",
+    "lektion": 5,
+    "audio": "284.ogg",
+    "teil": 4
+  },
+  {
+    "id": 285,
+    "wort": "beispielsweise",
+    "grammatik": "",
+    "beispiel": "Beispielsweise findet die Weiterbildung an Wochenenden statt, was das Familienleben belasten kann.",
+    "lektion": 5,
+    "audio": "285.ogg",
+    "teil": 4
+  },
+  {
+    "id": 286,
+    "wort": "kommen",
+    "grammatik": "zu + Dativ",
+    "beispiel": "Nachdem ich die Nachteile einer Weiterbildung aufgezeigt habe, komme ich nun zu den Pro-Argumenten.",
+    "lektion": 5,
+    "audio": "286.ogg",
+    "teil": 4
+  },
+  {
+    "id": 287,
+    "wort": "Pluspunkt",
+    "grammatik": "der, Pluspunkte",
+    "beispiel": "Ein wichtiger Pluspunkt einer Weiterbildung ist die Weiterentwicklung der eigenen Persönlichkeit.",
+    "lektion": 5,
+    "audio": "287.ogg",
+    "teil": 4
+  },
+  {
+    "id": 288,
+    "wort": "zusammenfassend",
+    "grammatik": "",
+    "beispiel": "Zusammenfassend stelle ich nach fairer Betrachtung beider Perspektiven fest, dass mich die Argumente, sich weiterzubilden, mehr überzeugen.",
+    "lektion": 5,
+    "audio": "288.ogg",
+    "teil": 4
+  },
+  {
+    "id": 289,
+    "wort": "fassen",
+    "grammatik": "fasst, fasste, hat gefasst",
+    "beispiel": "Beim Jahreswechsel werden jeweils gute Vorsätze für das neue Jahr gefasst.",
+    "lektion": 5,
+    "audio": "289.ogg",
+    "teil": 5
+  },
+  {
+    "id": 290,
+    "wort": "303",
+    "grammatik": " die",
+    "beispiel": "Obwohl die Motivation gross ist, verpufft die Anfangsbegeisterung meist schnell.",
+    "lektion": 5,
+    "audio": "290.ogg",
+    "teil": 5
+  },
+  {
+    "id": 291,
+    "wort": "hoch",
+    "grammatik": "",
+    "beispiel": "Sich zu hohe Ziele zu stecken, ist einer der Gründe für die schnelle Kapitulation.",
+    "lektion": 5,
+    "audio": "291.ogg",
+    "teil": 5
+  },
+  {
+    "id": 292,
+    "wort": "Gewohnheit",
+    "grammatik": "die, Gewohnheiten",
+    "beispiel": "Hat sich die Gewohnheit gebildet, üppig zu essen, ist es schwierig, diese wieder aufzugeben.",
+    "lektion": 5,
+    "audio": "292.ogg",
+    "teil": 5
+  },
+  {
+    "id": 293,
+    "wort": "Verstand",
+    "grammatik": "der",
+    "beispiel": "Der Verstand weiss um die Nachteile von andauernder Bewegungsarmut.",
+    "lektion": 5,
+    "audio": "293.ogg",
+    "teil": 5
+  },
+  {
+    "id": 294,
+    "wort": "Gewissen",
+    "grammatik": "das",
+    "beispiel": "Das schlechte Gewissen winkt, weil der Verstand einem sagt, was schädlich für einen ist.",
+    "lektion": 5,
+    "audio": "294.ogg",
+    "teil": 5
+  },
+  {
+    "id": 295,
+    "wort": "sich konzentrieren",
+    "grammatik": " auf + Akkusativ",
+    "beispiel": "Wenn man sich auf eine Sache konzentriert, muss man weniger Fehlschläge hinnehmen.",
+    "lektion": 5,
+    "audio": "295.ogg",
+    "teil": 5
+  },
+  {
+    "id": 296,
+    "wort": "aufschieben",
+    "grammatik": "schiebt auf, schob auf, hat aufgeschoben",
+    "beispiel": "Aufgeschoben ist nicht aufgehoben.",
+    "lektion": 5,
+    "audio": "296.ogg",
+    "teil": 5
+  },
+  {
+    "id": 297,
+    "wort": "obwohl",
+    "grammatik": "konzessiv, Verbalform, Nebensatz",
+    "beispiel": "Obwohl man gute Vorsätze fasst, setzt man sie nicht um.",
+    "lektion": 5,
+    "audio": "297.ogg",
+    "teil": 6
+  },
+  {
+    "id": 298,
+    "wort": "trotzdem/dennoch",
+    "grammatik": "konzessiv, Verbform, Hauptsatz mit Inversion!",
+    "beispiel": "Man fasste gute Vorsätze, dennoch setzt man sie nicht um.",
+    "lektion": 5,
+    "audio": "298.ogg",
+    "teil": 6
+  },
+  {
+    "id": 299,
+    "wort": "zwar ... Aber",
+    "grammatik": "konzessiv, Hauptsatz",
+    "beispiel": "Zwar fasst man gute Vorsätze, aber man setzt sie nicht um.",
+    "lektion": 5,
+    "audio": "299.ogg",
+    "teil": 6
+  },
+  {
+    "id": 300,
+    "wort": "trotz",
+    "grammatik": "konzessiv, mit Genitiv, Nominalform",
+    "beispiel": "Trotz guter Vorsätze setzt man sie nicht um.",
+    "lektion": 5,
+    "audio": "300.ogg",
+    "teil": 6
+  },
+  {
+    "id": 301,
+    "wort": "um ... zu",
+    "grammatik": "final, Verbalform, Nebensatz (Infinitivsatz)",
+    "beispiel": "Um seine Vorsätze in die Realität umzusetzen, sollte man sich realistische Ziele stecken.",
+    "lektion": 5,
+    "audio": "301.ogg",
+    "teil": 6
+  },
+  {
+    "id": 302,
+    "wort": "damit",
+    "grammatik": "final, Verbalform, Nebensatz",
+    "beispiel": "Damit man seine Vorsätze in die Realität umsetzen kann, sollte man sich realistische Ziele stecken.",
+    "lektion": 5,
+    "audio": "302.ogg",
+    "teil": 6
+  },
+  {
+    "id": 303,
+    "wort": "zu",
+    "grammatik": "Dativ, final, Nominalform",
+    "beispiel": "Zur erfolgreichen Umsetzung seiner Vorsätze sollte man sich realistische Ziele setzen.",
+    "lektion": 5,
+    "audio": "303.ogg",
+    "teil": 6
+  },
+  {
+    "id": 304,
+    "wort": "für",
+    "grammatik": "Akkusativ, final, Nominalform",
+    "beispiel": "Für eine erfolgreiche Umsetzung seiner Vorsätze sollte man sich realistische Ziele setzen.",
+    "lektion": 5,
+    "audio": "304.ogg",
+    "teil": 6
+  },
+  {
+    "id": 305,
+    "wort": "Mitgefühl",
+    "grammatik": "das",
+    "beispiel": "Sein Mitgefühl für die Kriegswaisen war sehr stark.",
+    "lektion": 5,
+    "audio": "305.ogg",
+    "teil": 7
+  },
+  {
+    "id": 306,
+    "wort": "Grundbedürfnis",
+    "grammatik": "das, Grundbedürfnisse",
+    "beispiel": "Er beschrieb die Grundbedürfnisse eines jeden Kindes.",
+    "lektion": 5,
+    "audio": "306.ogg",
+    "teil": 7
+  },
+  {
+    "id": 307,
+    "wort": "übernehmen",
+    "grammatik": "übernimmt, übernahm, hat übernommen",
+    "beispiel": "Die älteste Schwester übernahm die Mutterrolle für die acht jüngeren Geschwister.",
+    "lektion": 5,
+    "audio": "307.ogg",
+    "teil": 7
+  },
+  {
+    "id": 308,
+    "wort": "Geborgenheit",
+    "grammatik": "die",
+    "beispiel": "Jedes Kind möchte in Geborgenheit aufwachsen und seine Persönlichkeit entwickeln.",
+    "lektion": 5,
+    "audio": "308.ogg",
+    "teil": 7
+  },
+  {
+    "id": 309,
+    "wort": "auffallen",
+    "grammatik": "fällt auf, fiel auf, ist aufgefallen",
+    "beispiel": "Schon als Kind fiel er als begabter Junge auf.",
+    "lektion": 5,
+    "audio": "309.ogg",
+    "teil": 7
+  },
+  {
+    "id": 310,
+    "wort": "Jugendfürsorge",
+    "grammatik": "die",
+    "beispiel": "Er engagierte sich in der Jugendfürsorge.",
+    "lektion": 5,
+    "audio": "310.ogg",
+    "teil": 7
+  },
+  {
+    "id": 311,
+    "wort": "Dienst",
+    "grammatik": "der, Dienste",
+    "beispiel": "Er stellte sein Leben in den Dienst seiner Idee.",
+    "lektion": 5,
+    "audio": "311.ogg",
+    "teil": 7
+  },
+  {
+    "id": 312,
+    "wort": "Sozialwerk",
+    "grammatik": "das, Sozialwerke",
+    "beispiel": "Es gelang ihm, eines der grössten Sozialwerke der Welt für Kinder aufzubauen.",
+    "lektion": 5,
+    "audio": "312.ogg",
+    "teil": 7
+  },
+  {
+    "id": 313,
+    "wort": "Freiwilligenarbeit",
+    "grammatik": "die",
+    "beispiel": "Freiwilligenarbeit bietet sowohl Vor- als auch Nachteile.",
+    "lektion": 5,
+    "audio": "313.opus",
+    "teil": 8
+  },
+  {
+    "id": 314,
+    "wort": "Schattenseite",
+    "grammatik": "die, Schattenseiten",
+    "beispiel": "Wie alles im Leben hat auch freiwilliges Engagement Schattenseiten.",
+    "lektion": 5,
+    "audio": "314.opus",
+    "teil": 8
+  },
+  {
+    "id": 315,
+    "wort": "negativ",
+    "grammatik": "",
+    "beispiel": "Negativ an Freiwilligenarbeit ist die fehlende Bezahlung.",
+    "lektion": 5,
+    "audio": "315.opus",
+    "teil": 8
+  },
+  {
+    "id": 316,
+    "wort": "ausserdem",
+    "grammatik": "",
+    "beispiel": "Ausserdem kann der zeitliche Aufwand ein Problem darstellen.",
+    "lektion": 5,
+    "audio": "316.opus",
+    "teil": 8
+  },
+  {
+    "id": 317,
+    "wort": "dazu kommt, dass",
+    "grammatik": "dazu kommt, dass",
+    "beispiel": "Dazu kommt, dass man vielleicht anderen bezahlte Arbeit wegnimmt.",
+    "lektion": 5,
+    "audio": "317.opus",
+    "teil": 8
+  },
+  {
+    "id": 318,
+    "wort": "Aspekt",
+    "grammatik": "",
+    "beispiel": "Trotz gewichtiger Argumente gegen Freiwilligenarbeit überwiegen für mich die positiven Aspekte.",
+    "lektion": 5,
+    "audio": "318.opus",
+    "teil": 8
+  },
+  {
+    "id": 319,
+    "wort": "nicht zuletzt",
+    "grammatik": "",
+    "beispiel": "Nicht zuletzt bildet freiwilliges Engagement das Fundament funktionierender Gesellschaften.",
+    "lektion": 5,
+    "audio": "319.opus",
+    "teil": 8
+  },
+  {
+    "id": 320,
+    "wort": "sich vor Augen halten",
+    "grammatik": "",
+    "beispiel": "Trotzdem sollte man sich stets vor Augen halten, dass freiwilliges Engagement in keinem Fall sozialstaatliche Aufgaben ersetzen kann und soll.",
+    "lektion": 5,
+    "audio": "320.opus",
+    "teil": 8
+  },
+  {
+    "id": 321,
+    "wort": "stossen",
+    "grammatik": "stösst, stiess, ist gestossen",
+    "beispiel": "Wann stossen Sie mit Ihrer Ausdauer an Ihre Grenzen?",
+    "lektion": 6,
+    "audio": "321.ogg",
+    "teil": 1
+  },
+  {
+    "id": 322,
+    "wort": "halten",
+    "grammatik": "von + Dativ",
+    "beispiel": "Was halten Sie von Gesundheitstests?",
+    "lektion": 6,
+    "audio": "322.ogg",
+    "teil": 1
+  },
+  {
+    "id": 323,
+    "wort": "einnehmen",
+    "grammatik": "nimmt ein, nahm ein, hat eingenommen",
+    "beispiel": "Wegen seiner Diabeteserkrankung nimmt er regelmässig Medikamente ein.",
+    "lektion": 6,
+    "audio": "323.ogg",
+    "teil": 1
+  },
+  {
+    "id": 324,
+    "wort": "Grippe",
+    "grammatik": "die",
+    "beispiel": "Älteren Patienten empfiehlt der Arzt eine Grippeimpfung.",
+    "lektion": 6,
+    "audio": "324.ogg",
+    "teil": 1
+  },
+  {
+    "id": 325,
+    "wort": "Abwehrkräfte",
+    "grammatik": "die, Plural",
+    "beispiel": "Zur Stärkung der Abwehrkräfte geht sie täglich an die frische Luft.",
+    "lektion": 6,
+    "audio": "325.ogg",
+    "teil": 1
+  },
+  {
+    "id": 326,
+    "wort": "behandeln",
+    "grammatik": "behandelt, behandelte, hat behandelt",
+    "beispiel": "Ein solch starker Husten sollte vom Arzt behandelt werden.",
+    "lektion": 6,
+    "audio": "326.ogg",
+    "teil": 1
+  },
+  {
+    "id": 327,
+    "wort": "Sonnenbrand",
+    "grammatik": "der",
+    "beispiel": "Gegen Sonnenbrand sollte man eine Sonnencreme auf die Haut auftragen.",
+    "lektion": 6,
+    "audio": "327.ogg",
+    "teil": 1
+  },
+  {
+    "id": 328,
+    "wort": "Prophylaxe/Vorsorge",
+    "grammatik": "die",
+    "beispiel": "Professionelle Zahnprophylaxe hilft, gesunde Zähne und Zahnfleisch langfristig zu erhalten.",
+    "lektion": 6,
+    "audio": "328.ogg",
+    "teil": 1
+  },
+  {
+    "id": 329,
+    "wort": "Heilung",
+    "grammatik": "die",
+    "beispiel": "Brauchen wir zur Heilung immer eine Tablette oder Spritze mit viel Chemie?",
+    "lektion": 6,
+    "audio": "329.ogg",
+    "teil": 2
+  },
+  {
+    "id": 330,
+    "wort": "Kontroverse",
+    "grammatik": "die, Kontroversen",
+    "beispiel": "Diese Kontroverse ist heute unser Thema.",
+    "lektion": 6,
+    "audio": "330.ogg",
+    "teil": 2
+  },
+  {
+    "id": 331,
+    "wort": "leisten",
+    "grammatik": "leistet, leistete, hat geleistet",
+    "beispiel": "Ein Medikament soll mehr leisten, als wenn wir sogenannte Placebos nehmen.",
+    "lektion": 6,
+    "audio": "331.ogg",
+    "teil": 2
+  },
+  {
+    "id": 332,
+    "wort": "Wirkstoff",
+    "grammatik": "der, Wirkstoffe",
+    "beispiel": "Ein Placebo ist ein Präparat ohne pharmazeutische Wirkstoffe.",
+    "lektion": 6,
+    "audio": "332.ogg",
+    "teil": 2
+  },
+  {
+    "id": 333,
+    "wort": "Studie",
+    "grammatik": "die, Studien",
+    "beispiel": "Placebos werden in Studien eingesetzt, um die Wirkung echter Medikamente zu überprüfen.",
+    "lektion": 6,
+    "audio": "333.ogg",
+    "teil": 2
+  },
+  {
+    "id": 334,
+    "wort": "Faktor",
+    "grammatik": "der, Faktoren",
+    "beispiel": "Psychologische Faktoren haben einen großen Einfluss auf die Wirkung von Placebos.",
+    "lektion": 6,
+    "audio": "334.ogg",
+    "teil": 2
+  },
+  {
+    "id": 335,
+    "wort": "Empfinden",
+    "grammatik": "das",
+    "beispiel": "Die Vorstellung davon, ein Schmerzmittel zu bekommen, kann das Schmerzempfinden unterdrücken.",
+    "lektion": 6,
+    "audio": "335.ogg",
+    "teil": 2
+  },
+  {
+    "id": 336,
+    "wort": "Placebo-Effekt",
+    "grammatik": "der",
+    "beispiel": "Für den erwünschten Placebo-Effekt ist das Arzt-Patienten-Gespräch ein entscheidender Faktor.",
+    "lektion": 6,
+    "audio": "336.ogg",
+    "teil": 2
+  },
+  {
+    "id": 337,
+    "wort": "Infinitivsatz Aktiv, Präsens",
+    "grammatik": "Das Subjekt des dass-Satzes ist mit einer Ergänzung im Hauptsatz identisch, hier Akkusativobjekt.",
+    "beispiel": "Er hat sie, (dass sie ihm den Koffer trägt) ihm den Koffer zu tragen.",
+    "lektion": 6,
+    "audio": "337.ogg",
+    "teil": 3
+  },
+  {
+    "id": 338,
+    "wort": "Infinitivsatz Passiv, Präsens",
+    "grammatik": "Das Subjekt des dass-Satzes ist man.",
+    "beispiel": "Es wird erwartet, (dass man über die Nebenwirkungen des Medikaments aufgeklärt wird) über die Nebenwirkungen des Medikaments aufgeklärt zu werden.",
+    "lektion": 6,
+    "audio": "338.ogg",
+    "teil": 3
+  },
+  {
+    "id": 339,
+    "wort": "Infinitivsatz Aktiv, Vergangenheit",
+    "grammatik": "Infinitiv Perfekt",
+    "beispiel": "Die Forschung ist der Ansicht, (dass sie interessante Erkenntnisse gewonnen hat) interessante Erkenntnisse gewonnen zu haben.",
+    "lektion": 6,
+    "audio": "339.ogg",
+    "teil": 3
+  },
+  {
+    "id": 340,
+    "wort": "Infinitivsatz Passiv, Vergangenheit",
+    "grammatik": "",
+    "beispiel": "Wir erinnern uns, (dass wir als Kind bei Schmerzen getröstet wurden) als Kind bei Schmerzen getröstet worden zu sein.",
+    "lektion": 6,
+    "audio": "340.ogg",
+    "teil": 3
+  },
+  {
+    "id": 341,
+    "wort": "Infinitivsatz mit Modalverb Präsens",
+    "grammatik": "",
+    "beispiel": "Der Arzt bestätigt, (dass er Patienten mit Placebos heilen kann) Patienten mit Placebos heilen zu können.",
+    "lektion": 6,
+    "audio": "341.ogg",
+    "teil": 3
+  },
+  {
+    "id": 342,
+    "wort": "Infinitivsatz mit Modalverb Vergangenheit",
+    "grammatik": "",
+    "beispiel": "Der Arzt berichtet, (dass er den Patienten heilen konnte) den Patienten geheilt haben zu können.",
+    "lektion": 6,
+    "audio": "342.ogg",
+    "teil": 3
+  },
+  {
+    "id": 343,
+    "wort": "abhängig",
+    "grammatik": "",
+    "beispiel": "Mein Bruder sagt heute, (dass er von seinen Medikamenten beinahe abhängig geworden ist) von seinen Medikamenten beinahe abhängig geworden zu sein.",
+    "lektion": 6,
+    "audio": "343.ogg",
+    "teil": 3
+  },
+  {
+    "id": 344,
+    "wort": "Tipp",
+    "grammatik": "der, Tipps",
+    "beispiel": "Es war sein Glück, (dass er diesen Tipp bekam) diesen Tipp bekommen zu haben.",
+    "lektion": 6,
+    "audio": "344.ogg",
+    "teil": 3
+  },
+  {
+    "id": 345,
+    "wort": "prädestiniert",
+    "grammatik": "für + Akkusativ",
+    "beispiel": "Frauen scheinen von Natur aus für ein längeres Leben prädestiniert zu sein.",
+    "lektion": 6,
+    "audio": "345.opus",
+    "teil": 4
+  },
+  {
+    "id": 346,
+    "wort": "doppelt",
+    "grammatik": "so",
+    "beispiel": "Im Alter zwischen 25 und 34 Jahren essen deutsche Männer im Schnitt fast doppelt so viel Fleisch wie Frauen.",
+    "lektion": 6,
+    "audio": "346.opus",
+    "teil": 4
+  },
+  {
+    "id": 347,
+    "wort": "investieren",
+    "grammatik": "investiert, investierte, hat investiert",
+    "beispiel": "Frauen investieren mehr Energie in ihre Kinder.",
+    "lektion": 6,
+    "audio": "347.opus",
+    "teil": 4
+  },
+  {
+    "id": 348,
+    "wort": "Gen",
+    "grammatik": "Das, Gene",
+    "beispiel": "Im Laufe der Evolution setzten sich Gene durch, die männliches Risiko und Wettkampfverhalten fördern.",
+    "lektion": 6,
+    "audio": "348.opus",
+    "teil": 4
+  },
+  {
+    "id": 349,
+    "wort": "landen",
+    "grammatik": "landet, landete, ist gelandet",
+    "beispiel": "Vorzugsweise freitags landen Männer mit Herzinfarktverdacht im Krankenhaus.",
+    "lektion": 6,
+    "audio": "349.opus",
+    "teil": 4
+  },
+  {
+    "id": 350,
+    "wort": "auch wenn",
+    "grammatik": "",
+    "beispiel": "Auch wenn Frauen mitunter vom Gesundheitssystem benachteiligt sind, ist das Sorgenkind der Mediziner eher der Mann.",
+    "lektion": 6,
+    "audio": "350.opus",
+    "teil": 4
+  },
+  {
+    "id": 351,
+    "wort": "stressig",
+    "grammatik": "",
+    "beispiel": "Max hat einen stressigen Vollzeitjob.",
+    "lektion": 6,
+    "audio": "351.opus",
+    "teil": 4
+  },
+  {
+    "id": 352,
+    "wort": "wahrnehmen",
+    "grammatik": "nimmt wahr, nahm wahr, hat wahrgenommen",
+    "beispiel": "Präventionsangebote der Kassen werden kaum von Männern wahrgenommen.",
+    "lektion": 6,
+    "audio": "352.opus",
+    "teil": 4
+  },
+  {
+    "id": 353,
+    "wort": "unbedenklich",
+    "grammatik": "",
+    "beispiel": "Kann man überhaupt noch irgendetwas unbedenklich essen?",
+    "lektion": 6,
+    "audio": "353.ogg",
+    "teil": 5
+  },
+  {
+    "id": 354,
+    "wort": "überzeugt",
+    "grammatik": "",
+    "beispiel": "Viele sind überzeugt, dass unsere Lebensmittel weniger gesund sind als vor zehn Jahren.",
+    "lektion": 6,
+    "audio": "354.ogg",
+    "teil": 5
+  },
+  {
+    "id": 355,
+    "wort": "generell",
+    "grammatik": "",
+    "beispiel": "Generell hat sich die Nahrungsmitelqualität stark verbessert.",
+    "lektion": 6,
+    "audio": "355.ogg",
+    "teil": 5
+  },
+  {
+    "id": 356,
+    "wort": "Einhaltung",
+    "grammatik": "die",
+    "beispiel": "Es wird zu wenig auf die Einhaltung der Schadstoffhöchstgrenzen geachtet.",
+    "lektion": 6,
+    "audio": "356.ogg",
+    "teil": 5
+  },
+  {
+    "id": 357,
+    "wort": "Indikator",
+    "grammatik": "der",
+    "beispiel": "Der Preis eines Lebensmittels ist kein Indikator dafür, ob es gesund ist.",
+    "lektion": 6,
+    "audio": "357.ogg",
+    "teil": 5
+  },
+  {
+    "id": 358,
+    "wort": "direkt",
+    "grammatik": "",
+    "beispiel": "Wenn ich direkt beim Bauern einkaufe, weiss ich, woher mein Obst, Gemüse und Fleisch kommen.",
+    "lektion": 6,
+    "audio": "358.ogg",
+    "teil": 5
+  },
+  {
+    "id": 359,
+    "wort": "düngen",
+    "grammatik": "düngt, düngte, hat gedüngt",
+    "beispiel": "Es fragt sich, wie der Bauer gewirtschaftet, ob er gedüngt oder gespritzt hat.",
+    "lektion": 6,
+    "audio": "359.ogg",
+    "teil": 5
+  },
+  {
+    "id": 360,
+    "wort": "besagen",
+    "grammatik": "besagt, besagte, hat besagt",
+    "beispiel": "Europäische Biosiegel besagen, dass Gemüse und Obst ohne Gentechnik, chemische Dünger und Pestizide angebaut werden.",
+    "lektion": 6,
+    "audio": "360.ogg",
+    "teil": 5
+  },
+  {
+    "id": 361,
+    "wort": "wenn man ... kauft",
+    "grammatik": "Nominalform",
+    "beispiel": "beim Kauf von",
+    "lektion": 6,
+    "audio": "361.ogg",
+    "teil": 6
+  },
+  {
+    "id": 362,
+    "wort": "wenn die Qualität gut ist",
+    "grammatik": "Nominalform",
+    "beispiel": "Bei guter Qualität",
+    "lektion": 6,
+    "audio": "362.ogg",
+    "teil": 6
+  },
+  {
+    "id": 363,
+    "wort": "wir haben schönes Wetter",
+    "grammatik": "Nominalform",
+    "beispiel": "bei schönem Wetter",
+    "lektion": 6,
+    "audio": "363.ogg",
+    "teil": 6
+  },
+  {
+    "id": 364,
+    "wort": "es regnet",
+    "grammatik": "Nominalform",
+    "beispiel": "bei Regen",
+    "lektion": 6,
+    "audio": "364.ogg",
+    "teil": 6
+  },
+  {
+    "id": 365,
+    "wort": "ich habe kein Auto",
+    "grammatik": "Nominalform",
+    "beispiel": "ohne Auto",
+    "lektion": 6,
+    "audio": "365.ogg",
+    "teil": 6
+  },
+  {
+    "id": 366,
+    "wort": "bei geringem Kundeninteresse",
+    "grammatik": "Verbalform",
+    "beispiel": "falls die Kunden ein geringes Interesse zeigen/haben",
+    "lektion": 6,
+    "audio": "366.ogg",
+    "teil": 6
+  },
+  {
+    "id": 367,
+    "wort": "ohne zuverlässige Partner",
+    "grammatik": "Verbalform",
+    "beispiel": "falls man keine zuverlässigen Partner hat",
+    "lektion": 6,
+    "audio": "367.ogg",
+    "teil": 6
+  },
+  {
+    "id": 368,
+    "wort": "beim Einkauf im Biomarkt",
+    "grammatik": "Verbalform",
+    "beispiel": "falls man im Biomarkt einkauft",
+    "lektion": 6,
+    "audio": "368.ogg",
+    "teil": 6
+  },
+  {
+    "id": 369,
+    "wort": "sich beziehen",
+    "grammatik": "auf + Akkusativ",
+    "beispiel": "Mein Kommentar bezieht sich auf das Fisch Spa.",
+    "lektion": 6,
+    "audio": "369.ogg",
+    "teil": 7
+  },
+  {
+    "id": 370,
+    "wort": "halten",
+    "grammatik": "hält, hielt, hat gehalten",
+    "beispiel": "Tierschützer kritisieren, dass die Fische in zu kleinen Becken gehalten werden.",
+    "lektion": 6,
+    "audio": "370.ogg",
+    "teil": 7
+  },
+  {
+    "id": 371,
+    "wort": "Zutat",
+    "grammatik": "die, Zutaten",
+    "beispiel": "Alle Zutaten kommen samt Schale und Kernen in den Mixer.",
+    "lektion": 6,
+    "audio": "371.ogg",
+    "teil": 7
+  },
+  {
+    "id": 372,
+    "wort": "stecken",
+    "grammatik": "in",
+    "beispiel": "In den Schalen und Kernen stecken besonders viele Vitamine und Ballaststoffe.",
+    "lektion": 6,
+    "audio": "372.ogg",
+    "teil": 7
+  },
+  {
+    "id": 373,
+    "wort": "insgesamt",
+    "grammatik": "",
+    "beispiel": "Wellness bedeutet eine Anleitung für ein besseres Leben insgesamt.",
+    "lektion": 6,
+    "audio": "373.ogg",
+    "teil": 7
+  },
+  {
+    "id": 374,
+    "wort": "entscheidend",
+    "grammatik": "",
+    "beispiel": "Ein entscheidendes Argument gegen Green Smoothies ist, dass zu ihrer Herstellung Hochleistungsgeräte zum Einsatz kommen.",
+    "lektion": 6,
+    "audio": "374.ogg",
+    "teil": 7
+  },
+  {
+    "id": 375,
+    "wort": "bedenken",
+    "grammatik": "",
+    "beispiel": "Man sollte bedenken, dass ein Verwöhnungsurlaub nichts nützt, wenn man ansonsten nicht gut mit sich selbst umgeht.",
+    "lektion": 6,
+    "audio": "375.ogg",
+    "teil": 7
+  },
+  {
+    "id": 376,
+    "wort": "in meinen Augen",
+    "grammatik": "",
+    "beispiel": "In meinen Augen muss man nicht unbedingt viel Geld ausgeben, um sich entspannen zu können.",
+    "lektion": 6,
+    "audio": "376.ogg",
+    "teil": 7
+  },
+  {
+    "id": 377,
+    "wort": "Weisheiten",
+    "grammatik": "die Weisheit, die Weisheiten",
+    "beispiel": "Beim Thema Ernährung sind viele Weisheiten verbreitet, die sich bei genauer Betrachtung als Mythen entpuppen.",
+    "lektion": 6,
+    "audio": "377.opus",
+    "teil": 8
+  },
+  {
+    "id": 378,
+    "wort": "hartnäckig",
+    "grammatik": "",
+    "beispiel": "Gewisse Mythen halten sich hartnäckig.",
+    "lektion": 6,
+    "audio": "378.opus",
+    "teil": 8
+  },
+  {
+    "id": 379,
+    "wort": "bleibend",
+    "grammatik": "",
+    "beispiel": "Lesen bei schlechtem Licht führt nicht zu einem bleibenden Schaden.",
+    "lektion": 6,
+    "audio": "379.opus",
+    "teil": 8
+  },
+  {
+    "id": 380,
+    "wort": "gesamt",
+    "grammatik": "",
+    "beispiel": "Entscheidend ist die gesamte Kalorienmenge, die man zu sich nimmt.",
+    "lektion": 6,
+    "audio": "380.opus",
+    "teil": 8
+  },
+  {
+    "id": 381,
+    "wort": "Pflaster",
+    "grammatik": "das Pflaster, die Pflaster",
+    "beispiel": "Soll man eine Wunde mit einem Pflaster abdecken oder nicht?",
+    "lektion": 6,
+    "audio": "381.opus",
+    "teil": 8
+  },
+  {
+    "id": 382,
+    "wort": "weitverbreitet",
+    "grammatik": "",
+    "beispiel": "Es herrscht die weitverbreitete Meinung, Verletzungen würden an der Luft am schnellsten heilen.",
+    "lektion": 6,
+    "audio": "382.opus",
+    "teil": 8
+  },
+  {
+    "id": 383,
+    "wort": "kosten",
+    "grammatik": "kostet, kostete, hat gekostet",
+    "beispiel": "Wenn wir etwas sehr Kaltes trinken, kostet das unserem Körper viel Energie.",
+    "lektion": 6,
+    "audio": "383.opus",
+    "teil": 8
+  },
+  {
+    "id": 384,
+    "wort": "lauwarm",
+    "grammatik": "",
+    "beispiel": "Am besten sollte man im Sommer lauwarme Getränke zu sich nehmen.",
+    "lektion": 6,
+    "audio": "384.opus",
+    "teil": 8
+  },
+  {
+    "id": 385,
+    "wort": "strafbar",
+    "grammatik": "sich strafbar machen",
+    "beispiel": "Strafbar macht sich, wer sich als an einem Verkehrsunfall Beteiligter vom Unfallort entfernt, ohne die Feststellung seiner Personalien zu ermöglichen.",
+    "lektion": 7,
+    "audio": "385.ogg",
+    "teil": 1
+  },
+  {
+    "id": 386,
+    "wort": "Straftat",
+    "grammatik": "die, Straftaten",
+    "beispiel": "Bei einer Straftat versucht eine Person, sich durch Gewalt oder Androhung eines Übels zu bereichern.",
+    "lektion": 7,
+    "audio": "386.ogg",
+    "teil": 1
+  },
+  {
+    "id": 387,
+    "wort": "zulässig",
+    "grammatik": "",
+    "beispiel": "Das Kopieren oder Nachahmen ist dann rechtlich nicht zulässig, wenn man damit Gewinn erzielt.",
+    "lektion": 7,
+    "audio": "387.ogg",
+    "teil": 1
+  },
+  {
+    "id": 388,
+    "wort": "Strafe",
+    "grammatik": "die, Strafen",
+    "beispiel": "Die vorsätzliche Beschädigung oder Zerstörung einer fremden Sache steht unter Strafe.",
+    "lektion": 7,
+    "audio": "388.ogg",
+    "teil": 1
+  },
+  {
+    "id": 389,
+    "wort": "fällen",
+    "grammatik": "fällt, fällte, hat gefällt",
+    "beispiel": "Das Gericht fällt ein Urteil, um einen Rechtsstreit abzuschliessen.",
+    "lektion": 7,
+    "audio": "389.ogg",
+    "teil": 1
+  },
+  {
+    "id": 390,
+    "wort": "fahnden",
+    "grammatik": "fahndet, fahndete, hat gefahndet",
+    "beispiel": "Bisher wurde vergeblich nach dem Täter gefahndet.",
+    "lektion": 7,
+    "audio": "390.ogg",
+    "teil": 1
+  },
+  {
+    "id": 391,
+    "wort": "einschalten",
+    "grammatik": "schaltet ein, schaltete ein, hat eingeschaltet",
+    "beispiel": "Wenn ihr Nachbar weiterhin gegen die Regeln verstösst, werden Sie einen Rechtsanwalt einschalten.",
+    "lektion": 7,
+    "audio": "391.ogg",
+    "teil": 1
+  },
+  {
+    "id": 392,
+    "wort": "aufklären",
+    "grammatik": "klärt auf, klärte auf, hat aufgeklärt",
+    "beispiel": "In Kriminalromanen gelingt es dem Detektiv in der Regel, ein Verbrechen aufzuklären.",
+    "lektion": 7,
+    "audio": "392.ogg",
+    "teil": 1
+  },
+  {
+    "id": 393,
+    "wort": "verbüssen",
+    "grammatik": "verbüsst, verbüsste, hat verbüsst",
+    "beispiel": "Eine Haftstrafe auf Bewährung muss man nur verbüssen, wenn man bestimmte Auflagen nicht erfüllt.",
+    "lektion": 7,
+    "audio": "393.ogg",
+    "teil": 1
+  },
+  {
+    "id": 394,
+    "wort": "Ungeschickt",
+    "grammatik": "",
+    "beispiel": "Ein ungeschickter Täter verlor bei einem Banküberfall seine Bankkarte.",
+    "lektion": 7,
+    "audio": "394.opus",
+    "teil": 2
+  },
+  {
+    "id": 395,
+    "wort": "Motiv",
+    "grammatik": "das Motiv, die Motive",
+    "beispiel": "Als Motiv gab er an, nach der Scheidung von seiner Frau unter Geldmangel gelitten zu haben.",
+    "lektion": 7,
+    "audio": "395.opus",
+    "teil": 2
+  },
+  {
+    "id": 396,
+    "wort": "Überwachungskamera",
+    "grammatik": "die Überwachungskamera, die Überwachungskameras",
+    "beispiel": "Ein tollpatschiger Dieb sah die Überwachungskamera zu spät.",
+    "lektion": 7,
+    "audio": "396.opus",
+    "teil": 2
+  },
+  {
+    "id": 397,
+    "wort": "identifizieren",
+    "grammatik": "identifiziert, identifizierte, hat identifiziert",
+    "beispiel": "Er konnte identifiziert werden, da er während seiner Aktion die Skimaske abnahm.",
+    "lektion": 7,
+    "audio": "397.opus",
+    "teil": 2
+  },
+  {
+    "id": 398,
+    "wort": "sich ausloggen",
+    "grammatik": "loggt, loggte, hat ausgeloggt",
+    "beispiel": "Ein Einbrecher nutzte eine sturmfreie Bude, um seine E-Mails zu checken, vergass aber, sich auszuloggen.",
+    "lektion": 7,
+    "audio": "398.opus",
+    "teil": 2
+  },
+  {
+    "id": 399,
+    "wort": "Vergehen",
+    "grammatik": "das Vergehen, die Vergehen",
+    "beispiel": "Nach ihm wurde bereits wegen anderer Vergehen gesucht.",
+    "lektion": 7,
+    "audio": "399.opus",
+    "teil": 2
+  },
+  {
+    "id": 400,
+    "wort": "Tarnung",
+    "grammatik": "die Tarnung, die Tarnungen",
+    "beispiel": "Zur Tarnung hatten sich zwei Einbrecher ihre Gesichter schwarz angemalt.",
+    "lektion": 7,
+    "audio": "400.opus",
+    "teil": 2
+  },
+  {
+    "id": 401,
+    "wort": "abwaschbar",
+    "grammatik": "",
+    "beispiel": "Der Marker, mit dem sie ihre Gesichter bekritzelt hatten, war nicht abwaschbar.",
+    "lektion": 7,
+    "audio": "401.opus",
+    "teil": 2
+  },
+  {
+    "id": 402,
+    "wort": "es im Passivsatz",
+    "grammatik": "nur im Hauptsatz, wenn es kein anderes Subjekt gibt!",
+    "beispiel": "Es wurde beschlossen, mehrere Angestellte zu entlassen.",
+    "lektion": 7,
+    "audio": "402.ogg",
+    "teil": 3
+  },
+  {
+    "id": 403,
+    "wort": "es im Nebensatz mit Passiv?",
+    "grammatik": "Im Nebensatz mit Passiv gibt es kein es!",
+    "beispiel": "Schade, dass beschlossen wurde, mehrere Angestellte zu entlassen!",
+    "lektion": 7,
+    "audio": "403.ogg",
+    "teil": 3
+  },
+  {
+    "id": 404,
+    "wort": "es im Passivsatz fällt weg",
+    "grammatik": "es steht am Satzanfang!",
+    "beispiel": "In der Zeitung wird berichtet, dass man verzweifelt Fachkräfte sucht. Es wird in der Zeitung berichtet....",
+    "lektion": 7,
+    "audio": "404.ogg",
+    "teil": 3
+  },
+  {
+    "id": 405,
+    "wort": "Der Täter konnte gefasst werden.",
+    "grammatik": "im Nebensatz? Konjugiertes Verb am Schluss!",
+    "beispiel": "Die Polizei gab bekannt, dass der Täter gefasst werden konnte.",
+    "lektion": 7,
+    "audio": "405.ogg",
+    "teil": 3
+  },
+  {
+    "id": 406,
+    "wort": "Der Täter hat gefasst werden können.",
+    "grammatik": "im Nebensatz? Konjugiertes Verb vor dem Partizip II!",
+    "beispiel": "Die Polizei meldete, dass der Täter habe gefasst werden können.",
+    "lektion": 7,
+    "audio": "406.ogg",
+    "teil": 3
+  },
+  {
+    "id": 407,
+    "wort": "Der Täter hätte gefasst werden können.",
+    "grammatik": "im Nebensatz? Konjugiertes Verb vor dem Partizip II!",
+    "beispiel": "Die Zeitung schrieb, dass der Täter hätte gefasst werden können.",
+    "lektion": 7,
+    "audio": "407.ogg",
+    "teil": 3
+  },
+  {
+    "id": 408,
+    "wort": "Man kann nicht alle Täter fassen.",
+    "grammatik": "Passiv?",
+    "beispiel": "Nicht alle Täter können gefasst werden.",
+    "lektion": 7,
+    "audio": "408.ogg",
+    "teil": 3
+  },
+  {
+    "id": 409,
+    "wort": "Die Polizei musste weitere Beweise sammeln.",
+    "grammatik": "Passiv?",
+    "beispiel": "Weitere Beweise mussten gesammelt werden.",
+    "lektion": 7,
+    "audio": "409.ogg",
+    "teil": 3
+  },
+  {
+    "id": 410,
+    "wort": "Man hat viele Zeugen befragen müssen.",
+    "grammatik": "Passiv?",
+    "beispiel": "Viele Zeugen haben befragt werden müssen.",
+    "lektion": 7,
+    "audio": "410.ogg",
+    "teil": 3
+  },
+  {
+    "id": 411,
+    "wort": "Massnahme",
+    "grammatik": "die, Massnahmen",
+    "beispiel": "Welche Massnahmen wirken der Jugendkriminalität entgegen?",
+    "lektion": 7,
+    "audio": "411.ogg",
+    "teil": 4
+  },
+  {
+    "id": 412,
+    "wort": "sich durchsetzen",
+    "grammatik": "setzt sich, setzte sich, hat sich durchgesetzt",
+    "beispiel": "Ein Vater, der auf den Nachbarn losgeht, bringt den Kindern bei, dass man sich mit Gewalt durchsetzen kann.",
+    "lektion": 7,
+    "audio": "412.ogg",
+    "teil": 4
+  },
+  {
+    "id": 413,
+    "wort": "weitere",
+    "grammatik": "",
+    "beispiel": "Können Strafen helfen, weitere Straftaten zu verhindern?",
+    "lektion": 7,
+    "audio": "413.ogg",
+    "teil": 4
+  },
+  {
+    "id": 414,
+    "wort": "unmittelbar",
+    "grammatik": "nach + Dativ",
+    "beispiel": "Ein Täter, der unmittelbar nach seiner Tat bestraft wird, kann lernen, dass sein Handeln Folgen hat.",
+    "lektion": 7,
+    "audio": "414.ogg",
+    "teil": 4
+  },
+  {
+    "id": 415,
+    "wort": "Drang",
+    "grammatik": "der",
+    "beispiel": "Der Drang, kriminell zu werden, erledigt sich bei den meisten mit dem Älterwerden.",
+    "lektion": 7,
+    "audio": "415.ogg",
+    "teil": 4
+  },
+  {
+    "id": 416,
+    "wort": "vorleben",
+    "grammatik": "lebt vor, lebte vor, hat vorgelebt",
+    "beispiel": "Wenn Eltern ihren Kindern Regeln vorleben, ist schon viel gewonnen.",
+    "lektion": 7,
+    "audio": "416.ogg",
+    "teil": 4
+  },
+  {
+    "id": 417,
+    "wort": "schwänzen",
+    "grammatik": "schwänzt, schwänzte, hat geschwänzt",
+    "beispiel": "Es ist wichtig, dass Eltern nicht egal ist, wenn ihre Kinder die Schule schwänzen.",
+    "lektion": 7,
+    "audio": "417.ogg",
+    "teil": 4
+  },
+  {
+    "id": 418,
+    "wort": "elementar",
+    "grammatik": "",
+    "beispiel": "Bildung und Wissen sind elementare Faktoren, um Kriminalität zu vermeiden.",
+    "lektion": 7,
+    "audio": "418.ogg",
+    "teil": 4
+  },
+  {
+    "id": 419,
+    "wort": "eine Person, die man nicht erkennen kann",
+    "grammatik": "modales Partizip",
+    "beispiel": "eine nicht zu erkennende Person",
+    "lektion": 7,
+    "audio": "419.ogg",
+    "teil": 5
+  },
+  {
+    "id": 420,
+    "wort": "Regeln, die man beachten muss",
+    "grammatik": "modales Partizip",
+    "beispiel": "zu beachtende Regeln",
+    "lektion": 7,
+    "audio": "420.ogg",
+    "teil": 5
+  },
+  {
+    "id": 421,
+    "wort": "eine Person, die man nicht erkennen kann",
+    "grammatik": "Passiv-Ersatzform",
+    "beispiel": "eine Person, die nicht zu erkennen ist",
+    "lektion": 7,
+    "audio": "421.ogg",
+    "teil": 5
+  },
+  {
+    "id": 422,
+    "wort": "Gesetzgebung",
+    "grammatik": "die",
+    "beispiel": "Die deutsche Gesetzgebung ist dafür bekannt, dass sie versucht, alle Fragen des Alltags bis ins kleinste Detail zu beantworten.",
+    "lektion": 7,
+    "audio": "422.ogg",
+    "teil": 5
+  },
+  {
+    "id": 423,
+    "wort": "derzeit",
+    "grammatik": "",
+    "beispiel": "Italien bringt derzeit auf 500 neue Gesetze pro Jahr.",
+    "lektion": 7,
+    "audio": "423.ogg",
+    "teil": 5
+  },
+  {
+    "id": 424,
+    "wort": "küssen",
+    "grammatik": "küsst, küsste, hat geküsst",
+    "beispiel": "IN Frankreich sollen sich Paare nicht auf Bahnübergängen küssen.",
+    "lektion": 7,
+    "audio": "424.ogg",
+    "teil": 5
+  },
+  {
+    "id": 425,
+    "wort": "Landesverrat",
+    "grammatik": "der",
+    "beispiel": "In England fällt das auf dem Kopf Aufkleben von Briefmarken mit dem Bild des königlichen Oberhauptes unter Landesverrat.",
+    "lektion": 7,
+    "audio": "425.ogg",
+    "teil": 5
+  },
+  {
+    "id": 426,
+    "wort": "gesetzlich",
+    "grammatik": "",
+    "beispiel": "Es ist fraglich, ob die zu lösenden Probleme mit immer mehr gesetzlichen Regelungen kleiner werden.",
+    "lektion": 7,
+    "audio": "426.ogg",
+    "teil": 5
+  },
+  {
+    "id": 427,
+    "wort": "bloss",
+    "grammatik": "",
+    "beispiel": "Warum bloss ist das Böse so beliebt?",
+    "lektion": 7,
+    "audio": "427.ogg",
+    "teil": 6
+  },
+  {
+    "id": 428,
+    "wort": "Bestseller",
+    "grammatik": "der",
+    "beispiel": "Es sind Bestseller und lassen die Kasse klingeln.",
+    "lektion": 7,
+    "audio": "428.ogg",
+    "teil": 6
+  },
+  {
+    "id": 429,
+    "wort": "Wette",
+    "grammatik": "die, Wetten",
+    "beispiel": "Jede Woche erscheinen neue Krimis, in denen um die Wette gemordet wird.",
+    "lektion": 7,
+    "audio": "429.ogg",
+    "teil": 6
+  },
+  {
+    "id": 430,
+    "wort": "Boom",
+    "grammatik": "der",
+    "beispiel": "In der Schweiz kann man von einem regelrechten Krimiboom sprechen.",
+    "lektion": 7,
+    "audio": "430.ogg",
+    "teil": 6
+  },
+  {
+    "id": 431,
+    "wort": "reizen",
+    "grammatik": "reizt, reizte, hat gereizt",
+    "beispiel": "Was aber reizt den Leser an der Beschreibung",
+    "lektion": 7,
+    "audio": "431.ogg",
+    "teil": 6
+  },
+  {
+    "id": 432,
+    "wort": "Bedrohung",
+    "grammatik": "die, Bedrohungen",
+    "beispiel": "Die Angst vor irgendwelchen Bedrohungen spielt in unserem Leben eine grosse Rolle.",
+    "lektion": 7,
+    "audio": "432.ogg",
+    "teil": 6
+  },
+  {
+    "id": 433,
+    "wort": "sich stellen",
+    "grammatik": "stellt sich, stellte sich, hat sich gestellt",
+    "beispiel": "Mit dem Vertrauen auf das Happy End können wir uns unseren Ängsten stellen.",
+    "lektion": 7,
+    "audio": "433.ogg",
+    "teil": 6
+  },
+  {
+    "id": 434,
+    "wort": "konfrontieren",
+    "grammatik": "konfrontiert, konfrontierte, hat konfrontiert",
+    "beispiel": "Der Krimi konfrontiert uns auch mit unseren dunklen Seiten.",
+    "lektion": 7,
+    "audio": "434.ogg",
+    "teil": 6
+  },
+  {
+    "id": 435,
+    "wort": "gehen",
+    "grammatik": "um + Akkusativ",
+    "beispiel": "In diesem Krimi geht es um eine Leiche auf einem Friedhof.",
+    "lektion": 7,
+    "audio": "435.ogg",
+    "teil": 7
+  },
+  {
+    "id": 436,
+    "wort": "sich befassen",
+    "grammatik": "mit + Dativ",
+    "beispiel": "Der Roman befasst sich mit dem Verhältnis des Sohnes mit seiner sterbenden Mutter.",
+    "lektion": 7,
+    "audio": "436.ogg",
+    "teil": 7
+  },
+  {
+    "id": 437,
+    "wort": "darlegen",
+    "grammatik": "legt dar, legte dar, hat dargelegt",
+    "beispiel": "Mein Kollege hat dargelegt, warum er die Erfindung des Rades bahnbrechend findet.",
+    "lektion": 7,
+    "audio": "437.ogg",
+    "teil": 7
+  },
+  {
+    "id": 438,
+    "wort": "anführen",
+    "grammatik": "führt an, führte an, hat angeführt",
+    "beispiel": "Als Beispiel führte er an, dass der Transport von Steinen vor der Erfindung des Rades viel beschwerlicher war.",
+    "lektion": 7,
+    "audio": "438.ogg",
+    "teil": 7
+  },
+  {
+    "id": 439,
+    "wort": "Zunächst",
+    "grammatik": "",
+    "beispiel": "Zunächst ging er darauf ein, was ihn zur Wahl dieser Erfindung bewogen hatte.",
+    "lektion": 7,
+    "audio": "439.ogg",
+    "teil": 7
+  },
+  {
+    "id": 440,
+    "wort": "Anschluss",
+    "grammatik": "im Anschluss",
+    "beispiel": "Im Anschluss zeigte er auf, was diese Erfindung Neues mit sich brachte.",
+    "lektion": 7,
+    "audio": "440.ogg",
+    "teil": 7
+  },
+  {
+    "id": 441,
+    "wort": "Insgesamt",
+    "grammatik": "",
+    "beispiel": "Insgesamt kann man sagen, dass das Rad eine für die Menschheit enorm wichtige Erfindung war.",
+    "lektion": 7,
+    "audio": "441.ogg",
+    "teil": 7
+  },
+  {
+    "id": 442,
+    "wort": "nachvollziehen",
+    "grammatik": "vollzieht nach,vollzog nach, hat nachvollzogen",
+    "beispiel": "Dass die Erfindung des Rades einen Meilenstein der Menschheitsgeschichte darstellt, kann ich nun nachvollziehen.",
+    "lektion": 7,
+    "audio": "442.ogg",
+    "teil": 7
+  },
+  {
+    "id": 443,
+    "wort": "Tatort",
+    "grammatik": "der",
+    "beispiel": "Den Ort, an dem eine kriminelle Handlung begangen wurde, nennt man Tatort.",
+    "lektion": 7,
+    "audio": "443.ogg",
+    "teil": 8
+  },
+  {
+    "id": 444,
+    "wort": "Beweis",
+    "grammatik": "der, Beweise",
+    "beispiel": "Ich bringe den Nachweis dafür, dass etwas zu Recht angenommen wird, also den Beweis dafür.",
+    "lektion": 7,
+    "audio": "444.ogg",
+    "teil": 8
+  },
+  {
+    "id": 445,
+    "wort": "Festnahme",
+    "grammatik": "die",
+    "beispiel": "Nach seiner Festnahme (Verhaftung) kam er in Untersuchungshaft.",
+    "lektion": 7,
+    "audio": "445.ogg",
+    "teil": 8
+  },
+  {
+    "id": 446,
+    "wort": "Alibi",
+    "grammatik": "das, Alibis",
+    "beispiel": "Der Beweis, dass man sich zur Tatzeit nicht am Tatort aufgehalten hat, dient als Alibi.",
+    "lektion": 7,
+    "audio": "446.ogg",
+    "teil": 8
+  },
+  {
+    "id": 447,
+    "wort": "Geständnis",
+    "grammatik": "das, Geständnisse",
+    "beispiel": "Ich muss dir leider ein Geständnis machen: Ich habe alle Käsespatzen allein aufgegessen!",
+    "lektion": 7,
+    "audio": "447.ogg",
+    "teil": 8
+  },
+  {
+    "id": 448,
+    "wort": "Motiv",
+    "grammatik": "das, Motive",
+    "beispiel": "Der Kommissar fragte sich, aus welchen Motiven die Putzfrau den Mann vergiftet haben könnte.",
+    "lektion": 7,
+    "audio": "448.ogg",
+    "teil": 8
+  },
+  {
+    "id": 449,
+    "wort": "teilnehmen",
+    "grammatik": "an + Dativ",
+    "beispiel": "Seine Frau wollte, dass er am Dorfleben teilnahm.",
+    "lektion": 7,
+    "audio": "449.ogg",
+    "teil": 8
+  },
+  {
+    "id": 450,
+    "wort": "stattlich",
+    "grammatik": "",
+    "beispiel": "Niemand ausser ihm war stattlich genug, dieses mächtige Instrument zu tragen.",
+    "lektion": 7,
+    "audio": "450.ogg",
+    "teil": 8
+  },
+  {
+    "id": 451,
+    "wort": "vergebens",
+    "grammatik": "",
+    "beispiel": "Alles hat einen Sinn, nichts ist vergebens.",
+    "lektion": 8,
+    "audio": "456.ogg",
+    "teil": 1
+  },
+  {
+    "id": 452,
+    "wort": "borgen",
+    "grammatik": "borgt, borgte, hat geborgt",
+    "beispiel": "Da er es eilig hatte, borgte er sich das Velo seines Kollegen.",
+    "lektion": 8,
+    "audio": "452.ogg",
+    "teil": 1
+  },
+  {
+    "id": 453,
+    "wort": "sich auskennen",
+    "grammatik": "kennt sich aus, kannte sich aus, hat sich ausgekannt",
+    "beispiel": "Er kennt sich aus mit Versicherungsfragen, schliesslich ist er ja vom Fach.",
+    "lektion": 8,
+    "audio": "453.ogg",
+    "teil": 1
+  },
+  {
+    "id": 454,
+    "wort": "spüren",
+    "grammatik": "spürt, spürte, hat gespürt",
+    "beispiel": "Plötzlich spürte sie einen Luftzug im Nacken.",
+    "lektion": 8,
+    "audio": "454.ogg",
+    "teil": 1
+  },
+  {
+    "id": 455,
+    "wort": "zerstreut",
+    "grammatik": "",
+    "beispiel": "Da er in Gedanken ständig woanders war, wirkte er auf seine Familie sehr zerstreut.",
+    "lektion": 8,
+    "audio": "455.ogg",
+    "teil": 1
+  },
+  {
+    "id": 456,
+    "wort": "schreckhaft",
+    "grammatik": "",
+    "beispiel": "Da sie so schreckhaft war, trauten wir uns nicht, sie zum Scherz zu erschrecken, aus Angst, sie könnte einen Herzinfarkt bekommen.",
+    "lektion": 8,
+    "audio": "456.ogg",
+    "teil": 1
+  },
+  {
+    "id": 457,
+    "wort": "abergläubisch",
+    "grammatik": "",
+    "beispiel": "Sie ist so abergläubisch zu befürchten, schwarze Katzen brächten Unglück.",
+    "lektion": 8,
+    "audio": "457.ogg",
+    "teil": 1
+  },
+  {
+    "id": 458,
+    "wort": "heranreifen",
+    "grammatik": "reift heran, reifte heran, ist herangereift",
+    "beispiel": "Er ist vom unbeholfenen Lehrling zum versierten Fachmann herangereift.",
+    "lektion": 8,
+    "audio": "458.ogg",
+    "teil": 1
+  },
+  {
+    "id": 459,
+    "wort": "sollen",
+    "grammatik": "Behauptung",
+    "beispiel": "Der Zahn soll von einem Mammut stammen.",
+    "lektion": 8,
+    "audio": "459.ogg",
+    "teil": 2
+  },
+  {
+    "id": 460,
+    "wort": "wollen",
+    "grammatik": "Behauptung, sich selbst betreffend",
+    "beispiel": "Er will zum gegebenen Zeitpunkt zu Hause ferngesehen haben.",
+    "lektion": 8,
+    "audio": "460.ogg",
+    "teil": 2
+  },
+  {
+    "id": 461,
+    "wort": "verblüffend",
+    "grammatik": "Behauptung",
+    "beispiel": "Das Resultat der Studie ist verblüffend: Die Probanden mit roten Tellern sollen weniger gegessen haben als Probanden mit anderen Farben.",
+    "lektion": 8,
+    "audio": "461.ogg",
+    "teil": 2
+  },
+  {
+    "id": 462,
+    "wort": "Sinn",
+    "grammatik": "der, Sinne",
+    "beispiel": "Essen ist eine Erfahrung, die viele Sinne anspricht.",
+    "lektion": 8,
+    "audio": "462.ogg",
+    "teil": 2
+  },
+  {
+    "id": 463,
+    "wort": "einprägen",
+    "grammatik": "Behauptung",
+    "beispiel": "Bei schlechtem Wetter sollen wir uns Dinge besser einprägen.",
+    "lektion": 8,
+    "audio": "463.ogg",
+    "teil": 2
+  },
+  {
+    "id": 464,
+    "wort": "untermauern",
+    "grammatik": "untermauert, untermauerte, hat untermauert",
+    "beispiel": "Um diese Behauptung zu untermauern, wurde ein Experiment durchgeführt.",
+    "lektion": 8,
+    "audio": "464.ogg",
+    "teil": 2
+  },
+  {
+    "id": 465,
+    "wort": "demnach",
+    "grammatik": "..= also, folglich",
+    "beispiel": "Ich kenne mich mit Instagram nicht aus, demnach kann ich nicht mitreden.",
+    "lektion": 8,
+    "audio": "465.ogg",
+    "teil": 2
+  },
+  {
+    "id": 466,
+    "wort": "Auswirkung",
+    "grammatik": "die, Auswirkungen",
+    "beispiel": "Zu lange am Bildschirm zu sitzen, hat negative Auswirkungen auf das Konzentrationsvermögen.",
+    "lektion": 8,
+    "audio": "466.ogg",
+    "teil": 2
+  },
+  {
+    "id": 467,
+    "wort": "Gleichheit",
+    "grammatik": "die",
+    "beispiel": "Im Vortrag wird die Gleichheit der Geschlechter nicht bestätigt.",
+    "lektion": 8,
+    "audio": "467.ogg",
+    "teil": 3
+  },
+  {
+    "id": 468,
+    "wort": "Sozialisation",
+    "grammatik": "die",
+    "beispiel": "Uns brachte man bei, die Geschlechter seien gleich, es komme nur auf die Sozialisation an.",
+    "lektion": 8,
+    "audio": "468.ogg",
+    "teil": 3
+  },
+  {
+    "id": 469,
+    "wort": "Chromosom",
+    "grammatik": "das, Chromosomen",
+    "beispiel": "Das Y-Chromosom ist bei den Menschen und anderen Säugetieren für die Entwicklung des männlichen Geschlechts verantwortlich.",
+    "lektion": 8,
+    "audio": "469.ogg",
+    "teil": 3
+  },
+  {
+    "id": 470,
+    "wort": "teilen",
+    "grammatik": "teilt, teilte, hat geteilt",
+    "beispiel": "Jungen teilen ihre Interessen in grösseren Gruppen.",
+    "lektion": 8,
+    "audio": "470.ogg",
+    "teil": 3
+  },
+  {
+    "id": 471,
+    "wort": "Zentrum",
+    "grammatik": "das, Zentren",
+    "beispiel": "Bei Mädchen steht die Kommunikation im Zentrum.",
+    "lektion": 8,
+    "audio": "471.ogg",
+    "teil": 3
+  },
+  {
+    "id": 472,
+    "wort": "sich begeben",
+    "grammatik": "begibt sich, begab sich, hat sich begeben",
+    "beispiel": "Mädchen begeben sich seltener in gefährliche Situationen.",
+    "lektion": 8,
+    "audio": "472.ogg",
+    "teil": 3
+  },
+  {
+    "id": 473,
+    "wort": "verfügen",
+    "grammatik": "über + Akkusativ",
+    "beispiel": "Mädchen verfügen in der Regel über ein besseres Sprachvermögen.",
+    "lektion": 8,
+    "audio": "473.ogg",
+    "teil": 3
+  },
+  {
+    "id": 474,
+    "wort": "ausgeprägt",
+    "grammatik": "",
+    "beispiel": "Bei Jungen ist die räumliche Vorstellung ausgeprägt.",
+    "lektion": 8,
+    "audio": "474.ogg",
+    "teil": 3
+  },
+  {
+    "id": 475,
+    "wort": "erstaunlicherweise",
+    "grammatik": "",
+    "beispiel": "Erstaunlicherweise funktionieren weibliche und männliche Gehirne unterschiedlich.",
+    "lektion": 8,
+    "audio": "475.ogg",
+    "teil": 4
+  },
+  {
+    "id": 476,
+    "wort": "weismachen",
+    "grammatik": "..= jemand will uns hereinlegen",
+    "beispiel": "Die Forschung will uns weismachen, dass Frauen und Männer nicht gleich sind, um die alten Rollenbilder zu festigen.",
+    "lektion": 8,
+    "audio": "476.ogg",
+    "teil": 4
+  },
+  {
+    "id": 477,
+    "wort": "skeptisch",
+    "grammatik": "",
+    "beispiel": "Diese Forschungsergebnisse machen mich skeptisch.",
+    "lektion": 8,
+    "audio": "477.ogg",
+    "teil": 4
+  },
+  {
+    "id": 478,
+    "wort": "Neigung",
+    "grammatik": "die, Neigungen",
+    "beispiel": "Den Beruf des Lehrers ergriff er aus innerer Neigung.",
+    "lektion": 8,
+    "audio": "478.ogg",
+    "teil": 4
+  },
+  {
+    "id": 479,
+    "wort": "Vorliebe",
+    "grammatik": "die, Vorlieben",
+    "beispiel": "Kinder sollen ihre Vorlieben entdecken dürfen.",
+    "lektion": 8,
+    "audio": "479.ogg",
+    "teil": 4
+  },
+  {
+    "id": 480,
+    "wort": "fördern",
+    "grammatik": "fördert, förderte, hat gefördert",
+    "beispiel": "Schon als Kinde wurde seine Vorliebe für die Musik gefördert.",
+    "lektion": 8,
+    "audio": "480.ogg",
+    "teil": 4
+  },
+  {
+    "id": 481,
+    "wort": "Veranlagung",
+    "grammatik": "die",
+    "beispiel": "Die Ursache für viele Krankheiten kann auch im Erbgut liegen, also eine Veranlagung dafür sein.",
+    "lektion": 8,
+    "audio": "481.ogg",
+    "teil": 4
+  },
+  {
+    "id": 482,
+    "wort": "genetisch",
+    "grammatik": "",
+    "beispiel": "Eine erhöhte Anfälligkeit, eine Krankheit zu entwickeln, kann genetisch bedingt sein.",
+    "lektion": 8,
+    "audio": "482.ogg",
+    "teil": 4
+  },
+  {
+    "id": 483,
+    "wort": "muss",
+    "grammatik": "Vermutung: grosse Sicherheit",
+    "beispiel": "Die Diagnose muss falsch sein. (ich bin sicher, überzeugt, bestimmt, sicher, zweifellos...)",
+    "lektion": 8,
+    "audio": "483.ogg",
+    "teil": 5
+  },
+  {
+    "id": 484,
+    "wort": "kann nicht",
+    "grammatik": "Vermutung: grosse Sicherheit",
+    "beispiel": "Diese Ergebnisse können nicht richtig sein. (sicher nicht, alles deutet darauf hin, alle Anzeichen sprechen dafür, gewiss...)",
+    "lektion": 8,
+    "audio": "484.ogg",
+    "teil": 5
+  },
+  {
+    "id": 485,
+    "wort": "dürfte",
+    "grammatik": "sehr wahrscheinlich",
+    "beispiel": "Er dürfte sehr musikalisch sein. (ich vermute, nehme an, bin ziemlich sicher...)",
+    "lektion": 8,
+    "audio": "485.ogg",
+    "teil": 5
+  },
+  {
+    "id": 486,
+    "wort": "kann",
+    "grammatik": "sehr wahrscheinlich",
+    "beispiel": "Sie kann die Prüfung bestehen. (aller Wahrscheinlichkeit nach, vermutlich, es sieht so aus, als ob..)",
+    "lektion": 8,
+    "audio": "486.ogg",
+    "teil": 5
+  },
+  {
+    "id": 487,
+    "wort": "könnte",
+    "grammatik": "möglich",
+    "beispiel": "Du könntest recht haben. (denkbar, möglich, nicht ausgeschlossen, vielleicht, eventuell...)",
+    "lektion": 8,
+    "audio": "487.ogg",
+    "teil": 5
+  },
+  {
+    "id": 488,
+    "wort": "aussergewöhnlich",
+    "grammatik": "",
+    "beispiel": "Das Kind verfügt über eine aussergewöhnliche intellektuelle Begabung.",
+    "lektion": 8,
+    "audio": "488.ogg",
+    "teil": 5
+  },
+  {
+    "id": 489,
+    "wort": "muss",
+    "grammatik": "Vermutung",
+    "beispiel": "Die Eltern denken, die Diagnose müsse falsch sein, da er so schlechte Noten habe.",
+    "lektion": 8,
+    "audio": "489.ogg",
+    "teil": 5
+  },
+  {
+    "id": 490,
+    "wort": "kann",
+    "grammatik": "",
+    "beispiel": "Einige Dinge sprechen dafür, dass das Kind hochbegabt sein kann.",
+    "lektion": 8,
+    "audio": "490.ogg",
+    "teil": 5
+  },
+  {
+    "id": 491,
+    "wort": "nachdenken",
+    "grammatik": "über + Akkusativ",
+    "beispiel": "Seit Anfang des letzten Jahrhunderts denken Eltern über die Erziehung der eigenen Kinder nach.",
+    "lektion": 8,
+    "audio": "491.ogg",
+    "teil": 6
+  },
+  {
+    "id": 492,
+    "wort": "Ziel",
+    "grammatik": "das, Ziele",
+    "beispiel": "Brauchen Kinder stets ein Ziel vor Augen?",
+    "lektion": 8,
+    "audio": "492.ogg",
+    "teil": 6
+  },
+  {
+    "id": 493,
+    "wort": "Menge",
+    "grammatik": "die, Mengen",
+    "beispiel": "Kinder haben jede Menge Termine.",
+    "lektion": 8,
+    "audio": "493.ogg",
+    "teil": 6
+  },
+  {
+    "id": 494,
+    "wort": "Zugriff",
+    "grammatik": "auf + Akkusativ",
+    "beispiel": "Eltern haben heute viel stärkeren Zugriff auf alle Bereiche des Lebens der Kinder.",
+    "lektion": 8,
+    "audio": "494.ogg",
+    "teil": 6
+  },
+  {
+    "id": 495,
+    "wort": "Kontrolle",
+    "grammatik": "die",
+    "beispiel": "Eltern üben eine viel stärkere Kontrolle aus.",
+    "lektion": 8,
+    "audio": "495.ogg",
+    "teil": 6
+  },
+  {
+    "id": 496,
+    "wort": "Individualität",
+    "grammatik": "",
+    "beispiel": "Kinder sollen sich ganz in ihrer Individualität entfalten, sollen aber auch die Normen erfüllen.",
+    "lektion": 8,
+    "audio": "496.ogg",
+    "teil": 6
+  },
+  {
+    "id": 497,
+    "wort": "Ausweg",
+    "grammatik": "aus + Dativ / der, Auswege",
+    "beispiel": "Gibt es einen Ausweg aus diesem Dilemma?",
+    "lektion": 8,
+    "audio": "497.ogg",
+    "teil": 6
+  },
+  {
+    "id": 498,
+    "wort": "Druck",
+    "grammatik": "der",
+    "beispiel": "Wir können den Druck aus der Gesellschaft nicht von den Kindern fernhalten.",
+    "lektion": 8,
+    "audio": "498.ogg",
+    "teil": 6
+  },
+  {
+    "id": 499,
+    "wort": "vertreten",
+    "grammatik": "vertritt, vertrat, hat vertreten",
+    "beispiel": "Welche Ansicht vertrittst du zur Frage, was uns glücklich macht?",
+    "lektion": 8,
+    "audio": "499.ogg",
+    "teil": 7
+  },
+  {
+    "id": 500,
+    "wort": "machen",
+    "grammatik": "zu + Dativ",
+    "beispiel": "Was macht uns zu glücklichen Erwachsenen?",
+    "lektion": 8,
+    "audio": "500.ogg",
+    "teil": 7
+  },
+  {
+    "id": 501,
+    "wort": "beeinflussen",
+    "grammatik": "beeinflusst, beeinflusste, hat beeinflusst",
+    "beispiel": "Welche Erinnerungen haben dich positiv beeinflusst?",
+    "lektion": 8,
+    "audio": "501.ogg",
+    "teil": 7
+  },
+  {
+    "id": 502,
+    "wort": "halten",
+    "grammatik": "zu + Dativ",
+    "beispiel": "Meine Eltern waren zwar ziemlich streng, aber sie haben immer zu mir gehalten.",
+    "lektion": 8,
+    "audio": "502.ogg",
+    "teil": 7
+  },
+  {
+    "id": 503,
+    "wort": "erschüttern",
+    "grammatik": "erschüttert, erschütterte, hat erschüttert",
+    "beispiel": "Wenn man geliebt wird, kann einen so schnell nichts erschüttern.",
+    "lektion": 8,
+    "audio": "503.ogg",
+    "teil": 7
+  },
+  {
+    "id": 504,
+    "wort": "vorbereiten",
+    "grammatik": "auf + Akkusativ",
+    "beispiel": "Eine gerechte Erziehung mit klaren Regeln bereitet die Kinder am besten auf das Leben vor.",
+    "lektion": 8,
+    "audio": "504.ogg",
+    "teil": 7
+  },
+  {
+    "id": 505,
+    "wort": "Freiraum",
+    "grammatik": "der, Freiräume",
+    "beispiel": "Kinder sollten einen grossen spielerischen und kreativen Freiraum bekommen.",
+    "lektion": 8,
+    "audio": "505.ogg",
+    "teil": 7
+  },
+  {
+    "id": 506,
+    "wort": "unterbrechen",
+    "grammatik": "unterbricht, unterbrach, hat unterbrochen",
+    "beispiel": "Wenn ich da kurz unterbrechen darf, ...",
+    "lektion": 8,
+    "audio": "506.ogg",
+    "teil": 7
+  },
+  {
+    "id": 507,
+    "wort": "raten",
+    "grammatik": "zu + Dativ",
+    "beispiel": "Er rät zu mehr Gelassenheit, denn Kinder seien heute oft überfordert.",
+    "lektion": 8,
+    "audio": "507.ogg",
+    "teil": 8
+  },
+  {
+    "id": 508,
+    "wort": "durchschnittlich",
+    "grammatik": "",
+    "beispiel": "Eltern haben den Anspruch, dass ihr Kind nicht durchschnittlich ist.",
+    "lektion": 8,
+    "audio": "508.ogg",
+    "teil": 8
+  },
+  {
+    "id": 509,
+    "wort": "autoritär",
+    "grammatik": "",
+    "beispiel": "Ein autoritärer Erziehungsstil fördert die Selbständigkeit der Kinder weniger.",
+    "lektion": 8,
+    "audio": "509.ogg",
+    "teil": 8
+  },
+  {
+    "id": 510,
+    "wort": "egoistisch",
+    "grammatik": "",
+    "beispiel": "Fehlen jegliche Grenzen, besteht die Gefahr, dass diese Kinder egoistisch werden.",
+    "lektion": 8,
+    "audio": "510.ogg",
+    "teil": 8
+  },
+  {
+    "id": 511,
+    "wort": "Grenze",
+    "grammatik": "die, Grenzen",
+    "beispiel": "Es gibt auch Grenzen, die die Selbstentwicklung nicht einschränken.",
+    "lektion": 8,
+    "audio": "511.ogg",
+    "teil": 8
+  },
+  {
+    "id": 512,
+    "wort": "emotional",
+    "grammatik": "",
+    "beispiel": "Kinder brauchen viel emotionale Unterstützung.",
+    "lektion": 8,
+    "audio": "512.ogg",
+    "teil": 8
+  },
+  {
+    "id": 513,
+    "wort": "tadeln",
+    "grammatik": "tadelt, tadelte, hat getadelt",
+    "beispiel": "Oft werden Kinder, wenn sie antiautoritär erzogen werden, zurechtgewiesen und getadelt.",
+    "lektion": 8,
+    "audio": "513.ogg",
+    "teil": 8
+  },
+  {
+    "id": 514,
+    "wort": "vorgeben",
+    "grammatik": "gibt vor, gab vor, hat vorgegeben",
+    "beispiel": "Wenn Eltern einen Grossteil der Aktivitäten der Kinder vorgeben, schränken sie deren Kreativität ein.",
+    "lektion": 8,
+    "audio": "514.ogg",
+    "teil": 8
+  },
+  {
+    "id": 515,
+    "wort": "Skulptur",
+    "grammatik": "die, Skulpturen",
+    "beispiel": "Der Künstler schuf eine riesige Skulptur aus Stein.",
+    "lektion": 9,
+    "audio": "515.ogg",
+    "teil": 1
+  },
+  {
+    "id": 516,
+    "wort": "Skizze",
+    "grammatik": "die, Skizzen",
+    "beispiel": "Mit seinen Skizzen und Zeichnungen gehört Joseph Beuys zu den bedeutendsten Zeichnern des 20. Jahrhunderts.",
+    "lektion": 9,
+    "audio": "516.ogg",
+    "teil": 1
+  },
+  {
+    "id": 517,
+    "wort": "Gemälde",
+    "grammatik": "das",
+    "beispiel": "Auf seinen Gemälden stellte Georg Baselitz die Welt auf den Kopf.",
+    "lektion": 9,
+    "audio": "517.ogg",
+    "teil": 1
+  },
+  {
+    "id": 518,
+    "wort": "auffallen",
+    "grammatik": "fällt auf, fiel auf, ist aufgefallen",
+    "beispiel": "Bereits in der Gesamtschule fiel sein schriftstellerisches Talent auf.",
+    "lektion": 9,
+    "audio": "518.ogg",
+    "teil": 1
+  },
+  {
+    "id": 519,
+    "wort": "mittlerweile",
+    "grammatik": "",
+    "beispiel": "Mittlerweile gehört er zu den erfolgreichsten jungen Autoren Deutschlands.",
+    "lektion": 9,
+    "audio": "519.ogg",
+    "teil": 1
+  },
+  {
+    "id": 520,
+    "wort": "vertreten sein",
+    "grammatik": "",
+    "beispiel": "Ihre Werke sind heute in vielen internationalen Sammlungen vertreten.",
+    "lektion": 9,
+    "audio": "520.ogg",
+    "teil": 1
+  },
+  {
+    "id": 521,
+    "wort": "gewinnen",
+    "grammatik": "gewinnt, gewann, hat gewonnen",
+    "beispiel": "Nach der Gründung der Band gewannen sie auf zahlreichen Konzerten eine grosse Fangemeinde.",
+    "lektion": 9,
+    "audio": "521.ogg",
+    "teil": 1
+  },
+  {
+    "id": 522,
+    "wort": "Werk",
+    "grammatik": "das",
+    "beispiel": "Das Werk Picassos umfasst mehr als 50 000 Gemälde, Collagen, Plastiken und Grafiken.",
+    "lektion": 9,
+    "audio": "522.ogg",
+    "teil": 1
+  },
+  {
+    "id": 523,
+    "wort": "basieren",
+    "grammatik": "auf + Dativ<br>Präpositionaladverb",
+    "beispiel": "Brainstorming basiert darauf, dass in einer Gruppe jeder Einfall ohne Wertung geäussert wird.",
+    "lektion": 9,
+    "audio": "523.ogg",
+    "teil": 2
+  },
+  {
+    "id": 524,
+    "wort": "glauben",
+    "grammatik": "an + Akkusativ",
+    "beispiel": "Viele glauben daran, dass die Kreativität in Lebenskrisen gesteigert wird.",
+    "lektion": 9,
+    "audio": "524.ogg",
+    "teil": 2
+  },
+  {
+    "id": 525,
+    "wort": "beitragen",
+    "grammatik": "zu + Dativ",
+    "beispiel": "Gute Laune trägt zur Kreativität der Menschen bei.",
+    "lektion": 9,
+    "audio": "525.ogg",
+    "teil": 2
+  },
+  {
+    "id": 526,
+    "wort": "sich beschäftigen",
+    "grammatik": "mit + Dativ",
+    "beispiel": "Er beschäftigte sich stundenlang mit der Lösung des Problems.",
+    "lektion": 9,
+    "audio": "526.ogg",
+    "teil": 2
+  },
+  {
+    "id": 527,
+    "wort": "helfen",
+    "grammatik": "bei + Dativ",
+    "beispiel": "Monotone Tätigkeiten helfen beim Finden kreativer Ideen.",
+    "lektion": 9,
+    "audio": "527.ogg",
+    "teil": 2
+  },
+  {
+    "id": 528,
+    "wort": "suchen",
+    "grammatik": "nach + Dativ",
+    "beispiel": "Einerseits wird das Gehirn abgelenkt, andererseits kann es gleichzeitig nach Lösungen suchen.",
+    "lektion": 9,
+    "audio": "528.ogg",
+    "teil": 2
+  },
+  {
+    "id": 529,
+    "wort": "überzeugen",
+    "grammatik": "von + Dativ",
+    "beispiel": "Sie konnte den Chef von der positiven Wirkung eines Spazierganges überzeugen.",
+    "lektion": 9,
+    "audio": "529.ogg",
+    "teil": 2
+  },
+  {
+    "id": 530,
+    "wort": "führen",
+    "grammatik": "zu + Dativ",
+    "beispiel": "Ihr Streit führte dazu, dass sie verärgert auseinander gingen.",
+    "lektion": 9,
+    "audio": "530.ogg",
+    "teil": 2
+  },
+  {
+    "id": 531,
+    "wort": "gehen",
+    "grammatik": "um + Akkusativ",
+    "beispiel": "In beruflichen Meetings geht es oft darum, Probleme zu besprechen.",
+    "lektion": 9,
+    "audio": "531.ogg",
+    "teil": 3
+  },
+  {
+    "id": 532,
+    "wort": "führen",
+    "grammatik": "zu + Dativ",
+    "beispiel": "Zu grosse Konkurrenz kann dazu führen, dass Konflikte entstehen.",
+    "lektion": 9,
+    "audio": "532.ogg",
+    "teil": 3
+  },
+  {
+    "id": 533,
+    "wort": "schwärmen",
+    "grammatik": "von + Dativ",
+    "beispiel": "Er schwärmte davon, gemeinsame Projekte zu verwirklichen.",
+    "lektion": 9,
+    "audio": "533.ogg",
+    "teil": 3
+  },
+  {
+    "id": 534,
+    "wort": "verzichten",
+    "grammatik": "auf + Akkusativ",
+    "beispiel": "Ich würde nicht darauf verzichten, meinen eigenen Salat zu kultivieren.",
+    "lektion": 9,
+    "audio": "534.ogg",
+    "teil": 3
+  },
+  {
+    "id": 535,
+    "wort": "sich spezialisieren",
+    "grammatik": "auf + Akkusativ",
+    "beispiel": "Er hat sich auf 3D-Animation spezialisiert.",
+    "lektion": 9,
+    "audio": "535.ogg",
+    "teil": 3
+  },
+  {
+    "id": 536,
+    "wort": "sich beschäftigen",
+    "grammatik": "mit + Dativ",
+    "beispiel": "In meinem Vortrag beschäftige ich mich mit positiven und negativen Aspekten der Kernenergie.",
+    "lektion": 9,
+    "audio": "536.ogg",
+    "teil": 3
+  },
+  {
+    "id": 537,
+    "wort": "nachdenken",
+    "grammatik": "über + Akkusativ",
+    "beispiel": "Sie denkt darüber nach, beruflich nochmals ganz von vorn zu beginnen.",
+    "lektion": 9,
+    "audio": "537.ogg",
+    "teil": 3
+  },
+  {
+    "id": 538,
+    "wort": "sich entscheiden",
+    "grammatik": "für + Akkusativ",
+    "beispiel": "Er hat sich dafür entschieden, eine Lehre zu absolvieren.",
+    "lektion": 9,
+    "audio": "538.ogg",
+    "teil": 3
+  },
+  {
+    "id": 539,
+    "wort": "sich handeln",
+    "grammatik": "um",
+    "beispiel": "Beim Film «Stiller» handelt es sich um eine Buchverfilmung.",
+    "lektion": 9,
+    "audio": "539.ogg",
+    "teil": 4
+  },
+  {
+    "id": 540,
+    "wort": "veröffentlichen",
+    "grammatik": "veröffentlicht, veröffentlichte, hat veröffentlicht",
+    "beispiel": "«Stiller» ist ein Roman des Schweizer Schriftstellers Max Frisch, der im Jahr 1954 veröffentlicht wurde.",
+    "lektion": 9,
+    "audio": "540.ogg",
+    "teil": 4
+  },
+  {
+    "id": 541,
+    "wort": "wiedererkennen",
+    "grammatik": "erkennt wieder, erkannte wieder, hat wiedererkannt",
+    "beispiel": "Im Roman erzählt ein Ich-Erzähler, wie er verhaftet wird, weil man in ihm einen verschollenen Bildhauer wiederzuerkennen glaubt.",
+    "lektion": 9,
+    "audio": "541.ogg",
+    "teil": 4
+  },
+  {
+    "id": 542,
+    "wort": "gleichnamig",
+    "grammatik": "",
+    "beispiel": "Der gleichnamige Film des Regisseurs Stefan Haupt kam im Oktober 25 in die Kinos.",
+    "lektion": 9,
+    "audio": "542.ogg",
+    "teil": 4
+  },
+  {
+    "id": 543,
+    "wort": "Hauptrolle",
+    "grammatik": "die, Hauptrollen",
+    "beispiel": "Die Hauptrollen sind mit weniger bekannten Darstellern besetzt.",
+    "lektion": 9,
+    "audio": "543.ogg",
+    "teil": 4
+  },
+  {
+    "id": 544,
+    "wort": "Frage",
+    "grammatik": "nach + Dativ    Artikel: die",
+    "beispiel": "Sowohl im Buch als auch im Film geht es um die Frage nach der Identität.",
+    "lektion": 9,
+    "audio": "544.ogg",
+    "teil": 4
+  },
+  {
+    "id": 545,
+    "wort": "Leinwand",
+    "grammatik": "die",
+    "beispiel": "Max Frischs «Stiller» auf die Leinwand zu bringen, ist kein leichtes Unterfangen.",
+    "lektion": 9,
+    "audio": "545.ogg",
+    "teil": 4
+  },
+  {
+    "id": 546,
+    "wort": "verfilmen",
+    "grammatik": "verfilmt, verfilmte, hat verfilmt",
+    "beispiel": "Es gab schon mehrere Versuche, den Roman zu verfilmen, etwa von Wim Wenders, der das Projekt allerdings aufgab.",
+    "lektion": 9,
+    "audio": "546.ogg",
+    "teil": 4
+  },
+  {
+    "id": 547,
+    "wort": "stattdessen",
+    "grammatik": "",
+    "beispiel": "Sie träumte von einer Karriere. Stattdessen bleiben die Aufträge aus.",
+    "lektion": 9,
+    "audio": "547.ogg",
+    "teil": 5
+  },
+  {
+    "id": 548,
+    "wort": "vielmehr",
+    "grammatik": "",
+    "beispiel": "Von der Kunst zu leben, ist nicht romantisch. Vielmehr ist es harte Arbeit.",
+    "lektion": 9,
+    "audio": "548.ogg",
+    "teil": 5
+  },
+  {
+    "id": 549,
+    "wort": "währenddessen",
+    "grammatik": "",
+    "beispiel": "Ich studierte fünf Jahre lang. Währenddessen lebte ich noch bei meinen Eltern.",
+    "lektion": 9,
+    "audio": "549.ogg",
+    "teil": 5
+  },
+  {
+    "id": 550,
+    "wort": "allerdings",
+    "grammatik": "",
+    "beispiel": "Ich konnte schon einige Werke verkaufen. Allerdings kann ich noch nicht von meiner Kunst leben.",
+    "lektion": 9,
+    "audio": "550.ogg",
+    "teil": 5
+  },
+  {
+    "id": 551,
+    "wort": "inzwischen",
+    "grammatik": "",
+    "beispiel": "Vor einem Jahr hatte ich meine erste Ausstellung. Inzwischen habe ich einige Aufträge erhalten.",
+    "lektion": 9,
+    "audio": "551.ogg",
+    "teil": 5
+  },
+  {
+    "id": 552,
+    "wort": "demgegenüber",
+    "grammatik": "",
+    "beispiel": "Viele träumen von einem Künstlerleben. Demgegenüber steht die harte Realität.",
+    "lektion": 9,
+    "audio": "552.ogg",
+    "teil": 5
+  },
+  {
+    "id": 553,
+    "wort": "dagegen",
+    "grammatik": "",
+    "beispiel": "Mein Kollege lebt von der finanziellen Unterstützung seiner Eltern, ich dagegen nicht.",
+    "lektion": 9,
+    "audio": "553.ogg",
+    "teil": 5
+  },
+  {
+    "id": 554,
+    "wort": "mittlerweile",
+    "grammatik": "",
+    "beispiel": "Anfangs hatte ich kaum Geld, mir Kleider zu kaufen. Mittlerweile verdiene ich etwas besser.",
+    "lektion": 9,
+    "audio": "554.ogg",
+    "teil": 5
+  },
+  {
+    "id": 555,
+    "wort": "demgegenüber",
+    "grammatik": "",
+    "beispiel": "Meine Eltern sahen mich als künftigen Lehrer. Demgegenüber war ich entschlossen, Sänger zu werden.",
+    "lektion": 9,
+    "audio": "555.ogg",
+    "teil": 6
+  },
+  {
+    "id": 556,
+    "wort": "mittlerweile",
+    "grammatik": "",
+    "beispiel": "Vor zehn Jahren schloss sie ihr Studium ab. Mittlerweile ist sie Oberärztin.",
+    "lektion": 9,
+    "audio": "556.ogg",
+    "teil": 6
+  },
+  {
+    "id": 557,
+    "wort": "daraufhin",
+    "grammatik": "",
+    "beispiel": "Er fiel bei der Aufnahmeprüfung durch. Daraufhin bewarb er sich sofort an einer anderen Hochschule.",
+    "lektion": 9,
+    "audio": "557.ogg",
+    "teil": 6
+  },
+  {
+    "id": 558,
+    "wort": "währenddessen",
+    "grammatik": "",
+    "beispiel": "Er schaute sich einen Film am Fernsehen an. Währenddessen kochte seine Frau das Abendessen.",
+    "lektion": 9,
+    "audio": "558.ogg",
+    "teil": 6
+  },
+  {
+    "id": 559,
+    "wort": "allerdings",
+    "grammatik": "",
+    "beispiel": "Sie begann vor zwei Jahren ein Medizinstudium. Allerdings brach sie es nach einem Semester ab.",
+    "lektion": 9,
+    "audio": "559.ogg",
+    "teil": 6
+  },
+  {
+    "id": 560,
+    "wort": "dagegen",
+    "grammatik": "",
+    "beispiel": "Er unternimmt regelmässig Hochgebirgswanderungen. Dagegen sind meine Spaziergänge harmlos.",
+    "lektion": 9,
+    "audio": "560.ogg",
+    "teil": 6
+  },
+  {
+    "id": 561,
+    "wort": "gleichzeitig",
+    "grammatik": "",
+    "beispiel": "Ich studiere Soziale Arbeit. Gleichzeitig arbeite ich zu 60 Prozent.",
+    "lektion": 9,
+    "audio": "561.ogg",
+    "teil": 6
+  },
+  {
+    "id": 562,
+    "wort": "vielmehr",
+    "grammatik": "",
+    "beispiel": "Musikalisch zu sein genügt nicht. Vielmehr ist tägliches intensives Üben grundlegend wichtig.",
+    "lektion": 9,
+    "audio": "562.ogg",
+    "teil": 6
+  },
+  {
+    "id": 563,
+    "wort": "Leseratte",
+    "grammatik": "",
+    "beispiel": "Dank ihrer lesefreudigen Eltern wurde auch sie zur Leseratte.",
+    "lektion": 9,
+    "audio": "563.opus",
+    "teil": 7
+  },
+  {
+    "id": 564,
+    "wort": "sich auftun",
+    "grammatik": "tut sich auf, tat sich auf, hat sich aufgetan",
+    "beispiel": "Als sie lesen lernte, tat sich ihr eine riesige, bunte, unbekannte Welt auf.",
+    "lektion": 9,
+    "audio": "564.opus",
+    "teil": 7
+  },
+  {
+    "id": 565,
+    "wort": "eigen",
+    "grammatik": "",
+    "beispiel": "Der eigene Film, der beim Lesen entsteht, ist immer besser, großartiger, schöner.",
+    "lektion": 9,
+    "audio": "565.opus",
+    "teil": 7
+  },
+  {
+    "id": 566,
+    "wort": "unvermeidlich",
+    "grammatik": "",
+    "beispiel": "Buchverfilmungen führen zu unvermeidlicher Enttäuschung des treuen Lesers.",
+    "lektion": 9,
+    "audio": "566.opus",
+    "teil": 7
+  },
+  {
+    "id": 567,
+    "wort": "auslesen",
+    "grammatik": "wie fertig lesen",
+    "beispiel": "Ein tolles Buch ausgelesen zu haben, ist ein Abschied der besonderen Art.",
+    "lektion": 9,
+    "audio": "567.opus",
+    "teil": 7
+  },
+  {
+    "id": 568,
+    "wort": "Herzklopfen",
+    "grammatik": "das Herzklopfen",
+    "beispiel": "Mit Herzklopfen erwarten die Leser den Fortgang der Ereignisse.",
+    "lektion": 9,
+    "audio": "568.opus",
+    "teil": 7
+  },
+  {
+    "id": 569,
+    "wort": "vorlesen",
+    "grammatik": "liest vor, las vor, hat vorgelesen",
+    "beispiel": "Beim Vorlesen verhilft man einer Geschichte zu einem virtuellen Leben im Raum.",
+    "lektion": 9,
+    "audio": "569.opus",
+    "teil": 7
+  },
+  {
+    "id": 570,
+    "wort": "zwischen den Zeilen lesen",
+    "grammatik": "",
+    "beispiel": "Du musst das Unausgesprochene erkennen, also zwischen den Zeilen lesen.",
+    "lektion": 9,
+    "audio": "570.opus",
+    "teil": 7
+  },
+  {
+    "id": 571,
+    "wort": "gebären",
+    "grammatik": "gebärt, gebar, hat geboren",
+    "beispiel": "Siegfried Lenz wurde 1926 in Ostpreußen geboren.",
+    "lektion": 9,
+    "audio": "571.opus",
+    "teil": 8
+  },
+  {
+    "id": 572,
+    "wort": "Gegenwart",
+    "grammatik": "die",
+    "beispiel": "Er ist einer der bedeutendsten und meistgelesenen deutschsprachigen Autoren der Nachkriegszeit.",
+    "lektion": 9,
+    "audio": "572.opus",
+    "teil": 8
+  },
+  {
+    "id": 573,
+    "wort": "Habicht",
+    "grammatik": "der Habicht / die Habichte",
+    "beispiel": "Nach \"Es waren Habichte in der Luft\" arbeitete er als freier Schriftsteller.",
+    "lektion": 9,
+    "audio": "573.opus",
+    "teil": 8
+  },
+  {
+    "id": 574,
+    "wort": "sich auszeichnen",
+    "grammatik": "durch mit Akkusativ",
+    "beispiel": "Seine Romane zeichnen sich durch Humor und eine kritische Auseinandersetzung mit gesellschaftspolitischen Themen aus.",
+    "lektion": 9,
+    "audio": "574.opus",
+    "teil": 8
+  },
+  {
+    "id": 575,
+    "wort": "erscheinen",
+    "grammatik": "erscheint, erschien, ist erschienen",
+    "beispiel": "Sein erfolgreichster Roman \"Die Deutschstunde\" erschien 1968.",
+    "lektion": 9,
+    "audio": "575.opus",
+    "teil": 8
+  },
+  {
+    "id": 576,
+    "wort": "humoristisch",
+    "grammatik": "",
+    "beispiel": "Sein humoristischer Erzählband \"So zärtlich war Suleyken\" war ein regelrechter Publikumserfolg.",
+    "lektion": 9,
+    "audio": "576.opus",
+    "teil": 8
+  },
+  {
+    "id": 577,
+    "wort": "übersetzen",
+    "grammatik": "übersetzt, übersetzte, hat übersetzt",
+    "beispiel": "Das Buch wurde in 22 Sprachen übersetzt und erfolgreich verfilmt.",
+    "lektion": 9,
+    "audio": "577.opus",
+    "teil": 8
+  },
+  {
+    "id": 578,
+    "wort": "übertrieben",
+    "grammatik": "",
+    "beispiel": "Im Roman geht es um das übertriebene Pflichtgefühl eines Polizisten im Dritten Reich.",
+    "lektion": 9,
+    "audio": "578.opus",
+    "teil": 8
+  },
+  {
+    "id": 579,
+    "wort": "Konditionalsatz",
+    "grammatik": "..=uneingeleiteter Konditionalsatz",
+    "beispiel": "Wenn du genug früh kommst, dann können wir uns noch gemeinsam vorbereiten. Kommst du genug früh, dann können wir uns noch gemeinsam vorbereiten.",
+    "lektion": 10,
+    "audio": "579.opus",
+    "teil": 1
+  },
+  {
+    "id": 580,
+    "wort": "genau genommen",
+    "grammatik": "..=verkürzter Konditionalsatz",
+    "beispiel": "Genau genommen./ Wenn man es genau nimmt, besteht unser Gehirn aus drei Hauptsystemen.",
+    "lektion": 10,
+    "audio": "580.opus",
+    "teil": 1
+  },
+  {
+    "id": 581,
+    "wort": "zerfallen",
+    "grammatik": "zerfällt, zerfiel, ist zerfallen",
+    "beispiel": "Ohne die bindende Kraft unseres Gedächtnisses zerfiele unser Bewusstsein in Einzelteile.",
+    "lektion": 10,
+    "audio": "581.opus",
+    "teil": 1
+  },
+  {
+    "id": 582,
+    "wort": "Hirn",
+    "grammatik": "das Hirn, die Hirne",
+    "beispiel": "Unser Hirn besteht aus etwa 100 Milliarden Nervenzellen.",
+    "lektion": 10,
+    "audio": "582.opus",
+    "teil": 1
+  },
+  {
+    "id": 583,
+    "wort": "zusammenschweissen",
+    "grammatik": "schweisst, schweisste, hat zusammengeschweisst",
+    "beispiel": "Je häufiger sich das Erlebnis wiederholt, desto stärker wird das Neuronennetz zusammengeschweisst.",
+    "lektion": 10,
+    "audio": "583.opus",
+    "teil": 1
+  },
+  {
+    "id": 584,
+    "wort": "geistig",
+    "grammatik": "",
+    "beispiel": "In Sekundenschnelle entsteht das Bild eines Balls vor unserem geistigen Auge.",
+    "lektion": 10,
+    "audio": "584.opus",
+    "teil": 1
+  },
+  {
+    "id": 585,
+    "wort": "bewusst",
+    "grammatik": "",
+    "beispiel": "Unser Gehirn erinnert sich an viel mehr, als uns bewusst ist.",
+    "lektion": 10,
+    "audio": "585.opus",
+    "teil": 1
+  },
+  {
+    "id": 586,
+    "wort": "dauerhaft",
+    "grammatik": "",
+    "beispiel": "Je stärker unsere emotionale Beteiligung, desto dauerhafter die Speicherung.",
+    "lektion": 10,
+    "audio": "586.opus",
+    "teil": 1
+  },
+  {
+    "id": 587,
+    "wort": "Gebiet",
+    "grammatik": "das, Gebiete",
+    "beispiel": "Algebra ist ein Teilgebiet der Mathematik.",
+    "lektion": 10,
+    "audio": "587.ogg",
+    "teil": 2
+  },
+  {
+    "id": 588,
+    "wort": "abweichend",
+    "grammatik": "",
+    "beispiel": "Die beiden haben voneinander abweichende Vorstellungen von einer Idealbeziehung.",
+    "lektion": 10,
+    "audio": "588.ogg",
+    "teil": 2
+  },
+  {
+    "id": 589,
+    "wort": "absichtlich",
+    "grammatik": "",
+    "beispiel": "Hast du das Glas absichtlich oder versehentlich umgestossen?",
+    "lektion": 10,
+    "audio": "589.ogg",
+    "teil": 2
+  },
+  {
+    "id": 590,
+    "wort": "folgerichtig",
+    "grammatik": "",
+    "beispiel": "Nach alle den unerfreulichen Vorkommnissen scheint uns seine Kündigung folgerichtig.",
+    "lektion": 10,
+    "audio": "590.ogg",
+    "teil": 2
+  },
+  {
+    "id": 591,
+    "wort": "aufdecken",
+    "grammatik": "deckt, deckte, hat aufgedeckt",
+    "beispiel": "Es gelang Matthäi nicht, den Mordfall aufzudecken.",
+    "lektion": 10,
+    "audio": "591.ogg",
+    "teil": 2
+  },
+  {
+    "id": 592,
+    "wort": "Anschein",
+    "grammatik": "der",
+    "beispiel": "Er erweckte den Anschein, grosses Interesse an der ausgeschriebenen Stelle zu haben.",
+    "lektion": 10,
+    "audio": "592.ogg",
+    "teil": 2
+  },
+  {
+    "id": 593,
+    "wort": "Vorgang",
+    "grammatik": "der, Vorgänge",
+    "beispiel": "Im Text wird der Vorgang des Vergessens beschrieben.",
+    "lektion": 10,
+    "audio": "593.ogg",
+    "teil": 2
+  },
+  {
+    "id": 594,
+    "wort": "sich merken",
+    "grammatik": "merkt sich, merkte sich, hat sich gemerkt",
+    "beispiel": "Beim Vorgang des Merkens spielen Gefühle eine grosse Rolle.",
+    "lektion": 10,
+    "audio": "594.ogg",
+    "teil": 2
+  },
+  {
+    "id": 595,
+    "wort": "Verlass",
+    "grammatik": "der",
+    "beispiel": "Auf unser Gedächtnis ist nicht immer Verlass.",
+    "lektion": 10,
+    "audio": "595.ogg",
+    "teil": 3
+  },
+  {
+    "id": 596,
+    "wort": "Verfassung",
+    "grammatik": "die",
+    "beispiel": "Die körperliche Verfassung spielt im Moment des Erinnerns eine wichtige Rolle.",
+    "lektion": 10,
+    "audio": "596.ogg",
+    "teil": 3
+  },
+  {
+    "id": 597,
+    "wort": "sich erinnern",
+    "grammatik": "an + Akkusativ",
+    "beispiel": "Ein glücklicher Mensch wird sich eher an gute Erlebnisse erinnern.",
+    "lektion": 10,
+    "audio": "597.ogg",
+    "teil": 3
+  },
+  {
+    "id": 598,
+    "wort": "Streich",
+    "grammatik": "der, Streiche",
+    "beispiel": "Manchmal spielt das Gedächtnis uns einen Streich.",
+    "lektion": 10,
+    "audio": "598.ogg",
+    "teil": 3
+  },
+  {
+    "id": 599,
+    "wort": "behalten",
+    "grammatik": "behält, behielt, hat behalten",
+    "beispiel": "Unser Gedächtnis behält angenehme Eindrücke eher in Erinnerung.",
+    "lektion": 10,
+    "audio": "599.ogg",
+    "teil": 3
+  },
+  {
+    "id": 600,
+    "wort": "verblassen",
+    "grammatik": "verblasst, verblasste, ist verblasst",
+    "beispiel": "Negative Erinnerungen verblassen leichter.",
+    "lektion": 10,
+    "audio": "600.ogg",
+    "teil": 3
+  },
+  {
+    "id": 601,
+    "wort": "hinterlassen",
+    "grammatik": "hinterlässt, hinterliess, hat hinterlassen",
+    "beispiel": "Was zum ersten Mal passiert, hinterlässt den stärksten Eindruck.",
+    "lektion": 10,
+    "audio": "601.ogg",
+    "teil": 3
+  },
+  {
+    "id": 602,
+    "wort": "Zeugenaussage",
+    "grammatik": "die, Aussagen",
+    "beispiel": "Zeugenaussagen vor Gericht können problematisch sein.",
+    "lektion": 10,
+    "audio": "602.ogg",
+    "teil": 3
+  },
+  {
+    "id": 603,
+    "wort": "Modalitätsverb «sein» (können)",
+    "grammatik": "",
+    "beispiel": "Das Missverständnis ist schnell aufzuklären (kann schnell aufgeklärt werden).",
+    "lektion": 10,
+    "audio": "603.ogg",
+    "teil": 4
+  },
+  {
+    "id": 604,
+    "wort": "Modalitätsverb «sein» (müssen)",
+    "grammatik": "",
+    "beispiel": "Das Asylrecht ist zu respektiere (muss respektiert werden).",
+    "lektion": 10,
+    "audio": "604.ogg",
+    "teil": 4
+  },
+  {
+    "id": 605,
+    "wort": "Modalitätsverb «haben» + nicht",
+    "grammatik": "",
+    "beispiel": "Du hast hier nichts zu kritisieren (darfst hier nichts kritisieren).",
+    "lektion": 10,
+    "audio": "605.ogg",
+    "teil": 4
+  },
+  {
+    "id": 606,
+    "wort": "Modalitätsverb «haben»",
+    "grammatik": "",
+    "beispiel": "Er hat etwas zu beichten (muss etwas beichten).",
+    "lektion": 10,
+    "audio": "606.ogg",
+    "teil": 4
+  },
+  {
+    "id": 607,
+    "wort": "Modalitätsverb «nicht brauchen»",
+    "grammatik": "",
+    "beispiel": "Du brauchst dich nicht zu entschuldigen (musst dich nicht entschuldigen).",
+    "lektion": 10,
+    "audio": "607.ogg",
+    "teil": 4
+  },
+  {
+    "id": 608,
+    "wort": "Modalitätsverb «scheinen»",
+    "grammatik": "",
+    "beispiel": "Es scheint sich um eine Verwechslung zu handeln. (Anscheinend handelt es sich um eine Verwechslung).",
+    "lektion": 10,
+    "audio": "608.ogg",
+    "teil": 4
+  },
+  {
+    "id": 609,
+    "wort": "Modalitätsverb «drohen»",
+    "grammatik": "",
+    "beispiel": "Die Firma droht Bankrott zu gehen (ist in Gefahr, Bankrott zu gehen).",
+    "lektion": 10,
+    "audio": "609.ogg",
+    "teil": 4
+  },
+  {
+    "id": 610,
+    "wort": "Modalitätsverb «verstehen/wissen»",
+    "grammatik": "",
+    "beispiel": "Er versteht die Leute zu überzeugen (kann die Leute überzeugen).",
+    "lektion": 10,
+    "audio": "610.ogg",
+    "teil": 4
+  },
+  {
+    "id": 611,
+    "wort": "hinweglesen",
+    "grammatik": "über + Akkusativ",
+    "beispiel": "Lies zunächst über unbekannte Wörter hinweg!",
+    "lektion": 10,
+    "audio": "611.ogg",
+    "teil": 5
+  },
+  {
+    "id": 612,
+    "wort": "erschliessen",
+    "grammatik": "erschliesst, erschloss, hat erschlossen",
+    "beispiel": "Schlage die Übersetzung erst nach, wenn du die Bedeutung nicht aus dem Kontext erschliessen kannst.",
+    "lektion": 10,
+    "audio": "612.ogg",
+    "teil": 5
+  },
+  {
+    "id": 613,
+    "wort": "leiden",
+    "grammatik": "an + Dativ",
+    "beispiel": "Die Grossmutter litt im Alter an Demenz.",
+    "lektion": 10,
+    "audio": "613.ogg",
+    "teil": 5
+  },
+  {
+    "id": 614,
+    "wort": "Angst",
+    "grammatik": "vor + Dativ die, Ängste",
+    "beispiel": "Ich hatte keine Angst vor dem Springen, denn ich konnte gut schwimmen.",
+    "lektion": 10,
+    "audio": "614.ogg",
+    "teil": 5
+  },
+  {
+    "id": 615,
+    "wort": "schmeicheln",
+    "grammatik": "schmeichelt, schmeichelte, hat geschmeichelt",
+    "beispiel": "Ob ihres Lobes fühlte ich mich geschmeichelt.",
+    "lektion": 10,
+    "audio": "615.ogg",
+    "teil": 5
+  },
+  {
+    "id": 616,
+    "wort": "aus den Augen lassen",
+    "grammatik": "",
+    "beispiel": "Kleine Kinder darf man nicht aus den Augen lassen.",
+    "lektion": 10,
+    "audio": "616.ogg",
+    "teil": 5
+  },
+  {
+    "id": 617,
+    "wort": "sich beherrschen",
+    "grammatik": "beherrscht sich, beherrschte sich, hat sich beherrscht",
+    "beispiel": "Ich musste mich beherrschen, nicht laut herauszulachen.",
+    "lektion": 10,
+    "audio": "617.ogg",
+    "teil": 5
+  },
+  {
+    "id": 618,
+    "wort": "überhandnehmen",
+    "grammatik": "nimmt, nahm, hat überhandgenommen",
+    "beispiel": "In den Kartoffelbeeten nahm der Kartoffelkäfer überhand.",
+    "lektion": 10,
+    "audio": "618.ogg",
+    "teil": 5
+  },
+  {
+    "id": 619,
+    "wort": "Wertschätzung",
+    "grammatik": "die",
+    "beispiel": "Die fünfziger Jahre geniessen in der Öffentlichkeit eine sehr unterschiedliche Wertschätzung.",
+    "lektion": 10,
+    "audio": "619.ogg",
+    "teil": 6
+  },
+  {
+    "id": 620,
+    "wort": "erstreben",
+    "grammatik": "",
+    "beispiel": "Die Menschen erstrebten in erster Linie Ruhe und Sicherheit.",
+    "lektion": 10,
+    "audio": "620.ogg",
+    "teil": 6
+  },
+  {
+    "id": 621,
+    "wort": "Nachholbedarf",
+    "grammatik": "der",
+    "beispiel": "Es herrschte ein grosser Nachholbedarf an Hausrat.",
+    "lektion": 10,
+    "audio": "621.ogg",
+    "teil": 6
+  },
+  {
+    "id": 622,
+    "wort": "Jahrzehnt",
+    "grammatik": "",
+    "beispiel": "Die fünfziger Jahre gelten als Jahrzehnt des Sparens.",
+    "lektion": 10,
+    "audio": "622.ogg",
+    "teil": 6
+  },
+  {
+    "id": 623,
+    "wort": "verfügen",
+    "grammatik": "verfügt, verfügte, hat verfügt über + Akkusativ",
+    "beispiel": "Nur etwa ein Viertel aller deutschen Haushalte verfügte 1953 über einen Staubsauger.",
+    "lektion": 10,
+    "audio": "623.ogg",
+    "teil": 6
+  },
+  {
+    "id": 624,
+    "wort": "Hang",
+    "grammatik": "der zu + Dativ",
+    "beispiel": "Es herrschte ein ausgeprägter Hang zum Familiären und Privaten.",
+    "lektion": 10,
+    "audio": "624.ogg",
+    "teil": 6
+  },
+  {
+    "id": 625,
+    "wort": "sich betätigen",
+    "grammatik": "betätigt sich, betätigte sich, hat sich betätigt",
+    "beispiel": "Etwa ein Viertel betätigte sich regelmässig oder gelegentlich sportlich.",
+    "lektion": 10,
+    "audio": "625.ogg",
+    "teil": 6
+  },
+  {
+    "id": 626,
+    "wort": "darstellen",
+    "grammatik": "stellt dar, stellte dar, hat dargestellt",
+    "beispiel": "Der Vereinssport stellte in den fünfziger Jahren eine männliche Domäne dar.",
+    "lektion": 10,
+    "audio": "626.ogg",
+    "teil": 6
+  }
+]

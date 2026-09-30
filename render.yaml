@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: german-trainer-platform
+    runtime: python
+    plan: free
+    buildCommand: pip install -e .
+    startCommand: uvicorn germanhub.app:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.6

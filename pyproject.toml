@@ -1,0 +1,16 @@
+[project]
+name = "german-trainer-platform"
+version = "0.1.0"
+description = "German Trainer Platform: B2 (Sicher! B2) and C1 (Aspekte Neu) vocabulary trainers served by one FastAPI app"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
