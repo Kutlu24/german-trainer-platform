@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Two exam-focused German vocabulary trainers under one roof: B2 (Sicher! B2) and C1 (Aspekte Neu C1). Flashcards, quizzes, spaced repetition and audio — everything stays in your browser.">
   <title>German Trainer Platform — B2 &amp; C1 Vocabulary Trainers</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,26 +11,96 @@
   <link rel="stylesheet" href="/hub-static/style.css">
 </head>
 <body>
-  <header>
-    <h1>German Trainer Platform</h1>
-    <p>Two exam-focused vocabulary trainers — B2 and C1 — under one roof.</p>
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Deutsch B2 &middot; C1 &mdash; prüfungsfokussiert</span>
+      <h1>Two trainers.<br><em>One goal:</em> the exam.</h1>
+      <p class="hero-sub">Exam-focused vocabulary trainers for <strong>B2</strong> and <strong>C1</strong> — flashcards, quizzes,
+        spaced repetition and native audio. No account, no upload: your progress never leaves your browser.</p>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="/b2/">Start B2</a>
+        <a class="btn btn-red" href="/c1/">Start C1</a>
+      </div>
+      <dl class="stats">
+        <div class="stat"><dt>Words</dt><dd data-count="1505">0</dd></div>
+        <div class="stat"><dt>Audio clips</dt><dd data-count="1324">0</dd></div>
+        <div class="stat"><dt>Levels</dt><dd>B2 &middot; C1</dd></div>
+        <div class="stat"><dt>Sign-up</dt><dd class="stat-none">none</dd></div>
+      </dl>
+    </div>
   </header>
+
   <main>
-    <section class="tools">
-      <a class="card" href="/b2/">
-        <h2>Bist du sicher? — B2</h2>
-        <p>Flashcards and quizzes for roughly 1,000 B2 words from <em>Sicher! B2</em>, each with an example sentence and audio. Progress tracking included — everything stays in your browser.</p>
+    <section class="tools" aria-label="The two trainers">
+      <a class="card card-b2" href="/b2/">
+        <div class="card-top">
+          <span class="level-badge level-b2">B2</span>
+          <span class="card-meta">662 words &middot; 662 audio</span>
+        </div>
+        <h2>Bist du sicher? <span class="h2-sub">&mdash; Sicher! B2</span></h2>
+        <p>Flashcards and quizzes for 662 B2 words from <em>Sicher! B2</em>, each with grammar,
+          an example sentence and audio. Progress tracking included — everything stays in your browser.</p>
+        <ul class="card-feats">
+          <li>Flashcards &amp; multiple-choice</li>
+          <li>Grammar + example per word</li>
+          <li>Native audio for every entry</li>
+        </ul>
         <span class="go">Start B2 &rarr;</span>
       </a>
-      <a class="card" href="/c1/">
-        <h2>Deutsch C1 Vokabeltrainer</h2>
-        <p>Two modules, 1,505 C1 words: a full Vokabelliste and the Aspekte Neu C1 trainer. Flashcards, multiple-choice and typing quizzes, spaced repetition, daily goals and audio.</p>
+
+      <a class="card card-c1" href="/c1/">
+        <div class="card-top">
+          <span class="level-badge level-c1">C1</span>
+          <span class="card-meta">1,505 words &middot; 662 audio</span>
+        </div>
+        <h2>Deutsch C1 Vokabeltrainer <span class="h2-sub">&mdash; Aspekte Neu</span></h2>
+        <p>Two modules, 1,505 C1 words: the full Vokabelliste (626) and the Aspekte Neu C1 trainer (879).
+          Flashcards, multiple-choice and typing quizzes, spaced repetition, daily goals and audio.</p>
+        <ul class="card-feats">
+          <li>Vokabelliste + Aspekte Neu modules</li>
+          <li>Typing mode &amp; spaced repetition</li>
+          <li>Daily goal with streak tracking</li>
+        </ul>
         <span class="go">Start C1 &rarr;</span>
       </a>
     </section>
+
+    <section class="how" aria-label="How it works">
+      <h3>How it works</h3>
+      <ol class="how-steps">
+        <li><span class="how-num">1</span><div><strong>Pick your level</strong><span>B2 for Sicher!, C1 for Vokabelliste &amp; Aspekte Neu.</span></div></li>
+        <li><span class="how-num">2</span><div><strong>Train daily</strong><span>Flashcards, choice and typing quizzes with spaced repetition.</span></div></li>
+        <li><span class="how-num">3</span><div><strong>Keep your streak</strong><span>Daily goals and progress — saved only in your browser.</span></div></li>
+      </ol>
+    </section>
   </main>
+
   <footer>
-    <p>German Trainer Platform &mdash; B2 &middot; C1</p>
+    <p>German Trainer Platform &mdash; B2 &middot; C1 &mdash; <em>Alles Gute bei den Prüfungen!</em></p>
   </footer>
+
+<script>
+  /* Count-up for the stat numbers — respects prefers-reduced-motion. */
+  (function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.stat dd[data-count]').forEach(function (el) {
+        el.textContent = Number(el.dataset.count).toLocaleString('en-US');
+      });
+      return;
+    }
+    var els = document.querySelectorAll('.stat dd[data-count]');
+    var start = null, DURATION = 1100;
+    var step = function (ts) {
+      if (!start) start = ts;
+      var p = Math.min((ts - start) / DURATION, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      els.forEach(function (el) {
+        el.textContent = Math.round(Number(el.dataset.count) * eased).toLocaleString('en-US');
+      });
+      if (p < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  })();
+</script>
 </body>
 </html>
