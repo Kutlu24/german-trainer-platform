@@ -3,8 +3,20 @@ services:
     name: german-trainer-platform
     runtime: python
     plan: free
+    # my-essay-tutor is pulled from GitHub (private repo -> Render's GitHub
+    # app provides the token automatically for same-account private repos).
     buildCommand: pip install -e .
     startCommand: uvicorn germanhub.app:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: PYTHON_VERSION
         value: 3.12.6
+      # Essay Tutor grading backend (GLM) — only /essay needs these.
+      - key: GRADING_PROVIDER
+        value: glm
+      - key: GLM_API_KEY
+        sync: false
+      # Essay Tutor OCR backend (Gemini vision) — only /essay needs these.
+      - key: OCR_PROVIDER
+        value: gemini
+      - key: GEMINI_API_KEY
+        sync: false

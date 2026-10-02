@@ -1,16 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "german-trainer-platform"
-version = "0.1.0"
-description = "German Trainer Platform: B2 (Sicher! B2) and C1 (Aspekte Neu) vocabulary trainers served by one FastAPI app"
+version = "0.2.0"
+description = "One FastAPI app hosting the B2 and C1 German vocabulary trainers plus the Essay Tutor."
 requires-python = ">=3.11"
 dependencies = [
     "fastapi>=0.115",
     "uvicorn[standard]>=0.30",
+    "my-essay-tutor @ git+https://github.com/Kutlu24/my-essay-tutor.git",
 ]
 
-[build-system]
-requires = ["setuptools>=68"]
-build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = ["src"]
