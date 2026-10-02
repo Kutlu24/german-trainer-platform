@@ -7,29 +7,30 @@
   <title>German Trainer Platform — B2, C1, Essay &amp; Grammar</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Noto+Sans+Armenian:wght@400;600&family=Noto+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/hub-static/style.css">
 </head>
 <body>
   <header class="hero">
     <div class="hero-inner">
-      <span class="hero-eyebrow">Deutsch B2 &middot; C1 &middot; Essay &middot; Grammatik &mdash; prüfungsfokussiert</span>
-      <h1>Four tools.<br><em>One goal:</em> the exam.</h1>
-      <p class="hero-sub">Exam-focused vocabulary trainers for <strong>B2</strong> and <strong>C1</strong> — flashcards, quizzes,
+      <span class="hero-eyebrow" data-i18n="eyebrow">Deutsch B2 &middot; C1 &middot; Essay &middot; Grammatik &mdash; exam-focused</span>
+      <h1 data-i18n="h1">Four tools.<br><em>One goal:</em> the exam.</h1>
+      <p class="hero-sub" data-i18n="sub">Exam-focused vocabulary trainers for <strong>B2</strong> and <strong>C1</strong> — flashcards, quizzes,
         spaced repetition and native audio — plus an <strong>AI essay tutor</strong> and a <strong>grammar reference</strong>.
         No account, no upload: your progress never leaves your browser.</p>
       <div class="hero-cta">
-        <a class="btn btn-gold" href="/b2/">Start B2</a>
-        <a class="btn btn-red" href="/c1/">Start C1</a>
-        <a class="btn btn-green" href="/essay/">Essay Tutor</a>
-        <a class="btn btn-blue" href="/grammatik/">Grammatik</a>
+        <a class="btn btn-gold" href="/b2/" data-i18n="ctaB2">Start B2</a>
+        <a class="btn btn-red" href="/c1/" data-i18n="ctaC1">Start C1</a>
+        <a class="btn btn-green" href="/essay/" data-i18n="ctaEssay">Essay Tutor</a>
+        <a class="btn btn-blue" href="/grammatik/" data-i18n="ctaGram">Grammatik</a>
       </div>
       <dl class="stats">
-        <div class="stat"><dt>Words</dt><dd data-count="1505">0</dd></div>
-        <div class="stat"><dt>Audio clips</dt><dd data-count="1324">0</dd></div>
-        <div class="stat"><dt>Tools</dt><dd>4</dd></div>
-        <div class="stat"><dt>Sign-up</dt><dd class="stat-none">none</dd></div>
+        <div class="stat"><dt data-i18n="statWords">Words</dt><dd data-count="1505">0</dd></div>
+        <div class="stat"><dt data-i18n="statAudio">Audio clips</dt><dd data-count="1324">0</dd></div>
+        <div class="stat"><dt data-i18n="statTools">Tools</dt><dd>4</dd></div>
+        <div class="stat"><dt data-i18n="statSignup">Sign-up</dt><dd class="stat-none" data-i18n="statNone">none</dd></div>
       </dl>
+      <button class="btn-lang" id="btn-lang" type="button">&bull;</button>
     </div>
   </header>
 
@@ -38,81 +39,100 @@
       <a class="card card-b2" href="/b2/">
         <div class="card-top">
           <span class="level-badge level-b2">B2</span>
-          <span class="card-meta">662 words &middot; 662 audio</span>
+          <span class="card-meta" data-i18n="b2meta">662 words &middot; 662 audio</span>
         </div>
-        <h2>Bist du sicher? <span class="h2-sub">&mdash; Sicher! B2</span></h2>
-        <p>Flashcards and quizzes for 662 B2 words from <em>Sicher! B2</em>, each with grammar,
+        <h2>Bist du sicher? <span class="h2-sub" data-i18n="b2sub">&mdash; Sicher! B2</span></h2>
+        <p data-i18n="b2desc">Flashcards and quizzes for 662 B2 words from <em>Sicher! B2</em>, each with grammar,
           an example sentence and audio. Progress tracking included — everything stays in your browser.</p>
         <ul class="card-feats">
-          <li>Flashcards &amp; multiple-choice</li>
-          <li>Grammar + example per word</li>
-          <li>Native audio for every entry</li>
+          <li data-i18n="b2f1">Flashcards &amp; multiple-choice</li>
+          <li data-i18n="b2f2">Grammar + example per word</li>
+          <li data-i18n="b2f3">Native audio for every entry</li>
         </ul>
-        <span class="go">Start B2 &rarr;</span>
+        <span class="go" data-i18n="b2go">Start B2 &rarr;</span>
       </a>
 
       <a class="card card-c1" href="/c1/">
         <div class="card-top">
           <span class="level-badge level-c1">C1</span>
-          <span class="card-meta">1,505 words &middot; 662 audio</span>
+          <span class="card-meta" data-i18n="c1meta">1,505 words &middot; 662 audio</span>
         </div>
-        <h2>Deutsch C1 Vokabeltrainer <span class="h2-sub">&mdash; Aspekte Neu</span></h2>
-        <p>Two modules, 1,505 C1 words: the full Vokabelliste (626) and the Aspekte Neu C1 trainer (879).
+        <h2>Deutsch C1 Vokabeltrainer <span class="h2-sub" data-i18n="c1sub">&mdash; Aspekte Neu</span></h2>
+        <p data-i18n="c1desc">Two modules, 1,505 C1 words: the full Vokabelliste (626) and the Aspekte Neu C1 trainer (879).
           Flashcards, multiple-choice and typing quizzes, spaced repetition, daily goals and audio.</p>
         <ul class="card-feats">
-          <li>Vokabelliste + Aspekte Neu modules</li>
-          <li>Typing mode &amp; spaced repetition</li>
-          <li>Daily goal with streak tracking</li>
+          <li data-i18n="c1f1">Vokabelliste + Aspekte Neu modules</li>
+          <li data-i18n="c1f2">Typing mode &amp; spaced repetition</li>
+          <li data-i18n="c1f3">Daily goal with streak tracking</li>
         </ul>
-        <span class="go">Start C1 &rarr;</span>
+        <span class="go" data-i18n="c1go">Start C1 &rarr;</span>
       </a>
 
       <a class="card card-essay" href="/essay/">
         <div class="card-top">
           <span class="level-badge level-essay">Essay</span>
-          <span class="card-meta">AI feedback &middot; CEFR score</span>
+          <span class="card-meta" data-i18n="essayMeta">AI feedback &middot; CEFR score</span>
         </div>
-        <h2>Essay Tutor <span class="h2-sub">&mdash; AI writing feedback</span></h2>
-        <p>Upload a handwritten or typed German essay: OCR reads it, then the AI returns corrected text,
+        <h2>Essay Tutor <span class="h2-sub" data-i18n="essaySub">&mdash; AI writing feedback</span></h2>
+        <p data-i18n="essayDesc">Upload a handwritten or typed German essay: OCR reads it, then the AI returns corrected text,
           grammar explanations and a CEFR level score. Needs API keys — everything else runs here.</p>
         <ul class="card-feats">
-          <li>Handwriting &amp; typed essay upload</li>
-          <li>Corrected text + grammar notes</li>
-          <li>CEFR level assessment</li>
+          <li data-i18n="essayF1">Handwriting &amp; typed essay upload</li>
+          <li data-i18n="essayF2">Corrected text + grammar notes</li>
+          <li data-i18n="essayF3">CEFR level assessment</li>
         </ul>
-        <span class="go">Open Essay Tutor &rarr;</span>
+        <span class="go" data-i18n="essayGo">Open Essay Tutor &rarr;</span>
       </a>
 
       <a class="card card-grammatik" href="/grammatik/">
         <div class="card-top">
           <span class="level-badge level-grammatik">A1&ndash;C1</span>
-          <span class="card-meta">Reference &middot; exercises</span>
+          <span class="card-meta" data-i18n="gramMeta">Reference &middot; exercises</span>
         </div>
-        <h2>DeutschGrammatikMeister <span class="h2-sub">&mdash; grammar reference</span></h2>
-        <p>A compact German grammar reference: nouns, verbs and adjectives explained in Turkish,
+        <h2>DeutschGrammatikMeister <span class="h2-sub" data-i18n="gramSub">&mdash; grammar reference</span></h2>
+        <p data-i18n="gramDesc">A compact German grammar reference: nouns, verbs and adjectives explained in German,
           with practice exercises and a glossary — handy alongside the trainers.</p>
         <ul class="card-feats">
-          <li>Nouns, verbs, adjectives</li>
-          <li>Practice exercises</li>
-          <li>Glossary &amp; resources</li>
+          <li data-i18n="gramF1">Nouns, verbs, adjectives</li>
+          <li data-i18n="gramF2">Practice exercises</li>
+          <li data-i18n="gramF3">Glossary &amp; resources</li>
         </ul>
-        <span class="go">Open Grammatik &rarr;</span>
+        <span class="go" data-i18n="gramGo">Open Grammatik &rarr;</span>
       </a>
     </section>
 
     <section class="how" aria-label="How it works">
-      <h3>How it works</h3>
+      <h3 data-i18n="howTitle">How it works</h3>
       <ol class="how-steps">
-        <li><span class="how-num">1</span><div><strong>Pick your level</strong><span>B2 for Sicher!, C1 for Vokabelliste &amp; Aspekte Neu.</span></div></li>
-        <li><span class="how-num">2</span><div><strong>Train daily</strong><span>Flashcards, choice and typing quizzes with spaced repetition.</span></div></li>
-        <li><span class="how-num">3</span><div><strong>Keep your streak</strong><span>Daily goals and progress — saved only in your browser.</span></div></li>
+        <li><span class="how-num">1</span><div><strong data-i18n="s1t">Pick your level</strong><span data-i18n="s1s">B2 for Sicher!, C1 for Vokabelliste &amp; Aspekte Neu.</span></div></li>
+        <li><span class="how-num">2</span><div><strong data-i18n="s2t">Train daily</strong><span data-i18n="s2s">Flashcards, choice and typing quizzes with spaced repetition.</span></div></li>
+        <li><span class="how-num">3</span><div><strong data-i18n="s3t">Keep your streak</strong><span data-i18n="s3s">Daily goals and progress — saved only in your browser.</span></div></li>
       </ol>
     </section>
   </main>
 
   <footer>
-    <p>German Trainer Platform &mdash; B2 &middot; C1 &middot; Essay &middot; Grammatik &mdash; <em>Alles Gute bei den Prüfungen!</em></p>
+    <p data-i18n="footer">German Trainer Platform &mdash; B2 &middot; C1 &middot; Essay &middot; Grammatik &mdash; <em>Alles Gute bei den Prüfungen!</em></p>
   </footer>
+
+  <!-- Language picker — same first-visit flow as the Aspekte Neu trainer module -->
+  <div class="lang-overlay" id="lang-overlay" hidden>
+    <div class="lang-box">
+      <h2 class="lang-title">German Trainer Platform</h2>
+      <p class="lang-sub" data-i18n="pickerSub">Choose your language</p>
+      <div class="lang-grid">
+        <button class="lang-card" type="button" onclick="applyLang('en')"><span class="lang-flag">🇬🇧</span><span class="lang-name">English</span></button>
+        <button class="lang-card" type="button" onclick="applyLang('de')"><span class="lang-flag">🇩🇪</span><span class="lang-name">Deutsch</span></button>
+        <button class="lang-card" type="button" onclick="applyLang('tr')"><span class="lang-flag">🇹🇷</span><span class="lang-name">Türkçe</span></button>
+        <button class="lang-card" type="button" onclick="applyLang('zh')"><span class="lang-flag">🇨🇳</span><span class="lang-name">中文</span></button>
+        <button class="lang-card" type="button" onclick="applyLang('fa')"><span class="lang-flag">🇮🇷</span><span class="lang-name">فارسی</span></button>
+        <button class="lang-card" type="button" onclick="applyLang('hy')"><span class="lang-flag">🇦🇲</span><span class="lang-name">Հայերեն</span></button>
+        <button class="lang-card" type="button" onclick="applyLang('ku')"><span class="lang-flag">🕊️</span><span class="lang-name">Kurdî</span></button>
+        <button class="lang-card" type="button" onclick="applyLang('uk')"><span class="lang-flag">🇺🇦</span><span class="lang-name">Українська</span></button>
+      </div>
+      <p class="lang-hint" data-i18n="pickerHint">You can change it anytime.</p>
+    </div>
+  </div>
 
 <script>
   /* Count-up for the stat numbers — respects prefers-reduced-motion. */
@@ -135,6 +155,217 @@
       if (p < 1) requestAnimationFrame(step);
     };
     requestAnimationFrame(step);
+  })();
+
+  /* i18n — same languages as the Aspekte Neu trainer module (picker above). */
+  var I18N = {
+    en: { eyebrow: 'Deutsch B2 · C1 · Essay · Grammatik — exam-focused',
+      h1: 'Four tools.<br><em>One goal:</em> the exam.',
+      sub: 'Exam-focused vocabulary trainers for <strong>B2</strong> and <strong>C1</strong> — flashcards, quizzes, spaced repetition and native audio — plus an <strong>AI essay tutor</strong> and a <strong>grammar reference</strong>. No account, no upload: your progress never leaves your browser.',
+      ctaB2: 'Start B2', ctaC1: 'Start C1', ctaEssay: 'Essay Tutor', ctaGram: 'Grammatik',
+      statWords: 'Words', statAudio: 'Audio clips', statTools: 'Tools', statSignup: 'Sign-up', statNone: 'none',
+      b2meta: '662 words · 662 audio', b2sub: '— Sicher! B2',
+      b2desc: 'Flashcards and quizzes for 662 B2 words from <em>Sicher! B2</em>, each with grammar, an example sentence and audio. Progress tracking included — everything stays in your browser.',
+      b2f1: 'Flashcards & multiple-choice', b2f2: 'Grammar + example per word', b2f3: 'Native audio for every entry', b2go: 'Start B2 →',
+      c1meta: '1,505 words · 662 audio', c1sub: '— Aspekte Neu',
+      c1desc: 'Two modules, 1,505 C1 words: the full Vokabelliste (626) and the Aspekte Neu C1 trainer (879). Flashcards, multiple-choice and typing quizzes, spaced repetition, daily goals and audio.',
+      c1f1: 'Vokabelliste + Aspekte Neu modules', c1f2: 'Typing mode & spaced repetition', c1f3: 'Daily goal with streak tracking', c1go: 'Start C1 →',
+      essayMeta: 'AI feedback · CEFR score', essaySub: '— AI writing feedback',
+      essayDesc: 'Upload a handwritten or typed German essay: OCR reads it, then the AI returns corrected text, grammar explanations and a CEFR level score. Needs API keys — everything else runs here.',
+      essayF1: 'Handwriting & typed essay upload', essayF2: 'Corrected text + grammar notes', essayF3: 'CEFR level assessment', essayGo: 'Open Essay Tutor →',
+      gramMeta: 'Reference · exercises', gramSub: '— grammar reference',
+      gramDesc: 'A compact German grammar reference: nouns, verbs and adjectives explained in German, with practice exercises and a glossary — handy alongside the trainers.',
+      gramF1: 'Nouns, verbs, adjectives', gramF2: 'Practice exercises', gramF3: 'Glossary & resources', gramGo: 'Open Grammatik →',
+      howTitle: 'How it works',
+      s1t: 'Pick your level', s1s: 'B2 for Sicher!, C1 for Vokabelliste & Aspekte Neu.',
+      s2t: 'Train daily', s2s: 'Flashcards, choice and typing quizzes with spaced repetition.',
+      s3t: 'Keep your streak', s3s: 'Daily goals and progress — saved only in your browser.',
+      footer: 'German Trainer Platform — B2 · C1 · Essay · Grammatik — <em>Alles Gute bei den Prüfungen!</em>',
+      pickerSub: 'Choose your language', pickerHint: 'You can change it anytime.', changeBtn: '🌍 Language' },
+    de: { eyebrow: 'Deutsch B2 · C1 · Essay · Grammatik — prüfungsfokussiert',
+      h1: 'Vier Tools.<br><em>Ein Ziel:</em> die Prüfung.',
+      sub: 'Prüfungsfokussierte Vokabeltrainer für <strong>B2</strong> und <strong>C1</strong> — Karteikarten, Quizze, verteilte Wiederholung und Muttersprachler-Audio — dazu ein <strong>KI-Essay-Tutor</strong> und eine <strong>Grammatikreferenz</strong>. Kein Konto, kein Upload: Ihr Fortschritt verlässt niemals Ihren Browser.',
+      ctaB2: 'B2 starten', ctaC1: 'C1 starten', ctaEssay: 'Essay-Tutor', ctaGram: 'Grammatik',
+      statWords: 'Wörter', statAudio: 'Audiodateien', statTools: 'Tools', statSignup: 'Anmeldung', statNone: 'keine',
+      b2meta: '662 Wörter · 662 Audio', b2sub: '— Sicher! B2',
+      b2desc: 'Karteikarten und Quizze für 662 B2-Wörter aus <em>Sicher! B2</em>, jeweils mit Grammatik, Beispielsatz und Audio. Lernfortschritt inklusive — alles bleibt in Ihrem Browser.',
+      b2f1: 'Karteikarten & Multiple-Choice', b2f2: 'Grammatik + Beispiel pro Wort', b2f3: 'Muttersprachliches Audio für jeden Eintrag', b2go: 'B2 starten →',
+      c1meta: '1.505 Wörter · 662 Audio', c1sub: '— Aspekte Neu',
+      c1desc: 'Zwei Module, 1.505 C1-Wörter: die komplette Vokabelliste (626) und der Aspekte-Neu-C1-Trainer (879). Karteikarten, Multiple-Choice und Tipp-Quizze, verteilte Wiederholung, Tagesziele und Audio.',
+      c1f1: 'Vokabelliste- + Aspekte-Neu-Module', c1f2: 'Tipp-Modus & verteilte Wiederholung', c1f3: 'Tagesziel mit Streak-Tracking', c1go: 'C1 starten →',
+      essayMeta: 'KI-Feedback · CEFR-Score', essaySub: '— KI-Schreibfeedback',
+      essayDesc: 'Laden Sie einen handschriftlichen oder getippten deutschen Aufsatz hoch: Die OCR liest ihn ein, die KI liefert korrigierten Text, Grammatikerklärungen und ein CEFR-Niveaurating. Braucht API-Schlüssel — alles andere läuft hier.',
+      essayF1: 'Hand- & Maschinenschrift-Upload', essayF2: 'Korrigierter Text + Grammatiknotizen', essayF3: 'CEFR-Niveau-Einschätzung', essayGo: 'Essay-Tutor öffnen →',
+      gramMeta: 'Referenz · Übungen', gramSub: '— Grammatikreferenz',
+      gramDesc: 'Eine kompakte deutsche Grammatikreferenz: Nomen, Verben und Adjektive auf Deutsch erklärt, mit Übungslinks und Glossar — praktisch neben den Trainern.',
+      gramF1: 'Nomen, Verben, Adjektive', gramF2: 'Übungslinks', gramF3: 'Glossar & Ressourcen', gramGo: 'Grammatik öffnen →',
+      howTitle: 'So funktioniert\'s',
+      s1t: 'Level wählen', s1s: 'B2 für Sicher!, C1 für Vokabelliste & Aspekte Neu.',
+      s2t: 'Täglich üben', s2s: 'Karteikarten, Multiple-Choice und Tipp-Quizze mit verteilter Wiederholung.',
+      s3t: 'Streak halten', s3s: 'Tagesziele und Fortschritt — nur in Ihrem Browser gespeichert.',
+      footer: 'German Trainer Platform — B2 · C1 · Essay · Grammatik — <em>Alles Gute bei den Prüfungen!</em>',
+      pickerSub: 'Sprache wählen', pickerHint: 'Jederzeit änderbar.', changeBtn: '🌍 Sprache' },
+    tr: { eyebrow: 'Almanca B2 · C1 · Essay · Grammatik — sınav odaklı',
+      h1: 'Dört araç.<br><em>Tek hedef:</em> sınav.',
+      sub: '<strong>B2</strong> ve <strong>C1</strong> için sınav odaklı kelime antrenörleri — kartlar, testler, aralıklı tekrar ve anadili sesli — ayrıca bir <strong>yapay zekâ essay koçu</strong> ve <strong>gramer başvurusu</strong>. Hesap yok, yükleme yok: ilerlemeniz asla tarayıcınızdan çıkmaz.',
+      ctaB2: 'B2\'ye başla', ctaC1: 'C1\'e başla', ctaEssay: 'Essay Koçu', ctaGram: 'Gramer',
+      statWords: 'Kelime', statAudio: 'Ses kaydı', statTools: 'Araç', statSignup: 'Kayıt', statNone: 'yok',
+      b2meta: '662 kelime · 662 ses', b2sub: '— Sicher! B2',
+      b2desc: '<em>Sicher! B2</em>\'den 662 B2 kelimesi için kartlar ve testler; her kelimede gramer, örnek cümle ve ses. İlerleme takibi dahil — her şey tarayıcınızda kalır.',
+      b2f1: 'Kartlar & çoktan seçmeli', b2f2: 'Kelime başına gramer + örnek', b2f3: 'Her girdi için anadili sesi', b2go: 'B2\'ye başla →',
+      c1meta: '1.505 kelime · 662 ses', c1sub: '— Aspekte Neu',
+      c1desc: 'İki modül, 1.505 C1 kelimesi: tam Vokabelliste (626) ve Aspekte Neu C1 antrenörü (879). Kartlar, çoktan seçmeli ve yazma testleri, aralıklı tekrar, günlük hedefler ve ses.',
+      c1f1: 'Vokabelliste + Aspekte Neu modülleri', c1f2: 'Yazma modu & aralıklı tekrar', c1f3: 'Seri takipli günlük hedef', c1go: 'C1\'e başla →',
+      essayMeta: 'YZ geri bildirim · CEFR puanı', essaySub: '— YZ yazma geri bildirimi',
+      essayDesc: 'El yazısı ya da yazılı Almanca kompozisyon yükleyin: OCR okur, yapay zekâ düzeltilmiş metni, gramer açıklamalarını ve CEFR seviye puanını verir. API anahtarı gerekir — gerisi burada çalışır.',
+      essayF1: 'El yazısı & yazılı yükleme', essayF2: 'Düzeltilmiş metin + gramer notları', essayF3: 'CEFR seviye değerlendirmesi', essayGo: 'Essay Koçu\'nu aç →',
+      gramMeta: 'Başvuru · alıştırmalar', gramSub: '— gramer başvurusu',
+      gramDesc: 'Kompakt bir Almanca gramer başvurusu: isimler, fiiller ve sıfatlar Almanca açıklamalı, alıştırma bağlantıları ve sözlüklü — antrenörlerin yanında pratik.',
+      gramF1: 'İsimler, fiiller, sıfatlar', gramF2: 'Alıştırma bağlantıları', gramF3: 'Sözlük & kaynaklar', gramGo: 'Gramer\'i aç →',
+      howTitle: 'Nasıl çalışır',
+      s1t: 'Seviyeni seç', s1s: 'Sicher! için B2, Vokabelliste & Aspekte Neu için C1.',
+      s2t: 'Her gün çalış', s2s: 'Kartlar, seçme ve yazma testleriyle aralıklı tekrar.',
+      s3t: 'Serini koru', s3s: 'Günlük hedefler ve ilerleme — yalnızca tarayıcında saklanır.',
+      footer: 'German Trainer Platform — B2 · C1 · Essay · Grammatik — <em>Alles Gute bei den Prüfungen!</em>',
+      pickerSub: 'Dilini seç', pickerHint: 'Her zaman değiştirebilirsin.', changeBtn: '🌍 Dil' },
+    zh: { eyebrow: '德语 B2 · C1 · 写作 · 语法 — 备考导向',
+      h1: '四大工具。<br><em>共同目标：</em>通过考试。',
+      sub: '面向 <strong>B2</strong> 和 <strong>C1</strong> 考试的词汇训练器——卡片、测验、间隔重复和母语音频——另有<strong>人工智能写作教练</strong>和<strong>语法参考</strong>。无需注册，无需上传：您的学习进度只保存在浏览器中。',
+      ctaB2: '开始 B2', ctaC1: '开始 C1', ctaEssay: '写作教练', ctaGram: '语法',
+      statWords: '词汇', statAudio: '音频', statTools: '工具', statSignup: '注册', statNone: '无需',
+      b2meta: '662 词 · 662 音频', b2sub: '— Sicher! B2',
+      b2desc: '为《Sicher! B2》662 个 B2 词汇提供卡片和测验，每个词都配有语法、例句和音频。包含学习进度跟踪——一切都在您的浏览器中。',
+      b2f1: '卡片与选择题', b2f2: '每个词的语法+例句', b2f3: '每个词条的母语音频', b2go: '开始 B2 →',
+      c1meta: '1,505 词 · 662 音频', c1sub: '— Aspekte Neu',
+      c1desc: '两个模块，1505 个 C1 词汇：完整词汇表 (626) 和 Aspekte Neu C1 训练器 (879)。卡片、选择题、打字测验、间隔重复、每日目标和音频。',
+      c1f1: '词汇表 + Aspekte Neu 模块', c1f2: '打字模式与间隔重复', c1f3: '带连胜记录的每日目标', c1go: '开始 C1 →',
+      essayMeta: 'AI 反馈 · CEFR 评分', essaySub: '— AI 写作反馈',
+      essayDesc: '上传手写或打印的德语作文：OCR 识别后，AI 返回修改后的文本、语法讲解和 CEFR 等级评分。需要 API 密钥——其余都在这里运行。',
+      essayF1: '手写与打印作文上传', essayF2: '修改后的文本+语法笔记', essayF3: 'CEFR 等级评估', essayGo: '打开写作教练 →',
+      gramMeta: '参考 · 练习', gramSub: '— 语法参考',
+      gramDesc: '简明的德语语法参考：用德语讲解名词、动词和形容词，附练习链接和词汇表——是训练器的好帮手。',
+      gramF1: '名词、动词、形容词', gramF2: '练习链接', gramF3: '词汇表与资源', gramGo: '打开语法 →',
+      howTitle: '使用方法',
+      s1t: '选择级别', s1s: 'Sicher! 选 B2，词汇表与 Aspekte Neu 选 C1。',
+      s2t: '每天练习', s2s: '卡片、选择和打字测验，配合间隔重复。',
+      s3t: '保持连胜', s3s: '每日目标和进度——只保存在您的浏览器中。',
+      footer: 'German Trainer Platform — B2 · C1 · Essay · Grammatik — <em>Alles Gute bei den Prüfungen!</em>',
+      pickerSub: '选择语言', pickerHint: '随时可以更改。', changeBtn: '🌍 语言' },
+    fa: { eyebrow: 'آلمانی B2 · C1 · انشا · دستور زبان — آمادگی آزمون',
+      h1: 'چهار ابزار.<br><em>یک هدف:</em> آزمون.',
+      sub: 'واژه‌آموزهای آمادگی آزمون برای <strong>B2</strong> و <strong>C1</strong> — کارت، آزمون، تکرار فاصله‌دار و صدای بومی — به‌علاوه <strong>مربی انشای هوش مصنوعی</strong> و <strong>مرجع دستور زبان</strong>. بدون حساب، بدون آپلود: پیشرفت شما هرگز از مرورگرتان خارج نمی‌شود.',
+      ctaB2: 'شروع B2', ctaC1: 'شروع C1', ctaEssay: 'مربی انشا', ctaGram: 'دستور زبان',
+      statWords: 'واژه', statAudio: 'فایل صوتی', statTools: 'ابزار', statSignup: 'ثبت‌نام', statNone: 'بدون',
+      b2meta: '۶۶۲ واژه · ۶۶۲ صدا', b2sub: '— Sicher! B2',
+      b2desc: 'کارت و آزمون برای ۶۶۲ واژه B2 از <em>Sicher! B2</em>، هر کدام با دستور زبان، جمله نمونه و صدا. پیگیری پیشرفت هم دارد — همه‌چیز در مرورگر شما می‌ماند.',
+      b2f1: 'کارت و چهارگزینه‌ای', b2f2: 'دستور زبان + مثال برای هر واژه', b2f3: 'صدای بومی برای هر مدخل', b2go: 'شروع B2 →',
+      c1meta: '۱٬۵۰۵ واژه · ۶۶۲ صدا', c1sub: '— Aspekte Neu',
+      c1desc: 'دو ماژول، ۱۵۰۵ واژه C1: فهرست کامل واژه‌ها (۶۲۶) و واژه‌آموز Aspekte Neu C1 (۸۷۹). کارت، چهارگزینه‌ای و آزمون تایپ، تکرار فاصله‌دار، هدف روزانه و صدا.',
+      c1f1: 'ماژول‌های Vokabelliste + Aspekte Neu', c1f2: 'حالت تایپ و تکرار فاصله‌دار', c1f3: 'هدف روزانه با زنجیره روزها', c1go: 'شروع C1 →',
+      essayMeta: 'بازخورد هوش مصنوعی · نمره CEFR', essaySub: '— بازخورد نوشتاری هوش مصنوعی',
+      essayDesc: 'انشای آلمانی دست‌نویس یا تایپ‌شده بارگذاری کنید: OCR می‌خواند، سپس هوش مصنوعی متن اصلاح‌شده، توضیحات دستور زبان و نمره سطح CEFR می‌دهد. کلید API لازم است — بقیه اینجا کار می‌کند.',
+      essayF1: 'بارگذاری دست‌نویس و تایپی', essayF2: 'متن اصلاح‌شده + یادداشت‌های دستور زبان', essayF3: 'ارزیابی سطح CEFR', essayGo: 'باز کردن مربی انشا →',
+      gramMeta: 'مرجع · تمرین', gramSub: '— مرجع دستور زبان',
+      gramDesc: 'مرجع فشرده دستور زبان آلمانی: اسم، فعل و صفت به آلمانی توضیح داده شده، با پیوند تمرین و واژه‌نامه — در کنار واژه‌آموزها کاربردی است.',
+      gramF1: 'اسم، فعل، صفت', gramF2: 'پیوندهای تمرین', gramF3: 'واژه‌نامه و منابع', gramGo: 'باز کردن دستور زبان →',
+      howTitle: 'چگونه کار می‌کند',
+      s1t: 'سطح خود را انتخاب کنید', s1s: 'برای Sicher! سطح B2، برای Vokabelliste و Aspekte Neu سطح C1.',
+      s2t: 'هر روز تمرین کنید', s2s: 'کارت، آزمون‌های چهارگزینه‌ای و تایپ با تکرار فاصله‌دار.',
+      s3t: 'زنجیره‌تان را نگه دارید', s3s: 'هدف‌های روزانه و پیشرفت — فقط در مرورگر شما ذخیره می‌شود.',
+      footer: 'German Trainer Platform — B2 · C1 · Essay · Grammatik — <em>Alles Gute bei den Prüfungen!</em>',
+      pickerSub: 'زبان خود را انتخاب کنید', pickerHint: 'هر زمان می‌توانید تغییر دهید.', changeBtn: '🌍 زبان' },
+    hy: { eyebrow: 'Գերմաներեն B2 · C1 · շարադրություն · քերականություն — քննության վրա կենտրոնացած',
+      h1: 'Չորս գործիք։<br><em>Մեկ նպատակ՝</em> քննությունը։',
+      sub: 'Քննության ուղղված բառապաշարի մարզիչներ <strong>B2</strong>-ի և <strong>C1</strong>-ի համար — քարտեր, թեստեր, ընդհատվող կրկնություն և մայրենի ձայնագրություններ — նաև <strong>արհեստական բանականությամբ շարադրության մարզիչ</strong> և <strong>քերականության տեղեկատու</strong>։ Հաշիվ պետք չէ, վերբեռնում չէ՝ Ձեր առաջընթացը երբեք չի լքում Ձեր զննարկիչը։',
+      ctaB2: 'Սկսել B2', ctaC1: 'Սկսել C1', ctaEssay: 'Շարադրության մարզիչ', ctaGram: 'Քերականություն',
+      statWords: 'Բառ', statAudio: 'Ձայնագրություն', statTools: 'Գործիք', statSignup: 'Գրանցում', statNone: 'չկա',
+      b2meta: '662 բառ · 662 ձայն', b2sub: '— Sicher! B2',
+      b2desc: 'Քարտեր և թեստեր <em>Sicher! B2</em>-ի 662 բառի համար՝ ամեն բառի հետ քերականություն, օրինակելի նախադասություն և ձայն։ Առաջընթացի հետևումը ներառյալ — ամեն ինչ մնում է Ձեր զննարկիչում։',
+      b2f1: 'Քարտեր և ընտրանիով թեստեր', b2f2: 'Քերականություն + օրինակ ամեն բառի', b2f3: 'Մայրենի ձայն ամեն բառի համար', b2go: 'Սկսել B2 →',
+      c1meta: '1,505 բառ · 662 ձայն', c1sub: '— Aspekte Neu',
+      c1desc: 'Երկու մոդուլ, 1505 C1 բառ՝ ամբողջական բառացանկը (626) և Aspekte Neu C1 մարզիչը (879)։ Քարտեր, ընտրանիով և մուտքագրման թեստեր, ընդհատվող կրկնություն, օրական նպատակներ և ձայն։',
+      c1f1: 'Բառացանկի + Aspekte Neu մոդուլներ', c1f2: 'Մուտքագրման ռեժիմ և ընդհատվող կրկնություն', c1f3: 'Օրական նպատակ շարքի հետևմամբ', c1go: 'Սկսել C1 →',
+      essayMeta: 'ԱԻ հետադարձ · CEFR գնահատական', essaySub: '— ԱԻ գրավոր հետադարձ',
+      essayDesc: 'Վերբեռնեք ձեռագիր կամ մեքենագիր գերմաներեն շարադրություն՝ OCR-ը կարդում է, ապա արհեստական բանականությունը վերադարձնում ուղղված տեքստը, քերականության բացատրությունները և CEFR մակարդակի գնահատականը։ Անհրաժեշտ է API բանալի — մնացածն աշխատում է այստեղ։',
+      essayF1: 'Ձեռագիր և մեքենագիր վերբեռնում', essayF2: 'Ուղղված տեքստ + քերականական նշումներ', essayF3: 'CEFR մակարդակի գնահատում', essayGo: 'Բացել շարադրության մարզիչը →',
+      gramMeta: 'Տեղեկատու · վարժություններ', gramSub: '— քերականության տեղեկատու',
+      gramDesc: 'Գերմաներենի քերականության հակիրճ տեղեկատու՝ գոյականներ, բայեր և ածականներ գերմաներենով բացատրված, վարժությունների հղումներով և բառարանով — հարմար է մարզիչների կողքին։',
+      gramF1: 'Գոյականներ, բայեր, ածականներ', gramF2: 'Վարժությունների հղումներ', gramF3: 'Բառարան և ռեսուրսներ', gramGo: 'Բացել քերականությունը →',
+      howTitle: 'Ինչպես է աշխատում',
+      s1t: 'Ընտրեք մակարդակը', s1s: 'Sicher!-ի համար՝ B2, բառացանկի և Aspekte Neu-ի համար՝ C1։',
+      s2t: 'Մարզվեք ամեն օր', s2s: 'Քարտեր, ընտրանիով և մուտքագրման թեստեր՝ ընդհատվող կրկնությամբ։',
+      s3t: 'Պահեք Ձեր շարքը', s3s: 'Օրական նպատակներ և առաջընթաց — պահվում է միայն Ձեր զննարկիչում։',
+      footer: 'German Trainer Platform — B2 · C1 · Essay · Grammatik — <em>Alles Gute bei den Prüfungen!</em>',
+      pickerSub: 'Ընտրեք Ձեր լեզուն', pickerHint: 'Կարող եք փոխել ցանկացած պահի։', changeBtn: '🌍 Լեզու' },
+    ku: { eyebrow: 'Almanî B2 · C1 · nivîsar · rêziman — ji bo îmtîhanê',
+      h1: 'Çar amcar.<br><em>Yek armanc:</em> îmtîhan.',
+      sub: 'Amcarên peyvan ên <strong>B2</strong> û <strong>C1</strong> yê ji bo îmtîhanê — kart, pirs, dubarekirina bi navber û dengê zikmakî — zêde <strong>mamosteyê nivîsê yê AI</strong> û <strong>çavkanîya rêzimanê</strong>. Hesab tune, barKirin tune: pêşketina te ji geroka te derbason nake.',
+      ctaB2: 'B2 dest pê ke', ctaC1: 'C1 dest pê ke', ctaEssay: 'Mamosteyê nivîsê', ctaGram: 'Rêziman',
+      statWords: 'Peyv', statAudio: 'Deng', statTools: 'Amcar', statSignup: 'Qeyd', statNone: 'tune',
+      b2meta: '662 peyv · 662 deng', b2sub: '— Sicher! B2',
+      b2desc: 'Kart û pirs ji bo 662 peyvên B2 yên <em>Sicher! B2</em> — bi rêziman, hevgotin û deng re. Şopandina pêşketinê jî heye — her tişt di geroka te de dimîne.',
+      b2f1: 'Kart û pirjigor', b2f2: 'Rêziman + hevgotin ji bo her peyvê', b2f3: 'Dengê zikmakî ji bo her têketinê', b2go: 'B2 dest pê ke →',
+      c1meta: '1,505 peyv · 662 deng', c1sub: '— Aspekte Neu',
+      c1desc: 'Du modul, 1505 peyvên C1: lîsteya peyvan a temam (626) û mamosteyê Aspekte Neu C1 (879). Kart, pirjigor û pirsên nivîsînê, dubarekirina bi navber, arincê rojane û deng.',
+      c1f1: 'Modulên Vokabelliste + Aspekte Neu', c1f2: 'Moda nivîsînê û dubarekirina bi navber', c1f3: 'Arincê rojane bi şopandina rêzê', c1go: 'C1 dest pê ke →',
+      essayMeta: 'Pêşiya AI · xala CEFR', essaySub: '— pêşiya nivîsê ya AI',
+      essayDesc: 'Nivîsareka almanî ya destxet an jî makîne bar bike: OCR dixwîne, paşê AI nivîsa rastkirî, raveyên rêzimanê û xala asta CEFR dide. Kilîda API hewce ye — ya mayî li vir dixebite.',
+      essayF1: 'BarKirina destxet û makîneyê', essayF2: 'Nivîsa rastkirî + notên rêzimanê', essayF3: 'Nirxandina asta CEFR', essayGo: 'Mamosteyê nivîsê veke →',
+      gramMeta: 'Çavkanî · rahênan', gramSub: '— çavkanîya rêzimanê',
+      gramDesc: 'Çavkaniyeka rêzimanê ya almanî ya kurt: nav, lêker û reng bi almanî ravekirî, bi girêdanên rahênan û ferhengok — li kêleka mamosteyan bikêr.',
+      gramF1: 'Nav, lêker, reng', gramF2: 'Girêdanên rahênanê', gramF3: 'Ferhengok û çavkanî', gramGo: 'Rêzimanê veke →',
+      howTitle: 'Çawa dixebite',
+      s1t: 'Astê xwe hilbijêre', s1s: 'Ji bo Sicher! B2, ji bo lîsteya peyvan û Aspekte Neu C1.',
+      s2t: 'Her rojan pêz bimîne', s2s: 'Kart, pirsên bijarte û nivîsînê bi dubarekirina bi navber re.',
+      s3t: 'Rêza xwe biparêze', s3s: 'Arincên rojane û pêşketin — tenê di geroka te de tê hilanîn.',
+      footer: 'German Trainer Platform — B2 · C1 · Essay · Grammatik — <em>Alles Gute bei den Prüfungen!</em>',
+      pickerSub: 'Zimanê xwe hilbijêre', pickerHint: 'Dikarî her dem biguherînî.', changeBtn: '🌍 Ziman' },
+    uk: { eyebrow: 'Німецька B2 · C1 · есе · граматика — підготовка до іспиту',
+      h1: 'Чотири інструменти.<br><em>Одна мета:</em> іспит.',
+      sub: 'Лексичні тренажери для іспитів <strong>B2</strong> та <strong>C1</strong> — картки, тести, інтервальне повторення та звук від носіїв мови — а також <strong>ШІ-тренажер есе</strong> та <strong>довідник граматики</strong>. Без акаунта, без завантажень: ваш прогрес ніколи не залишає ваш браузер.',
+      ctaB2: 'Почати B2', ctaC1: 'Почати C1', ctaEssay: 'Тренажер есе', ctaGram: 'Граматика',
+      statWords: 'Слів', statAudio: 'Аудіо', statTools: 'Інструменти', statSignup: 'Реєстрація', statNone: 'немає',
+      b2meta: '662 слова · 662 аудіо', b2sub: '— Sicher! B2',
+      b2desc: 'Картки та тести для 662 слів рівня B2 з <em>Sicher! B2</em> — кожне слово з граматикою, прикладом та аудіо. Відстеження прогресу включено — усе залишається у вашому браузері.',
+      b2f1: 'Картки та тестові запитання', b2f2: 'Граматика + приклад до кожного слова', b2f3: 'Озвучка носієм для кожного запису', b2go: 'Почати B2 →',
+      c1meta: '1,505 слів · 662 аудіо', c1sub: '— Aspekte Neu',
+      c1desc: 'Два модулі, 1505 слів C1: повний словник (626) та тренажер Aspekte Neu C1 (879). Картки, тестові запитання та тести на введення, інтервальне повторення, денні цілі та аудіо.',
+      c1f1: 'Модулі Vokabelliste + Aspekte Neu', c1f2: 'Режим введення та інтервальне повторення', c1f3: 'Денна мета з відстеженням серії', c1go: 'Почати C1 →',
+      essayMeta: 'ШІ-зворотний зв\'язок · оцінка CEFR', essaySub: '— ШІ-зворотний зв\'язок з письма',
+      essayDesc: 'Завантажте рукописний або друкований німецький твір: OCR розпізнає його, а ШІ поверне виправлений текст, пояснення граматики та оцінку рівня CEFR. Потрібні API-ключі — решта працює тут.',
+      essayF1: 'Завантаження рукописного та друкованого тексту', essayF2: 'Виправлений текст + нотатки з граматики', essayF3: 'Оцінювання рівня CEFR', essayGo: 'Відкрити тренажер есе →',
+      gramMeta: 'Довідник · вправи', gramSub: '— довідник граматики',
+      gramDesc: 'Стислий довідник німецької граматики: іменники, дієслова та прикметники з поясненнями німецькою, посиланнями на вправи та словником — зручно поруч із тренажерами.',
+      gramF1: 'Іменники, дієслова, прикметники', gramF2: 'Посилання на вправи', gramF3: 'Словник та ресурси', gramGo: 'Відкрити граматику →',
+      howTitle: 'Як це працює',
+      s1t: 'Оберіть рівень', s1s: 'B2 для Sicher!, C1 для словника та Aspekte Neu.',
+      s2t: 'Займайтеся щодня', s2s: 'Картки, тестові запитання та тести на введення з інтервальним повторенням.',
+      s3t: 'Зберігайте свою серію', s3s: 'Денні цілі та прогрес — зберігаються лише у вашому браузері.',
+      footer: 'German Trainer Platform — B2 · C1 · Essay · Grammatik — <em>Alles Gute bei den Prüfungen!</em>',
+      pickerSub: 'Оберіть свою мову', pickerHint: 'Можна змінити будь-коли.', changeBtn: '🌍 Мова' }
+  };
+
+  function applyLang(id) {
+    var d = I18N[id] || I18N.en;
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var v = d[el.dataset.i18n];
+      if (v !== undefined) el.innerHTML = v;
+    });
+    document.documentElement.lang = id;
+    document.documentElement.dir = (id === 'fa') ? 'rtl' : 'ltr';
+    try { localStorage.setItem('hubSelectedLanguage', JSON.stringify(id)); } catch (e) {}
+    document.getElementById('lang-overlay').hidden = true;
+    document.getElementById('btn-lang').textContent = d.changeBtn;
+  }
+
+  function openLangPicker() { document.getElementById('lang-overlay').hidden = false; }
+  window.applyLang = applyLang;
+  document.getElementById('btn-lang').addEventListener('click', openLangPicker);
+
+  (function () {
+    var saved = null;
+    try { saved = JSON.parse(localStorage.getItem('hubSelectedLanguage')); } catch (e) {}
+    if (saved && I18N[saved]) applyLang(saved); else openLangPicker();
   })();
 </script>
 </body>
