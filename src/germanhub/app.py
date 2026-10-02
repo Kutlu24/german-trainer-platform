@@ -1,22 +1,28 @@
-"""German Trainer Platform - one FastAPI app hosting the B2 and C1 trainers.
+"""German Trainer Platform - one FastAPI app hosting the B2, C1 and essay tutors.
 
 Routes:
-    GET  /       -> hub page linking both levels
+    GET  /       -> hub page linking all three tools
     /b2/         -> "Bist du sicher?" B2 vocabulary trainer (Sicher! B2)
     /c1/         -> Deutsch C1 Vokabeltrainer (vokabelliste + Aspekte Neu C1)
+    /essay/      -> Essay Tutor (upload -> OCR -> grammar/CEFR grading; needs
+                    GLM_API_KEY / GEMINI_API_KEY to be set, everything else
+                    here works without keys)
 
-Both trainers are fully client-side; FastAPI only serves the static files
+The trainers are fully client-side; FastAPI only serves the static files
 (including the shared sesler/ audio banks) so fetch('...') paths resolve
-unchanged relative to each app's mount point.
+unchanged relative to each app's mount point. The essay tutor is a second
+FastAPI app mounted under /essay (its own /api/* routes and /ui frontend),
+so its fetch('/api/...') calls are rewritten once here, relative to /essay.
 Run with:
-    uvicorn site.app:app --host 0.0.0.0 --port $PORT
+    uvicorn germanhub.app:app --host 0.0.0.0 --port $PORT
 """
 from __future__ import annotations
 
 from pathlib import Path
+from typing import Any
 
 from fastapi import FastAPI
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 
 _ROOT = Path(__file__).resolve().parents[2]
@@ -45,3 +51,60 @@ if (_c1_dir / "index.html").exists():
     app.mount("/c1", StaticFiles(directory=str(_c1_dir), html=True), name="c1")
 
 app.mount("/hub-static", StaticFiles(directory=str(_STATIC_DIR)), name="hub-static")
+
+# ---------------------------------------------------------------- essay tutor
+# The standalone Essay Tutor app (my-essay-tutor repo), mounted in-process:
+# one Render service serves all three tools. Its frontend calls fetch('/api/..')
+# absolutely; served under /essay those would hit this hub instead, so it is
+# mounted together with a tiny rewriting shim: /essay/api/* -> its /api/*.
+def _mount_essay_tutor() -> None:
+    try:
+        from my_essay_tutor.api.app import app as essay_app  # type: ignore[import-not-found]
+
+        essay_app = essay_app  # keep the name for the shim closure
+    except ImportError:
+        return  # package not installed -> hub runs without the essay tool
+
+    from starlette.applications import ASGIApp
+    from starlette.requests import Request
+    from starlette.routing import Mount
+    from starlette.types import Receive, Scope, Send
+
+    class _PathRewrite:
+        """Strips the /essay prefix so the inner app sees its own root paths.
+
+        root_path is deliberately cleared: Starlette's Mount already sets
+        root_path=/essay on the child scope, and with root_path=/essay,
+        StaticFiles (html=True) 404s on its own redirects. The inner app's
+        absolute redirects (e.g. / -> /ui/) are prefixed back with /essay in
+        the send wrapper so the browser stays under the mount.
+        """
+
+        def __init__(self, inner: ASGIApp) -> None:
+            self._inner = inner
+
+        async def __call__(self, scope: Scope, receive: Receive, send: Send) -> None:
+            if scope["type"] != "http":
+                await self._inner(scope, receive, send)
+                return
+            path = scope.get("path", "")
+            if path == "/essay":
+                scope = dict(scope, path="/", root_path="")
+            elif path.startswith("/essay/"):
+                scope = dict(scope, path=path.removeprefix("/essay"), root_path="")
+
+            async def send_wrapper(message: Any) -> None:
+                if message["type"] == "http.response.start":
+                    headers = [
+                        (key, b"/essay" + value if key == b"location" and value.startswith(b"/") else value)
+                        for key, value in message["headers"]
+                    ]
+                    message = dict(message, headers=headers)
+                await send(message)
+
+            await self._inner(scope, receive, send_wrapper)
+
+    app.mount("/essay", _PathRewrite(essay_app), name="essay")
+
+
+_mount_essay_tutor()
