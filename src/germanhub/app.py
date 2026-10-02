@@ -59,11 +59,14 @@ app.mount("/hub-static", StaticFiles(directory=str(_STATIC_DIR)), name="hub-stat
 # mounted together with a tiny rewriting shim: /essay/api/* -> its /api/*.
 def _mount_essay_tutor() -> None:
     try:
-        from my_essay_tutor.api.app import app as essay_app  # type: ignore[import-not-found]
-
-        essay_app = essay_app  # keep the name for the shim closure
+        # Vendored copy first (src/essay_tutor, mirrored from my-essay-tutor),
+        # installed package as fallback.
+        try:
+            from essay_tutor.api.app import app as essay_app
+        except ImportError:
+            from my_essay_tutor.api.app import app as essay_app  # type: ignore[import-not-found]
     except ImportError:
-        return  # package not installed -> hub runs without the essay tool
+        return  # neither vendored nor installed -> hub runs without the essay tool
 
     from starlette.applications import ASGIApp
     from starlette.requests import Request

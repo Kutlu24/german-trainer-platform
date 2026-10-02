@@ -10,9 +10,20 @@ requires-python = ">=3.11"
 dependencies = [
     "fastapi>=0.115",
     "uvicorn[standard]>=0.30",
-    "my-essay-tutor @ git+https://github.com/Kutlu24/my-essay-tutor.git",
+    "pydantic>=2.7",
+    "pydantic-settings>=2.3",
+    "python-multipart>=0.0.9",
+    "httpx>=0.27",
+    "openai>=1.40",
+    "google-genai>=0.3",
+    "pillow>=10.0",
+    "pypdfium2>=4.30",
+    "mcp>=1.2,<2",
+    "instructor[google-genai]>=1.17",
+    "language-tool-python>=3.4",
 ]
 
 
 [tool.setuptools.packages.find]
 where = ["src"]
+include = ["germanhub*", "essay_tutor*"]
