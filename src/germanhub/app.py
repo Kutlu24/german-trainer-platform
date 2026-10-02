@@ -1,7 +1,7 @@
 """German Trainer Platform - one FastAPI app hosting the B2, C1 and essay tutors.
 
 Routes:
-    GET  /       -> hub page linking all three tools
+    GET  /       -> hub page linking all four tools
     /b2/         -> "Bist du sicher?" B2 vocabulary trainer (Sicher! B2)
     /c1/         -> Deutsch C1 Vokabeltrainer (vokabelliste + Aspekte Neu C1)
     /essay/      -> Essay Tutor (upload -> OCR -> grammar/CEFR grading; needs
@@ -49,6 +49,11 @@ if (_b2_dir / "index.html").exists():
 
 if (_c1_dir / "index.html").exists():
     app.mount("/c1", StaticFiles(directory=str(_c1_dir), html=True), name="c1")
+
+_grammatik_dir = _ROOT / "apps" / "grammatik"
+
+if (_grammatik_dir / "index.html").exists():
+    app.mount("/grammatik", StaticFiles(directory=str(_grammatik_dir), html=True), name="grammatik")
 
 app.mount("/hub-static", StaticFiles(directory=str(_STATIC_DIR)), name="hub-static")
 

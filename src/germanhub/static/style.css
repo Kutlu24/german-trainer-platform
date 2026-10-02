@@ -9,6 +9,10 @@
   --gold-soft: rgba(224, 177, 62, 0.12);
   --red: #d94f3d;
   --red-soft: rgba(217, 79, 61, 0.10);
+  --green: #5fb877;
+  --green-soft: rgba(95, 184, 119, 0.12);
+  --blue: #6aa5e0;
+  --blue-soft: rgba(106, 165, 224, 0.12);
   --mono: "Space Mono", ui-monospace, monospace;
 }
 
@@ -94,6 +98,8 @@ body {
 
 .btn-gold { background: var(--gold); color: #1c1608; box-shadow: 0 6px 22px rgba(224, 177, 62, 0.25); }
 .btn-red  { background: var(--red);  color: #fff;      box-shadow: 0 6px 22px rgba(217, 79, 61, 0.22); }
+.btn-green { background: var(--green); color: #0c1a10; box-shadow: 0 6px 22px rgba(95, 184, 119, 0.22); }
+.btn-blue  { background: var(--blue);  color: #0c1420; box-shadow: 0 6px 22px rgba(106, 165, 224, 0.22); }
 
 /* ---- stat band ---- */
 .stats {
@@ -150,10 +156,12 @@ main {
   transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
-.card-b2:hover, .card-c1:hover { transform: translateY(-4px); box-shadow: 0 14px 34px rgba(0, 0, 0, 0.35); }
+.card-b2:hover, .card-c1:hover, .card-essay:hover, .card-grammatik:hover { transform: translateY(-4px); box-shadow: 0 14px 34px rgba(0, 0, 0, 0.35); }
 
 .card-b2:hover { border-color: var(--gold); }
 .card-c1:hover { border-color: var(--red); }
+.card-essay:hover { border-color: var(--green); }
+.card-grammatik:hover { border-color: var(--blue); }
 
 .card::before {
   content: "";
@@ -164,6 +172,8 @@ main {
 }
 
 .card-c1 { --accent: var(--red); }
+.card-essay { --accent: var(--green); }
+.card-grammatik { --accent: var(--blue); }
 
 .card-top {
   display: flex;
@@ -183,6 +193,8 @@ main {
 
 .level-b2 { color: var(--gold); background: var(--gold-soft); border: 1px solid rgba(224, 177, 62, 0.4); }
 .level-c1 { color: #ff8d7d; background: var(--red-soft); border: 1px solid rgba(217, 79, 61, 0.4); }
+.level-essay { color: var(--green); background: var(--green-soft); border: 1px solid rgba(95, 184, 119, 0.4); }
+.level-grammatik { color: var(--blue); background: var(--blue-soft); border: 1px solid rgba(106, 165, 224, 0.4); }
 
 .card-meta {
   font-family: var(--mono);
