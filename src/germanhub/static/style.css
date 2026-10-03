@@ -313,61 +313,32 @@ footer em { color: var(--gold); }
   .btn:hover, .card:hover { transform: none; }
 }
 
-/* ---- language picker (same flow as the Aspekte Neu trainer module) ---- */
-.btn-lang {
-  margin-top: 1.4rem;
+/* ---- language bar: one always-visible button per language ---- */
+.lang-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0 0 1.6rem;
+  padding: 0;
+  list-style: none;
+}
+.lang-btn {
+  min-width: 2.9rem;
   background: transparent;
   color: var(--muted);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 999px;
-  padding: 0.35rem 1rem;
-  font: 500 0.85rem "Work Sans", sans-serif;
+  padding: 0.4rem 0.85rem;
+  font: 600 0.85rem "Space Mono", monospace;
+  letter-spacing: 0.04em;
   cursor: pointer;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
 }
-.btn-lang:hover { color: var(--text); border-color: var(--gold); }
-
-.lang-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 50;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(10, 12, 18, 0.92);
-  backdrop-filter: blur(6px);
+.lang-btn:hover { color: var(--text); border-color: var(--gold); }
+.lang-btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.lang-btn[aria-pressed="true"] {
+  color: #14110c;
+  background: var(--gold);
+  border-color: var(--gold);
 }
-.lang-overlay[hidden] { display: none; }
-
-.lang-box { text-align: center; padding: 2rem; max-width: 640px; }
-.lang-title {
-  font: 600 1.6rem "Work Sans", sans-serif;
-  color: var(--text);
-  margin: 0 0 0.4rem;
-}
-.lang-sub { color: var(--muted); margin: 0 0 1.6rem; }
-.lang-hint { color: var(--muted); font-size: 0.85rem; margin: 1.4rem 0 0; }
-
-.lang-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  gap: 0.8rem;
-}
-.lang-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.3rem;
-  background: var(--card);
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  border-radius: 14px;
-  padding: 1rem 0.6rem;
-  cursor: pointer;
-  transition: transform 0.15s ease, border-color 0.15s ease;
-}
-.lang-card:hover { transform: translateY(-4px); border-color: var(--gold); }
-.lang-flag { font-size: 1.8rem; }
-.lang-name { font: 600 1rem "Work Sans", sans-serif; color: var(--text); }
-
-[dir="rtl"] .lang-card { font-family: "Noto Sans Arabic", "Work Sans", sans-serif; }
-.lang-card[lang="hy"] { font-family: "Noto Sans Armenian", "Work Sans", sans-serif; }
