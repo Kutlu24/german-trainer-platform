@@ -14,14 +14,14 @@
   <header class="hero">
     <div class="hero-inner">
       <div class="lang-bar" role="group" aria-label="Language">
-        <button class="lang-btn" type="button" data-lang="en" lang="en" title="English" aria-pressed="false">EN</button>
-        <button class="lang-btn" type="button" data-lang="de" lang="de" title="Deutsch" aria-pressed="false">DE</button>
-        <button class="lang-btn" type="button" data-lang="tr" lang="tr" title="Türkçe" aria-pressed="false">TR</button>
-        <button class="lang-btn" type="button" data-lang="zh" lang="zh" title="中文" aria-pressed="false">ZH</button>
-        <button class="lang-btn" type="button" data-lang="fa" lang="fa" title="فارسی" aria-pressed="false">FA</button>
-        <button class="lang-btn" type="button" data-lang="hy" lang="hy" title="Հայերեն" aria-pressed="false">HY</button>
-        <button class="lang-btn" type="button" data-lang="ku" lang="ku" title="Kurdî" aria-pressed="false">KU</button>
-        <button class="lang-btn" type="button" data-lang="uk" lang="uk" title="Українська" aria-pressed="false">UK</button>
+        <button class="lang-btn" type="button" data-lang="en" lang="en" title="English" aria-pressed="false" aria-label="English"><span class="lang-flag" aria-hidden="true">🇬🇧</span><span class="lang-code">EN</span></button>
+        <button class="lang-btn" type="button" data-lang="de" lang="de" title="Deutsch" aria-pressed="false" aria-label="Deutsch"><span class="lang-flag" aria-hidden="true">🇩🇪</span><span class="lang-code">DE</span></button>
+        <button class="lang-btn" type="button" data-lang="tr" lang="tr" title="Türkçe" aria-pressed="false" aria-label="Türkçe"><span class="lang-flag" aria-hidden="true">🇹🇷</span><span class="lang-code">TR</span></button>
+        <button class="lang-btn" type="button" data-lang="zh" lang="zh" title="中文" aria-pressed="false" aria-label="中文"><span class="lang-flag" aria-hidden="true">🇨🇳</span><span class="lang-code">ZH</span></button>
+        <button class="lang-btn" type="button" data-lang="fa" lang="fa" title="فارسی" aria-pressed="false" aria-label="فارسی"><span class="lang-flag" aria-hidden="true">🇮🇷</span><span class="lang-code">FA</span></button>
+        <button class="lang-btn" type="button" data-lang="hy" lang="hy" title="Հայերեն" aria-pressed="false" aria-label="Հայերեն"><span class="lang-flag" aria-hidden="true">🇦🇲</span><span class="lang-code">HY</span></button>
+        <button class="lang-btn" type="button" data-lang="ku" lang="ku" title="Kurdî" aria-pressed="false" aria-label="Kurdî"><span class="lang-flag" aria-hidden="true">🕊️</span><span class="lang-code">KU</span></button>
+        <button class="lang-btn" type="button" data-lang="uk" lang="uk" title="Українська" aria-pressed="false" aria-label="Українська"><span class="lang-flag" aria-hidden="true">🇺🇦</span><span class="lang-code">UK</span></button>
       </div>
       <span class="hero-eyebrow" data-i18n="eyebrow">Deutsch B2 &middot; C1 &middot; Essay &middot; Grammatik &mdash; exam-focused</span>
       <h1 data-i18n="h1">Four tools.<br><em>One goal:</em> the exam.</h1>
@@ -358,8 +358,7 @@
   (function () {
     var saved = null;
     try { saved = JSON.parse(localStorage.getItem('hubSelectedLanguage')); } catch (e) {}
-    var guess = (navigator.language || 'en').slice(0, 2).toLowerCase();
-    applyLang(saved && I18N[saved] ? saved : (I18N[guess] ? guess : 'en'));
+    applyLang(saved && I18N[saved] ? saved : 'de');
   })();
 </script>
 </body>

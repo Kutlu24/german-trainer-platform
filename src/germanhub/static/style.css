@@ -324,21 +324,25 @@ footer em { color: var(--gold); }
   list-style: none;
 }
 .lang-btn {
-  min-width: 2.9rem;
-  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  min-width: 3.6rem;
+  background: rgba(255, 255, 255, 0.04);
   color: var(--muted);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 999px;
-  padding: 0.4rem 0.85rem;
-  font: 600 0.85rem "Space Mono", monospace;
-  letter-spacing: 0.04em;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 0.45rem 0.6rem 0.35rem;
   cursor: pointer;
-  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+  transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
 }
-.lang-btn:hover { color: var(--text); border-color: var(--gold); }
+.lang-flag { font-size: 1.7rem; line-height: 1; }
+.lang-code { font: 600 0.7rem "Space Mono", monospace; letter-spacing: 0.06em; }
+.lang-btn:hover { color: var(--text); transform: translateY(-2px); }
 .lang-btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 .lang-btn[aria-pressed="true"] {
-  color: #14110c;
-  background: var(--gold);
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.10);
   border-color: var(--gold);
 }
