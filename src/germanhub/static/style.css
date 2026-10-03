@@ -41,17 +41,43 @@ body {
 .hero-inner { max-width: 46rem; margin: 0 auto; }
 
 .hero-eyebrow {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.45rem;
+}
+.chip {
   font-family: var(--mono);
   font-size: 0.74rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--gold);
-  background: var(--gold-soft);
-  border: 1px solid rgba(224, 177, 62, 0.35);
+  color: var(--chip, var(--muted));
+  background: var(--chip-soft, rgba(255, 255, 255, 0.06));
+  border: 1px solid var(--chip, rgba(255, 255, 255, 0.2));
   border-radius: 999px;
-  padding: 0.4rem 1rem;
+  padding: 0.38rem 0.9rem;
+}
+.chip-lang { --chip: var(--text); --chip-soft: rgba(255, 255, 255, 0.08); }
+.chip-b2 { --chip: var(--gold); --chip-soft: var(--gold-soft); }
+.chip-c1 { --chip: var(--red); --chip-soft: var(--red-soft); }
+.chip-essay { --chip: var(--green); --chip-soft: var(--green-soft); }
+.chip-gram { --chip: var(--blue); --chip-soft: var(--blue-soft); }
+.chip-telc {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-inline-start: 0.35rem;
+  color: #14110c;
+  background: var(--text);
+  border-color: var(--text);
+  box-shadow: 0 4px 18px rgba(255, 255, 255, 0.12);
+}
+.chip-check { color: var(--green); font-size: 0.9rem; }
+[dir="rtl"] .chip { font-family: "Noto Sans Arabic", var(--mono); letter-spacing: 0; }
+@media (max-width: 560px) {
+  .chip { font-size: 0.68rem; padding: 0.32rem 0.7rem; }
 }
 
 .hero h1 {

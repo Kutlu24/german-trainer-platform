@@ -23,7 +23,14 @@
         <button class="lang-btn" type="button" data-lang="ku" lang="ku" title="Kurdî" aria-pressed="false" aria-label="Kurdî"><span class="lang-flag" aria-hidden="true">🕊️</span><span class="lang-code">KU</span></button>
         <button class="lang-btn" type="button" data-lang="uk" lang="uk" title="Українська" aria-pressed="false" aria-label="Українська"><span class="lang-flag" aria-hidden="true">🇺🇦</span><span class="lang-code">UK</span></button>
       </div>
-      <span class="hero-eyebrow" data-i18n="eyebrow">Deutsch B2 &middot; C1 &middot; Essay &middot; Grammatik &mdash; exam-focused</span>
+      <div class="hero-eyebrow" role="list">
+        <span class="chip chip-lang" role="listitem" data-i18n="eyLang">Deutsch</span>
+        <span class="chip chip-b2" role="listitem">B2</span>
+        <span class="chip chip-c1" role="listitem">C1</span>
+        <span class="chip chip-essay" role="listitem" data-i18n="eyEssay">Essay</span>
+        <span class="chip chip-gram" role="listitem" data-i18n="eyGram">Grammatik</span>
+        <span class="chip chip-telc" role="listitem"><span class="chip-check" aria-hidden="true">&#10003;</span><span data-i18n="eyExam">telc exam prep</span></span>
+      </div>
       <h1 data-i18n="h1">Four tools.<br><em>One goal:</em> the exam.</h1>
       <p class="hero-sub" data-i18n="sub">Exam-focused vocabulary trainers for <strong>B2</strong> and <strong>C1</strong> — flashcards, quizzes,
         spaced repetition and native audio — plus an <strong>AI essay tutor</strong> and a <strong>grammar reference</strong>.
@@ -150,7 +157,7 @@
 
   /* i18n — same languages as the Aspekte Neu trainer module (picker above). */
   var I18N = {
-    en: { eyebrow: 'Deutsch B2 · C1 · Essay · Grammatik — exam-focused',
+    en: { eyLang: 'Deutsch', eyEssay: 'Essay', eyGram: 'Grammatik', eyExam: 'telc exam prep',
       h1: 'Four tools.<br><em>One goal:</em> the exam.',
       sub: 'Exam-focused vocabulary trainers for <strong>B2</strong> and <strong>C1</strong> — flashcards, quizzes, spaced repetition and native audio — plus an <strong>AI essay tutor</strong> and a <strong>grammar reference</strong>. No account, no upload: your progress never leaves your browser.',
       ctaB2: 'Start B2', ctaC1: 'Start C1', ctaEssay: 'Essay Tutor', ctaGram: 'Grammatik',
@@ -173,7 +180,7 @@
       s3t: 'Keep your streak', s3s: 'Daily goals and progress — saved only in your browser.',
       footer: 'German Trainer Platform — B2 · C1 · Essay · Grammatik — <em>Alles Gute bei den Prüfungen!</em>',
       pickerSub: 'Choose your language', pickerHint: 'You can change it anytime.', changeBtn: '🌍 Language' },
-    de: { eyebrow: 'Deutsch B2 · C1 · Essay · Grammatik — prüfungsfokussiert',
+    de: { eyLang: 'Deutsch', eyEssay: 'Essay', eyGram: 'Grammatik', eyExam: 'telc-Prüfungsvorbereitung',
       h1: 'Vier Tools.<br><em>Ein Ziel:</em> die Prüfung.',
       sub: 'Prüfungsfokussierte Vokabeltrainer für <strong>B2</strong> und <strong>C1</strong> — Karteikarten, Quizze, verteilte Wiederholung und Muttersprachler-Audio — dazu ein <strong>KI-Essay-Tutor</strong> und eine <strong>Grammatikreferenz</strong>. Kein Konto, kein Upload: Ihr Fortschritt verlässt niemals Ihren Browser.',
       ctaB2: 'B2 starten', ctaC1: 'C1 starten', ctaEssay: 'Essay-Tutor', ctaGram: 'Grammatik',
@@ -196,7 +203,7 @@
       s3t: 'Streak halten', s3s: 'Tagesziele und Fortschritt — nur in Ihrem Browser gespeichert.',
       footer: 'German Trainer Platform — B2 · C1 · Essay · Grammatik — <em>Alles Gute bei den Prüfungen!</em>',
       pickerSub: 'Sprache wählen', pickerHint: 'Jederzeit änderbar.', changeBtn: '🌍 Sprache' },
-    tr: { eyebrow: 'Almanca B2 · C1 · Essay · Grammatik — sınav odaklı',
+    tr: { eyLang: 'Almanca', eyEssay: 'Essay', eyGram: 'Grammatik', eyExam: 'telc sınavı odaklı',
       h1: 'Dört araç.<br><em>Tek hedef:</em> sınav.',
       sub: '<strong>B2</strong> ve <strong>C1</strong> için sınav odaklı kelime antrenörleri — kartlar, testler, aralıklı tekrar ve anadili sesli — ayrıca bir <strong>yapay zekâ essay koçu</strong> ve <strong>gramer başvurusu</strong>. Hesap yok, yükleme yok: ilerlemeniz asla tarayıcınızdan çıkmaz.',
       ctaB2: 'B2\'ye başla', ctaC1: 'C1\'e başla', ctaEssay: 'Essay Koçu', ctaGram: 'Gramer',
@@ -219,7 +226,7 @@
       s3t: 'Serini koru', s3s: 'Günlük hedefler ve ilerleme — yalnızca tarayıcında saklanır.',
       footer: 'German Trainer Platform — B2 · C1 · Essay · Grammatik — <em>Alles Gute bei den Prüfungen!</em>',
       pickerSub: 'Dilini seç', pickerHint: 'Her zaman değiştirebilirsin.', changeBtn: '🌍 Dil' },
-    zh: { eyebrow: '德语 B2 · C1 · 写作 · 语法 — 备考导向',
+    zh: { eyLang: '德语', eyEssay: '写作', eyGram: '语法', eyExam: 'telc 考试导向',
       h1: '四大工具。<br><em>共同目标：</em>通过考试。',
       sub: '面向 <strong>B2</strong> 和 <strong>C1</strong> 考试的词汇训练器——卡片、测验、间隔重复和母语音频——另有<strong>人工智能写作教练</strong>和<strong>语法参考</strong>。无需注册，无需上传：您的学习进度只保存在浏览器中。',
       ctaB2: '开始 B2', ctaC1: '开始 C1', ctaEssay: '写作教练', ctaGram: '语法',
@@ -242,7 +249,7 @@
       s3t: '保持连胜', s3s: '每日目标和进度——只保存在您的浏览器中。',
       footer: 'German Trainer Platform — B2 · C1 · Essay · Grammatik — <em>Alles Gute bei den Prüfungen!</em>',
       pickerSub: '选择语言', pickerHint: '随时可以更改。', changeBtn: '🌍 语言' },
-    fa: { eyebrow: 'آلمانی B2 · C1 · انشا · دستور زبان — آمادگی آزمون',
+    fa: { eyLang: 'آلمانی', eyEssay: 'انشا', eyGram: 'دستور زبان', eyExam: 'آمادگی آزمون telc',
       h1: 'چهار ابزار.<br><em>یک هدف:</em> آزمون.',
       sub: 'واژه‌آموزهای آمادگی آزمون برای <strong>B2</strong> و <strong>C1</strong> — کارت، آزمون، تکرار فاصله‌دار و صدای بومی — به‌علاوه <strong>مربی انشای هوش مصنوعی</strong> و <strong>مرجع دستور زبان</strong>. بدون حساب، بدون آپلود: پیشرفت شما هرگز از مرورگرتان خارج نمی‌شود.',
       ctaB2: 'شروع B2', ctaC1: 'شروع C1', ctaEssay: 'مربی انشا', ctaGram: 'دستور زبان',
@@ -265,7 +272,7 @@
       s3t: 'زنجیره‌تان را نگه دارید', s3s: 'هدف‌های روزانه و پیشرفت — فقط در مرورگر شما ذخیره می‌شود.',
       footer: 'German Trainer Platform — B2 · C1 · Essay · Grammatik — <em>Alles Gute bei den Prüfungen!</em>',
       pickerSub: 'زبان خود را انتخاب کنید', pickerHint: 'هر زمان می‌توانید تغییر دهید.', changeBtn: '🌍 زبان' },
-    hy: { eyebrow: 'Գերմաներեն B2 · C1 · շարադրություն · քերականություն — քննության վրա կենտրոնացած',
+    hy: { eyLang: 'Գերմաներեն', eyEssay: 'շարադրություն', eyGram: 'քերականություն', eyExam: 'telc քննության պատրաստություն',
       h1: 'Չորս գործիք։<br><em>Մեկ նպատակ՝</em> քննությունը։',
       sub: 'Քննության ուղղված բառապաշարի մարզիչներ <strong>B2</strong>-ի և <strong>C1</strong>-ի համար — քարտեր, թեստեր, ընդհատվող կրկնություն և մայրենի ձայնագրություններ — նաև <strong>արհեստական բանականությամբ շարադրության մարզիչ</strong> և <strong>քերականության տեղեկատու</strong>։ Հաշիվ պետք չէ, վերբեռնում չէ՝ Ձեր առաջընթացը երբեք չի լքում Ձեր զննարկիչը։',
       ctaB2: 'Սկսել B2', ctaC1: 'Սկսել C1', ctaEssay: 'Շարադրության մարզիչ', ctaGram: 'Քերականություն',
@@ -288,7 +295,7 @@
       s3t: 'Պահեք Ձեր շարքը', s3s: 'Օրական նպատակներ և առաջընթաց — պահվում է միայն Ձեր զննարկիչում։',
       footer: 'German Trainer Platform — B2 · C1 · Essay · Grammatik — <em>Alles Gute bei den Prüfungen!</em>',
       pickerSub: 'Ընտրեք Ձեր լեզուն', pickerHint: 'Կարող եք փոխել ցանկացած պահի։', changeBtn: '🌍 Լեզու' },
-    ku: { eyebrow: 'Almanî B2 · C1 · nivîsar · rêziman — ji bo îmtîhanê',
+    ku: { eyLang: 'Almanî', eyEssay: 'nivîsar', eyGram: 'rêziman', eyExam: 'ji bo îmtîhana telc',
       h1: 'Çar amcar.<br><em>Yek armanc:</em> îmtîhan.',
       sub: 'Amcarên peyvan ên <strong>B2</strong> û <strong>C1</strong> yê ji bo îmtîhanê — kart, pirs, dubarekirina bi navber û dengê zikmakî — zêde <strong>mamosteyê nivîsê yê AI</strong> û <strong>çavkanîya rêzimanê</strong>. Hesab tune, barKirin tune: pêşketina te ji geroka te derbason nake.',
       ctaB2: 'B2 dest pê ke', ctaC1: 'C1 dest pê ke', ctaEssay: 'Mamosteyê nivîsê', ctaGram: 'Rêziman',
@@ -311,7 +318,7 @@
       s3t: 'Rêza xwe biparêze', s3s: 'Arincên rojane û pêşketin — tenê di geroka te de tê hilanîn.',
       footer: 'German Trainer Platform — B2 · C1 · Essay · Grammatik — <em>Alles Gute bei den Prüfungen!</em>',
       pickerSub: 'Zimanê xwe hilbijêre', pickerHint: 'Dikarî her dem biguherînî.', changeBtn: '🌍 Ziman' },
-    uk: { eyebrow: 'Німецька B2 · C1 · есе · граматика — підготовка до іспиту',
+    uk: { eyLang: 'Німецька', eyEssay: 'есе', eyGram: 'граматика', eyExam: 'підготовка до іспиту telc',
       h1: 'Чотири інструменти.<br><em>Одна мета:</em> іспит.',
       sub: 'Лексичні тренажери для іспитів <strong>B2</strong> та <strong>C1</strong> — картки, тести, інтервальне повторення та звук від носіїв мови — а також <strong>ШІ-тренажер есе</strong> та <strong>довідник граматики</strong>. Без акаунта, без завантажень: ваш прогрес ніколи не залишає ваш браузер.',
       ctaB2: 'Почати B2', ctaC1: 'Почати C1', ctaEssay: 'Тренажер есе', ctaGram: 'Граматика',
