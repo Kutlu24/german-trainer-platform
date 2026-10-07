@@ -36,8 +36,10 @@ body.stage-on .classic { display: none; }
   z-index: 1;
   display: block;
 }
-.stage.fine { cursor: none; }
-.stage.fine a, .stage.fine button { cursor: pointer; }
+.stage { cursor: grab; }
+.stage.over { cursor: pointer; }
+.stage.dragging { cursor: grabbing; }
+.stage a, .stage button { cursor: pointer; }
 
 /* ---- giant typographic labels behind the planes ---- */
 .giants { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
@@ -250,28 +252,6 @@ body.stage-on .classic { display: none; }
   display: none;
 }
 
-.cursor {
-  position: absolute;
-  z-index: 8;
-  left: 0; top: 0;
-  width: 4.6rem; height: 4.6rem;
-  margin: -2.3rem 0 0 -2.3rem;
-  border-radius: 50%;
-  display: none;
-  place-items: center;
-  pointer-events: none;
-  color: var(--accent-ink);
-  background: var(--accent);
-  font: 700 1.1rem / 1 var(--mono);
-  transform: translate3d(-100px, -100px, 0) scale(0.3);
-  opacity: 0;
-  transition: opacity 0.25s, scale 0.3s;
-  will-change: transform;
-}
-.stage.fine .cursor { display: grid; }
-.cursor.show { opacity: 1; }
-.cursor.over { scale: 1; }
-.cursor:not(.over) { scale: 0.45; }
 
 /* ---- load / open choreography ---- */
 .stage .stage-top, .stage .copy, .stage .arrow {
@@ -315,3 +295,5 @@ body.stage-on .classic { display: none; }
 
 .lang-slot { justify-self: end; min-width: 0; max-width: 100%; }
 @media (max-width: 760px) { .lang-slot { justify-self: stretch; } }
+
+@media (max-width: 1500px) and (min-width: 761px) { .stage .lang-code { display: none; } }

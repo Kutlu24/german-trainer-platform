@@ -69,7 +69,7 @@
     'varying vec2 v_uv;',
     'uniform float u_kind; uniform float u_time; uniform float u_rel; uniform float u_vel; uniform float u_aspect;',
     'uniform vec3 u_c; uniform vec3 u_c2; uniform vec2 u_lm; uniform float u_hover; uniform float u_alpha; uniform float u_open;',
-    'uniform float u_motion;',
+    'uniform float u_motion; uniform sampler2D u_tex;',
     'float hash(vec2 p) { p = fract(p * vec2(123.34, 456.21)); p += dot(p, p + 45.32); return fract(p.x * p.y); }',
     'float vnoise(vec2 p) {',
     '  vec2 i = floor(p), f = fract(p); f = f * f * (3.0 - 2.0 * f);',
@@ -103,7 +103,7 @@
     '  vec2 sc = q - vec2(0.0, -0.12 + 0.02 * sin(t * 0.5));',
     '  float r = 0.26 + 0.012 * sin(t * 0.9);',
     '  float disc = 1.0 - smoothstep(r - 0.004, r + 0.004, length(sc));',
-    '  col = mix(col, vec3(1.0, 0.86, 0.66), disc * 0.92);',
+    '  col = mix(col, vec3(0.92, 0.55, 0.42), disc * 0.55);',
     '  col -= disc * 0.18 * step(0.5, fract(sc.y * 22.0 + t * 0.1)) * step(sc.y, 0.0);',
     '  return col + u_c * edge * 0.0;',
     '}',
@@ -169,6 +169,11 @@
     '  vec3 col;',
     '  if (abs(ch) > 0.0012) col = vec3(art(q + vec2(ch, 0.0), t).r, art(q, t).g, art(q - vec2(ch, 0.0), t).b);',
     '  else col = art(q, t);',
+    /* illustration layer: drifts at its own rate (parallax) and splits colour with speed */
+    '  vec2 tuv = (v_uv - 0.5) * 0.985 + 0.5 + vec2(-u_rel * 0.028 * (1.0 - u_open), 0.0);',
+    '  vec4 tx = texture2D(u_tex, tuv);',
+    '  if (abs(ch) > 0.0012) tx = vec4(texture2D(u_tex, tuv + vec2(ch * 0.7, 0.0)).r, tx.g, texture2D(u_tex, tuv - vec2(ch * 0.7, 0.0)).b, tx.a);',
+    '  col = col * (1.0 - tx.a) + tx.rgb;',
     '  vec2 hv = v_uv - 0.5 - u_lm / asp;',
     '  col += u_c * exp(-dot(hv * asp, hv * asp) * 7.0) * u_hover * 0.16;',
     '  float vig = smoothstep(1.0, 0.2, length((v_uv - 0.5) * 1.5));',
@@ -208,7 +213,7 @@
 
   var U = {};
   ['u_res', 'u_size', 'u_rel', 'u_pitch', 'u_cy', 'u_vel', 'u_time', 'u_mouse', 'u_open', 'u_intro', 'u_hover', 'u_motion',
-    'u_kind', 'u_aspect', 'u_c', 'u_c2', 'u_lm', 'u_alpha'].forEach(function (n) { U[n] = gl.getUniformLocation(prog, n); });
+    'u_kind', 'u_aspect', 'u_c', 'u_c2', 'u_lm', 'u_alpha', 'u_tex'].forEach(function (n) { U[n] = gl.getUniformLocation(prog, n); });
 
   /* subdivided unit grid */
   var COLS = 22, ROWS = 30, verts = [], idx = [];
@@ -226,6 +231,33 @@
   gl.enable(gl.BLEND);
   gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
 
+  /* illustration textures (Canvas2D -> WebGL), redrawn once web fonts arrive */
+  var texs = [];
+  function uploadArt() {
+    if (!window.StageArt) return;
+    gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true);
+    gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, true);
+    for (var k = 0; k < 4; k++) {
+      var cv = window.StageArt.draw(k, document.createElement('canvas'));
+      if (!texs[k]) {
+        texs[k] = gl.createTexture();
+      }
+      gl.bindTexture(gl.TEXTURE_2D, texs[k]);
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, cv);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+    }
+    gl.activeTexture(gl.TEXTURE0);
+    gl.uniform1i(U.u_tex, 0);
+  }
+  uploadArt();
+  if (document.fonts && document.fonts.load) {
+    Promise.all(['700 40px "Work Sans"', '500 40px "Work Sans"', 'italic 400 32px "Work Sans"', '700 24px "Space Mono"', '400 24px "Space Mono"']
+      .map(function (f) { return document.fonts.load(f); })).then(uploadArt, function () {});
+  }
+
   /* ------------------------------------------------------------ state */
   var W = 0, H = 0, pw = 0, ph = 0, pitch = 0, cyPx = 0, aspect = 1;
   var pos = 0, target = 0, velS = 0, lastPos = 0;
@@ -238,7 +270,6 @@
   var giants = [].slice.call(stage.querySelectorAll('.giant'));
   var navBtns = [].slice.call(stage.querySelectorAll('.stage-index button'));
   var counter = stage.querySelector('.stage-count');
-  var cursor = stage.querySelector('.cursor');
 
   function wrap(x) { return ((x + N / 2) % N + N) % N - N / 2; } /* [-N/2, N/2) */
   function mod(x) { return ((x % N) + N) % N; }
@@ -250,8 +281,11 @@
     canvas.width = Math.round(W * dpr); canvas.height = Math.round(H * dpr);
     gl.viewport(0, 0, canvas.width, canvas.height);
     var mobile = W < 760;
-    ph = mobile ? H * 0.36 : H * 0.54;
-    pw = mobile ? Math.min(W * 0.72, ph * 0.84) : Math.min(ph * 0.76, W * 0.34);
+    var ASPECT = window.StageArt ? window.StageArt.W / window.StageArt.H : 0.78;
+    ph = mobile ? H * 0.38 : H * 0.58;
+    pw = ph * ASPECT;
+    var maxW = mobile ? W * 0.74 : W * 0.34;
+    if (pw > maxW) { pw = maxW; ph = pw / ASPECT; }
     pitch = pw * (mobile ? 1.04 : 1.18);
     cyPx = mobile ? H * 0.085 : H * 0.045;     /* px the plane centre sits above the viewport centre */
     aspect = pw / ph;
@@ -329,11 +363,6 @@
     var r = stage.getBoundingClientRect();
     mouse.tx = ((e.clientX - r.left) / W) * 2 - 1; mouse.ty = ((e.clientY - r.top) / H) * 2 - 1;
     mouse.px = e.clientX - r.left; mouse.py = e.clientY - r.top;
-    if (cursor && fine) {
-      var onUi = !!e.target.closest && e.target.closest('a,button');
-      cursor.classList.toggle('show', !onUi);
-      cursor.style.transform = 'translate3d(' + mouse.px + 'px,' + mouse.py + 'px,0)';
-    }
     if (!drag || e.pointerId !== drag.id) return;
     var dx = e.clientX - drag.x;
     if (!drag.moved && Math.abs(dx) > 6) {
@@ -369,6 +398,8 @@
   window.addEventListener('pointercancel', endDrag);
 
   stage.addEventListener('wheel', function (e) {
+    var bar = e.target.closest && e.target.closest('.lang-bar');
+    if (bar) { bar.scrollLeft += (e.deltaX || e.deltaY); e.preventDefault(); return; }
     if (opening >= 0) return;
     e.preventDefault();
     var d = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
@@ -396,7 +427,6 @@
   stage.querySelector('.arrow-prev').addEventListener('click', function () { go(-1); });
   stage.querySelector('.arrow-next').addEventListener('click', function () { go(1); });
   navBtns.forEach(function (b, k) { b.addEventListener('click', function () { goTo(k); }); });
-  stage.addEventListener('pointerleave', function () { if (cursor) cursor.classList.remove('show'); });
 
   /* ------------------------------------------------------------ frame */
   function ease4(x) { return 1 - Math.pow(1 - x, 4); }
@@ -423,11 +453,7 @@
     var over = fine && !drag && opening < 0 && Math.abs(wrap(act - pos)) < 0.25 && inPlane(mouse.px, mouse.py);
     hoverT = over ? 1 : 0;
     hover += (hoverT - hover) * (1 - Math.exp(-dt * 7));
-    if (cursor && fine) {
-      cursor.classList.toggle('over', over);
-      var ch = over ? '↗' : '';
-      if (cursor.textContent !== ch) cursor.textContent = ch;
-    }
+    stage.classList.toggle('over', over);
 
     if (opening >= 0) {
       openT = clamp((now - openStart) / (reduce ? 100 : 760), 0, 1);
@@ -459,6 +485,7 @@
       if (opening >= 0 && i !== opening) alpha *= 1 - clamp(openT * 1.6, 0, 1);
       if (alpha <= 0.002) continue;
       var col = COLORS[i];
+      gl.bindTexture(gl.TEXTURE_2D, texs[i]);
       gl.uniform1f(U.u_kind, i);
       gl.uniform1f(U.u_rel, rel);
       gl.uniform2f(U.u_size, pw, ph);
