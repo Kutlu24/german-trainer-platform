@@ -1,0 +1,507 @@
+/* Stage — a raw-WebGL slider for the four tools (no libraries, no assets).
+ *
+ * Each tool is a curved plane whose surface is a procedural shader "artwork".
+ * One float `pos` drives everything: drag / wheel / keys move a target, a
+ * critically-damped spring chases it, and its *velocity* bends, shears and
+ * colour-splits the planes so the interface feels like cloth moving through
+ * space. At rest the planes keep a slow idle sway. Falls back to the classic
+ * page (cards grid) if WebGL is unavailable, the context is lost, or JS is off.
+ */
+(function () {
+  'use strict';
+  var stage = document.getElementById('stage');
+  if (!stage || /[?&]classic\b/.test(location.search)) return;
+
+  var canvas = stage.querySelector('canvas');
+  var gl = null;
+  try {
+    gl = canvas.getContext('webgl', { alpha: true, antialias: true, premultipliedAlpha: true, powerPreference: 'high-performance' });
+  } catch (e) { /* fall through */ }
+  if (!gl) return;
+
+  var N = 4;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var fine = window.matchMedia('(pointer: fine)').matches;
+  var COLORS = [[224, 177, 62], [217, 79, 61], [95, 184, 119], [106, 165, 224]];
+  var INK = ['#1c1608', '#ffffff', '#0c1a10', '#0c1420'];
+
+  /* ------------------------------------------------------------ shaders */
+  var VS = [
+    'attribute vec2 a_uv;',
+    'uniform vec2 u_res; uniform vec2 u_size; uniform float u_rel; uniform float u_pitch; uniform float u_cy;',
+    'uniform float u_vel; uniform float u_time; uniform vec2 u_mouse; uniform float u_open; uniform float u_intro;',
+    'uniform float u_hover; uniform float u_motion;',
+    'varying vec2 v_uv;',
+    'void main() {',
+    '  v_uv = a_uv;',
+    '  vec2 p = a_uv - 0.5;',
+    '  float o = u_open;',
+    '  float live = (1.0 - o) * u_motion;',
+    '  float rel = u_rel * (1.0 - o);',
+    '  float ar = abs(rel);',
+    '  float t = u_time;',
+    '  vec2 size = mix(u_size * (1.0 + 0.035 * u_hover), u_res * 1.12, o);',
+    '  vec2 l = p * size;',
+    '  float v = u_vel * live;',
+    /* idle sway + velocity-driven bend */
+    '  float sway = sin(t * 0.55 + rel * 1.9) * 0.032 * live + sin(t * 0.31 + 1.7) * 0.012 * live;',
+    '  float ang = (-rel * 0.46 + sway + u_mouse.x * 0.07 * (1.0 - ar)) * (1.0 - o);',
+    '  float ca = cos(ang), sa = sin(ang);',
+    '  float cx = rel * u_pitch;',
+    '  float cz = -ar * ar * 150.0 - ar * 70.0;',
+    '  float ripple = (sin(p.x * 3.2 + t * 0.7 + rel) + sin(p.y * 2.6 - t * 0.55)) * 4.5 * live;',
+    '  float tilt = p.x * v * 260.0;',
+    '  float x = cx + l.x * ca + sin(p.y * 4.0 + t * 1.6 + rel) * v * 22.0;',
+    '  float z = cz + l.x * sa + ripple + tilt;',
+    '  float y = l.y + l.x * v * 0.11 + sin(p.x * 5.0 - t * 1.2) * v * 14.0',
+    '          + sin(t * 0.8 + rel * 1.3) * 6.0 * live + u_cy - (1.0 - u_intro) * u_res.y * 0.6',
+    '          - u_mouse.y * 10.0 * (1.0 - ar) * live;',
+    '  x += -u_mouse.x * 16.0 * (0.4 + ar * 0.8) * live;',
+    '  float f = 1300.0;',
+    '  float s = f / (f - z);',
+    '  vec2 sp = vec2(x, y) * s;',
+    '  gl_Position = vec4(sp / (u_res * 0.5), 0.0, 1.0);',
+    '}'
+  ].join('\n');
+
+  var FS = [
+    '#ifdef GL_FRAGMENT_PRECISION_HIGH', 'precision highp float;', '#else', 'precision mediump float;', '#endif',
+    'varying vec2 v_uv;',
+    'uniform float u_kind; uniform float u_time; uniform float u_rel; uniform float u_vel; uniform float u_aspect;',
+    'uniform vec3 u_c; uniform vec3 u_c2; uniform vec2 u_lm; uniform float u_hover; uniform float u_alpha; uniform float u_open;',
+    'uniform float u_motion;',
+    'float hash(vec2 p) { p = fract(p * vec2(123.34, 456.21)); p += dot(p, p + 45.32); return fract(p.x * p.y); }',
+    'float vnoise(vec2 p) {',
+    '  vec2 i = floor(p), f = fract(p); f = f * f * (3.0 - 2.0 * f);',
+    '  return mix(mix(hash(i), hash(i + vec2(1.0, 0.0)), f.x), mix(hash(i + vec2(0.0, 1.0)), hash(i + vec2(1.0, 1.0)), f.x), f.y);',
+    '}',
+    'float fbm(vec2 p) { float a = 0.5, s = 0.0; for (int i = 0; i < 4; i++) { s += a * vnoise(p); p = p * 2.03 + 11.7; a *= 0.5; } return s; }',
+
+    /* B2 — topographic contours */
+    'vec3 artTopo(vec2 q, float t) {',
+    '  vec2 w = q * 2.3 + vec2(t * 0.035, -t * 0.02);',
+    '  float h = fbm(w + 0.7 * vec2(fbm(w * 1.6 - t * 0.04), fbm(w * 1.6 + 5.0 + t * 0.03)));',
+    '  float k = h * 12.0;',
+    '  float d = abs(fract(k) - 0.5);',
+    '  float line = 1.0 - smoothstep(0.0, 0.07, d);',
+    '  float major = step(0.5, fract(floor(k) / 4.0 + 0.001)) ;',
+    '  vec3 base = mix(u_c2, u_c * 0.38, smoothstep(0.2, 0.8, h));',
+    '  vec3 col = base + u_c * line * (0.42 + 0.58 * (1.0 - major));',
+    '  col += u_c * 0.22 * smoothstep(0.62, 0.8, h);',
+    '  return col;',
+    '}',
+
+    /* C1 — warped poster bands + sun */
+    'vec3 artBloom(vec2 q, float t) {',
+    '  vec2 w = q * 1.9;',
+    '  w += 0.9 * vec2(fbm(w + t * 0.07), fbm(w + 7.3 - t * 0.06));',
+    '  float n = fbm(w + 2.0);',
+    '  float b = floor(n * 6.0) / 6.0;',
+    '  float edge = smoothstep(0.0, 0.03, abs(fract(n * 6.0) - 0.5) - 0.44);',
+    '  vec3 col = mix(u_c2, u_c, b * 1.15);',
+    '  col *= 0.8 + 0.2 * step(0.5, fract(n * 6.0));',
+    '  vec2 sc = q - vec2(0.0, -0.12 + 0.02 * sin(t * 0.5));',
+    '  float r = 0.26 + 0.012 * sin(t * 0.9);',
+    '  float disc = 1.0 - smoothstep(r - 0.004, r + 0.004, length(sc));',
+    '  col = mix(col, vec3(1.0, 0.86, 0.66), disc * 0.92);',
+    '  col -= disc * 0.18 * step(0.5, fract(sc.y * 22.0 + t * 0.1)) * step(sc.y, 0.0);',
+    '  return col + u_c * edge * 0.0;',
+    '}',
+
+    /* Essay — handwriting lines being read */
+    'vec3 artInk(vec2 q, float t) {',
+    '  float rows = 17.0;',
+    '  float ry = (q.y + 0.5) * rows;',
+    '  float row = floor(ry);',
+    '  float fy = fract(ry) - 0.5;',
+    '  fy += (fbm(vec2(q.x * 2.2, row * 0.7) + t * 0.04) - 0.5) * 0.34;',
+    '  float x = (q.x + 0.5) * 9.0 + hash(vec2(row, 1.0)) * 40.0;',
+    '  float seg = floor(x * 0.85);',
+    '  float fx = fract(x * 0.85);',
+    '  float word = step(0.22, hash(vec2(seg, row))) * step(0.08, fx) * step(fx, 0.88 - 0.4 * hash(vec2(seg, row + 9.0)));',
+    '  float th = 0.07 + 0.05 * hash(vec2(seg, row + 3.0));',
+    '  float stroke = (1.0 - smoothstep(th * 0.6, th + 0.05, abs(fy + 0.08 * sin(x * 7.0)))) * word;',
+    '  float pen = 0.5 + 0.5 * sin(t * 0.55 - row * 0.62 + q.x * 2.4);',
+    '  float lit = smoothstep(0.35, 1.0, pen);',
+    '  float mark = step(0.93, hash(vec2(seg, row + 21.0))) * word;',
+    '  float ul = (1.0 - smoothstep(0.02, 0.06, abs(fy - 0.33))) * step(0.08, fx) * step(fx, 0.88) * mark;',
+    '  vec3 paper = mix(u_c2, u_c * 0.2, 0.5 + 0.5 * q.y);',
+    '  float rule = 1.0 - smoothstep(0.0, 0.03, abs(fract(ry) - 0.0) * 0.5);',
+    '  vec3 col = paper + vec3(0.03) * rule;',
+    '  col += u_c * stroke * (0.45 + 0.65 * lit);',
+    '  col = mix(col, vec3(0.92, 0.38, 0.30), ul * 0.95);',
+    '  return col;',
+    '}',
+
+    /* Grammatik — bending blueprint grid with a magnifying lens + sentence arcs */
+    'vec3 artGrid(vec2 q, float t) {',
+    '  vec2 g = q * 7.0;',
+    '  g += 0.28 * vec2(sin(q.y * 3.1 + t * 0.32), cos(q.x * 3.4 + t * 0.27));',
+    '  float d = length(q - u_lm);',
+    '  float lens = exp(-d * d * 9.0) * (0.35 + 0.65 * u_hover);',
+    '  g -= (q - u_lm) * lens * 3.4;',
+    '  vec2 a = abs(fract(g) - 0.5);',
+    '  float grid = smoothstep(0.455, 0.5, max(a.x, a.y));',
+    '  vec2 f = fract(g + 0.5) - 0.5;',
+    '  float node = 1.0 - smoothstep(0.035, 0.075, length(f));',
+    '  float arc = 1.0 - smoothstep(0.0, 0.012, abs(q.y - (0.12 * sin(q.x * 6.0 + t * 0.4) - 0.16)));',
+    '  float arc2 = 1.0 - smoothstep(0.0, 0.01, abs(q.y - (0.07 * sin(q.x * 9.0 - t * 0.5) + 0.22)));',
+    '  vec3 col = mix(u_c2, u_c * 0.28, 0.5 + 0.5 * q.y);',
+    '  col += u_c * (grid * 0.30 + node * 0.8 + arc * 0.85 + arc2 * 0.5);',
+    '  col += u_c * lens * 0.22;',
+    '  return col;',
+    '}',
+
+    'vec3 art(vec2 q, float t) {',
+    '  if (u_kind < 0.5) return artTopo(q, t);',
+    '  if (u_kind < 1.5) return artBloom(q, t);',
+    '  if (u_kind < 2.5) return artInk(q, t);',
+    '  return artGrid(q, t);',
+    '}',
+
+    'void main() {',
+    '  vec2 asp = vec2(u_aspect, 1.0);',
+    '  vec2 q = (v_uv - 0.5) * asp;',
+    /* the artwork drifts at a different rate than its frame -> depth */
+    '  q.x += u_rel * 0.22 * (1.0 - u_open);',
+    '  float t = u_time;',
+    '  float ch = u_vel * 0.016 * u_motion;',
+    '  vec3 col;',
+    '  if (abs(ch) > 0.0012) col = vec3(art(q + vec2(ch, 0.0), t).r, art(q, t).g, art(q - vec2(ch, 0.0), t).b);',
+    '  else col = art(q, t);',
+    '  vec2 hv = v_uv - 0.5 - u_lm / asp;',
+    '  col += u_c * exp(-dot(hv * asp, hv * asp) * 7.0) * u_hover * 0.16;',
+    '  float vig = smoothstep(1.0, 0.2, length((v_uv - 0.5) * 1.5));',
+    '  col *= mix(0.5, 1.0, vig);',
+    '  col *= mix(1.0, 0.42, smoothstep(0.0, 1.3, abs(u_rel)) * (1.0 - u_open));',
+    '  col += (hash(gl_FragCoord.xy + fract(t) * 91.0) - 0.5) * 0.045;',
+    /* rounded rect mask, in plane-height units */
+    '  float r = mix(0.028, 0.0, u_open);',
+    '  vec2 dd = abs(v_uv - 0.5) * asp - (asp * 0.5 - r);',
+    '  float sd = length(max(dd, 0.0)) + min(max(dd.x, dd.y), 0.0) - r;',
+    '  float m = 1.0 - smoothstep(-0.0015, 0.0015, sd);',
+    '  float rim = (1.0 - smoothstep(0.0, 0.006, abs(sd + 0.003))) * 0.22;',
+    '  col += rim;',
+    '  float a = m * u_alpha;',
+    '  gl_FragColor = vec4(col * a, a);',
+    '}'
+  ].join('\n');
+
+  function compile(type, src) {
+    var s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) {
+      if (window.console) console.warn('stage shader:', gl.getShaderInfoLog(s));
+      return null;
+    }
+    return s;
+  }
+  var vs = compile(gl.VERTEX_SHADER, VS), fs = compile(gl.FRAGMENT_SHADER, FS);
+  if (!vs || !fs) return;
+  var prog = gl.createProgram();
+  gl.attachShader(prog, vs); gl.attachShader(prog, fs);
+  gl.bindAttribLocation(prog, 0, 'a_uv');
+  gl.linkProgram(prog);
+  if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) return;
+  gl.useProgram(prog);
+
+  var U = {};
+  ['u_res', 'u_size', 'u_rel', 'u_pitch', 'u_cy', 'u_vel', 'u_time', 'u_mouse', 'u_open', 'u_intro', 'u_hover', 'u_motion',
+    'u_kind', 'u_aspect', 'u_c', 'u_c2', 'u_lm', 'u_alpha'].forEach(function (n) { U[n] = gl.getUniformLocation(prog, n); });
+
+  /* subdivided unit grid */
+  var COLS = 22, ROWS = 30, verts = [], idx = [];
+  for (var j = 0; j <= ROWS; j++) for (var i = 0; i <= COLS; i++) verts.push(i / COLS, j / ROWS);
+  for (var jj = 0; jj < ROWS; jj++) for (var ii = 0; ii < COLS; ii++) {
+    var a = jj * (COLS + 1) + ii, b = a + 1, c = a + COLS + 1, d = c + 1;
+    idx.push(a, b, c, b, d, c);
+  }
+  var vbo = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, vbo);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(verts), gl.STATIC_DRAW);
+  var ibo = gl.createBuffer(); gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, ibo);
+  gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, new Uint16Array(idx), gl.STATIC_DRAW);
+  gl.enableVertexAttribArray(0);
+  gl.vertexAttribPointer(0, 2, gl.FLOAT, false, 0, 0);
+  gl.enable(gl.BLEND);
+  gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
+
+  /* ------------------------------------------------------------ state */
+  var W = 0, H = 0, pw = 0, ph = 0, pitch = 0, cyPx = 0, aspect = 1;
+  var pos = 0, target = 0, velS = 0, lastPos = 0;
+  var mouse = { x: 0, y: 0, tx: 0, ty: 0, px: -999, py: -999 };
+  var hover = 0, hoverT = 0;
+  var drag = null, wheel = { acc: 0, base: 0, timer: 0, on: false };
+  var opening = -1, openT = 0, openStart = 0;
+  var t0 = performance.now(), time = 0, last = t0, active = -1, raf = 0;
+  var copies = [].slice.call(stage.querySelectorAll('.slide-copy'));
+  var giants = [].slice.call(stage.querySelectorAll('.giant'));
+  var navBtns = [].slice.call(stage.querySelectorAll('.stage-index button'));
+  var counter = stage.querySelector('.stage-count');
+  var cursor = stage.querySelector('.cursor');
+
+  function wrap(x) { return ((x + N / 2) % N + N) % N - N / 2; } /* [-N/2, N/2) */
+  function mod(x) { return ((x % N) + N) % N; }
+  function clamp(x, a, b) { return Math.max(a, Math.min(b, x)); }
+
+  function resize() {
+    W = stage.clientWidth; H = stage.clientHeight;
+    var dpr = Math.min(window.devicePixelRatio || 1, W < 760 ? 1.6 : 2);
+    canvas.width = Math.round(W * dpr); canvas.height = Math.round(H * dpr);
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    var mobile = W < 760;
+    ph = mobile ? H * 0.36 : H * 0.54;
+    pw = mobile ? Math.min(W * 0.72, ph * 0.84) : Math.min(ph * 0.76, W * 0.34);
+    pitch = pw * (mobile ? 1.04 : 1.18);
+    cyPx = mobile ? H * 0.085 : H * 0.045;     /* px the plane centre sits above the viewport centre */
+    aspect = pw / ph;
+    var cyScreen = H / 2 - cyPx;
+    stage.style.setProperty('--plane-cy', cyScreen + 'px');
+    stage.style.setProperty('--plane-h', ph + 'px');
+    giants.forEach(function (g) { g.style.marginTop = ''; });
+  }
+
+  /* ------------------------------------------------------------ chrome sync */
+  function setActive(i) {
+    if (i === active) return;
+    active = i;
+    copies.forEach(function (c, k) {
+      var on = k === i;
+      c.setAttribute('aria-hidden', on ? 'false' : 'true');
+      var a = c.querySelector('a'); if (a) a.tabIndex = on ? 0 : -1;
+    });
+    navBtns.forEach(function (b, k) { b.setAttribute('aria-current', k === i ? 'true' : 'false'); });
+    if (counter) counter.textContent = '0' + (i + 1) + ' / 0' + N;
+    stage.style.setProperty('--accent-ink', INK[i]);
+  }
+
+  function accentAt(p) {
+    var f = Math.floor(p), k = p - f, a = COLORS[mod(f)], b = COLORS[mod(f + 1)];
+    var s = k * k * (3 - 2 * k);
+    return [a[0] + (b[0] - a[0]) * s, a[1] + (b[1] - a[1]) * s, a[2] + (b[2] - a[2]) * s];
+  }
+
+  function syncDom() {
+    var ac = accentAt(pos);
+    stage.style.setProperty('--accent', 'rgb(' + (ac[0] | 0) + ',' + (ac[1] | 0) + ',' + (ac[2] | 0) + ')');
+    var cy = H / 2 - cyPx;
+    for (var i = 0; i < N; i++) {
+      var rel = wrap(i - pos), ar = Math.abs(rel);
+      var c = copies[i], g = giants[i];
+      var o = clamp(1 - ar * 2.3, 0, 1);
+      c.style.opacity = o;
+      c.style.visibility = o > 0.01 ? 'visible' : 'hidden';
+      c.style.transform = 'translate3d(' + (rel * -70).toFixed(1) + 'px,0,0)';
+      c.style.pointerEvents = o > 0.85 ? 'auto' : 'none';
+      var go = clamp(1.05 - ar * 0.85, 0, 1) * (opening >= 0 ? 0 : 1);
+      g.style.opacity = go.toFixed(3);
+      g.style.transform = 'translate3d(' + (rel * pitch * 1.9 - 0).toFixed(1) + 'px,0,0) translate(-50%,-50%) scale(' + (1 + ar * 0.06).toFixed(3) + ')';
+      g.style.top = cy + 'px';
+    }
+  }
+
+  /* ------------------------------------------------------------ input */
+  function go(i) { target = Math.round(target) + i; }
+  function goTo(k) { /* nearest route to slide k */
+    var cur = Math.round(target);
+    target = cur + wrap(k - cur);
+  }
+
+  function open(i) {
+    if (opening >= 0) return;
+    var a = copies[i] && copies[i].querySelector('a');
+    if (!a) return;
+    opening = i; openStart = performance.now(); stage.classList.add('is-opening');
+    var dest = a.getAttribute('href');
+    setTimeout(function () { location.href = dest; }, reduce ? 120 : 820);
+  }
+
+  function inPlane(x, y) {
+    var cx = W / 2, cy = H / 2 - cyPx;
+    return Math.abs(x - cx) < pw / 2 && Math.abs(y - cy) < ph / 2;
+  }
+
+  stage.addEventListener('pointerdown', function (e) {
+    if (e.target.closest('a,button') || opening >= 0) return;
+    drag = { id: e.pointerId, x: e.clientX, y: e.clientY, t: performance.now(), base: target, lx: e.clientX, lt: performance.now(), v: 0, moved: false };
+  });
+  window.addEventListener('pointermove', function (e) {
+    var r = stage.getBoundingClientRect();
+    mouse.tx = ((e.clientX - r.left) / W) * 2 - 1; mouse.ty = ((e.clientY - r.top) / H) * 2 - 1;
+    mouse.px = e.clientX - r.left; mouse.py = e.clientY - r.top;
+    if (cursor && fine) {
+      var onUi = !!e.target.closest && e.target.closest('a,button');
+      cursor.classList.toggle('show', !onUi);
+      cursor.style.transform = 'translate3d(' + mouse.px + 'px,' + mouse.py + 'px,0)';
+    }
+    if (!drag || e.pointerId !== drag.id) return;
+    var dx = e.clientX - drag.x;
+    if (!drag.moved && Math.abs(dx) > 6) {
+      drag.moved = true;
+      try { stage.setPointerCapture(e.pointerId); } catch (err) {}
+      stage.classList.add('dragging');
+    }
+    if (drag.moved) {
+      target = drag.base - dx / pitch;
+      var now = performance.now(), dt = Math.max(1, now - drag.lt);
+      drag.v = drag.v * 0.7 + (-(e.clientX - drag.lx) / pitch / (dt / 1000)) * 0.3;
+      drag.lx = e.clientX; drag.lt = now;
+    }
+  });
+  function endDrag(e) {
+    if (!drag || (e && e.pointerId !== drag.id)) return;
+    var d = drag; drag = null; stage.classList.remove('dragging');
+    if (d.moved) {
+      var cur = d.base + (-(mouse.px - d.x) / pitch);
+      var fling = clamp(d.v * 0.16, -1.1, 1.1);
+      var dest = Math.round(cur + fling);
+      if (dest === Math.round(d.base) && Math.abs(cur - d.base) > 0.12) dest = Math.round(d.base) + (cur > d.base ? 1 : -1);
+      target = dest;
+    } else if (performance.now() - d.t < 500) {
+      /* a click, not a drag */
+      var cx = W / 2, cy = H / 2 - cyPx, x = e.clientX, y = e.clientY;
+      var cur2 = mod(Math.round(target));
+      if (inPlane(x, y)) open(cur2);
+      else if (Math.abs(y - cy) < ph / 2 + 30) go(x < cx ? -1 : 1);
+    }
+  }
+  window.addEventListener('pointerup', endDrag);
+  window.addEventListener('pointercancel', endDrag);
+
+  stage.addEventListener('wheel', function (e) {
+    if (opening >= 0) return;
+    e.preventDefault();
+    var d = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
+    if (e.deltaMode === 1) d *= 32;
+    if (!wheel.on) { wheel.on = true; wheel.acc = 0; wheel.base = Math.round(target); }
+    wheel.acc += d;
+    target = wheel.base + clamp(wheel.acc * 0.0016, -1.3, 1.3);
+    clearTimeout(wheel.timer);
+    wheel.timer = setTimeout(function () {
+      var n = Math.abs(wheel.acc) > 900 ? 2 : (Math.abs(wheel.acc) > 28 ? 1 : 0);
+      target = wheel.base + (wheel.acc < 0 ? -n : n);
+      wheel.on = false;
+    }, 110);
+  }, { passive: false });
+
+  window.addEventListener('keydown', function (e) {
+    if (opening >= 0 || e.altKey || e.ctrlKey || e.metaKey) return;
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === 'PageDown') { go(document.dir === 'rtl' ? -1 : 1); e.preventDefault(); }
+    else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp' || e.key === 'PageUp') { go(document.dir === 'rtl' ? 1 : -1); e.preventDefault(); }
+    else if (e.key === 'Home') goTo(0);
+    else if (e.key === 'End') goTo(N - 1);
+    else if (/^[1-4]$/.test(e.key)) goTo(+e.key - 1);
+  });
+
+  stage.querySelector('.arrow-prev').addEventListener('click', function () { go(-1); });
+  stage.querySelector('.arrow-next').addEventListener('click', function () { go(1); });
+  navBtns.forEach(function (b, k) { b.addEventListener('click', function () { goTo(k); }); });
+  stage.addEventListener('pointerleave', function () { if (cursor) cursor.classList.remove('show'); });
+
+  /* ------------------------------------------------------------ frame */
+  function ease4(x) { return 1 - Math.pow(1 - x, 4); }
+
+  function frame(now) {
+    raf = requestAnimationFrame(frame);
+    var dt = Math.min(0.05, (now - last) / 1000); last = now;
+    if (!reduce) time += dt;
+    var rate = drag && drag.moved ? 20 : (reduce ? 14 : 5.6);
+    lastPos = pos;
+    pos += (target - pos) * (1 - Math.exp(-dt * rate));
+    if (Math.abs(target - pos) < 0.0004) pos = target;
+    var v = dt > 0 ? (pos - lastPos) / dt : 0;
+    velS += (v - velS) * (1 - Math.exp(-dt * 11));
+    var vN = clamp(velS * 0.3, -1.2, 1.2);
+    mouse.x += (mouse.tx - mouse.x) * (1 - Math.exp(-dt * 4));
+    mouse.y += (mouse.ty - mouse.y) * (1 - Math.exp(-dt * 4));
+    if (reduce) { mouse.x = 0; mouse.y = 0; }
+
+    var act = mod(Math.round(pos));
+    setActive(act);
+
+    /* hover over the centred plane */
+    var over = fine && !drag && opening < 0 && Math.abs(wrap(act - pos)) < 0.25 && inPlane(mouse.px, mouse.py);
+    hoverT = over ? 1 : 0;
+    hover += (hoverT - hover) * (1 - Math.exp(-dt * 7));
+    if (cursor && fine) {
+      cursor.classList.toggle('over', over);
+      var ch = over ? '↗' : '';
+      if (cursor.textContent !== ch) cursor.textContent = ch;
+    }
+
+    if (opening >= 0) {
+      openT = clamp((now - openStart) / (reduce ? 100 : 760), 0, 1);
+      openT = openT < 0.5 ? 4 * openT * openT * openT : 1 - Math.pow(-2 * openT + 2, 3) / 2;
+    }
+    var introT = (now - t0) / 1000;
+
+    syncDom();
+
+    gl.clearColor(0, 0, 0, 0);
+    gl.clear(gl.COLOR_BUFFER_BIT);
+    gl.uniform2f(U.u_res, W, H);
+    gl.uniform1f(U.u_pitch, pitch);
+    gl.uniform1f(U.u_cy, cyPx);
+    gl.uniform1f(U.u_vel, vN);
+    gl.uniform1f(U.u_time, time % 600);
+    gl.uniform2f(U.u_mouse, mouse.x, mouse.y);
+    gl.uniform1f(U.u_motion, reduce ? 0 : 1);
+    gl.uniform1f(U.u_aspect, aspect);
+
+    /* paint far -> near */
+    var order = [0, 1, 2, 3].sort(function (a, b) { return Math.abs(wrap(b - pos)) - Math.abs(wrap(a - pos)); });
+    for (var n = 0; n < N; n++) {
+      var i = order[n], rel = wrap(i - pos), ar = Math.abs(rel);
+      var rank = Math.round(Math.abs(wrap(i - 0)));
+      var ip = reduce ? 1 : ease4(clamp((introT - 0.1 - 0.13 * rank) / 1.2, 0, 1));
+      var alpha = clamp(1.9 - ar, 0, 1) * ip;
+      var op = (i === opening) ? openT : 0;
+      if (opening >= 0 && i !== opening) alpha *= 1 - clamp(openT * 1.6, 0, 1);
+      if (alpha <= 0.002) continue;
+      var col = COLORS[i];
+      gl.uniform1f(U.u_kind, i);
+      gl.uniform1f(U.u_rel, rel);
+      gl.uniform2f(U.u_size, pw, ph);
+      gl.uniform1f(U.u_open, op);
+      gl.uniform1f(U.u_intro, ip);
+      gl.uniform1f(U.u_hover, i === act ? hover : 0);
+      gl.uniform1f(U.u_alpha, alpha);
+      gl.uniform3f(U.u_c, col[0] / 255, col[1] / 255, col[2] / 255);
+      gl.uniform3f(U.u_c2, col[0] / 255 * 0.07, col[1] / 255 * 0.07, col[2] / 255 * 0.07 + 0.02);
+      /* pointer position in the plane's own art space (height units) */
+      var pcx = W / 2 + rel * pitch, pcy = H / 2 - cyPx;
+      gl.uniform2f(U.u_lm, (mouse.px - pcx) / ph, -(mouse.py - pcy) / ph);
+      gl.drawElements(gl.TRIANGLES, idx.length, gl.UNSIGNED_SHORT, 0);
+    }
+    if (!stage.classList.contains('ready') && introT > 0.5) stage.classList.add('ready');
+  }
+
+  /* ------------------------------------------------------------ boot */
+  canvas.addEventListener('webglcontextlost', function (e) {
+    e.preventDefault();
+    cancelAnimationFrame(raf);
+    stage.classList.remove('on'); document.body.classList.remove('stage-on');
+  });
+  document.addEventListener('visibilitychange', function () {
+    cancelAnimationFrame(raf);
+    if (!document.hidden) { last = performance.now(); raf = requestAnimationFrame(frame); }
+  });
+  /* back/forward cache: come back to a clean, un-opened stage */
+  window.addEventListener('pageshow', function (e) {
+    if (e.persisted) { opening = -1; openT = 0; stage.classList.remove('is-opening'); }
+  });
+  var rt; window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(resize, 60); });
+
+  stage.classList.add('on');
+  document.body.classList.add('stage-on');
+  if (fine) stage.classList.add('fine');
+  /* the language picker lives in the stage top bar while the stage is active */
+  var lb = document.querySelector('.hero .lang-bar'), slot = stage.querySelector('.lang-slot');
+  if (lb && slot) slot.appendChild(lb);
+  resize();
+  /* start on the slide matching a #b2/#c1/#essay/#grammatik hash */
+  var h = (location.hash || '').replace('#', '');
+  var hi = ['b2', 'c1', 'essay', 'grammatik'].indexOf(h);
+  if (hi > 0) { pos = target = hi; lastPos = pos; }
+  raf = requestAnimationFrame(frame);
+})();
