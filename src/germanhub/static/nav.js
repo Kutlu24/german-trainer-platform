@@ -7,7 +7,7 @@
     { href: '/b2/', label: 'B2 Vokabeln', sub: 'Sicher! B2' },
     { href: '/c1/', label: 'C1 Vokabeln', sub: 'Aspekte Neu C1' },
     { href: '/grammatik/', label: 'Grammatik', sub: 'A1–C1' },
-    { href: '/essay/', label: 'Essay Tutor', sub: 'KI-Feedback' }
+    { href: '/schreiben/', label: 'Schreibwerkstatt', sub: 'Aufsatz-Feedback (KI)' }
   ];
   var path = location.pathname;
   var css = document.createElement('style');

@@ -2,11 +2,9 @@ import io
 import os
 from pathlib import Path
 
-from typing import Awaitable, Callable
-
-from fastapi import FastAPI, File, HTTPException, Request, UploadFile
+from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import RedirectResponse, Response
+from fastapi.responses import RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from PIL import Image
 from pydantic import BaseModel
@@ -40,30 +38,24 @@ app = FastAPI(title="my-essay-tutor")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=_allowed_origins(),
-    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allow_headers=["Content-Type", "Authorization"],
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
 @app.middleware("http")
-async def _security_headers(request: Request, call_next: Callable[[Request], Awaitable[Response]]) -> Response:
-    response: Response = await call_next(request)
+async def _security_headers(request, call_next):
+    response = await call_next(request)
     response.headers.setdefault("X-Content-Type-Options", "nosniff")
     response.headers.setdefault("X-Frame-Options", "SAMEORIGIN")
     response.headers.setdefault("Referrer-Policy", "strict-origin-when-cross-origin")
-    # Only set HSTS on HTTPS; avoid breaking HTTP development environments
-    if request.url.scheme == "https" or "render" in os.environ:
-        response.headers.setdefault(
-            "Strict-Transport-Security", "max-age=31536000; includeSubDomains"
-        )
     response.headers.setdefault(
-        "Content-Security-Policy",
-        "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'"
+        "Strict-Transport-Security", "max-age=31536000; includeSubDomains"
     )
     return response
 
 # Frontend lives in the repo checkout during development and inside the
-# installed package (my_essay_tutor.frontend) when pip-installed.
+# installed package (essay_tutor.frontend) when pip-installed.
 _DEV_FRONTEND = Path(__file__).resolve().parents[3] / "frontend"
 _PKG_FRONTEND = Path(__file__).resolve().parents[1] / "frontend"
 _FRONTEND_DIR = _DEV_FRONTEND if _DEV_FRONTEND.exists() else _PKG_FRONTEND
@@ -118,10 +110,19 @@ async def extract(file: UploadFile = File(...)) -> ExtractResponse:
     return ExtractResponse(extracted_text="\n\n".join(t for t in page_texts if t), pages=len(pages))
 
 
+@app.get("/api/config")
+def public_config() -> dict:
+    """What this deployment offers: essay languages and the name it shows (see Settings)."""
+    st = get_settings()
+    kicker = st.app_kicker or ("A1 → C1 · telc · Goethe · DELF/DALF · " + " / ".join(x.upper() for x in st.language_list))
+    return {"languages": st.language_list, "title": st.app_title, "kicker": kicker}
+
+
 @app.get("/api/exams")
 def list_exams() -> dict:
     """Exam catalog (language -> exams -> levels -> tasks) the frontend builds its pickers from."""
-    return exams.catalog()
+    allowed = get_settings().language_list
+    return {lang: items for lang, items in exams.catalog().items() if lang in allowed}
 
 
 class GradeRequest(BaseModel):
@@ -134,8 +135,9 @@ class GradeRequest(BaseModel):
 
 @app.post("/api/grade", response_model=GradingResult)
 def grade(req: GradeRequest) -> GradingResult:
-    if req.language_code not in ("de", "en", "fr"):
-        raise HTTPException(400, "language_code must be one of: de, en, fr")
+    allowed = get_settings().language_list
+    if req.language_code not in allowed:
+        raise HTTPException(400, "language_code must be one of: " + ", ".join(allowed))
     if req.target_level not in ("A1", "A2", "B1", "B2", "C1"):
         raise HTTPException(400, "target_level must be one of: A1, A2, B1, B2, C1")
     if not req.text.strip():

@@ -6,7 +6,7 @@ Four exam-focused German tools under one FastAPI application:
 |------|------|---------|
 | Bist du sicher? — B2 | `/b2/` | 662 words from *Sicher! B2* — flashcards, multiple choice, audio (`sesler/`), progress tracking |
 | Deutsch C1 Vokabeltrainer | `/c1/` | 1,505 C1 words in two modules (Vokabelliste 626 + Aspekte Neu C1 879) — flashcards, multiple choice, typing quiz, spaced repetition, daily goals, audio |
-| Essay Tutor | `/essay/` | Upload a handwritten or typed German essay → OCR → corrected text, grammar notes, CEFR score (needs `GLM_API_KEY` / `GEMINI_API_KEY`; the rest of the platform runs without keys) |
+| Essay Tutor | `/schreiben/` | Upload a handwritten or typed German essay → OCR → corrected text, grammar notes, CEFR score (needs `GLM_API_KEY` / `GEMINI_API_KEY`; the rest of the platform runs without keys) |
 | DeutschGrammatikMeister | `/grammatik/` | Compact A1–C1 grammar reference: nouns, verbs, adjectives in German, exercises, glossary |
 
 The hub at `/` links all four. With JavaScript and WebGL it renders as a
@@ -57,3 +57,7 @@ the `<link rel="canonical">` keeps that variant from being indexed twice.
 ## Module switcher
 
 `src/germanhub/static/nav.js` is injected into every HTML page of the four modules (B2, C1, Grammatik, Essay Tutor) by the `_inject_nav` middleware in `germanhub/app.py`: a small floating "German Trainer" button with links to the overview and all modules. The vendored module sources stay untouched, so they can be re-synced from their own repos without losing it.
+
+## Schreibwerkstatt (formerly "Essay Tutor" here)
+
+Inside the platform the writing module is German-only and called **Schreibwerkstatt** (`/schreiben/`; old `/essay/` URLs redirect). It is the same code as the standalone My Essay Tutor (which checks German, English and French), configured through `ALLOWED_LANGUAGES=de`, `APP_TITLE`, `APP_KICKER` and `GRAMMAR_SITE_URL=/grammatik/` (set as defaults in `germanhub/app.py`). Links between modules stay inside the platform.
