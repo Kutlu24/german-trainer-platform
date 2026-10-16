@@ -1,0 +1,304 @@
+{
+  "level": "A1",
+  "title": "A1 – Erste Schritte",
+  "intro": "Auf A1 lernst du die Grundbausteine: Artikel, Präsens, einfache Sätze und Fragen.",
+  "rules": [
+    {
+      "id": "a1-artikel-genus",
+      "title": "Artikel und Genus (der, die, das)",
+      "explain": [
+        "Jedes Nomen hat ein Geschlecht: **der** (maskulin), **die** (feminin) oder **das** (neutral). Das Geschlecht musst du mit dem Nomen lernen.",
+        "Der unbestimmte Artikel heißt **ein** (m., n.) und **eine** (f.). Im Plural gibt es keinen unbestimmten Artikel: *Kinder*, aber der bestimmte Artikel ist immer **die**."
+      ],
+      "examples": [
+        "der Tisch – ein Tisch",
+        "die Lampe – eine Lampe",
+        "das Buch – ein Buch"
+      ],
+      "exercises": [
+        {
+          "q": "___ Sonne scheint. (bestimmter Artikel)",
+          "a": "Die"
+        },
+        {
+          "q": "Ich habe ___ Hund. (unbestimmter Artikel, maskulin, Akkusativ)",
+          "a": "einen"
+        },
+        {
+          "q": "___ Mädchen spielt. (bestimmter Artikel)",
+          "a": "Das"
+        }
+      ]
+    },
+    {
+      "id": "a1-plural",
+      "title": "Pluralbildung",
+      "explain": [
+        "Der Plural wird auf verschiedene Weise gebildet: mit **-e** (Tag – Tage), **-en/-n** (Frau – Frauen, Lampe – Lampen), **-er** (Kind – Kinder), **-s** (Auto – Autos) oder ohne Endung (Lehrer – Lehrer). Oft kommt ein Umlaut dazu (Haus – Häuser).",
+        "Lerne den Plural immer mit dem Nomen. Der Artikel im Plural ist immer **die**."
+      ],
+      "examples": [
+        "das Buch – die Bücher",
+        "die Frau – die Frauen",
+        "das Auto – die Autos"
+      ],
+      "exercises": [
+        {
+          "q": "Plural von „der Tag“: die ___",
+          "a": "Tage"
+        },
+        {
+          "q": "Plural von „das Kind“: die ___",
+          "a": "Kinder"
+        },
+        {
+          "q": "Plural von „die Frau“: die ___",
+          "a": "Frauen"
+        }
+      ]
+    },
+    {
+      "id": "a1-praesens-regelmaessig",
+      "title": "Präsens: regelmäßige Verben",
+      "explain": [
+        "Im Präsens nimmst du den Verbstamm (lernen → lern-) und hängst die Endung an: ich **-e**, du **-st**, er/sie/es **-t**, wir **-en**, ihr **-t**, sie/Sie **-en**.",
+        "Endet der Stamm auf -t oder -d, kommt ein **-e-** dazu: du arbeit**e**st, er arbeit**e**t."
+      ],
+      "examples": [
+        "Ich lerne Deutsch.",
+        "Du wohnst in Zürich.",
+        "Er arbeitet heute."
+      ],
+      "exercises": [
+        {
+          "q": "Wir ___ Kaffee. (trinken)",
+          "a": "trinken"
+        },
+        {
+          "q": "Du ___ gern. (tanzen)",
+          "a": "tanzt"
+        },
+        {
+          "q": "Er ___ viel. (arbeiten)",
+          "a": "arbeitet"
+        }
+      ]
+    },
+    {
+      "id": "a1-praesens-unregelmaessig",
+      "title": "Präsens: Verben mit Vokalwechsel",
+      "explain": [
+        "Einige Verben ändern bei **du** und **er/sie/es** den Stammvokal: e → i/ie (sprechen – du sprichst, lesen – du liest), a → ä (fahren – du fährst, schlafen – er schläft).",
+        "Bei ich, wir, ihr und sie/Sie bleibt der Vokal gleich."
+      ],
+      "examples": [
+        "Du sprichst gut Deutsch.",
+        "Er fährt mit dem Bus.",
+        "Sie liest ein Buch."
+      ],
+      "exercises": [
+        {
+          "q": "Er ___ Pizza. (essen)",
+          "a": "isst"
+        },
+        {
+          "q": "Du ___ nach Bern. (fahren)",
+          "a": "fährst"
+        },
+        {
+          "q": "Sie ___ lange. (schlafen)",
+          "a": "schläft"
+        }
+      ]
+    },
+    {
+      "id": "a1-sein-haben",
+      "title": "sein und haben",
+      "explain": [
+        "**sein** und **haben** sind unregelmäßig und sehr wichtig. sein: ich bin, du bist, er ist, wir sind, ihr seid, sie sind. haben: ich habe, du hast, er hat, wir haben, ihr habt, sie haben.",
+        "Mit sein beschreibst du Zustände und Berufe, mit haben Besitz."
+      ],
+      "examples": [
+        "Ich bin Studentin.",
+        "Wir sind müde.",
+        "Er hat ein Fahrrad."
+      ],
+      "exercises": [
+        {
+          "q": "Du ___ Hunger. (haben)",
+          "a": "hast"
+        },
+        {
+          "q": "Ihr ___ zu Hause. (sein)",
+          "a": "seid"
+        },
+        {
+          "q": "Sie (Plural) ___ zwei Kinder. (haben)",
+          "a": "haben"
+        }
+      ]
+    },
+    {
+      "id": "a1-satzbau-verbposition",
+      "title": "Satzbau: Das Verb steht an Position 2",
+      "explain": [
+        "Im Aussagesatz steht das konjugierte Verb immer an **Position 2**. Auf Position 1 kann das Subjekt stehen oder eine Zeitangabe; dann folgt das Verb, danach das Subjekt.",
+        "Bei Ja/Nein-Fragen steht das Verb an Position 1, bei W-Fragen an Position 2 nach dem Fragewort."
+      ],
+      "examples": [
+        "Ich lerne heute Deutsch.",
+        "Heute lerne ich Deutsch.",
+        "Wann lernst du Deutsch?"
+      ],
+      "exercises": [
+        {
+          "q": "Ordne: morgen / ich / fahre / nach Bern → ___",
+          "a": "Morgen fahre ich nach Bern."
+        },
+        {
+          "q": "Mache eine Ja/Nein-Frage: Du kommst aus der Türkei. → ___",
+          "a": "Kommst du aus der Türkei?"
+        },
+        {
+          "q": "Ordne: wohnt / wo / er → ___",
+          "a": "Wo wohnt er?"
+        }
+      ]
+    },
+    {
+      "id": "a1-negation",
+      "title": "Verneinung: nicht und kein",
+      "explain": [
+        "**kein** verneint Nomen mit unbestimmtem Artikel oder ohne Artikel: *Ich habe kein Auto.* Es wird wie *ein* dekliniert (keine im Plural).",
+        "**nicht** verneint Verben, Adjektive und Nomen mit bestimmtem Artikel: *Ich arbeite nicht. Das Auto ist nicht neu.* Es steht meist am Satzende oder vor dem Wort, das verneint wird."
+      ],
+      "examples": [
+        "Ich habe keine Zeit.",
+        "Er kommt nicht.",
+        "Das ist nicht mein Buch."
+      ],
+      "exercises": [
+        {
+          "q": "Ich habe ___ Geld. (kein/nicht)",
+          "a": "kein"
+        },
+        {
+          "q": "Sie schläft ___. (kein/nicht)",
+          "a": "nicht"
+        },
+        {
+          "q": "Wir haben ___ Fragen. (keine/nicht)",
+          "a": "keine"
+        }
+      ]
+    },
+    {
+      "id": "a1-nominativ-akkusativ",
+      "title": "Nominativ und Akkusativ",
+      "explain": [
+        "Das Subjekt steht im **Nominativ** (wer? was?), das direkte Objekt im **Akkusativ** (wen? was?). Nur der maskuline Artikel verändert sich: der → **den**, ein → **einen**.",
+        "Femininum, Neutrum und Plural bleiben im Akkusativ gleich."
+      ],
+      "examples": [
+        "Der Mann sieht den Hund.",
+        "Ich kaufe einen Tisch.",
+        "Sie hat eine Katze."
+      ],
+      "exercises": [
+        {
+          "q": "Ich sehe ___ Lehrer. (der)",
+          "a": "den"
+        },
+        {
+          "q": "Er kauft ___ Apfel. (ein)",
+          "a": "einen"
+        },
+        {
+          "q": "Wir haben ___ Auto. (das)",
+          "a": "das"
+        }
+      ]
+    },
+    {
+      "id": "a1-possessivartikel",
+      "title": "Possessivartikel (mein, dein, …)",
+      "explain": [
+        "Possessivartikel zeigen Besitz: ich – **mein**, du – **dein**, er/es – **sein**, sie – **ihr**, wir – **unser**, ihr – **euer**, sie/Sie – **ihr/Ihr**.",
+        "Sie werden wie *ein* dekliniert: mein Bruder – meine Schwester – mein Kind; Akkusativ maskulin: **meinen** Bruder."
+      ],
+      "examples": [
+        "Das ist meine Tasche.",
+        "Wo ist dein Handy?",
+        "Ich besuche meinen Bruder."
+      ],
+      "exercises": [
+        {
+          "q": "Das ist ___ Mutter. (ich)",
+          "a": "meine"
+        },
+        {
+          "q": "Er liebt ___ Frau. (er)",
+          "a": "seine"
+        },
+        {
+          "q": "Wir besuchen ___ Onkel. (wir, Akkusativ)",
+          "a": "unseren"
+        }
+      ]
+    },
+    {
+      "id": "a1-trennbare-verben",
+      "title": "Trennbare Verben",
+      "explain": [
+        "Bei trennbaren Verben steht die Vorsilbe im Hauptsatz **am Ende**: *aufstehen → Ich stehe um 7 Uhr auf.* Im Infinitiv bleibt das Verb zusammen.",
+        "Typische Vorsilben: ab-, an-, auf-, aus-, ein-, mit-, zu-."
+      ],
+      "examples": [
+        "Der Zug kommt um 8 Uhr an.",
+        "Ich kaufe heute ein.",
+        "Er ruft mich an."
+      ],
+      "exercises": [
+        {
+          "q": "Ich ___ um 6 Uhr ___. (aufstehen)",
+          "a": "stehe … auf"
+        },
+        {
+          "q": "Wir ___ im Supermarkt ___. (einkaufen)",
+          "a": "kaufen … ein"
+        },
+        {
+          "q": "Er ___ seine Mutter ___. (anrufen)",
+          "a": "ruft … an"
+        }
+      ]
+    },
+    {
+      "id": "a1-modalverben",
+      "title": "Modalverben (können, müssen, wollen, …)",
+      "explain": [
+        "Das Modalverb steht an Position 2 und ist konjugiert, das Vollverb steht im **Infinitiv am Satzende**.",
+        "ich kann, du kannst, er kann; ich muss; ich will; ich darf; ich soll. Bei ich und er/sie/es gibt es keine Endung."
+      ],
+      "examples": [
+        "Ich kann gut schwimmen.",
+        "Du musst heute arbeiten.",
+        "Wir wollen nach Hause gehen."
+      ],
+      "exercises": [
+        {
+          "q": "Er ___ Deutsch sprechen. (können)",
+          "a": "kann"
+        },
+        {
+          "q": "Ihr ___ pünktlich kommen. (müssen)",
+          "a": "müsst"
+        },
+        {
+          "q": "Ich ___ ein Eis essen. (wollen)",
+          "a": "will"
+        }
+      ]
+    }
+  ]
+}

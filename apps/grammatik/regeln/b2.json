@@ -1,0 +1,329 @@
+{
+  "level": "B2",
+  "title": "B2 – Differenziert und genau",
+  "intro": "Auf B2 drückst du dich differenziert aus: Passiv, indirekte Rede, Konnektoren und komplexe Nebensätze.",
+  "rules": [
+    {
+      "id": "b2-passiv-erweitert",
+      "title": "Passiv: Perfekt, Modalverben und Zustandspassiv",
+      "explain": [
+        "Perfekt Passiv: **ist/sind + Partizip II + worden**: *Das Haus ist gebaut worden.* Mit Modalverb: **Modalverb + Partizip II + werden**: *Das Formular muss ausgefüllt werden.*",
+        "Das **Zustandspassiv** (sein + Partizip II) beschreibt das Ergebnis: *Die Tür ist geöffnet.* Der Prozess dagegen: *Die Tür wird geöffnet.*"
+      ],
+      "examples": [
+        "Der Brief ist gestern geschickt worden.",
+        "Die Aufgabe kann gelöst werden.",
+        "Das Geschäft ist geschlossen."
+      ],
+      "exercises": [
+        {
+          "q": "Das Paket ___ gestern ___ ___. (liefern, Perfekt Passiv)",
+          "a": "ist … geliefert worden"
+        },
+        {
+          "q": "Der Antrag muss bis Freitag ___ ___. (abgeben, Passiv mit Modalverb)",
+          "a": "abgegeben werden"
+        },
+        {
+          "q": "Prozess oder Zustand? „Das Fenster ist geschlossen.“ →",
+          "a": "Zustand"
+        }
+      ]
+    },
+    {
+      "id": "b2-konjunktiv-ii-vergangenheit",
+      "title": "Konjunktiv II der Vergangenheit",
+      "explain": [
+        "Für irreale Bedingungen in der Vergangenheit: **hätte/wäre + Partizip II**. *Wenn ich gelernt hätte, hätte ich die Prüfung bestanden.*",
+        "Mit Modalverben: **hätte + Infinitiv + Modalverb im Infinitiv**: *Ich hätte kommen können.* Ausdrücke wie *Ich hätte gern …* bleiben im Präsens."
+      ],
+      "examples": [
+        "Wenn ich früher aufgestanden wäre, hätte ich den Zug nicht verpasst.",
+        "Du hättest anrufen sollen."
+      ],
+      "exercises": [
+        {
+          "q": "Wenn er pünktlich ___ ___, hätte er die Stelle bekommen. (sein, Konjunktiv II der Vergangenheit)",
+          "a": "gewesen wäre"
+        },
+        {
+          "q": "Ich ___ das nicht ___. (sagen, Konjunktiv II der Vergangenheit)",
+          "a": "hätte … gesagt"
+        },
+        {
+          "q": "Wir ___ früher ___. (gehen, wäre)",
+          "a": "wären … gegangen"
+        }
+      ]
+    },
+    {
+      "id": "b2-konjunktiv-i-indirekte-rede",
+      "title": "Konjunktiv I und indirekte Rede",
+      "explain": [
+        "Die indirekte Rede gibt fremde Aussagen wieder, in Zeitung und Bericht meist mit **Konjunktiv I**: Stamm + -e (er **komme**, sie **habe**, er **sei**).",
+        "Ist die Form des Konjunktiv I mit dem Indikativ identisch (z. B. *sie kommen*), weicht man auf den **Konjunktiv II** aus (*sie kämen*)."
+      ],
+      "examples": [
+        "Er sagt, er habe keine Zeit.",
+        "Sie behauptete, sie sei krank gewesen.",
+        "Die Zeitung berichtet, der Minister trete zurück."
+      ],
+      "exercises": [
+        {
+          "q": "„Ich bin müde.“ → Er sagt, er ___ müde. (sein, Konjunktiv I)",
+          "a": "sei"
+        },
+        {
+          "q": "„Ich habe Hunger.“ → Sie sagt, sie ___ Hunger. (haben, Konjunktiv I)",
+          "a": "habe"
+        },
+        {
+          "q": "„Wir fahren morgen.“ → Sie sagen, sie ___ morgen. (fahren, Ausweichform)",
+          "a": "führen"
+        }
+      ]
+    },
+    {
+      "id": "b2-konnektoren",
+      "title": "Konnektoren: obwohl, trotzdem, deshalb, dennoch",
+      "explain": [
+        "**obwohl** (Gegengrund) leitet einen Nebensatz ein: *Obwohl es regnet, gehe ich spazieren.* **trotzdem, dennoch, deshalb, deswegen, darum** sind Adverbien: sie stehen auf Position 1 und das Verb folgt direkt: *Es regnet. Trotzdem gehe ich spazieren.*",
+        "**weil** (Nebensatz) ↔ **deshalb** (Position 1 + Verb): *Er ist krank, deshalb bleibt er zu Hause.*"
+      ],
+      "examples": [
+        "Obwohl er müde war, arbeitete er weiter.",
+        "Sie war krank, trotzdem kam sie.",
+        "Es regnet, deshalb bleiben wir hier."
+      ],
+      "exercises": [
+        {
+          "q": "___ er viel arbeitet, hat er wenig Geld. (obwohl/trotzdem)",
+          "a": "Obwohl"
+        },
+        {
+          "q": "Ich bin müde. ___ gehe ich zur Party. (Trotzdem/Obwohl)",
+          "a": "Trotzdem"
+        },
+        {
+          "q": "Das Wetter ist schlecht, ___ bleiben wir zu Hause. (deshalb/weil)",
+          "a": "deshalb"
+        }
+      ]
+    },
+    {
+      "id": "b2-doppelkonjunktionen",
+      "title": "Zweiteilige Konjunktionen",
+      "explain": [
+        "**sowohl … als auch**, **nicht nur … sondern auch**, **entweder … oder**, **weder … noch**, **zwar … aber**, **je … desto**. Sie verbinden gleichwertige Satzteile oder Sätze.",
+        "Bei **entweder … oder** und **zwar … aber** folgt auf den ersten Teil direkt das Verb, wenn er am Satzanfang steht: *Entweder fahren wir mit dem Zug oder wir fliegen.* Bei **je … desto** + Komparativ: *Je mehr du lernst, desto besser wirst du.*"
+      ],
+      "examples": [
+        "Er spricht sowohl Deutsch als auch Englisch.",
+        "Sie ist weder müde noch hungrig.",
+        "Je früher du anfängst, desto früher bist du fertig."
+      ],
+      "exercises": [
+        {
+          "q": "Sie ist nicht nur klug, ___ auch fleißig. (sondern/als)",
+          "a": "sondern"
+        },
+        {
+          "q": "Ich mag ___ Tee ___ Kaffee. (weder … noch)",
+          "a": "weder … noch"
+        },
+        {
+          "q": "Je länger ich warte, ___ nervöser werde ich. (desto/je)",
+          "a": "desto"
+        }
+      ]
+    },
+    {
+      "id": "b2-relativsaetze-mit-praepositionen",
+      "title": "Relativsätze mit Präpositionen, was und wo",
+      "explain": [
+        "Die Präposition steht vor dem Relativpronomen: *Das ist die Firma, **in der** ich arbeite. Der Mann, **mit dem** ich sprach, …*",
+        "**was** verwendet man nach *alles, nichts, etwas, das Beste, das Einzige*: *Alles, was er sagt, stimmt.* **wo** für Orte und Zeiten: *die Stadt, wo ich wohne.*"
+      ],
+      "examples": [
+        "Das Haus, in dem sie wohnt, ist alt.",
+        "Das ist alles, was ich weiß.",
+        "Der Freund, mit dem ich reise, kommt aus Wien."
+      ],
+      "exercises": [
+        {
+          "q": "Das ist die Frau, mit ___ ich sprach.",
+          "a": "der"
+        },
+        {
+          "q": "Alles, ___ du sagst, ist richtig.",
+          "a": "was"
+        },
+        {
+          "q": "Das Haus, in ___ er wohnt, ist neu.",
+          "a": "dem"
+        }
+      ]
+    },
+    {
+      "id": "b2-subjektive-modalverben",
+      "title": "Subjektiver Gebrauch der Modalverben",
+      "explain": [
+        "Modalverben können auch eine **Vermutung** oder **Behauptung** ausdrücken. Vermutung: **müssen** (sicher), **dürfte** (wahrscheinlich), **können/könnte** (möglich).",
+        "Behauptung: **sollen** (man sagt, dass), **wollen** (er behauptet). Mit Perfekt-Infinitiv für Vergangenes: *Er muss krank gewesen sein.*"
+      ],
+      "examples": [
+        "Er muss zu Hause sein.",
+        "Sie soll sehr reich sein.",
+        "Er will die Prüfung bestanden haben."
+      ],
+      "exercises": [
+        {
+          "q": "Es ist 8 Uhr, er ___ schon im Büro sein. (müssen, sehr sicher)",
+          "a": "muss"
+        },
+        {
+          "q": "Der Film ___ sehr gut sein. (sollen, man sagt)",
+          "a": "soll"
+        },
+        {
+          "q": "Sie ___ gestern krank gewesen sein. (müssen, Vermutung)",
+          "a": "muss"
+        }
+      ]
+    },
+    {
+      "id": "b2-finalsaetze",
+      "title": "Finalsätze: damit und um … zu",
+      "explain": [
+        "Finalsätze nennen den Zweck. **damit** leitet einen Nebensatz ein und kann verschiedene Subjekte haben: *Ich erkläre es, damit du es verstehst.*",
+        "**um … zu** + Infinitiv benutzt man bei gleichem Subjekt: *Ich lerne, um die Prüfung zu bestehen.*"
+      ],
+      "examples": [
+        "Er spart Geld, um ein Auto zu kaufen.",
+        "Sie spricht langsam, damit alle sie verstehen."
+      ],
+      "exercises": [
+        {
+          "q": "Ich lerne Deutsch, ___ in Zürich zu arbeiten. (um/damit)",
+          "a": "um"
+        },
+        {
+          "q": "Sie erklärt es noch einmal, ___ wir es verstehen. (um/damit)",
+          "a": "damit"
+        },
+        {
+          "q": "Er geht früh ins Bett, um fit ___ sein. (zu/–)",
+          "a": "zu"
+        }
+      ]
+    },
+    {
+      "id": "b2-partizipialattribute",
+      "title": "Partizip I und II als Adjektiv",
+      "explain": [
+        "**Partizip I** (Infinitiv + d) drückt etwas Gleichzeitiges und Aktives aus: *der lachende Junge* (der Junge, der lacht). **Partizip II** drückt Abgeschlossenes oder Passives aus: *das gelesene Buch*, *die gebrauchten Autos*.",
+        "Sie werden wie Adjektive dekliniert."
+      ],
+      "examples": [
+        "Das spielende Kind ist laut.",
+        "Ich lese das geliehene Buch.",
+        "Der anrufende Kunde wartet."
+      ],
+      "exercises": [
+        {
+          "q": "Der (schlafen) ___ Hund liegt unter dem Tisch. (Partizip I + Endung)",
+          "a": "schlafende"
+        },
+        {
+          "q": "Das (reparieren) ___ Auto steht vor der Tür. (Partizip II + Endung)",
+          "a": "reparierte"
+        },
+        {
+          "q": "Der (singen) ___ Mann ist mein Onkel. (Partizip I + Endung)",
+          "a": "singende"
+        }
+      ]
+    },
+    {
+      "id": "b2-nominalisierung",
+      "title": "Nominalisierung: Verb → Nomen",
+      "explain": [
+        "Im formalen Stil ersetzt man Verben oft durch Nomen. Endungen: **-ung** (erklären → die Erklärung), **-heit/-keit** (schön → die Schönheit), **-nis**, **-er** (Lehrer), Infinitiv als Nomen (das Lesen, das Essen).",
+        "Das Genus ergibt sich oft aus der Endung: *-ung, -heit, -keit* → die; *-er* (Person) → der; Infinitiv → das."
+      ],
+      "examples": [
+        "entscheiden → die Entscheidung",
+        "frei → die Freiheit",
+        "lesen → das Lesen"
+      ],
+      "exercises": [
+        {
+          "q": "erklären → die ___",
+          "a": "Erklärung"
+        },
+        {
+          "q": "schwierig → die ___",
+          "a": "Schwierigkeit"
+        },
+        {
+          "q": "entwickeln → die ___",
+          "a": "Entwicklung"
+        }
+      ]
+    },
+    {
+      "id": "b2-wortstellung-mittelfeld",
+      "title": "Wortstellung im Mittelfeld (temporal – kausal – modal – lokal)",
+      "explain": [
+        "Angaben stehen im Mittelfeld meist in der Reihenfolge **te-ka-mo-lo**: temporal (wann), kausal (warum), modal (wie), lokal (wo). Pronomen stehen vor Nomen; Akkusativpronomen vor Dativpronomen: *Ich gebe es ihm.*",
+        "Nomen: Dativ vor Akkusativ: *Ich gebe dem Kind den Ball.*"
+      ],
+      "examples": [
+        "Ich fahre morgen wegen der Arbeit mit dem Zug nach Bern.",
+        "Er schenkt ihr einen Ring.",
+        "Er schenkt ihn ihr."
+      ],
+      "exercises": [
+        {
+          "q": "Ordne: Ich / gebe / es / ihm → ___",
+          "a": "Ich gebe es ihm."
+        },
+        {
+          "q": "Ordne: Wir / fahren / morgen / mit dem Bus / in die Stadt → ___",
+          "a": "Wir fahren morgen mit dem Bus in die Stadt."
+        },
+        {
+          "q": "Ordne: Sie / zeigt / dem Kind / das Buch → ___",
+          "a": "Sie zeigt dem Kind das Buch."
+        }
+      ]
+    },
+    {
+      "id": "b2-adjektive-mit-praepositionen",
+      "title": "Adjektive mit Präpositionen",
+      "explain": [
+        "Auch Adjektive verlangen feste Präpositionen: *stolz auf* (Akk.), *zufrieden mit* (Dat.), *abhängig von* (Dat.), *interessiert an* (Dat.), *typisch für* (Akk.), *überzeugt von* (Dat.).",
+        "Wie bei Verben gilt: Lerne die Präposition und den Kasus mit."
+      ],
+      "examples": [
+        "Ich bin stolz auf dich.",
+        "Er ist mit dem Ergebnis zufrieden.",
+        "Das ist typisch für ihn."
+      ],
+      "exercises": [
+        {
+          "q": "Sie ist stolz ___ ihre Kinder. (auf/von)",
+          "a": "auf"
+        },
+        {
+          "q": "Ich bin zufrieden ___ meiner Arbeit. (mit/für)",
+          "a": "mit"
+        },
+        {
+          "q": "Das hängt ___ dem Wetter ab. (von/an)",
+          "a": "von"
+        }
+      ]
+    }
+  ]
+}

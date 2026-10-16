@@ -1,0 +1,277 @@
+{
+  "level": "C1",
+  "title": "C1 – Souverän und stilsicher",
+  "intro": "Auf C1 beherrschst du den Nominalstil, komplexe Attribute und feine Unterschiede im Ausdruck.",
+  "rules": [
+    {
+      "id": "c1-erweitertes-partizipialattribut",
+      "title": "Erweitertes Partizipialattribut",
+      "explain": [
+        "Das Partizip steht mit seinen Ergänzungen **vor dem Nomen** und ersetzt einen Relativsatz: *der Mann, der seit Jahren in Zürich lebt → der seit Jahren in Zürich lebende Mann.*",
+        "Partizip I (aktiv, gleichzeitig): *die bellenden Hunde*. Partizip II (passiv/abgeschlossen): *das von allen gelesene Buch*. Mit *zu* + Partizip I drückt man Möglichkeit/Notwendigkeit aus: *die zu lösende Aufgabe* (die gelöst werden muss)."
+      ],
+      "examples": [
+        "Die in der Schweiz lebenden Studierenden zahlen Gebühren.",
+        "Das von der Kommission verabschiedete Gesetz tritt in Kraft.",
+        "Das nicht zu übersehende Problem bleibt."
+      ],
+      "exercises": [
+        {
+          "q": "Relativsatz → Attribut: Das Auto, das gestern repariert wurde → das gestern ___ Auto",
+          "a": "reparierte"
+        },
+        {
+          "q": "Die Aufgabe, die gelöst werden muss → die ___ Aufgabe",
+          "a": "zu lösende"
+        },
+        {
+          "q": "Der Student, der in Bern studiert → der in Bern ___ Student",
+          "a": "studierende"
+        }
+      ]
+    },
+    {
+      "id": "c1-nominalstil-funktionsverbgefuege",
+      "title": "Nominalstil und Funktionsverbgefüge",
+      "explain": [
+        "Im Nominalstil (Verwaltung, Wissenschaft) stehen Nomen statt Verben. Funktionsverbgefüge verbinden ein Nomen mit einem blassen Verb: *eine Entscheidung treffen* (entscheiden), *in Betracht ziehen* (berücksichtigen), *zur Verfügung stellen*, *Kritik üben*, *in Frage stellen*.",
+        "Sie sind häufig im formellen Text und oft passivfähig oder mit Bedeutungsnuance (*zum Ausdruck bringen* = betonen)."
+      ],
+      "examples": [
+        "Das Unternehmen trifft eine Entscheidung. = Das Unternehmen entscheidet.",
+        "Wir ziehen Ihren Vorschlag in Betracht.",
+        "Er übt Kritik an der Regierung."
+      ],
+      "exercises": [
+        {
+          "q": "entscheiden → eine Entscheidung ___",
+          "a": "treffen"
+        },
+        {
+          "q": "berücksichtigen → in Betracht ___",
+          "a": "ziehen"
+        },
+        {
+          "q": "kritisieren → Kritik ___",
+          "a": "üben"
+        }
+      ]
+    },
+    {
+      "id": "c1-irreale-vergleiche",
+      "title": "Irreale Vergleiche: als ob, als wenn",
+      "explain": [
+        "**als ob/als wenn** leiten irreale oder unsichere Vergleiche ein; sie verlangen meist den Konjunktiv II: *Er tut, als ob er alles wüsste.* Mit **als** allein folgt das Verb direkt: *Er tut, als wüsste er alles.*",
+        "In der Umgangssprache steht auch der Indikativ, in der Schriftsprache bevorzugt man Konjunktiv II oder Konjunktiv I."
+      ],
+      "examples": [
+        "Sie lächelt, als hätte sie nichts gehört.",
+        "Es sieht aus, als ob es regnen würde.",
+        "Er benimmt sich, als wäre er der Chef."
+      ],
+      "exercises": [
+        {
+          "q": "Er tut, als ob er krank ___. (sein, Konjunktiv II)",
+          "a": "wäre"
+        },
+        {
+          "q": "Sie lächelt, als ___ sie nichts gehört. (haben, ohne ob, Konjunktiv II)",
+          "a": "hätte"
+        },
+        {
+          "q": "Es sieht aus, als ___ es schneien ___. (ob, würde)",
+          "a": "ob … würde"
+        }
+      ]
+    },
+    {
+      "id": "c1-passiversatzformen",
+      "title": "Passiversatzformen",
+      "explain": [
+        "Das Passiv lässt sich ersetzen durch: **man** (*Man kann das lösen*), **sich lassen** + Infinitiv (*Das lässt sich lösen*), **sein … zu** + Infinitiv (*Das ist zu lösen*), **-bar/-lich** Adjektive (*lösbar*), **sich eignen**, **bleiben … zu**.",
+        "Sie klingen eleganter und werden im Prüfungsstil oft verlangt."
+      ],
+      "examples": [
+        "Das Problem lässt sich leicht lösen.",
+        "Die Aufgabe ist schnell zu erledigen.",
+        "Das Wasser ist trinkbar."
+      ],
+      "exercises": [
+        {
+          "q": "Man kann das Problem lösen. → Das Problem ___ ___ lösen.",
+          "a": "lässt sich"
+        },
+        {
+          "q": "Das muss erledigt werden. → Das ist ___ erledigen.",
+          "a": "zu"
+        },
+        {
+          "q": "Man kann das essen. → Das ist ___.",
+          "a": "essbar"
+        }
+      ]
+    },
+    {
+      "id": "c1-gehobene-konnektoren",
+      "title": "Gehobene Konnektoren: indem, sodass, zumal, insofern",
+      "explain": [
+        "**indem**: Art und Weise (*Er löste das Problem, indem er einen Experten fragte.*). **sodass**: Folge (*Es regnete stark, sodass die Straße gesperrt wurde.*). **zumal**: zusätzlicher Grund (*Ich bleibe zu Hause, zumal es regnet.*).",
+        "Weitere: **insofern … als** (*Sie hat recht, insofern als …*), **soweit**, **sofern**, **falls**, **es sei denn**, **wohingegen** (Gegensatz)."
+      ],
+      "examples": [
+        "Er hilft ihr, indem er ihr Geld leiht.",
+        "Das Wetter war schlecht, sodass wir zu Hause blieben.",
+        "Ich komme, es sei denn, ich werde krank."
+      ],
+      "exercises": [
+        {
+          "q": "Er lernt Deutsch, ___ er jeden Tag liest. (indem/sodass)",
+          "a": "indem"
+        },
+        {
+          "q": "Der Zug fiel aus, ___ wir zu spät kamen. (sodass/indem)",
+          "a": "sodass"
+        },
+        {
+          "q": "Ich gehe heute nicht, ___ ich müde bin. (zumal/wohingegen)",
+          "a": "zumal"
+        }
+      ]
+    },
+    {
+      "id": "c1-verben-mit-modaler-bedeutung",
+      "title": "Verben mit modaler Bedeutung: scheinen, drohen, pflegen, vermögen",
+      "explain": [
+        "Einige Verben drücken Modalität aus und stehen mit **zu**-Infinitiv: **scheinen zu** (es sieht so aus), **drohen zu** (negativ möglich), **versprechen zu**, **pflegen zu** (gewohnheitsmäßig), **vermögen zu** (gehoben: können), **brauchen … nicht zu** (nicht müssen).",
+        "*Er scheint krank zu sein.* *Das Haus droht einzustürzen.* *Er pflegt früh aufzustehen.*"
+      ],
+      "examples": [
+        "Das Projekt scheint zu gelingen.",
+        "Er pflegt jeden Morgen zu joggen.",
+        "Du brauchst nicht zu kommen."
+      ],
+      "exercises": [
+        {
+          "q": "Er ___ müde zu sein. (scheinen)",
+          "a": "scheint"
+        },
+        {
+          "q": "Du ___ nicht zu warten. (brauchen)",
+          "a": "brauchst"
+        },
+        {
+          "q": "Das Dach ___ einzustürzen. (drohen)",
+          "a": "droht"
+        }
+      ]
+    },
+    {
+      "id": "c1-weiterfuehrende-relativsaetze",
+      "title": "Weiterführende Relativsätze (was, wo(r)-)",
+      "explain": [
+        "Ein weiterführender Relativsatz bezieht sich auf den **ganzen vorangehenden Satz** und beginnt mit **was** oder **wo(r)+Präposition**: *Er hat die Prüfung bestanden, **worüber** sich alle freuen.*",
+        "Nach Superlativ, *alles, nichts, etwas, vieles, das Beste* steht **was**: *Das ist das Beste, was ich gehört habe.*"
+      ],
+      "examples": [
+        "Sie kam pünktlich, was mich überraschte.",
+        "Er arbeitet viel, wofür ihn alle loben.",
+        "Das ist alles, was ich weiß."
+      ],
+      "exercises": [
+        {
+          "q": "Er hat gewonnen, ___ uns alle freut. (was/wer)",
+          "a": "was"
+        },
+        {
+          "q": "Sie lernt viel, ___ sie stolz ist. (worauf/wo)",
+          "a": "worauf"
+        },
+        {
+          "q": "Das ist das Schönste, ___ ich je sah. (was/das)",
+          "a": "was"
+        }
+      ]
+    },
+    {
+      "id": "c1-praepositionen-genitiv-gehoben",
+      "title": "Präpositionen des gehobenen Stils (aufgrund, infolge, angesichts, …)",
+      "explain": [
+        "Im formellen Stil benutzt man Genitivpräpositionen: **aufgrund/infolge** (Grund), **angesichts** (Anlass), **hinsichtlich/bezüglich** (Bezug), **mithilfe**, **anstelle**, **innerhalb/außerhalb**, **zugunsten**, **seitens**.",
+        "Sie ersetzen Nebensätze: *Weil die Preise steigen, … → Aufgrund der steigenden Preise …*"
+      ],
+      "examples": [
+        "Aufgrund des Streiks fielen viele Züge aus.",
+        "Angesichts der Lage bleiben wir ruhig.",
+        "Hinsichtlich der Kosten gibt es Fragen."
+      ],
+      "exercises": [
+        {
+          "q": "___ der hohen Kosten verzichten wir. (Angesichts/Innerhalb)",
+          "a": "Angesichts"
+        },
+        {
+          "q": "Aufgrund ___ Krankheit fällt der Kurs aus. (die)",
+          "a": "der"
+        },
+        {
+          "q": "___ eines Jahres ist alles fertig. (Innerhalb/Wegen)",
+          "a": "Innerhalb"
+        }
+      ]
+    },
+    {
+      "id": "c1-satzstellung-hervorhebung",
+      "title": "Hervorhebung durch Satzstellung",
+      "explain": [
+        "Auf Position 1 kann fast jedes Satzglied stehen; das Hervorgehobene (oft neue Information) rückt dorthin: *Den Vertrag unterschreibt der Direktor morgen. Morgen unterschreibt der Direktor den Vertrag.*",
+        "Weitere Mittel: **es** als Platzhalter (*Es kamen viele Gäste*), Spaltsatz (*Es war der Direktor, der unterschrieb*), Passiv, Partikeln."
+      ],
+      "examples": [
+        "Gestern habe ich ihn gesehen.",
+        "Ihn habe ich gestern gesehen.",
+        "Es war Anna, die den Fehler fand."
+      ],
+      "exercises": [
+        {
+          "q": "Betone „den Fehler“: Ich habe den Fehler gefunden. → ___ habe ich gefunden.",
+          "a": "Den Fehler"
+        },
+        {
+          "q": "Betone „Anna“ mit es: ___ war Anna, die geholfen hat.",
+          "a": "Es"
+        },
+        {
+          "q": "Betone „morgen“: Ich komme morgen. → ___ komme ich.",
+          "a": "Morgen"
+        }
+      ]
+    },
+    {
+      "id": "c1-konjunktiv-i-ii-wiedergabe",
+      "title": "Indirekte Rede im Text: Konjunktiv I und Ersatzformen",
+      "explain": [
+        "In Berichten benutzt man **Konjunktiv I** für die Distanzierung (*Er sagte, er sei krank*). Wenn Konjunktiv I und Indikativ gleich klingen, nimmt man **Konjunktiv II** oder **würde + Infinitiv** (*Sie sagen, sie hätten Zeit*).",
+        "Vergangenes: Konjunktiv I von haben/sein + Partizip II (*er habe gearbeitet, sie sei gefahren*). Bei Aufforderungen steht **sollen/möge**."
+      ],
+      "examples": [
+        "Er behauptet, er habe das Geld nicht genommen.",
+        "Sie sagten, sie hätten keine Zeit.",
+        "Der Arzt rät, man solle viel trinken."
+      ],
+      "exercises": [
+        {
+          "q": "„Ich habe es gesehen.“ → Er sagt, er ___ es gesehen.",
+          "a": "habe"
+        },
+        {
+          "q": "„Wir kommen später.“ → Sie sagen, sie ___ später. (kommen, Ersatzform)",
+          "a": "kämen"
+        },
+        {
+          "q": "„Sie ist gegangen.“ → Er sagt, sie ___ gegangen.",
+          "a": "sei"
+        }
+      ]
+    }
+  ]
+}

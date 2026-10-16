@@ -6,6 +6,11 @@ class GrammarError(BaseModel):
     correction: str
     explanation: str
     category: str
+    # Link to the matching rule on the DeutschGrammatikMeister site (German essays only; see rules.py).
+    rule_id: str | None = None
+    rule_title: str | None = None
+    rule_level: str | None = None
+    rule_url: str | None = None
 
 
 class CriterionScore(BaseModel):
@@ -75,3 +80,6 @@ class GradingResult(BaseModel):
     # grammar_check.py. Not reconciled against grammar_errors above; the
     # two lists are shown side by side, not merged.
     grammar_crosscheck: list[dict] | None = None
+    # The subset of grammar_crosscheck the LLM did not already report (grammar_check.extra_matches);
+    # shown in the UI as "further hints". None while the cross-check is off.
+    grammar_crosscheck_extra: list[dict] | None = None

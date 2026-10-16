@@ -1,0 +1,356 @@
+{
+  "level": "B1",
+  "title": "B1 – Selbstständig kommunizieren",
+  "intro": "Auf B1 verbindest du Sätze, erzählst in der Vergangenheit und drückst Wünsche und Möglichkeiten aus.",
+  "rules": [
+    {
+      "id": "b1-adjektivdeklination",
+      "title": "Adjektivdeklination nach bestimmtem Artikel und ohne Artikel",
+      "explain": [
+        "Nach dem **bestimmten Artikel** gilt: Nominativ Singular (alle Genera) und Akkusativ f./n. enden auf **-e**, alle anderen Formen auf **-en**: *der neue Tisch, die neue Lampe, das neue Auto; mit dem neuen Auto.*",
+        "**Ohne Artikel** trägt das Adjektiv die Endung des Artikels: *frischer Kaffee (m.), kalte Milch (f.), frisches Brot (n.)*; im Dativ Plural *-en*."
+      ],
+      "examples": [
+        "Der alte Mann liest die neue Zeitung.",
+        "Ich trinke gern heißen Tee.",
+        "Mit den roten Schuhen gehe ich nicht."
+      ],
+      "exercises": [
+        {
+          "q": "Wo ist das neu___ Buch? (Nominativ)",
+          "a": "e"
+        },
+        {
+          "q": "Ich sehe den groß___ Hund. (Akkusativ)",
+          "a": "en"
+        },
+        {
+          "q": "Sie trinkt kalt___ Wasser. (ohne Artikel, Akkusativ, n.)",
+          "a": "es"
+        }
+      ]
+    },
+    {
+      "id": "b1-praeteritum",
+      "title": "Präteritum: regelmäßige und unregelmäßige Verben",
+      "explain": [
+        "Das Präteritum wird vor allem **schriftlich** (Erzählungen, Berichte) benutzt. Regelmäßige Verben: Stamm + **-te** (machen → machte). Unregelmäßige Verben ändern den Stamm (gehen → ging, kommen → kam, sehen → sah).",
+        "Endungen: ich/er ohne Endung (ich ging, er ging), du **-st**, wir/sie **-en**, ihr **-t**. Bei regelmäßigen Verben bleibt das **-te** in allen Personen."
+      ],
+      "examples": [
+        "Er machte die Hausaufgaben.",
+        "Wir gingen nach Hause.",
+        "Sie sah einen Film."
+      ],
+      "exercises": [
+        {
+          "q": "Er ___ gestern spät. (kommen, Präteritum)",
+          "a": "kam"
+        },
+        {
+          "q": "Wir ___ im Garten. (arbeiten, Präteritum)",
+          "a": "arbeiteten"
+        },
+        {
+          "q": "Ich ___ das Buch. (lesen, Präteritum)",
+          "a": "las"
+        }
+      ]
+    },
+    {
+      "id": "b1-plusquamperfekt",
+      "title": "Plusquamperfekt",
+      "explain": [
+        "Das Plusquamperfekt drückt aus, was **vor** einem anderen Ereignis in der Vergangenheit geschah. Bildung: **hatte/war** + Partizip II.",
+        "Oft zusammen mit **nachdem**: *Nachdem er gegessen hatte, ging er spazieren.*"
+      ],
+      "examples": [
+        "Ich hatte schon gegessen, als er kam.",
+        "Nachdem sie angekommen war, rief sie an."
+      ],
+      "exercises": [
+        {
+          "q": "Nachdem wir ___ ___, gingen wir nach Hause. (essen, Plusquamperfekt)",
+          "a": "gegessen hatten"
+        },
+        {
+          "q": "Er ___ schon ___, als ich kam. (gehen, Plusquamperfekt)",
+          "a": "war … gegangen"
+        },
+        {
+          "q": "Sie ___ den Brief schon ___. (schreiben, Plusquamperfekt)",
+          "a": "hatte … geschrieben"
+        }
+      ]
+    },
+    {
+      "id": "b1-nebensatz-wenn-als-ob",
+      "title": "wenn, als, ob",
+      "explain": [
+        "**wenn**: Bedingung oder wiederholte Handlung (*Wenn es regnet, bleibe ich zu Hause.*). **als**: ein einmaliges Ereignis in der Vergangenheit (*Als ich ein Kind war, …*).",
+        "**ob** leitet indirekte Ja/Nein-Fragen ein: *Ich weiß nicht, ob er kommt.* Alle drei schicken das Verb ans Satzende."
+      ],
+      "examples": [
+        "Wenn ich Zeit habe, lese ich.",
+        "Als ich in Bern wohnte, lernte ich Deutsch.",
+        "Ich frage, ob du mitkommst."
+      ],
+      "exercises": [
+        {
+          "q": "___ ich klein war, spielte ich viel. (wenn/als)",
+          "a": "Als"
+        },
+        {
+          "q": "___ du Hunger hast, iss etwas! (wenn/als)",
+          "a": "Wenn"
+        },
+        {
+          "q": "Weißt du, ___ er heute kommt? (wenn/ob)",
+          "a": "ob"
+        }
+      ]
+    },
+    {
+      "id": "b1-relativsaetze",
+      "title": "Relativsätze",
+      "explain": [
+        "Ein Relativsatz beschreibt ein Nomen genauer. Das Relativpronomen richtet sich im **Genus und Numerus** nach dem Bezugswort, der **Kasus** nach seiner Funktion im Relativsatz: der Mann, **der** …; die Frau, **die** …; das Kind, **das** …; die Leute, **die** …",
+        "Dativ: dem/der/dem/**denen**. Das Verb steht am Ende des Relativsatzes, der durch Kommas abgetrennt wird."
+      ],
+      "examples": [
+        "Das ist der Mann, der hier wohnt.",
+        "Die Frau, die ich gesehen habe, ist Ärztin.",
+        "Das Kind, dem ich helfe, ist krank."
+      ],
+      "exercises": [
+        {
+          "q": "Der Mann, ___ dort steht, ist mein Lehrer.",
+          "a": "der"
+        },
+        {
+          "q": "Das Buch, ___ ich lese, ist spannend.",
+          "a": "das"
+        },
+        {
+          "q": "Die Kinder, ___ ich helfe, sind klein.",
+          "a": "denen"
+        }
+      ]
+    },
+    {
+      "id": "b1-infinitiv-mit-zu",
+      "title": "Infinitiv mit zu",
+      "explain": [
+        "Nach vielen Verben und Ausdrücken steht ein Infinitiv mit **zu**: *Es ist wichtig, Deutsch zu lernen. Ich habe vergessen, ihn anzurufen.* Bei trennbaren Verben steht **zu** zwischen Vorsilbe und Verb: **an**zu**rufen**.",
+        "Nach Modalverben, *werden*, *lassen* und Wahrnehmungsverben steht der Infinitiv **ohne zu**."
+      ],
+      "examples": [
+        "Ich versuche, früh aufzustehen.",
+        "Es macht Spaß, Deutsch zu sprechen.",
+        "Er hat keine Lust, heute zu arbeiten."
+      ],
+      "exercises": [
+        {
+          "q": "Ich habe vergessen, dich ___. (anrufen, mit zu)",
+          "a": "anzurufen"
+        },
+        {
+          "q": "Es ist schön, hier ___ wohnen. (zu/–)",
+          "a": "zu"
+        },
+        {
+          "q": "Sie hofft, ihn bald ___. (besuchen, mit zu)",
+          "a": "zu besuchen"
+        }
+      ]
+    },
+    {
+      "id": "b1-passiv-praesens",
+      "title": "Passiv Präsens und Präteritum",
+      "explain": [
+        "Das Passiv betont die Handlung, nicht den Handelnden. Bildung: **werden** + Partizip II. Präsens: *Das Auto wird repariert.* Präteritum: *Das Auto wurde repariert.*",
+        "Der Handelnde kann mit **von** + Dativ genannt werden: *Das Buch wird von vielen gelesen.* Perfekt: **ist … worden**."
+      ],
+      "examples": [
+        "Das Haus wird gebaut.",
+        "Die Tür wurde geöffnet.",
+        "Hier wird Deutsch gesprochen."
+      ],
+      "exercises": [
+        {
+          "q": "Der Brief ___ geschrieben. (werden, Präsens)",
+          "a": "wird"
+        },
+        {
+          "q": "Die Fenster ___ geputzt. (werden, Präteritum, Plural)",
+          "a": "wurden"
+        },
+        {
+          "q": "Aktiv → Passiv: Man baut das Haus. → Das Haus ___ ___.",
+          "a": "wird gebaut"
+        }
+      ]
+    },
+    {
+      "id": "b1-konjunktiv-ii-wuensche",
+      "title": "Konjunktiv II: Wünsche und höfliche Bitten",
+      "explain": [
+        "Mit dem Konjunktiv II drückst du Wünsche, irreale Situationen und höfliche Bitten aus. Meist benutzt man **würde** + Infinitiv; bei **sein, haben** und den Modalverben gibt es eigene Formen: *wäre, hätte, könnte, müsste, dürfte*.",
+        "Irreale Bedingung: *Wenn ich Zeit hätte, würde ich reisen.* Höfliche Bitte: *Könnten Sie mir helfen?*"
+      ],
+      "examples": [
+        "Ich wäre gern reich.",
+        "Wenn ich mehr Zeit hätte, würde ich Sport machen.",
+        "Könnten Sie das Fenster öffnen?"
+      ],
+      "exercises": [
+        {
+          "q": "Wenn ich Geld ___, ___ ich reisen. (haben / würde)",
+          "a": "hätte, würde"
+        },
+        {
+          "q": "Ich ___ gern Pilot. (sein, Konjunktiv II)",
+          "a": "wäre"
+        },
+        {
+          "q": "___ du mir helfen? (können, höflich)",
+          "a": "Könntest"
+        }
+      ]
+    },
+    {
+      "id": "b1-verben-mit-praepositionen",
+      "title": "Verben mit festen Präpositionen",
+      "explain": [
+        "Viele Verben verlangen eine feste Präposition mit festem Kasus: *warten auf* (Akk.), *sich freuen auf* (Akk.), *sich ärgern über* (Akk.), *denken an* (Akk.), *teilnehmen an* (Dat.), *sich interessieren für* (Akk.), *träumen von* (Dat.).",
+        "Lerne die Verben **mit** Präposition und Kasus zusammen."
+      ],
+      "examples": [
+        "Ich warte auf den Bus.",
+        "Sie denkt an ihre Familie.",
+        "Er träumt von einer Reise."
+      ],
+      "exercises": [
+        {
+          "q": "Wir warten ___ den Zug. (auf/an)",
+          "a": "auf"
+        },
+        {
+          "q": "Sie interessiert sich ___ Kunst. (für/von)",
+          "a": "für"
+        },
+        {
+          "q": "Er nimmt ___ dem Kurs teil. (an/mit)",
+          "a": "an"
+        }
+      ]
+    },
+    {
+      "id": "b1-pronominaladverbien",
+      "title": "Pronominaladverbien: darauf, worauf, …",
+      "explain": [
+        "Bei Sachen ersetzt man Präposition + Pronomen durch **da(r)** + Präposition: *Wartest du auf den Bus? – Ja, ich warte darauf.* Die Frage heißt **wo(r)** + Präposition: *Worauf wartest du?*",
+        "Bei Personen bleibt die Präposition mit Pronomen: *Auf wen wartest du? – Ich warte auf ihn.* Vor Vokalen kommt ein **-r-** dazu (dar-, wor-)."
+      ],
+      "examples": [
+        "Woran denkst du? – Ich denke an den Urlaub. – Ich denke daran.",
+        "Worüber ärgerst du dich?",
+        "Ich freue mich darauf."
+      ],
+      "exercises": [
+        {
+          "q": "___ wartest du? (Sache: auf)",
+          "a": "Worauf"
+        },
+        {
+          "q": "Ich interessiere mich ___. (Sache: für)",
+          "a": "dafür"
+        },
+        {
+          "q": "___ denkst du? (Person: an)",
+          "a": "An wen"
+        }
+      ]
+    },
+    {
+      "id": "b1-temporale-konjunktionen",
+      "title": "Temporale Nebensätze: während, bevor, nachdem, seit",
+      "explain": [
+        "**während** (gleichzeitig), **bevor** (danach), **nachdem** (davor), **seit(dem)** (ab einem Zeitpunkt), **bis** (Endpunkt). Das Verb steht im Nebensatz am Ende.",
+        "Nach **nachdem** steht meist Plusquamperfekt, wenn der Hauptsatz im Präteritum ist: *Nachdem ich gegessen hatte, ging ich.*"
+      ],
+      "examples": [
+        "Während ich koche, hört er Musik.",
+        "Bevor wir gehen, räumen wir auf.",
+        "Seit ich hier wohne, lerne ich Deutsch."
+      ],
+      "exercises": [
+        {
+          "q": "___ ich schlafe, soll es leise sein. (während/bevor)",
+          "a": "Während"
+        },
+        {
+          "q": "Ruf mich an, ___ du losfährst. (bevor/nachdem)",
+          "a": "bevor"
+        },
+        {
+          "q": "Wir warten, ___ er kommt. (bis/seit)",
+          "a": "bis"
+        }
+      ]
+    },
+    {
+      "id": "b1-genitiv",
+      "title": "Genitiv und Genitivpräpositionen",
+      "explain": [
+        "Der **Genitiv** zeigt Besitz oder Zugehörigkeit: *das Auto meines Vaters.* Artikel: des (m., n.) + **-(e)s** am Nomen, der (f.), der (Plural). Namen: *Annas Buch.*",
+        "Genitivpräpositionen: **wegen, trotz, während, statt**. Im Alltag wird oft der Dativ benutzt, schriftlich ist der Genitiv richtig."
+      ],
+      "examples": [
+        "Das ist das Haus des Lehrers.",
+        "Wegen des Regens bleiben wir hier.",
+        "Trotz der Kälte gehen wir spazieren."
+      ],
+      "exercises": [
+        {
+          "q": "Das ist das Buch ___ Lehrers. (der)",
+          "a": "des"
+        },
+        {
+          "q": "Wegen ___ Krankheit fehlt er. (die)",
+          "a": "der"
+        },
+        {
+          "q": "Trotz ___ Regens gehen wir. (der)",
+          "a": "des"
+        }
+      ]
+    },
+    {
+      "id": "b1-indirekte-fragen",
+      "title": "Indirekte Fragen",
+      "explain": [
+        "In indirekten Fragen steht das Verb **am Ende**. Fragewort-Fragen behalten das Fragewort: *Wann kommt er? → Ich weiß nicht, wann er kommt.*",
+        "Ja/Nein-Fragen werden mit **ob** eingeleitet: *Kommt er? → Ich weiß nicht, ob er kommt.*"
+      ],
+      "examples": [
+        "Können Sie mir sagen, wo der Bahnhof ist?",
+        "Ich frage mich, ob sie schon da ist."
+      ],
+      "exercises": [
+        {
+          "q": "Wo wohnt er? → Weißt du, wo er ___? (wohnen)",
+          "a": "wohnt"
+        },
+        {
+          "q": "Kommt sie heute? → Ich weiß nicht, ___ sie heute kommt.",
+          "a": "ob"
+        },
+        {
+          "q": "Wie spät ist es? → Können Sie mir sagen, wie spät es ___? (sein)",
+          "a": "ist"
+        }
+      ]
+    }
+  ]
+}

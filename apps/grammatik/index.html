@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DeutschGrammatikMeister</title>
     <link rel="stylesheet" href="style.css">
+    <link href="pagefind/pagefind-ui.css" rel="stylesheet">
+    <style>#search-box{max-width:760px;margin:1.5rem auto;padding:0 1rem;--pagefind-ui-font:inherit}</style>
 </head>
 <body>
     <header>
@@ -13,6 +15,7 @@
             <nav>
                 <ul>
                     <li><a href="#top">Startseite</a></li>
+                    <li><a href="#niveaus">Niveaustufen</a></li>
                     <li><a href="#grammatik">Grammatik</a></li>
                     <li><a href="#uebungen">Übungen</a></li>
                     <li><a href="#glossar">Glossar</a></li>
@@ -23,30 +26,46 @@
     </header>
 
     <main id="top">
+        <section id="search" data-pagefind-ignore><div id="search-box"></div></section>
         <section class="hero">
             <div class="container">
-                <h2>Deutsche Grammatik leicht lernen</h2>
+                <h2 id="h-deutsche-grammatik-leicht-lernen">Deutsche Grammatik leicht lernen</h2>
                 <p>Lernen Sie die wichtigsten Grammatikthemen Schritt für Schritt und verbessern Sie so Ihre Deutschkenntnisse.</p>
                 <a href="#grammatik" class="button">Jetzt loslegen</a>
             </div>
         </section>
 
+        <section class="featured-topics" id="niveaus">
+            <div class="container">
+                <h2 id="h-niveaustufen">Grammatik nach Niveaustufen</h2>
+                <p>58 Regeln von A1 bis C1, jeweils mit Erklärung, Beispielen und Übungen mit Lösung.</p>
+                <div class="levels">
+                    <a href="a1.html"><strong>A1</strong>Erste Schritte</a>
+                    <a href="a2.html"><strong>A2</strong>Alltag und Vergangenheit</a>
+                    <a href="b1.html"><strong>B1</strong>Selbstständig kommunizieren</a>
+                    <a href="b2.html"><strong>B2</strong>Differenziert und genau</a>
+                    <a href="c1.html"><strong>C1</strong>Souverän und stilsicher</a>
+                </div>
+                <p class="hint">Eigenen Text schreiben? Der <a href="https://my-essay-tutor.onrender.com/ui/">Essay Tutor</a> korrigiert ihn und verweist bei jedem Fehler auf die passende Regel hier.</p>
+            </div>
+        </section>
+
         <section class="featured-topics" id="grammatik">
             <div class="container">
-                <h2>Themen im Fokus</h2>
+                <h2 id="h-themen-im-fokus">Themen im Fokus</h2>
                 <div class="topic-list">
                     <div class="topic">
-                        <h3>Nomen</h3>
+                        <h3 id="h-nomen">Nomen</h3>
                         <p>Erfahren Sie mehr über Genus (Geschlecht), Plural und Kasus deutscher Substantive.</p>
                         <a href="#nomen">Mehr erfahren</a>
                     </div>
                     <div class="topic">
-                        <h3>Verben</h3>
+                        <h3 id="h-verben">Verben</h3>
                         <p>Erfahren Sie mehr über Konjugation, Zeitformen und den Gebrauch deutscher Verben.</p>
                         <a href="#verben">Mehr erfahren</a>
                     </div>
                     <div class="topic">
-                        <h3>Adjektive</h3>
+                        <h3 id="h-adjektive">Adjektive</h3>
                         <p>Erfahren Sie mehr über die Komparation (Steigerung) und die Kongruenz von Adjektiven mit dem Substantiv.</p>
                         <a href="#adjektive">Mehr erfahren</a>
                     </div>
@@ -56,7 +75,7 @@
 
         <section class="detail" id="nomen">
             <div class="container">
-                <h2>Nomen</h2>
+                <h2 id="h-nomen">Nomen</h2>
                 <p>Jedes deutsche Substantiv hat eines von drei grammatischen Geschlechtern (<strong>der</strong>, <strong>die</strong>, <strong>das</strong>) und wird nach der Rolle im Satz in einen von vier <strong>Kasus</strong> gesetzt.</p>
                 <div class="table-wrap">
                     <table>
@@ -77,7 +96,7 @@
 
         <section class="detail" id="verben">
             <div class="container">
-                <h2>Verben</h2>
+                <h2 id="h-verben">Verben</h2>
                 <p>Regelmäßige (schwache) Verben folgen im Präsens einem festen Endungsmuster:</p>
                 <div class="table-wrap">
                     <table>
@@ -101,7 +120,7 @@
 
         <section class="detail" id="adjektive">
             <div class="container">
-                <h2>Adjektive</h2>
+                <h2 id="h-adjektive">Adjektive</h2>
                 <p>Ein vor einem Substantiv stehendes Adjektiv erhält je nach vorausgehendem Artikel (der/die/das bzw. ein/eine/ein bzw. ohne Artikel) eine andere Endung. Mit bestimmtem Artikel (der/die/das) im Nominativ:</p>
                 <div class="table-wrap">
                     <table>
@@ -119,7 +138,7 @@
 
         <section class="detail" id="uebungen">
             <div class="container">
-                <h2>Übungen</h2>
+                <h2 id="h-uebungen">Übungen</h2>
                 <p>Diese Seite ist derzeit eine reine Grammatikreferenz – ohne eigenen Übungsteil. Hier gelangen Sie zu zwei wirklich funktionierenden Vokabel-/Quiz-Apps desselben Projekts:</p>
                 <ul class="link-list">
                     <li><a href="https://github.com/Kutlu24/Aspekte-Neu-C1-Wortschatz" target="_blank" rel="noopener">Aspekte Neu C1 Wortschatz</a> – Vokabel-/Flashcard-App für Niveau C1.</li>
@@ -130,7 +149,7 @@
 
         <section class="detail" id="glossar">
             <div class="container">
-                <h2>Glossar</h2>
+                <h2 id="h-glossar">Glossar</h2>
                 <dl class="glossary">
                     <dt>Kasus</dt><dd>Der Fall, der die Rolle eines Substantivs/Adjektivs/Artikels im Satz angibt (Nominativ, Akkusativ, Dativ, Genitiv).</dd>
                     <dt>Artikel</dt><dd>Begleitwort des Substantivs: bestimmt (der/die/das) oder unbestimmt (ein/eine/ein).</dd>
@@ -144,7 +163,7 @@
 
         <section class="detail" id="ressourcen">
             <div class="container">
-                <h2>Ressourcen</h2>
+                <h2 id="h-ressourcen">Ressourcen</h2>
                 <ul class="link-list">
                     <li><a href="https://learngerman.dw.com/de/overview" target="_blank" rel="noopener">Deutsche Welle – Deutsch Lernen</a> – kostenlose Kurse und Grammatikübungen.</li>
                     <li><a href="https://www.goethe.de/de/spr/ueb.html" target="_blank" rel="noopener">Goethe-Institut – Übungen</a> – Grammatik- und Wortschatzübungen nach Niveau.</li>
@@ -159,5 +178,12 @@
             <p>&copy; 2024 DeutschGrammatikMeister. Alle Rechte vorbehalten.</p>
         </div>
     </footer>
+    <script src="pagefind/pagefind-ui.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            if (window.PagefindUI) new PagefindUI({ element: '#search-box', showSubResults: true, resetStyles: false,
+                translations: { placeholder: 'Grammatik durchsuchen …', zero_results: 'Keine Treffer für [SEARCH_TERM]' } });
+        });
+    </script>
 </body>
 </html>

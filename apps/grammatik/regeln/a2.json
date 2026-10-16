@@ -1,0 +1,139 @@
+{
+  "level": "A2",
+  "title": "A2 – Alltag und Vergangenheit",
+  "intro": "Auf A2 sprichst du über Vergangenes, benutzt den Dativ und baust erste Nebensätze.",
+  "rules": [
+    {
+      "id": "a2-perfekt-bildung",
+      "title": "Perfekt: Bildung mit haben/sein + Partizip II",
+      "explain": ["Das Perfekt benutzt man im Gespräch für Vergangenes. Es besteht aus **haben/sein** (konjugiert, Position 2) und dem **Partizip II** am Satzende.", "Regelmäßige Verben: **ge-…-t** (machen → gemacht). Unregelmäßige Verben: **ge-…-en** (trinken → getrunken), oft mit Stammänderung (gehen → gegangen). Trennbare Verben: **ge** in der Mitte (einkaufen → eingekauft). Verben auf -ieren und ohne Betonung auf der ersten Silbe haben kein ge- (studiert, besucht)."],
+      "examples": ["Ich habe gestern Pizza gegessen.", "Wir haben eingekauft.", "Sie hat in Zürich studiert."],
+      "exercises": [
+        {"q": "Ich ___ Deutsch ___. (lernen, Perfekt)", "a": "habe … gelernt"},
+        {"q": "Er ___ einen Brief ___. (schreiben, Perfekt)", "a": "hat … geschrieben"},
+        {"q": "Wir ___ das Hotel ___. (reservieren, Perfekt)", "a": "haben … reserviert"}
+      ]
+    },
+    {
+      "id": "a2-perfekt-hilfsverb",
+      "title": "Perfekt: haben oder sein?",
+      "explain": ["Mit **sein** bilden Verben der **Ortsveränderung** (gehen, fahren, kommen, fliegen) und der **Zustandsänderung** (aufstehen, einschlafen, werden) sowie **sein, bleiben, passieren** das Perfekt.", "Alle anderen Verben, auch alle reflexiven und Verben mit Akkusativobjekt, bilden das Perfekt mit **haben**."],
+      "examples": ["Ich bin nach Bern gefahren.", "Er ist gestern lange geblieben.", "Wir haben Fußball gespielt."],
+      "exercises": [
+        {"q": "Sie ___ nach Hause ___. (gehen, Perfekt)", "a": "ist … gegangen"},
+        {"q": "Ich ___ gut ___. (schlafen, Perfekt)", "a": "habe … geschlafen"},
+        {"q": "Wir ___ im Urlaub ___. (sein, Perfekt)", "a": "sind … gewesen"}
+      ]
+    },
+    {
+      "id": "a2-praeteritum-sein-haben-modal",
+      "title": "Präteritum von sein, haben und Modalverben",
+      "explain": ["Bei **sein**, **haben** und den **Modalverben** benutzt man im Gespräch meist das Präteritum statt des Perfekts: ich war, ich hatte, ich konnte, ich musste, ich wollte, ich durfte.", "Endungen: ich/er ohne Endung (war, hatte), du -st (warst), wir/sie -en (waren), ihr -t (wart)."],
+      "examples": ["Gestern war ich krank.", "Er hatte keine Zeit.", "Wir mussten früh aufstehen."],
+      "exercises": [
+        {"q": "Gestern ___ ich zu Hause. (sein)", "a": "war"},
+        {"q": "Sie ___ keinen Hunger. (haben)", "a": "hatte"},
+        {"q": "Wir ___ lange warten. (müssen)", "a": "mussten"}
+      ]
+    },
+    {
+      "id": "a2-dativ",
+      "title": "Dativ: Artikel und typische Verben",
+      "explain": ["Der **Dativ** fragt *wem?*. Artikel: der → **dem**, die → **der**, das → **dem**, Plural die → **den** (+ -n am Nomen: den Kindern).", "Typische Dativverben: helfen, danken, gefallen, gehören, schmecken, antworten. Bei Verben mit zwei Objekten steht die Person im Dativ, die Sache im Akkusativ: *Ich gebe dem Kind einen Apfel.*"],
+      "examples": ["Ich helfe dem Mann.", "Das Buch gehört der Lehrerin.", "Sie schenkt den Kindern Bücher."],
+      "exercises": [
+        {"q": "Ich danke ___ Lehrerin. (die)", "a": "der"},
+        {"q": "Das Auto gehört ___ Mann. (der)", "a": "dem"},
+        {"q": "Er hilft ___ Kindern. (die)", "a": "den"}
+      ]
+    },
+    {
+      "id": "a2-praepositionen-dativ-akkusativ",
+      "title": "Präpositionen mit festem Kasus",
+      "explain": ["Immer **Dativ**: aus, bei, mit, nach, seit, von, zu (merke: *aus-bei-mit-nach-seit-von-zu*). Immer **Akkusativ**: durch, für, gegen, ohne, um.", "Zusammenzüge: zu dem → **zum**, zu der → **zur**, bei dem → **beim**, von dem → **vom**."],
+      "examples": ["Ich fahre mit dem Bus zur Arbeit.", "Das Geschenk ist für dich.", "Er wohnt seit einem Jahr bei seinem Onkel."],
+      "exercises": [
+        {"q": "Ich fahre mit ___ Zug. (der)", "a": "dem"},
+        {"q": "Das ist ein Geschenk für ___ Mutter. (die)", "a": "die"},
+        {"q": "Wir gehen ohne ___ Hund. (der)", "a": "den"}
+      ]
+    },
+    {
+      "id": "a2-wechselpraepositionen",
+      "title": "Wechselpräpositionen: wo? oder wohin?",
+      "explain": ["an, auf, hinter, in, neben, über, unter, vor, zwischen: Auf die Frage **wo?** (Position) steht der **Dativ**, auf die Frage **wohin?** (Richtung) der **Akkusativ**.", "Dazu passen Verben: stehen/liegen/hängen/sitzen (Dativ) und stellen/legen/hängen/setzen (Akkusativ)."],
+      "examples": ["Das Buch liegt auf dem Tisch.", "Ich lege das Buch auf den Tisch.", "Wir gehen in die Stadt."],
+      "exercises": [
+        {"q": "Er steht vor ___ Haus. (das, wo?)", "a": "dem"},
+        {"q": "Sie geht in ___ Küche. (die, wohin?)", "a": "die"},
+        {"q": "Ich hänge das Bild an ___ Wand. (die, wohin?)", "a": "die"}
+      ]
+    },
+    {
+      "id": "a2-konjunktionen-hauptsatz",
+      "title": "Hauptsatz-Konjunktionen: und, oder, aber, denn, sondern",
+      "explain": ["Diese Konjunktionen verbinden zwei Hauptsätze und **verändern die Wortstellung nicht**: Subjekt und Verb bleiben wie im normalen Aussagesatz.", "**sondern** benutzt man nach einer Verneinung: *Ich trinke nicht Kaffee, sondern Tee.* **denn** gibt einen Grund an."],
+      "examples": ["Ich bleibe zu Hause, denn ich bin krank.", "Er ist müde, aber er arbeitet weiter.", "Das ist kein Hund, sondern eine Katze."],
+      "exercises": [
+        {"q": "Ich lerne Deutsch, ___ ich in der Schweiz arbeite. (denn/sondern)", "a": "denn"},
+        {"q": "Sie kommt nicht heute, ___ morgen. (aber/sondern)", "a": "sondern"},
+        {"q": "Ich möchte Tee ___ Kaffee. (und/oder), beides geht.", "a": "oder"}
+      ]
+    },
+    {
+      "id": "a2-nebensatz-weil-dass",
+      "title": "Nebensätze mit weil und dass",
+      "explain": ["Im Nebensatz steht das konjugierte Verb **am Ende**. Nach **weil** (Grund) und **dass** folgt ein Nebensatz: *Ich lerne Deutsch, weil ich in Zürich arbeite.*", "Das Komma trennt Haupt- und Nebensatz. Steht der Nebensatz vorne, beginnt der Hauptsatz mit dem Verb: *Weil ich krank bin, bleibe ich zu Hause.*"],
+      "examples": ["Ich glaube, dass er recht hat.", "Sie kommt nicht, weil sie keine Zeit hat.", "Weil es regnet, bleiben wir drinnen."],
+      "exercises": [
+        {"q": "Ich weiß, dass er morgen ___. (kommen)", "a": "kommt"},
+        {"q": "Wir bleiben zu Hause, weil das Wetter schlecht ___. (sein)", "a": "ist"},
+        {"q": "Ordne: Er lernt, weil / viel Deutsch / er / will / verstehen → ___", "a": "Er lernt viel Deutsch, weil er verstehen will."}
+      ]
+    },
+    {
+      "id": "a2-komparativ-superlativ",
+      "title": "Komparativ und Superlativ",
+      "explain": ["Komparativ: Adjektiv + **-er** (schneller), Vergleich mit **als**: *Er ist schneller als ich.* Superlativ: **am** + Adjektiv + **-sten** (am schnellsten).", "Viele kurze Adjektive bekommen einen Umlaut (alt – älter – am ältesten). Unregelmäßig: gut – besser – am besten; viel – mehr – am meisten; gern – lieber – am liebsten."],
+      "examples": ["Zürich ist größer als Bern.", "Das ist der höchste Berg.", "Ich trinke lieber Tee."],
+      "exercises": [
+        {"q": "Mein Bruder ist ___ als ich. (alt)", "a": "älter"},
+        {"q": "Das ist das ___ Buch. (gut, Superlativ mit Artikel)", "a": "beste"},
+        {"q": "Sie läuft am ___. (schnell)", "a": "schnellsten"}
+      ]
+    },
+    {
+      "id": "a2-reflexive-verben",
+      "title": "Reflexive Verben",
+      "explain": ["Bei reflexiven Verben bezieht sich das Pronomen auf das Subjekt: ich **mich**, du **dich**, er/sie/es **sich**, wir **uns**, ihr **euch**, sie/Sie **sich**.", "Typisch: sich freuen, sich waschen, sich treffen, sich interessieren für, sich setzen."],
+      "examples": ["Ich freue mich auf das Wochenende.", "Er interessiert sich für Musik.", "Wir treffen uns um 5 Uhr."],
+      "exercises": [
+        {"q": "Ich setze ___ auf den Stuhl.", "a": "mich"},
+        {"q": "Sie freut ___ auf den Urlaub.", "a": "sich"},
+        {"q": "Wann trefft ihr ___?", "a": "euch"}
+      ]
+    },
+    {
+      "id": "a2-imperativ",
+      "title": "Imperativ",
+      "explain": ["Der Imperativ drückt eine Aufforderung aus. **du:** Stamm (ohne -st): *Komm!* **ihr:** wie im Präsens: *Kommt!* **Sie:** Infinitiv + Sie: *Kommen Sie!*", "Verben mit Vokalwechsel e → i/ie behalten den Wechsel bei du: *Sprich!*, *Lies!* (aber *Fahr!*, ohne Umlaut)."],
+      "examples": ["Mach bitte die Tür zu!", "Lest den Text!", "Nehmen Sie Platz!"],
+      "exercises": [
+        {"q": "___ bitte langsamer! (sprechen, du)", "a": "Sprich"},
+        {"q": "___ mir bitte! (helfen, ihr)", "a": "Helft"},
+        {"q": "___ Sie hier! (warten)", "a": "Warten"}
+      ]
+    },
+    {
+      "id": "a2-adjektivdeklination-unbestimmt",
+      "title": "Adjektivendungen nach ein-/kein-/mein-",
+      "explain": ["Nach unbestimmtem Artikel zeigt das Adjektiv das Genus dort, wo der Artikel keine Endung hat: **ein neuer Tisch** (m., Nom.), **ein neues Auto** (n., Nom./Akk.), **eine neue Lampe** (f.).", "Sonst gilt meist **-en**: *mit einem neuen Auto*, *ich sehe einen neuen Tisch*."],
+      "examples": ["Das ist ein alter Mann.", "Sie hat ein neues Handy.", "Ich kaufe einen roten Pullover."],
+      "exercises": [
+        {"q": "Das ist ein klein___ Kind. (Nominativ, n.)", "a": "es"},
+        {"q": "Er hat eine groß___ Wohnung. (Akkusativ, f.)", "a": "e"},
+        {"q": "Wir kaufen einen neu___ Computer. (Akkusativ, m.)", "a": "en"}
+      ]
+    }
+  ]
+}
