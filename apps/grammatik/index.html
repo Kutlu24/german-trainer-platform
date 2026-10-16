@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeutschGrammatikMeister</title>
+    <title>DeutschGrammatikMeister — Deutsche Grammatik von A1 bis C1</title>
+    <meta name="description" content="Visuelle Grammatik-Referenz für Deutsch: 58 Regeln von A1 bis C1 mit Erklärungen, Beispielen, Tabellen und Übungen mit Lösung.">
     <link rel="stylesheet" href="style.css">
     <link href="pagefind/pagefind-ui.css" rel="stylesheet">
-    <style>#search-box{max-width:760px;margin:1.5rem auto;padding:0 1rem;--pagefind-ui-font:inherit}</style>
+    <style>#search{scroll-margin-top:80px}#search-box{max-width:460px;--pagefind-ui-font:inherit}</style>
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <div class="container">
-            <h1>DeutschGrammatikMeister</h1>
-            <nav>
+            <a class="brand" href="#top">
+                <span class="brand-mark" aria-hidden="true">G</span>
+                <span class="brand-text">DeutschGrammatikMeister<small>Grammatik · A1–C1</small></span>
+            </a>
+            <nav class="site-nav" aria-label="Hauptnavigation">
                 <ul>
                     <li><a href="#top">Startseite</a></li>
                     <li><a href="#niveaus">Niveaustufen</a></li>
-                    <li><a href="#grammatik">Grammatik</a></li>
+                    <li><a href="#grammatik">Themen</a></li>
                     <li><a href="#uebungen">Übungen</a></li>
                     <li><a href="#glossar">Glossar</a></li>
                     <li><a href="#ressourcen">Ressourcen</a></li>
@@ -26,163 +30,418 @@
     </header>
 
     <main id="top">
-        <section id="search" data-pagefind-ignore><div id="search-box"></div></section>
         <section class="hero">
             <div class="container">
-                <h2 id="h-deutsche-grammatik-leicht-lernen">Deutsche Grammatik leicht lernen</h2>
-                <p>Lernen Sie die wichtigsten Grammatikthemen Schritt für Schritt und verbessern Sie so Ihre Deutschkenntnisse.</p>
-                <a href="#grammatik" class="button">Jetzt loslegen</a>
+                <div class="hero-copy">
+                    <p class="eyebrow">Visuelle Grammatik-Referenz · A1 bis C1</p>
+                    <h1 id="h-deutsche-grammatik-leicht-lernen">Deutsche Grammatik <span class="hl">leicht lernen</span></h1>
+                    <p class="lede">58 Regeln, klar erklärt und anschaulich dargestellt: Kasus, Konjugation, Deklination und Komparation — Schritt für Schritt, mit Beispielen und Übungen samt Lösung.</p>
+                    <div class="hero-cta">
+                        <a class="btn btn-primary" href="#niveaus">Regeln nach Niveau entdecken</a>
+                        <a class="btn btn-ghost" href="#grammatik">Themen ansehen</a>
+                    </div>
+                    <div class="hero-search" id="search" data-pagefind-ignore>
+                        <div id="search-box"></div>
+                    </div>
+                    <dl class="hero-stats" data-pagefind-ignore>
+                        <div><dt>58</dt><dd>Regeln</dd></div>
+                        <div><dt>5</dt><dd>Niveaustufen</dd></div>
+                        <div><dt>A1–C1</dt><dd>Gesamt</dd></div>
+                        <div><dt>100 %</dt><dd>Mit Lösung</dd></div>
+                    </dl>
+                </div>
+
+                <div class="hero-art" aria-hidden="true" data-pagefind-ignore>
+                    <div class="art-card art-main">
+                        <div class="art-head"><span class="dot"></span> Die vier Kasus</div>
+                        <div class="art-grid">
+                            <span class="art-chip m">der<b>Mann</b><span>maskulin</span></span>
+                            <span class="art-chip f">die<b>Frau</b><span>feminin</span></span>
+                            <span class="art-chip n">das<b>Kind</b><span>neutral</span></span>
+                        </div>
+                        <div class="art-meter">
+                            <div class="track"><i style="--w:78%"></i></div>
+                            <div class="lbl"><span>Deklination</span><span>78 %</span></div>
+                        </div>
+                    </div>
+                    <div class="art-card art-side">
+                        <div class="t">Präsens · lernen</div>
+                        <ul>
+                            <li>ich <em>lerne</em></li>
+                            <li>du <em>lernst</em></li>
+                            <li>er <em>lernt</em></li>
+                        </ul>
+                    </div>
+                    <div class="art-pills">
+                        <span class="art-pill p1">Nominativ</span>
+                        <span class="art-pill p2">Akkusativ</span>
+                        <span class="art-pill p3">Dativ</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="featured-topics" id="niveaus">
+        <section class="section" id="niveaus">
             <div class="container">
-                <h2 id="h-niveaustufen">Grammatik nach Niveaustufen</h2>
-                <p>58 Regeln von A1 bis C1, jeweils mit Erklärung, Beispielen und Übungen mit Lösung.</p>
+                <div class="section-head">
+                    <p class="eyebrow">Niveaustufen</p>
+                    <h2 id="h-niveaustufen">Grammatik nach Niveaustufen</h2>
+                    <p>58 Regeln von A1 bis C1, jeweils mit Erklärung, Beispielen und Übungen mit Lösung.</p>
+                </div>
                 <div class="levels">
-                    <a href="a1.html"><strong>A1</strong>Erste Schritte</a>
-                    <a href="a2.html"><strong>A2</strong>Alltag und Vergangenheit</a>
-                    <a href="b1.html"><strong>B1</strong>Selbstständig kommunizieren</a>
-                    <a href="b2.html"><strong>B2</strong>Differenziert und genau</a>
-                    <a href="c1.html"><strong>C1</strong>Souverän und stilsicher</a>
+                    <a class="level-card lv-a1" href="a1.html">
+                        <span class="badge">A1</span>
+                        <span class="lv-title">Erste Schritte</span>
+                        <span class="lv-sub">Artikel, Präsens, einfache Sätze und Fragen.</span>
+                        <span class="lv-meta">11 Regeln →</span>
+                    </a>
+                    <a class="level-card lv-a2" href="a2.html">
+                        <span class="badge">A2</span>
+                        <span class="lv-title">Alltag &amp; Vergangenheit</span>
+                        <span class="lv-sub">Perfekt, Dativ und erste Nebensätze.</span>
+                        <span class="lv-meta">12 Regeln →</span>
+                    </a>
+                    <a class="level-card lv-b1" href="b1.html">
+                        <span class="badge">B1</span>
+                        <span class="lv-title">Selbstständig kommunizieren</span>
+                        <span class="lv-sub">Relativsätze, Konjunktiv II, Wortstellung.</span>
+                        <span class="lv-meta">13 Regeln →</span>
+                    </a>
+                    <a class="level-card lv-b2" href="b2.html">
+                        <span class="badge">B2</span>
+                        <span class="lv-title">Differenziert und genau</span>
+                        <span class="lv-sub">Passiv, indirekte Rede, Konnektoren.</span>
+                        <span class="lv-meta">12 Regeln →</span>
+                    </a>
+                    <a class="level-card lv-c1" href="c1.html">
+                        <span class="badge">C1</span>
+                        <span class="lv-title">Souverän und stilsicher</span>
+                        <span class="lv-sub">Nominalstil, komplexe Attribute, Nuancen.</span>
+                        <span class="lv-meta">10 Regeln →</span>
+                    </a>
                 </div>
-                <p class="hint">Eigenen Text schreiben? Der <a href="https://my-essay-tutor.onrender.com/ui/">Essay Tutor</a> korrigiert ihn und verweist bei jedem Fehler auf die passende Regel hier.</p>
+                <p class="hint info">Eigenen Text schreiben? Der <a href="https://my-essay-tutor.onrender.com/ui/">Essay Tutor</a> korrigiert ihn und verweist bei jedem Fehler auf die passende Regel hier.</p>
             </div>
         </section>
 
-        <section class="featured-topics" id="grammatik">
+        <section class="section alt" id="grammatik">
             <div class="container">
-                <h2 id="h-themen-im-fokus">Themen im Fokus</h2>
-                <div class="topic-list">
-                    <div class="topic">
-                        <h3 id="h-nomen">Nomen</h3>
-                        <p>Erfahren Sie mehr über Genus (Geschlecht), Plural und Kasus deutscher Substantive.</p>
-                        <a href="#nomen">Mehr erfahren</a>
+                <div class="section-head">
+                    <p class="eyebrow">Themen im Fokus</p>
+                    <h2 id="h-themen-im-fokus">Die drei großen Bereiche</h2>
+                    <p>Nomen, Verben und Adjektive — die Bausteine, an denen sich die meiste Fehlerhäufigkeit entscheidet.</p>
+                </div>
+                <div class="topics">
+                    <article class="topic">
+                        <span class="ico" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h13"/><circle cx="19" cy="17" r="3"/></svg>
+                        </span>
+                        <h3 id="h-topic-nomen">Nomen</h3>
+                        <p>Genus (Geschlecht), Plural und die vier Kasus deutscher Substantive — mit vollständiger der/die/das-Tabelle.</p>
+                        <div class="preview" aria-hidden="true">
+                            <span><i>der</i> Mann</span><span><i>die</i> Frau</span><span><i>das</i> Kind</span>
+                            <span><i>die</i> Kinder</span>
+                        </div>
+                        <a class="more" href="#nomen">Mehr erfahren <span class="arw" aria-hidden="true">→</span></a>
+                    </article>
+                    <article class="topic">
+                        <span class="ico" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19V6a2 2 0 0 1 2-2h7l5 5v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2Z"/><path d="M14 4v5h5"/><path d="M9 13h6M9 17h4"/></svg>
+                        </span>
+                        <h3 id="h-topic-verben">Verben</h3>
+                        <p>Konjugation, Zeitformen und Stammvokalwechsel — vom regelmäßigen Präsens bis zu den starken Verben.</p>
+                        <div class="preview" aria-hidden="true">
+                            <span>ich <i>lerne</i></span><span>du <i>lernst</i></span><span>er <i>lernt</i></span>
+                            <span>du f<i>ä</i>hrst</span>
+                        </div>
+                        <a class="more" href="#verben">Mehr erfahren <span class="arw" aria-hidden="true">→</span></a>
+                    </article>
+                    <article class="topic">
+                        <span class="ico" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 10 6l4 8 2-3 4 7"/><path d="M4 21h16"/></svg>
+                        </span>
+                        <h3 id="h-topic-adjektive">Adjektive</h3>
+                        <p>Endungen nach dem Artikel und die Komparation: schnell → schneller → am schnellsten.</p>
+                        <div class="preview" aria-hidden="true">
+                            <span>schnell</span><span>schnell<i>er</i></span><span>am schnell<i>sten</i></span>
+                        </div>
+                        <a class="more" href="#adjektive">Mehr erfahren <span class="arw" aria-hidden="true">→</span></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section detail" id="nomen">
+            <div class="container">
+                <div class="section-head">
+                    <span class="num-tag"><b>01</b> Nomen</span>
+                    <h2 id="h-nomen">Nomen: vier Kasus, drei Geschlechter</h2>
+                    <p>Jedes deutsche Substantiv hat eines von drei grammatischen Geschlechtern (<strong>der</strong>, <strong>die</strong>, <strong>das</strong>) und wird nach der Rolle im Satz in einen von vier <strong>Kasus</strong> gesetzt.</p>
+                </div>
+                <div class="detail-grid">
+                    <div>
+                        <div class="case-flow" data-pagefind-ignore>
+                            <div class="case-row">
+                                <div class="k">Nominativ <span>wer? was?</span></div>
+                                <div class="v"><span class="art">der</span> Mann <span class="art">die</span> Frau <span class="art">das</span> Kind</div>
+                            </div>
+                            <div class="case-row">
+                                <div class="k">Akkusativ <span>wen? was?</span></div>
+                                <div class="v"><span class="art">den</span> Mann <span class="art">die</span> Frau <span class="art">das</span> Kind</div>
+                            </div>
+                            <div class="case-row">
+                                <div class="k">Dativ <span>wem?</span></div>
+                                <div class="v"><span class="art">dem</span> Mann <span class="art">der</span> Frau <span class="art">dem</span> Kind</div>
+                            </div>
+                            <div class="case-row">
+                                <div class="k">Genitiv <span>wessen?</span></div>
+                                <div class="v"><span class="art">des</span> Mannes <span class="art">der</span> Frau <span class="art">des</span> Kindes</div>
+                            </div>
+                        </div>
+                        <p class="hint">Im Dativ Plural hängt an das Substantiv ein <code>-n</code> (sofern der Plural nicht schon auf <code>-n</code> oder <code>-s</code> endet): die Kinder → den Kinder<strong>n</strong>.</p>
                     </div>
-                    <div class="topic">
-                        <h3 id="h-verben">Verben</h3>
-                        <p>Erfahren Sie mehr über Konjugation, Zeitformen und den Gebrauch deutscher Verben.</p>
-                        <a href="#verben">Mehr erfahren</a>
+                    <div>
+                        <div class="table-wrap">
+                            <table>
+                                <thead>
+                                    <tr><th scope="col">Kasus</th><th scope="col">der (m.)</th><th scope="col">die (f.)</th><th scope="col">das (n.)</th><th scope="col">die (Plural)</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><th scope="row">Nominativ (wer? was?)</th><td>der Mann</td><td>die Frau</td><td>das Kind</td><td>die Kinder</td></tr>
+                                    <tr><th scope="row">Akkusativ (wen? was?)</th><td><strong>den</strong> Mann</td><td>die Frau</td><td>das Kind</td><td>die Kinder</td></tr>
+                                    <tr><th scope="row">Dativ (wem?)</th><td><strong>dem</strong> Mann</td><td><strong>der</strong> Frau</td><td><strong>dem</strong> Kind</td><td><strong>den</strong> Kinder<strong>n</strong></td></tr>
+                                    <tr><th scope="row">Genitiv (wessen?)</th><td><strong>des</strong> Mann<strong>es</strong></td><td>der Frau</td><td><strong>des</strong> Kind<strong>es</strong></td><td>der Kinder</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="hint info">Alle Nomen-Regeln mit Übungen findest du auf den <a href="#niveaus">Niveaustufen-Seiten</a> — von <a href="a1.html">A1 Artikel und Genus</a> bis <a href="b2.html">B2 Genitivattribut</a>.</p>
                     </div>
-                    <div class="topic">
-                        <h3 id="h-adjektive">Adjektive</h3>
-                        <p>Erfahren Sie mehr über die Komparation (Steigerung) und die Kongruenz von Adjektiven mit dem Substantiv.</p>
-                        <a href="#adjektive">Mehr erfahren</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section alt detail" id="verben">
+            <div class="container">
+                <div class="section-head">
+                    <span class="num-tag"><b>02</b> Verben</span>
+                    <h2 id="h-verben">Verben: das feste Endungsmuster</h2>
+                    <p>Regelmäßige (schwache) Verben folgen im Präsens einem festen Endungsmuster. Unregelmäßige (starke) Verben ändern zusätzlich den Stammvokal.</p>
+                </div>
+                <div class="detail-grid rev">
+                    <div>
+                        <div class="conj" data-pagefind-ignore>
+                            <div class="verb">machen <small>Präsens · regelmäßig</small></div>
+                            <ul>
+                                <li><span class="p">ich</span><b>mache</b></li>
+                                <li><span class="p">du</span><b>machst</b></li>
+                                <li><span class="p">er/sie/es</span><b>macht</b></li>
+                                <li><span class="p">wir</span><b>machen</b></li>
+                                <li><span class="p">ihr</span><b>macht</b></li>
+                                <li><span class="p">sie/Sie</span><b>machen</b></li>
+                            </ul>
+                        </div>
+                        <div class="table-wrap" style="margin-top:14px">
+                            <table>
+                                <thead>
+                                    <tr><th scope="col">Stammvokal</th><th scope="col">du-Form</th><th scope="col">er/sie/es-Form</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><th scope="row">a → ä</th><td>du f<strong>ä</strong>hrst</td><td>er f<strong>ä</strong>hrt</td></tr>
+                                    <tr><th scope="row">e → i / ie</th><td>du spr<strong>i</strong>chst</td><td>er l<strong>ie</strong>st</td></tr>
+                                    <tr><th scope="row">a → ä, au → äu</th><td>du schl<strong>ä</strong>fst</td><td>er l<strong>äu</strong>ft</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="case-flow" data-pagefind-ignore>
+                            <div class="case-row">
+                                <div class="k">Präsens <span>Gegenwart</span></div>
+                                <div class="v">Ich <b>lerne</b> jeden Tag Deutsch.</div>
+                            </div>
+                            <div class="case-row">
+                                <div class="k">Perfekt <span>gesprochen</span></div>
+                                <div class="v">Ich <b>habe</b> Deutsch <b>gelernt</b>.</div>
+                            </div>
+                            <div class="case-row">
+                                <div class="k">Präteritum <span>Schriftsprache</span></div>
+                                <div class="v">Ich <b>lernte</b> Deutsch.</div>
+                            </div>
+                        </div>
+                        <p class="hint">Endet der Stamm auf <code>-t</code> oder <code>-d</code>, kommt ein <code>-e-</code> dazwischen: du arbeit<strong>e</strong>st, er arbeit<strong>e</strong>t.</p>
+                        <p class="hint info">Trennbare Verben stehen mit der Vorsilbe am Satzende: <em>Ich stehe um 7 Uhr <strong>auf</strong>.</em></p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="detail" id="nomen">
+        <section class="section detail" id="adjektive">
             <div class="container">
-                <h2 id="h-nomen">Nomen</h2>
-                <p>Jedes deutsche Substantiv hat eines von drei grammatischen Geschlechtern (<strong>der</strong>, <strong>die</strong>, <strong>das</strong>) und wird nach der Rolle im Satz in einen von vier <strong>Kasus</strong> gesetzt.</p>
-                <div class="table-wrap">
-                    <table>
-                        <thead>
-                            <tr><th>Kasus</th><th>der (m.)</th><th>die (f.)</th><th>das (n.)</th><th>die (Plural)</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Nominativ (wer? was?)</td><td>der Mann</td><td>die Frau</td><td>das Kind</td><td>die Kinder</td></tr>
-                            <tr><td>Akkusativ (wen? was?)</td><td>den Mann</td><td>die Frau</td><td>das Kind</td><td>die Kinder</td></tr>
-                            <tr><td>Dativ (wem?)</td><td>dem Mann</td><td>der Frau</td><td>dem Kind</td><td>den Kindern</td></tr>
-                            <tr><td>Genitiv (wessen?)</td><td>des Mannes</td><td>der Frau</td><td>des Kindes</td><td>der Kinder</td></tr>
-                        </tbody>
-                    </table>
+                <div class="section-head">
+                    <span class="num-tag"><b>03</b> Adjektive</span>
+                    <h2 id="h-adjektive">Adjektive: Endung und Steigerung</h2>
+                    <p>Ein vor einem Substantiv stehendes Adjektiv erhält je nach vorausgehendem Artikel eine andere Endung. Die Komparation verläuft bei den meisten Adjektiven regelmäßig.</p>
                 </div>
-                <p class="hint">Tipp: Im Dativ Plural hängt an das Substantiv ein <code>-n</code> (sofern der Plural nicht schon auf <code>-n</code> oder <code>-s</code> endet): die Kinder → den Kinder<strong>n</strong>.</p>
+                <div class="detail-grid">
+                    <div>
+                        <div class="ladder" data-pagefind-ignore>
+                            <div class="ladder-row">
+                                <span class="stage">Positiv</span>
+                                <div class="ladder-bar" style="--w:38%"><span>schnell</span></div>
+                            </div>
+                            <div class="ladder-row">
+                                <span class="stage">Komparativ</span>
+                                <div class="ladder-bar" style="--w:64%"><span>schnell<b>er</b></span></div>
+                            </div>
+                            <div class="ladder-row">
+                                <span class="stage">Superlativ</span>
+                                <div class="ladder-bar" style="--w:96%"><span>am schnell<b>sten</b></span></div>
+                            </div>
+                        </div>
+                        <p class="hint">Manche Adjektive wechseln dabei den Stammvokal: <strong>groß</strong> → gr<strong>ö</strong>ßer → am gr<strong>ö</strong>ßten; <strong>gern</strong> → lieber → am liebsten.</p>
+                    </div>
+                    <div>
+                        <div class="table-wrap">
+                            <table>
+                                <thead>
+                                    <tr><th scope="col"></th><th scope="col">maskulin</th><th scope="col">feminin</th><th scope="col">neutral</th><th scope="col">Plural</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><th scope="row">bestimmter Artikel</th><td>der gut<strong>e</strong> Mann</td><td>die gut<strong>e</strong> Frau</td><td>das gut<strong>e</strong> Kind</td><td>die gut<strong>en</strong> Kinder</td></tr>
+                                    <tr><th scope="row">unbestimmter Artikel</th><td>ein gut<strong>er</strong> Mann</td><td>eine gut<strong>e</strong> Frau</td><td>ein gut<strong>es</strong> Kind</td><td>—</td></tr>
+                                    <tr><th scope="row">ohne Artikel</th><td>gut<strong>er</strong> Mann</td><td>gut<strong>e</strong> Frau</td><td>gut<strong>es</strong> Kind</td><td>gut<strong>e</strong> Kinder</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="hint info">Die kompletten Adjektivregeln mit Übungen stehen auf <a href="a1.html">A1</a>, <a href="b1.html">B1</a> und <a href="b2.html">B2</a>.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="detail" id="verben">
+        <section class="section alt detail" id="uebungen">
             <div class="container">
-                <h2 id="h-verben">Verben</h2>
-                <p>Regelmäßige (schwache) Verben folgen im Präsens einem festen Endungsmuster:</p>
-                <div class="table-wrap">
-                    <table>
-                        <thead>
-                            <tr><th>Person</th><th>machen</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>ich</td><td>mach<strong>e</strong></td></tr>
-                            <tr><td>du</td><td>mach<strong>st</strong></td></tr>
-                            <tr><td>er/sie/es</td><td>mach<strong>t</strong></td></tr>
-                            <tr><td>wir</td><td>mach<strong>en</strong></td></tr>
-                            <tr><td>ihr</td><td>mach<strong>t</strong></td></tr>
-                            <tr><td>sie/Sie</td><td>mach<strong>en</strong></td></tr>
-                        </tbody>
-                    </table>
+                <div class="section-head">
+                    <p class="eyebrow">Übungen</p>
+                    <h2 id="h-uebungen">Üben, wiederholen, sicher werden</h2>
+                    <p>Jede Regel auf den Niveaustufen-Seiten endet mit Übungen samt Lösung — zum Aufdecken und Selbstprüfen. Zwei Apps desselben Projekts ergänzen das Vokabeltraining:</p>
                 </div>
-                <p>Unregelmäßige (starke) Verben können im <em>du</em>- und <em>er/sie/es</em>-Form den Stammvokal ändern: <strong>fahren</strong> → du f<strong>ä</strong>hrst, er f<strong>ä</strong>hrt; <strong>sehen</strong> → du s<strong>ie</strong>hst, er s<strong>ie</strong>ht.</p>
-                <p class="hint">Die wichtigsten Zeitformen: Präsens (Gegenwart), Perfekt (haben/sein + Partizip II – gesprochene Sprache), Präteritum (v. a. Schriftsprache).</p>
-            </div>
-        </section>
-
-        <section class="detail" id="adjektive">
-            <div class="container">
-                <h2 id="h-adjektive">Adjektive</h2>
-                <p>Ein vor einem Substantiv stehendes Adjektiv erhält je nach vorausgehendem Artikel (der/die/das bzw. ein/eine/ein bzw. ohne Artikel) eine andere Endung. Mit bestimmtem Artikel (der/die/das) im Nominativ:</p>
-                <div class="table-wrap">
-                    <table>
-                        <thead>
-                            <tr><th></th><th>maskulin</th><th>feminin</th><th>neutral</th><th>Plural</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Nominativ</td><td>der gut<strong>e</strong> Mann</td><td>die gut<strong>e</strong> Frau</td><td>das gut<strong>e</strong> Kind</td><td>die gut<strong>en</strong> Kinder</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <p>Die Komparation (Steigerung) verläuft bei den meisten Adjektiven regelmäßig: <strong>schnell</strong> → schnell<strong>er</strong> (Komparativ) → am schnell<strong>sten</strong> (Superlativ). Manche Adjektive wechseln dabei den Stammvokal: <strong>groß</strong> → gr<strong>ö</strong>ßer → am gr<strong>ö</strong>ßten.</p>
-            </div>
-        </section>
-
-        <section class="detail" id="uebungen">
-            <div class="container">
-                <h2 id="h-uebungen">Übungen</h2>
-                <p>Diese Seite ist derzeit eine reine Grammatikreferenz – ohne eigenen Übungsteil. Hier gelangen Sie zu zwei wirklich funktionierenden Vokabel-/Quiz-Apps desselben Projekts:</p>
                 <ul class="link-list">
-                    <li><a href="https://github.com/Kutlu24/Aspekte-Neu-C1-Wortschatz" target="_blank" rel="noopener">Aspekte Neu C1 Wortschatz</a> – Vokabel-/Flashcard-App für Niveau C1.</li>
-                    <li><a href="https://github.com/Kutlu24/HEY-Bist-Du-Sicher-B2" target="_blank" rel="noopener">Sicher! B2 Vokabeltrainer</a> – Vokabel-/Quiz-App für Niveau B2.</li>
+                    <li><a class="link-card" href="https://github.com/Kutlu24/Aspekte-Neu-C1-Wortschatz" target="_blank" rel="noopener">
+                        <span class="tile" aria-hidden="true">C1</span>
+                        <span><span class="t">Aspekte Neu C1 Wortschatz</span><span class="d">Vokabel- und Flashcard-App für Niveau C1 — 1.505 Wörter, Lernziel und Wiederholung.</span></span>
+                    </a></li>
+                    <li><a class="link-card" href="https://github.com/Kutlu24/HEY-Bist-Du-Sicher-B2" target="_blank" rel="noopener">
+                        <span class="tile" aria-hidden="true">B2</span>
+                        <span><span class="t">Sicher! B2 Vokabeltrainer</span><span class="d">Vokabel- und Quiz-App für Niveau B2 — 662 Wörter mit Audio und Fortschritt.</span></span>
+                    </a></li>
+                    <li><a class="link-card" href="https://my-essay-tutor.onrender.com/ui/">
+                        <span class="tile" aria-hidden="true">✎</span>
+                        <span><span class="t">Essay Tutor — Texte korrigieren lassen</span><span class="d">Aufsatz hochladen oder schreiben, Bewertung nach Prüfungskriterien, jeder Fehler verlinkt auf die Regel hier.</span></span>
+                    </a></li>
                 </ul>
             </div>
         </section>
 
-        <section class="detail" id="glossar">
+        <section class="section detail" id="glossar">
             <div class="container">
-                <h2 id="h-glossar">Glossar</h2>
+                <div class="section-head">
+                    <p class="eyebrow">Glossar</p>
+                    <h2 id="h-glossar">Fachbegriffe erklärt</h2>
+                    <p>Die Begriffe, die auf dieser Seite verwendet werden — kurz und ohne Umwege.</p>
+                </div>
                 <dl class="glossary">
-                    <dt>Kasus</dt><dd>Der Fall, der die Rolle eines Substantivs/Adjektivs/Artikels im Satz angibt (Nominativ, Akkusativ, Dativ, Genitiv).</dd>
-                    <dt>Artikel</dt><dd>Begleitwort des Substantivs: bestimmt (der/die/das) oder unbestimmt (ein/eine/ein).</dd>
-                    <dt>Deklination</dt><dd>Die Beugung eines Substantivs/Adjektivs nach den Kasus.</dd>
-                    <dt>Konjugation</dt><dd>Die Beugung eines Verbs nach Person und Tempus.</dd>
-                    <dt>Partizip II</dt><dd>Das zweite Partizip des Verbs (z. B. gemacht, gefahren) – bildet mit haben/sein das Perfekt.</dd>
-                    <dt>Steigerung</dt><dd>Die Komparationsstufen des Adjektivs: Positiv, Komparativ, Superlativ.</dd>
+                    <div><dt>Kasus</dt><dd>Der Fall, der die Rolle eines Substantivs, Adjektivs oder Artikels im Satz angibt: Nominativ, Akkusativ, Dativ, Genitiv.</dd></div>
+                    <div><dt>Artikel</dt><dd>Begleitwort des Substantivs: bestimmt (der/die/das) oder unbestimmt (ein/eine/ein).</dd></div>
+                    <div><dt>Deklination</dt><dd>Die Beugung eines Substantivs oder Adjektivs nach Kasus, Numerus und Genus.</dd></div>
+                    <div><dt>Konjugation</dt><dd>Die Beugung eines Verbs nach Person, Numerus, Tempus, Modus und Genus verbi.</dd></div>
+                    <div><dt>Partizip II</dt><dd>Das zweite Partizip des Verbs (z. B. gemacht, gefahren) — bildet mit <em>haben</em> oder <em>sein</em> das Perfekt.</dd></div>
+                    <div><dt>Steigerung</dt><dd>Die Komparationsstufen des Adjektivs: Positiv, Komparativ, Superlativ.</dd></div>
                 </dl>
             </div>
         </section>
 
-        <section class="detail" id="ressourcen">
+        <section class="section alt detail" id="ressourcen">
             <div class="container">
-                <h2 id="h-ressourcen">Ressourcen</h2>
+                <div class="section-head">
+                    <p class="eyebrow">Ressourcen</p>
+                    <h2 id="h-ressourcen">Weiterlernen im Web</h2>
+                    <p>Drei verlässliche Anlaufstellen für Kurse, Übungen und Nachschlagen.</p>
+                </div>
                 <ul class="link-list">
-                    <li><a href="https://learngerman.dw.com/de/overview" target="_blank" rel="noopener">Deutsche Welle – Deutsch Lernen</a> – kostenlose Kurse und Grammatikübungen.</li>
-                    <li><a href="https://www.goethe.de/de/spr/ueb.html" target="_blank" rel="noopener">Goethe-Institut – Übungen</a> – Grammatik- und Wortschatzübungen nach Niveau.</li>
-                    <li><a href="https://canoo.net/" target="_blank" rel="noopener">Canoonet</a> – kostenloses Wörterbuch mit vollständigen Flexionstabellen für jedes deutsche Wort.</li>
+                    <li><a class="link-card" href="https://learngerman.dw.com/de/overview" target="_blank" rel="noopener">
+                        <span class="tile" aria-hidden="true">DW</span>
+                        <span><span class="t">Deutsche Welle — Deutsch lernen</span><span class="d">Kostenlose Kurse und Grammatikübungen für alle Niveaustufen.</span></span>
+                    </a></li>
+                    <li><a class="link-card" href="https://www.goethe.de/de/spr/ueb.html" target="_blank" rel="noopener">
+                        <span class="tile" aria-hidden="true">GI</span>
+                        <span><span class="t">Goethe-Institut — Übungen</span><span class="d">Grammatik- und Wortschatzübungen nach Niveau, direkt im Browser.</span></span>
+                    </a></li>
+                    <li><a class="link-card" href="https://canoo.net/" target="_blank" rel="noopener">
+                        <span class="tile" aria-hidden="true">Cn</span>
+                        <span><span class="t">Canoonet</span><span class="d">Kostenloses Wörterbuch mit vollständigen Flexionstabellen für jedes deutsche Wort.</span></span>
+                    </a></li>
                 </ul>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2024 DeutschGrammatikMeister. Alle Rechte vorbehalten.</p>
+            <div class="cols">
+                <div>
+                    <a class="brand" href="#top">
+                        <span class="brand-mark" aria-hidden="true">G</span>
+                        <span class="brand-text">DeutschGrammatikMeister<small>Grammatik · A1–C1</small></span>
+                    </a>
+                    <p>Visuelle Grammatik-Referenz für Deutschlernende — 58 Regeln mit Erklärung, Beispielen und Übungen samt Lösung.</p>
+                </div>
+                <div>
+                    <h4>Niveaustufen</h4>
+                    <ul>
+                        <li><a href="a1.html">A1 — Erste Schritte</a></li>
+                        <li><a href="a2.html">A2 — Alltag &amp; Vergangenheit</a></li>
+                        <li><a href="b1.html">B1 — Selbstständig</a></li>
+                        <li><a href="b2.html">B2 — Differenziert</a></li>
+                        <li><a href="c1.html">C1 — Souverän</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Themen</h4>
+                    <ul>
+                        <li><a href="#nomen">Nomen &amp; Kasus</a></li>
+                        <li><a href="#verben">Verben &amp; Konjugation</a></li>
+                        <li><a href="#adjektive">Adjektive &amp; Komparation</a></li>
+                        <li><a href="#glossar">Glossar</a></li>
+                        <li><a href="#ressourcen">Ressourcen</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Projekt</h4>
+                    <ul>
+                        <li><a href="https://my-essay-tutor.onrender.com/ui/">Essay Tutor</a></li>
+                        <li><a href="https://github.com/Kutlu24/HEY-Bist-Du-Sicher-B2">Sicher! B2 Trainer</a></li>
+                        <li><a href="https://github.com/Kutlu24/Aspekte-Neu-C1-Wortschatz">Aspekte Neu C1 Trainer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom">
+                <span>© 2024 DeutschGrammatikMeister · Alle Rechte vorbehalten.</span>
+                <span>Suche via Pagefind · Kein Tracking, kein Cookie</span>
+            </div>
         </div>
     </footer>
+
     <script src="pagefind/pagefind-ui.js"></script>
     <script>
         window.addEventListener('DOMContentLoaded', function () {
             if (window.PagefindUI) new PagefindUI({ element: '#search-box', showSubResults: true, resetStyles: false,
                 translations: { placeholder: 'Grammatik durchsuchen …', zero_results: 'Keine Treffer für [SEARCH_TERM]' } });
+        });
+        // mark horizontally scrollable tables so the edge fade only shows when needed
+        document.querySelectorAll('.table-wrap').forEach(function (w) {
+            var sync = function () { w.classList.toggle('scrollable', w.scrollWidth - w.clientWidth > 4); };
+            sync(); w.addEventListener('scroll', sync, { passive: true }); window.addEventListener('resize', sync);
         });
     </script>
 </body>

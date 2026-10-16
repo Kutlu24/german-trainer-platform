@@ -8,110 +8,292 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <div class="container">
-            <h1><a href="index.html" style="color:inherit;text-decoration:none">DeutschGrammatikMeister</a></h1>
-            <nav><ul><li><a href="a1.html">A1</a></li><li><a href="a2.html">A2</a></li><li><a href="b1.html">B1</a></li><li><a href="b2.html">B2</a></li><li><a href="c1.html">C1</a></li></ul></nav>
+            <a class="brand" href="index.html">
+                <span class="brand-mark" aria-hidden="true">G</span>
+                <span class="brand-text">DeutschGrammatikMeister<small>Grammatik · A1–C1</small></span>
+            </a>
+            <nav class="site-nav" aria-label="Hauptnavigation">
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="a1.html">A1</a></li>
+                    <li><a href="a2.html" aria-current="page">A2</a></li>
+                    <li><a href="b1.html">B1</a></li>
+                    <li><a href="b2.html">B2</a></li>
+                    <li><a href="c1.html">C1</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+
     <main>
-        <section class="detail">
+        <section class="level-hero" data-level="A2" style="--level: var(--a2)">
             <div class="container">
-                <h2 id="h-a2">A2 – Alltag und Vergangenheit</h2>
+                <span class="chip">Niveaustufe A2</span>
+                <h1>A2 – Alltag und Vergangenheit</h1>
                 <p>Auf A2 sprichst du über Vergangenes, benutzt den Dativ und baust erste Nebensätze.</p>
-                <ul class="toc"><li><a href="#a2-perfekt-bildung">Perfekt: Bildung mit haben/sein + Partizip II</a></li><li><a href="#a2-perfekt-hilfsverb">Perfekt: haben oder sein?</a></li><li><a href="#a2-praeteritum-sein-haben-modal">Präteritum von sein, haben und Modalverben</a></li><li><a href="#a2-dativ">Dativ: Artikel und typische Verben</a></li><li><a href="#a2-praepositionen-dativ-akkusativ">Präpositionen mit festem Kasus</a></li><li><a href="#a2-wechselpraepositionen">Wechselpräpositionen: wo? oder wohin?</a></li><li><a href="#a2-konjunktionen-hauptsatz">Hauptsatz-Konjunktionen: und, oder, aber, denn, sondern</a></li><li><a href="#a2-nebensatz-weil-dass">Nebensätze mit weil und dass</a></li><li><a href="#a2-komparativ-superlativ">Komparativ und Superlativ</a></li><li><a href="#a2-reflexive-verben">Reflexive Verben</a></li><li><a href="#a2-imperativ">Imperativ</a></li><li><a href="#a2-adjektivdeklination-unbestimmt">Adjektivendungen nach ein-/kein-/mein-</a></li></ul>
-                <p class="hint">Schreibst du Texte? Lass sie im <a href="https://my-essay-tutor.onrender.com/ui/">Essay Tutor</a> prüfen. Bei jedem Fehler verweist er auf die passende Regel hier.</p>
+                <div class="meta">
+                    <span>12 Regeln</span>
+                    <span>Übungen mit Lösung</span>
+                    <span>A1 → C1</span>
+                </div>
             </div>
         </section>
-        <section class="detail rules">
-            <div class="container">
+
+        <div class="container">
+            <div class="level-layout" style="--level: var(--a2); --level-soft: color-mix(in srgb, var(--a2) 12%, #fff)">
+                <aside class="toc-rail" data-pagefind-ignore>
+                    <div class="rail-title">Inhalt · 12 Regeln</div>
+                    <ol>
+                        <li><a href="#a2-perfekt-bildung">Perfekt: Bildung mit haben/sein + Partizip II</a></li>
+                        <li><a href="#a2-perfekt-hilfsverb">Perfekt: haben oder sein?</a></li>
+                        <li><a href="#a2-praeteritum-sein-haben-modal">Präteritum von sein, haben und Modalverben</a></li>
+                        <li><a href="#a2-dativ">Dativ: Artikel und typische Verben</a></li>
+                        <li><a href="#a2-praepositionen-dativ-akkusativ">Präpositionen mit festem Kasus</a></li>
+                        <li><a href="#a2-wechselpraepositionen">Wechselpräpositionen: wo? oder wohin?</a></li>
+                        <li><a href="#a2-konjunktionen-hauptsatz">Hauptsatz-Konjunktionen: und, oder, aber, denn, sondern</a></li>
+                        <li><a href="#a2-nebensatz-weil-dass">Nebensätze mit weil und dass</a></li>
+                        <li><a href="#a2-komparativ-superlativ">Komparativ und Superlativ</a></li>
+                        <li><a href="#a2-reflexive-verben">Reflexive Verben</a></li>
+                        <li><a href="#a2-imperativ">Imperativ</a></li>
+                        <li><a href="#a2-adjektivdeklination-unbestimmt">Adjektivendungen nach ein-/kein-/mein-</a></li>
+                    </ol>
+                </aside>
+                <div class="rules">
 <article class="rule" id="a2-perfekt-bildung">
-<h3 id="h-a2-perfekt-bildung">Perfekt: Bildung mit haben/sein + Partizip II</h3>
-<p>Das Perfekt benutzt man im Gespräch für Vergangenes. Es besteht aus <strong>haben/sein</strong> (konjugiert, Position 2) und dem <strong>Partizip II</strong> am Satzende.</p><p>Regelmäßige Verben: <strong>ge-…-t</strong> (machen → gemacht). Unregelmäßige Verben: <strong>ge-…-en</strong> (trinken → getrunken), oft mit Stammänderung (gehen → gegangen). Trennbare Verben: <strong>ge</strong> in der Mitte (einkaufen → eingekauft). Verben auf -ieren und ohne Betonung auf der ersten Silbe haben kein ge- (studiert, besucht).</p>
-<p class="label">Beispiele</p><ul class="examples"><li>Ich habe gestern Pizza gegessen.</li><li>Wir haben eingekauft.</li><li>Sie hat in Zürich studiert.</li></ul>
-<p class="label">Übung</p><ol class="exercises"><li><span class="q">Ich ___ Deutsch ___. (lernen, Perfekt)</span> <details><summary>Lösung</summary><span class="a">habe … gelernt</span></details></li><li><span class="q">Er ___ einen Brief ___. (schreiben, Perfekt)</span> <details><summary>Lösung</summary><span class="a">hat … geschrieben</span></details></li><li><span class="q">Wir ___ das Hotel ___. (reservieren, Perfekt)</span> <details><summary>Lösung</summary><span class="a">haben … reserviert</span></details></li></ol>
-<p class="ruleid">Regel-ID: <code>a2-perfekt-bildung</code></p>
+<h3>Perfekt: Bildung mit haben/sein + Partizip II</h3>
+<p>Das Perfekt benutzt man im Gespräch für Vergangenes. Es besteht aus <strong>haben/sein</strong> (konjugiert, Position 2) und dem <strong>Partizip II</strong> am Satzende.</p>
+<p>Regelmäßige Verben: <strong>ge-…-t</strong> (machen → gemacht). Unregelmäßige Verben: <strong>ge-…-en</strong> (trinken → getrunken), oft mit Stammänderung (gehen → gegangen). Trennbare Verben: <strong>ge</strong> in der Mitte (einkaufen → eingekauft). Verben auf -ieren und ohne Betonung auf der ersten Silbe haben kein ge- (studiert, besucht).</p>
+<p class="label">Beispiele</p>
+<ul class="examples"><li>Ich habe gestern Pizza gegessen.</li>
+<li>Wir haben eingekauft.</li>
+<li>Sie hat in Zürich studiert.</li>
+</ul>
+<p class="label">Übung · 3 Aufgaben</p>
+<ol class="exercises"><li><span class="q">Ich ___ Deutsch ___. (lernen, Perfekt)</span> <details><summary>Lösung</summary><span class="a">habe … gelernt</span></details></li>
+<li><span class="q">Er ___ einen Brief ___. (schreiben, Perfekt)</span> <details><summary>Lösung</summary><span class="a">hat … geschrieben</span></details></li>
+<li><span class="q">Wir ___ das Hotel ___. (reservieren, Perfekt)</span> <details><summary>Lösung</summary><span class="a">haben … reserviert</span></details></li>
+</ol>
+<p class="ruleid">Regel-ID <code>a2-perfekt-bildung</code> · Regel 1</p>
 </article>
 <article class="rule" id="a2-perfekt-hilfsverb">
-<h3 id="h-a2-perfekt-hilfsverb">Perfekt: haben oder sein?</h3>
-<p>Mit <strong>sein</strong> bilden Verben der <strong>Ortsveränderung</strong> (gehen, fahren, kommen, fliegen) und der <strong>Zustandsänderung</strong> (aufstehen, einschlafen, werden) sowie <strong>sein, bleiben, passieren</strong> das Perfekt.</p><p>Alle anderen Verben, auch alle reflexiven und Verben mit Akkusativobjekt, bilden das Perfekt mit <strong>haben</strong>.</p>
-<p class="label">Beispiele</p><ul class="examples"><li>Ich bin nach Bern gefahren.</li><li>Er ist gestern lange geblieben.</li><li>Wir haben Fußball gespielt.</li></ul>
-<p class="label">Übung</p><ol class="exercises"><li><span class="q">Sie ___ nach Hause ___. (gehen, Perfekt)</span> <details><summary>Lösung</summary><span class="a">ist … gegangen</span></details></li><li><span class="q">Ich ___ gut ___. (schlafen, Perfekt)</span> <details><summary>Lösung</summary><span class="a">habe … geschlafen</span></details></li><li><span class="q">Wir ___ im Urlaub ___. (sein, Perfekt)</span> <details><summary>Lösung</summary><span class="a">sind … gewesen</span></details></li></ol>
-<p class="ruleid">Regel-ID: <code>a2-perfekt-hilfsverb</code></p>
+<h3>Perfekt: haben oder sein?</h3>
+<p>Mit <strong>sein</strong> bilden Verben der <strong>Ortsveränderung</strong> (gehen, fahren, kommen, fliegen) und der <strong>Zustandsänderung</strong> (aufstehen, einschlafen, werden) sowie <strong>sein, bleiben, passieren</strong> das Perfekt.</p>
+<p>Alle anderen Verben, auch alle reflexiven und Verben mit Akkusativobjekt, bilden das Perfekt mit <strong>haben</strong>.</p>
+<p class="label">Beispiele</p>
+<ul class="examples"><li>Ich bin nach Bern gefahren.</li>
+<li>Er ist gestern lange geblieben.</li>
+<li>Wir haben Fußball gespielt.</li>
+</ul>
+<p class="label">Übung · 3 Aufgaben</p>
+<ol class="exercises"><li><span class="q">Sie ___ nach Hause ___. (gehen, Perfekt)</span> <details><summary>Lösung</summary><span class="a">ist … gegangen</span></details></li>
+<li><span class="q">Ich ___ gut ___. (schlafen, Perfekt)</span> <details><summary>Lösung</summary><span class="a">habe … geschlafen</span></details></li>
+<li><span class="q">Wir ___ im Urlaub ___. (sein, Perfekt)</span> <details><summary>Lösung</summary><span class="a">sind … gewesen</span></details></li>
+</ol>
+<p class="ruleid">Regel-ID <code>a2-perfekt-hilfsverb</code> · Regel 2</p>
 </article>
 <article class="rule" id="a2-praeteritum-sein-haben-modal">
-<h3 id="h-a2-praeteritum-sein-haben-modal">Präteritum von sein, haben und Modalverben</h3>
-<p>Bei <strong>sein</strong>, <strong>haben</strong> und den <strong>Modalverben</strong> benutzt man im Gespräch meist das Präteritum statt des Perfekts: ich war, ich hatte, ich konnte, ich musste, ich wollte, ich durfte.</p><p>Endungen: ich/er ohne Endung (war, hatte), du -st (warst), wir/sie -en (waren), ihr -t (wart).</p>
-<p class="label">Beispiele</p><ul class="examples"><li>Gestern war ich krank.</li><li>Er hatte keine Zeit.</li><li>Wir mussten früh aufstehen.</li></ul>
-<p class="label">Übung</p><ol class="exercises"><li><span class="q">Gestern ___ ich zu Hause. (sein)</span> <details><summary>Lösung</summary><span class="a">war</span></details></li><li><span class="q">Sie ___ keinen Hunger. (haben)</span> <details><summary>Lösung</summary><span class="a">hatte</span></details></li><li><span class="q">Wir ___ lange warten. (müssen)</span> <details><summary>Lösung</summary><span class="a">mussten</span></details></li></ol>
-<p class="ruleid">Regel-ID: <code>a2-praeteritum-sein-haben-modal</code></p>
+<h3>Präteritum von sein, haben und Modalverben</h3>
+<p>Bei <strong>sein</strong>, <strong>haben</strong> und den <strong>Modalverben</strong> benutzt man im Gespräch meist das Präteritum statt des Perfekts: ich war, ich hatte, ich konnte, ich musste, ich wollte, ich durfte.</p>
+<p>Endungen: ich/er ohne Endung (war, hatte), du -st (warst), wir/sie -en (waren), ihr -t (wart).</p>
+<p class="label">Beispiele</p>
+<ul class="examples"><li>Gestern war ich krank.</li>
+<li>Er hatte keine Zeit.</li>
+<li>Wir mussten früh aufstehen.</li>
+</ul>
+<p class="label">Übung · 3 Aufgaben</p>
+<ol class="exercises"><li><span class="q">Gestern ___ ich zu Hause. (sein)</span> <details><summary>Lösung</summary><span class="a">war</span></details></li>
+<li><span class="q">Sie ___ keinen Hunger. (haben)</span> <details><summary>Lösung</summary><span class="a">hatte</span></details></li>
+<li><span class="q">Wir ___ lange warten. (müssen)</span> <details><summary>Lösung</summary><span class="a">mussten</span></details></li>
+</ol>
+<p class="ruleid">Regel-ID <code>a2-praeteritum-sein-haben-modal</code> · Regel 3</p>
 </article>
 <article class="rule" id="a2-dativ">
-<h3 id="h-a2-dativ">Dativ: Artikel und typische Verben</h3>
-<p>Der <strong>Dativ</strong> fragt <em>wem?</em>. Artikel: der → <strong>dem</strong>, die → <strong>der</strong>, das → <strong>dem</strong>, Plural die → <strong>den</strong> (+ -n am Nomen: den Kindern).</p><p>Typische Dativverben: helfen, danken, gefallen, gehören, schmecken, antworten. Bei Verben mit zwei Objekten steht die Person im Dativ, die Sache im Akkusativ: <em>Ich gebe dem Kind einen Apfel.</em></p>
-<p class="label">Beispiele</p><ul class="examples"><li>Ich helfe dem Mann.</li><li>Das Buch gehört der Lehrerin.</li><li>Sie schenkt den Kindern Bücher.</li></ul>
-<p class="label">Übung</p><ol class="exercises"><li><span class="q">Ich danke ___ Lehrerin. (die)</span> <details><summary>Lösung</summary><span class="a">der</span></details></li><li><span class="q">Das Auto gehört ___ Mann. (der)</span> <details><summary>Lösung</summary><span class="a">dem</span></details></li><li><span class="q">Er hilft ___ Kindern. (die)</span> <details><summary>Lösung</summary><span class="a">den</span></details></li></ol>
-<p class="ruleid">Regel-ID: <code>a2-dativ</code></p>
+<h3>Dativ: Artikel und typische Verben</h3>
+<p>Der <strong>Dativ</strong> fragt <em>wem?</em>. Artikel: der → <strong>dem</strong>, die → <strong>der</strong>, das → <strong>dem</strong>, Plural die → <strong>den</strong> (+ -n am Nomen: den Kindern).</p>
+<p>Typische Dativverben: helfen, danken, gefallen, gehören, schmecken, antworten. Bei Verben mit zwei Objekten steht die Person im Dativ, die Sache im Akkusativ: <em>Ich gebe dem Kind einen Apfel.</em></p>
+<p class="label">Beispiele</p>
+<ul class="examples"><li>Ich helfe dem Mann.</li>
+<li>Das Buch gehört der Lehrerin.</li>
+<li>Sie schenkt den Kindern Bücher.</li>
+</ul>
+<p class="label">Übung · 3 Aufgaben</p>
+<ol class="exercises"><li><span class="q">Ich danke ___ Lehrerin. (die)</span> <details><summary>Lösung</summary><span class="a">der</span></details></li>
+<li><span class="q">Das Auto gehört ___ Mann. (der)</span> <details><summary>Lösung</summary><span class="a">dem</span></details></li>
+<li><span class="q">Er hilft ___ Kindern. (die)</span> <details><summary>Lösung</summary><span class="a">den</span></details></li>
+</ol>
+<p class="ruleid">Regel-ID <code>a2-dativ</code> · Regel 4</p>
 </article>
 <article class="rule" id="a2-praepositionen-dativ-akkusativ">
-<h3 id="h-a2-praepositionen-dativ-akkusativ">Präpositionen mit festem Kasus</h3>
-<p>Immer <strong>Dativ</strong>: aus, bei, mit, nach, seit, von, zu (merke: <em>aus-bei-mit-nach-seit-von-zu</em>). Immer <strong>Akkusativ</strong>: durch, für, gegen, ohne, um.</p><p>Zusammenzüge: zu dem → <strong>zum</strong>, zu der → <strong>zur</strong>, bei dem → <strong>beim</strong>, von dem → <strong>vom</strong>.</p>
-<p class="label">Beispiele</p><ul class="examples"><li>Ich fahre mit dem Bus zur Arbeit.</li><li>Das Geschenk ist für dich.</li><li>Er wohnt seit einem Jahr bei seinem Onkel.</li></ul>
-<p class="label">Übung</p><ol class="exercises"><li><span class="q">Ich fahre mit ___ Zug. (der)</span> <details><summary>Lösung</summary><span class="a">dem</span></details></li><li><span class="q">Das ist ein Geschenk für ___ Mutter. (die)</span> <details><summary>Lösung</summary><span class="a">die</span></details></li><li><span class="q">Wir gehen ohne ___ Hund. (der)</span> <details><summary>Lösung</summary><span class="a">den</span></details></li></ol>
-<p class="ruleid">Regel-ID: <code>a2-praepositionen-dativ-akkusativ</code></p>
+<h3>Präpositionen mit festem Kasus</h3>
+<p>Immer <strong>Dativ</strong>: aus, bei, mit, nach, seit, von, zu (merke: <em>aus-bei-mit-nach-seit-von-zu</em>). Immer <strong>Akkusativ</strong>: durch, für, gegen, ohne, um.</p>
+<p>Zusammenzüge: zu dem → <strong>zum</strong>, zu der → <strong>zur</strong>, bei dem → <strong>beim</strong>, von dem → <strong>vom</strong>.</p>
+<p class="label">Beispiele</p>
+<ul class="examples"><li>Ich fahre mit dem Bus zur Arbeit.</li>
+<li>Das Geschenk ist für dich.</li>
+<li>Er wohnt seit einem Jahr bei seinem Onkel.</li>
+</ul>
+<p class="label">Übung · 3 Aufgaben</p>
+<ol class="exercises"><li><span class="q">Ich fahre mit ___ Zug. (der)</span> <details><summary>Lösung</summary><span class="a">dem</span></details></li>
+<li><span class="q">Das ist ein Geschenk für ___ Mutter. (die)</span> <details><summary>Lösung</summary><span class="a">die</span></details></li>
+<li><span class="q">Wir gehen ohne ___ Hund. (der)</span> <details><summary>Lösung</summary><span class="a">den</span></details></li>
+</ol>
+<p class="ruleid">Regel-ID <code>a2-praepositionen-dativ-akkusativ</code> · Regel 5</p>
 </article>
 <article class="rule" id="a2-wechselpraepositionen">
-<h3 id="h-a2-wechselpraepositionen">Wechselpräpositionen: wo? oder wohin?</h3>
-<p>an, auf, hinter, in, neben, über, unter, vor, zwischen: Auf die Frage <strong>wo?</strong> (Position) steht der <strong>Dativ</strong>, auf die Frage <strong>wohin?</strong> (Richtung) der <strong>Akkusativ</strong>.</p><p>Dazu passen Verben: stehen/liegen/hängen/sitzen (Dativ) und stellen/legen/hängen/setzen (Akkusativ).</p>
-<p class="label">Beispiele</p><ul class="examples"><li>Das Buch liegt auf dem Tisch.</li><li>Ich lege das Buch auf den Tisch.</li><li>Wir gehen in die Stadt.</li></ul>
-<p class="label">Übung</p><ol class="exercises"><li><span class="q">Er steht vor ___ Haus. (das, wo?)</span> <details><summary>Lösung</summary><span class="a">dem</span></details></li><li><span class="q">Sie geht in ___ Küche. (die, wohin?)</span> <details><summary>Lösung</summary><span class="a">die</span></details></li><li><span class="q">Ich hänge das Bild an ___ Wand. (die, wohin?)</span> <details><summary>Lösung</summary><span class="a">die</span></details></li></ol>
-<p class="ruleid">Regel-ID: <code>a2-wechselpraepositionen</code></p>
+<h3>Wechselpräpositionen: wo? oder wohin?</h3>
+<p>an, auf, hinter, in, neben, über, unter, vor, zwischen: Auf die Frage <strong>wo?</strong> (Position) steht der <strong>Dativ</strong>, auf die Frage <strong>wohin?</strong> (Richtung) der <strong>Akkusativ</strong>.</p>
+<p>Dazu passen Verben: stehen/liegen/hängen/sitzen (Dativ) und stellen/legen/hängen/setzen (Akkusativ).</p>
+<p class="label">Beispiele</p>
+<ul class="examples"><li>Das Buch liegt auf dem Tisch.</li>
+<li>Ich lege das Buch auf den Tisch.</li>
+<li>Wir gehen in die Stadt.</li>
+</ul>
+<p class="label">Übung · 3 Aufgaben</p>
+<ol class="exercises"><li><span class="q">Er steht vor ___ Haus. (das, wo?)</span> <details><summary>Lösung</summary><span class="a">dem</span></details></li>
+<li><span class="q">Sie geht in ___ Küche. (die, wohin?)</span> <details><summary>Lösung</summary><span class="a">die</span></details></li>
+<li><span class="q">Ich hänge das Bild an ___ Wand. (die, wohin?)</span> <details><summary>Lösung</summary><span class="a">die</span></details></li>
+</ol>
+<p class="ruleid">Regel-ID <code>a2-wechselpraepositionen</code> · Regel 6</p>
 </article>
 <article class="rule" id="a2-konjunktionen-hauptsatz">
-<h3 id="h-a2-konjunktionen-hauptsatz">Hauptsatz-Konjunktionen: und, oder, aber, denn, sondern</h3>
-<p>Diese Konjunktionen verbinden zwei Hauptsätze und <strong>verändern die Wortstellung nicht</strong>: Subjekt und Verb bleiben wie im normalen Aussagesatz.</p><p><strong>sondern</strong> benutzt man nach einer Verneinung: <em>Ich trinke nicht Kaffee, sondern Tee.</em> <strong>denn</strong> gibt einen Grund an.</p>
-<p class="label">Beispiele</p><ul class="examples"><li>Ich bleibe zu Hause, denn ich bin krank.</li><li>Er ist müde, aber er arbeitet weiter.</li><li>Das ist kein Hund, sondern eine Katze.</li></ul>
-<p class="label">Übung</p><ol class="exercises"><li><span class="q">Ich lerne Deutsch, ___ ich in der Schweiz arbeite. (denn/sondern)</span> <details><summary>Lösung</summary><span class="a">denn</span></details></li><li><span class="q">Sie kommt nicht heute, ___ morgen. (aber/sondern)</span> <details><summary>Lösung</summary><span class="a">sondern</span></details></li><li><span class="q">Ich möchte Tee ___ Kaffee. (und/oder), beides geht.</span> <details><summary>Lösung</summary><span class="a">oder</span></details></li></ol>
-<p class="ruleid">Regel-ID: <code>a2-konjunktionen-hauptsatz</code></p>
+<h3>Hauptsatz-Konjunktionen: und, oder, aber, denn, sondern</h3>
+<p>Diese Konjunktionen verbinden zwei Hauptsätze und <strong>verändern die Wortstellung nicht</strong>: Subjekt und Verb bleiben wie im normalen Aussagesatz.</p>
+<p><strong>sondern</strong> benutzt man nach einer Verneinung: <em>Ich trinke nicht Kaffee, sondern Tee.</em> <strong>denn</strong> gibt einen Grund an.</p>
+<p class="label">Beispiele</p>
+<ul class="examples"><li>Ich bleibe zu Hause, denn ich bin krank.</li>
+<li>Er ist müde, aber er arbeitet weiter.</li>
+<li>Das ist kein Hund, sondern eine Katze.</li>
+</ul>
+<p class="label">Übung · 3 Aufgaben</p>
+<ol class="exercises"><li><span class="q">Ich lerne Deutsch, ___ ich in der Schweiz arbeite. (denn/sondern)</span> <details><summary>Lösung</summary><span class="a">denn</span></details></li>
+<li><span class="q">Sie kommt nicht heute, ___ morgen. (aber/sondern)</span> <details><summary>Lösung</summary><span class="a">sondern</span></details></li>
+<li><span class="q">Ich möchte Tee ___ Kaffee. (und/oder), beides geht.</span> <details><summary>Lösung</summary><span class="a">oder</span></details></li>
+</ol>
+<p class="ruleid">Regel-ID <code>a2-konjunktionen-hauptsatz</code> · Regel 7</p>
 </article>
 <article class="rule" id="a2-nebensatz-weil-dass">
-<h3 id="h-a2-nebensatz-weil-dass">Nebensätze mit weil und dass</h3>
-<p>Im Nebensatz steht das konjugierte Verb <strong>am Ende</strong>. Nach <strong>weil</strong> (Grund) und <strong>dass</strong> folgt ein Nebensatz: <em>Ich lerne Deutsch, weil ich in Zürich arbeite.</em></p><p>Das Komma trennt Haupt- und Nebensatz. Steht der Nebensatz vorne, beginnt der Hauptsatz mit dem Verb: <em>Weil ich krank bin, bleibe ich zu Hause.</em></p>
-<p class="label">Beispiele</p><ul class="examples"><li>Ich glaube, dass er recht hat.</li><li>Sie kommt nicht, weil sie keine Zeit hat.</li><li>Weil es regnet, bleiben wir drinnen.</li></ul>
-<p class="label">Übung</p><ol class="exercises"><li><span class="q">Ich weiß, dass er morgen ___. (kommen)</span> <details><summary>Lösung</summary><span class="a">kommt</span></details></li><li><span class="q">Wir bleiben zu Hause, weil das Wetter schlecht ___. (sein)</span> <details><summary>Lösung</summary><span class="a">ist</span></details></li><li><span class="q">Ordne: Er lernt, weil / viel Deutsch / er / will / verstehen → ___</span> <details><summary>Lösung</summary><span class="a">Er lernt viel Deutsch, weil er verstehen will.</span></details></li></ol>
-<p class="ruleid">Regel-ID: <code>a2-nebensatz-weil-dass</code></p>
+<h3>Nebensätze mit weil und dass</h3>
+<p>Im Nebensatz steht das konjugierte Verb <strong>am Ende</strong>. Nach <strong>weil</strong> (Grund) und <strong>dass</strong> folgt ein Nebensatz: <em>Ich lerne Deutsch, weil ich in Zürich arbeite.</em></p>
+<p>Das Komma trennt Haupt- und Nebensatz. Steht der Nebensatz vorne, beginnt der Hauptsatz mit dem Verb: <em>Weil ich krank bin, bleibe ich zu Hause.</em></p>
+<p class="label">Beispiele</p>
+<ul class="examples"><li>Ich glaube, dass er recht hat.</li>
+<li>Sie kommt nicht, weil sie keine Zeit hat.</li>
+<li>Weil es regnet, bleiben wir drinnen.</li>
+</ul>
+<p class="label">Übung · 3 Aufgaben</p>
+<ol class="exercises"><li><span class="q">Ich weiß, dass er morgen ___. (kommen)</span> <details><summary>Lösung</summary><span class="a">kommt</span></details></li>
+<li><span class="q">Wir bleiben zu Hause, weil das Wetter schlecht ___. (sein)</span> <details><summary>Lösung</summary><span class="a">ist</span></details></li>
+<li><span class="q">Ordne: Er lernt, weil / viel Deutsch / er / will / verstehen → ___</span> <details><summary>Lösung</summary><span class="a">Er lernt viel Deutsch, weil er verstehen will.</span></details></li>
+</ol>
+<p class="ruleid">Regel-ID <code>a2-nebensatz-weil-dass</code> · Regel 8</p>
 </article>
 <article class="rule" id="a2-komparativ-superlativ">
-<h3 id="h-a2-komparativ-superlativ">Komparativ und Superlativ</h3>
-<p>Komparativ: Adjektiv + <strong>-er</strong> (schneller), Vergleich mit <strong>als</strong>: <em>Er ist schneller als ich.</em> Superlativ: <strong>am</strong> + Adjektiv + <strong>-sten</strong> (am schnellsten).</p><p>Viele kurze Adjektive bekommen einen Umlaut (alt – älter – am ältesten). Unregelmäßig: gut – besser – am besten; viel – mehr – am meisten; gern – lieber – am liebsten.</p>
-<p class="label">Beispiele</p><ul class="examples"><li>Zürich ist größer als Bern.</li><li>Das ist der höchste Berg.</li><li>Ich trinke lieber Tee.</li></ul>
-<p class="label">Übung</p><ol class="exercises"><li><span class="q">Mein Bruder ist ___ als ich. (alt)</span> <details><summary>Lösung</summary><span class="a">älter</span></details></li><li><span class="q">Das ist das ___ Buch. (gut, Superlativ mit Artikel)</span> <details><summary>Lösung</summary><span class="a">beste</span></details></li><li><span class="q">Sie läuft am ___. (schnell)</span> <details><summary>Lösung</summary><span class="a">schnellsten</span></details></li></ol>
-<p class="ruleid">Regel-ID: <code>a2-komparativ-superlativ</code></p>
+<h3>Komparativ und Superlativ</h3>
+<p>Komparativ: Adjektiv + <strong>-er</strong> (schneller), Vergleich mit <strong>als</strong>: <em>Er ist schneller als ich.</em> Superlativ: <strong>am</strong> + Adjektiv + <strong>-sten</strong> (am schnellsten).</p>
+<p>Viele kurze Adjektive bekommen einen Umlaut (alt – älter – am ältesten). Unregelmäßig: gut – besser – am besten; viel – mehr – am meisten; gern – lieber – am liebsten.</p>
+<p class="label">Beispiele</p>
+<ul class="examples"><li>Zürich ist größer als Bern.</li>
+<li>Das ist der höchste Berg.</li>
+<li>Ich trinke lieber Tee.</li>
+</ul>
+<p class="label">Übung · 3 Aufgaben</p>
+<ol class="exercises"><li><span class="q">Mein Bruder ist ___ als ich. (alt)</span> <details><summary>Lösung</summary><span class="a">älter</span></details></li>
+<li><span class="q">Das ist das ___ Buch. (gut, Superlativ mit Artikel)</span> <details><summary>Lösung</summary><span class="a">beste</span></details></li>
+<li><span class="q">Sie läuft am ___. (schnell)</span> <details><summary>Lösung</summary><span class="a">schnellsten</span></details></li>
+</ol>
+<p class="ruleid">Regel-ID <code>a2-komparativ-superlativ</code> · Regel 9</p>
 </article>
 <article class="rule" id="a2-reflexive-verben">
-<h3 id="h-a2-reflexive-verben">Reflexive Verben</h3>
-<p>Bei reflexiven Verben bezieht sich das Pronomen auf das Subjekt: ich <strong>mich</strong>, du <strong>dich</strong>, er/sie/es <strong>sich</strong>, wir <strong>uns</strong>, ihr <strong>euch</strong>, sie/Sie <strong>sich</strong>.</p><p>Typisch: sich freuen, sich waschen, sich treffen, sich interessieren für, sich setzen.</p>
-<p class="label">Beispiele</p><ul class="examples"><li>Ich freue mich auf das Wochenende.</li><li>Er interessiert sich für Musik.</li><li>Wir treffen uns um 5 Uhr.</li></ul>
-<p class="label">Übung</p><ol class="exercises"><li><span class="q">Ich setze ___ auf den Stuhl.</span> <details><summary>Lösung</summary><span class="a">mich</span></details></li><li><span class="q">Sie freut ___ auf den Urlaub.</span> <details><summary>Lösung</summary><span class="a">sich</span></details></li><li><span class="q">Wann trefft ihr ___?</span> <details><summary>Lösung</summary><span class="a">euch</span></details></li></ol>
-<p class="ruleid">Regel-ID: <code>a2-reflexive-verben</code></p>
+<h3>Reflexive Verben</h3>
+<p>Bei reflexiven Verben bezieht sich das Pronomen auf das Subjekt: ich <strong>mich</strong>, du <strong>dich</strong>, er/sie/es <strong>sich</strong>, wir <strong>uns</strong>, ihr <strong>euch</strong>, sie/Sie <strong>sich</strong>.</p>
+<p>Typisch: sich freuen, sich waschen, sich treffen, sich interessieren für, sich setzen.</p>
+<p class="label">Beispiele</p>
+<ul class="examples"><li>Ich freue mich auf das Wochenende.</li>
+<li>Er interessiert sich für Musik.</li>
+<li>Wir treffen uns um 5 Uhr.</li>
+</ul>
+<p class="label">Übung · 3 Aufgaben</p>
+<ol class="exercises"><li><span class="q">Ich setze ___ auf den Stuhl.</span> <details><summary>Lösung</summary><span class="a">mich</span></details></li>
+<li><span class="q">Sie freut ___ auf den Urlaub.</span> <details><summary>Lösung</summary><span class="a">sich</span></details></li>
+<li><span class="q">Wann trefft ihr ___?</span> <details><summary>Lösung</summary><span class="a">euch</span></details></li>
+</ol>
+<p class="ruleid">Regel-ID <code>a2-reflexive-verben</code> · Regel 10</p>
 </article>
 <article class="rule" id="a2-imperativ">
-<h3 id="h-a2-imperativ">Imperativ</h3>
-<p>Der Imperativ drückt eine Aufforderung aus. <strong>du:</strong> Stamm (ohne -st): <em>Komm!</em> <strong>ihr:</strong> wie im Präsens: <em>Kommt!</em> <strong>Sie:</strong> Infinitiv + Sie: <em>Kommen Sie!</em></p><p>Verben mit Vokalwechsel e → i/ie behalten den Wechsel bei du: <em>Sprich!</em>, <em>Lies!</em> (aber <em>Fahr!</em>, ohne Umlaut).</p>
-<p class="label">Beispiele</p><ul class="examples"><li>Mach bitte die Tür zu!</li><li>Lest den Text!</li><li>Nehmen Sie Platz!</li></ul>
-<p class="label">Übung</p><ol class="exercises"><li><span class="q">___ bitte langsamer! (sprechen, du)</span> <details><summary>Lösung</summary><span class="a">Sprich</span></details></li><li><span class="q">___ mir bitte! (helfen, ihr)</span> <details><summary>Lösung</summary><span class="a">Helft</span></details></li><li><span class="q">___ Sie hier! (warten)</span> <details><summary>Lösung</summary><span class="a">Warten</span></details></li></ol>
-<p class="ruleid">Regel-ID: <code>a2-imperativ</code></p>
+<h3>Imperativ</h3>
+<p>Der Imperativ drückt eine Aufforderung aus. <strong>du:</strong> Stamm (ohne -st): <em>Komm!</em> <strong>ihr:</strong> wie im Präsens: <em>Kommt!</em> <strong>Sie:</strong> Infinitiv + Sie: <em>Kommen Sie!</em></p>
+<p>Verben mit Vokalwechsel e → i/ie behalten den Wechsel bei du: <em>Sprich!</em>, <em>Lies!</em> (aber <em>Fahr!</em>, ohne Umlaut).</p>
+<p class="label">Beispiele</p>
+<ul class="examples"><li>Mach bitte die Tür zu!</li>
+<li>Lest den Text!</li>
+<li>Nehmen Sie Platz!</li>
+</ul>
+<p class="label">Übung · 3 Aufgaben</p>
+<ol class="exercises"><li><span class="q">___ bitte langsamer! (sprechen, du)</span> <details><summary>Lösung</summary><span class="a">Sprich</span></details></li>
+<li><span class="q">___ mir bitte! (helfen, ihr)</span> <details><summary>Lösung</summary><span class="a">Helft</span></details></li>
+<li><span class="q">___ Sie hier! (warten)</span> <details><summary>Lösung</summary><span class="a">Warten</span></details></li>
+</ol>
+<p class="ruleid">Regel-ID <code>a2-imperativ</code> · Regel 11</p>
 </article>
 <article class="rule" id="a2-adjektivdeklination-unbestimmt">
-<h3 id="h-a2-adjektivdeklination-unbestimmt">Adjektivendungen nach ein-/kein-/mein-</h3>
-<p>Nach unbestimmtem Artikel zeigt das Adjektiv das Genus dort, wo der Artikel keine Endung hat: <strong>ein neuer Tisch</strong> (m., Nom.), <strong>ein neues Auto</strong> (n., Nom./Akk.), <strong>eine neue Lampe</strong> (f.).</p><p>Sonst gilt meist <strong>-en</strong>: <em>mit einem neuen Auto</em>, <em>ich sehe einen neuen Tisch</em>.</p>
-<p class="label">Beispiele</p><ul class="examples"><li>Das ist ein alter Mann.</li><li>Sie hat ein neues Handy.</li><li>Ich kaufe einen roten Pullover.</li></ul>
-<p class="label">Übung</p><ol class="exercises"><li><span class="q">Das ist ein klein___ Kind. (Nominativ, n.)</span> <details><summary>Lösung</summary><span class="a">es</span></details></li><li><span class="q">Er hat eine groß___ Wohnung. (Akkusativ, f.)</span> <details><summary>Lösung</summary><span class="a">e</span></details></li><li><span class="q">Wir kaufen einen neu___ Computer. (Akkusativ, m.)</span> <details><summary>Lösung</summary><span class="a">en</span></details></li></ol>
-<p class="ruleid">Regel-ID: <code>a2-adjektivdeklination-unbestimmt</code></p>
+<h3>Adjektivendungen nach ein-/kein-/mein-</h3>
+<p>Nach unbestimmtem Artikel zeigt das Adjektiv das Genus dort, wo der Artikel keine Endung hat: <strong>ein neuer Tisch</strong> (m., Nom.), <strong>ein neues Auto</strong> (n., Nom./Akk.), <strong>eine neue Lampe</strong> (f.).</p>
+<p>Sonst gilt meist <strong>-en</strong>: <em>mit einem neuen Auto</em>, <em>ich sehe einen neuen Tisch</em>.</p>
+<p class="label">Beispiele</p>
+<ul class="examples"><li>Das ist ein alter Mann.</li>
+<li>Sie hat ein neues Handy.</li>
+<li>Ich kaufe einen roten Pullover.</li>
+</ul>
+<p class="label">Übung · 3 Aufgaben</p>
+<ol class="exercises"><li><span class="q">Das ist ein klein___ Kind. (Nominativ, n.)</span> <details><summary>Lösung</summary><span class="a">es</span></details></li>
+<li><span class="q">Er hat eine groß___ Wohnung. (Akkusativ, f.)</span> <details><summary>Lösung</summary><span class="a">e</span></details></li>
+<li><span class="q">Wir kaufen einen neu___ Computer. (Akkusativ, m.)</span> <details><summary>Lösung</summary><span class="a">en</span></details></li>
+</ol>
+<p class="ruleid">Regel-ID <code>a2-adjektivdeklination-unbestimmt</code> · Regel 12</p>
 </article>
+                    <p class="hint info" style="margin-top:6px">Schreibst du Texte? Lass sie im <a href="https://my-essay-tutor.onrender.com/ui/">Essay Tutor</a> prüfen. Bei jedem Fehler verweist er auf die passende Regel hier.</p>
+                    <a class="level-back" href="index.html">← Zurück zur Startseite</a>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
-    <footer><div class="container"><p>&copy; DeutschGrammatikMeister · <a href="index.html" style="color:#fff">Startseite</a></p></div></footer>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="cols">
+                <div>
+                    <a class="brand" href="index.html">
+                        <span class="brand-mark" aria-hidden="true">G</span>
+                        <span class="brand-text">DeutschGrammatikMeister<small>Grammatik · A1–C1</small></span>
+                    </a>
+                    <p>Visuelle Grammatik-Referenz für Deutschlernende — 58 Regeln mit Erklärung, Beispielen und Übungen samt Lösung.</p>
+                </div>
+                <div>
+                    <h4>Niveaustufen</h4>
+                    <ul>
+                        <li><a href="a1.html">A1 — Erste Schritte</a></li>
+                        <li><a href="a2.html">A2 — Alltag &amp; Vergangenheit</a></li>
+                        <li><a href="b1.html">B1 — Selbstständig kommunizieren</a></li>
+                        <li><a href="b2.html">B2 — Differenziert und genau</a></li>
+                        <li><a href="c1.html">C1 — Souverän und stilsicher</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Projekt</h4>
+                    <ul>
+                        <li><a href="https://my-essay-tutor.onrender.com/ui/">Essay Tutor</a></li>
+                        <li><a href="index.html#glossar">Glossar</a></li>
+                        <li><a href="index.html#ressourcen">Ressourcen</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom">
+                <span>© DeutschGrammatikMeister · <a href="index.html">Startseite</a></span>
+                <span>58 Regeln · A1 bis C1</span>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
