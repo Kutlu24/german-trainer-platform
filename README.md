@@ -53,3 +53,7 @@ lineage; both apps reference `sesler/<id>.opus` relative to their own root.
 
 `?classic` on the hub URL skips the WebGL stage and shows the classic page;
 the `<link rel="canonical">` keeps that variant from being indexed twice.
+
+## Module switcher
+
+`src/germanhub/static/nav.js` is injected into every HTML page of the four modules (B2, C1, Grammatik, Essay Tutor) by the `_inject_nav` middleware in `germanhub/app.py`: a small floating "German Trainer" button with links to the overview and all modules. The vendored module sources stay untouched, so they can be re-synced from their own repos without losing it.

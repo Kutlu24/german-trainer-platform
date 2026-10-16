@@ -1,4 +1,4 @@
-"""German Trainer Platform - one FastAPI app hosting the B2, C1 and essay tutors.
+"""German Trainer Platform - one FastAPI app hosting four modules: B2 and C1 vocabulary, grammar and essay tutor.
 
 Routes:
     GET  /       -> hub page linking all four tools
@@ -22,13 +22,32 @@ from pathlib import Path
 from typing import Any
 
 from fastapi import FastAPI
-from fastapi.responses import FileResponse, RedirectResponse
+from fastapi.responses import FileResponse, RedirectResponse, Response
 from fastapi.staticfiles import StaticFiles
 
 _ROOT = Path(__file__).resolve().parents[2]
 _STATIC_DIR = Path(__file__).resolve().parent / "static"
 
 app = FastAPI(title="German Trainer Platform", description="B2 and C1 German vocabulary trainers under one roof.")
+
+_MODULE_PREFIXES = ("/b2", "/c1", "/grammatik", "/essay")
+_NAV_TAG = b'<script src="/hub-static/nav.js" defer></script></body>'
+
+
+@app.middleware("http")
+async def _inject_nav(request, call_next):
+    """Adds the shared module switcher (hub-static/nav.js) to every HTML page of the four
+    modules, so the vendored module sources stay untouched and can be re-synced freely."""
+    response = await call_next(request)
+    path = request.url.path
+    if (not path.startswith(_MODULE_PREFIXES) or response.status_code != 200
+            or "text/html" not in response.headers.get("content-type", "")):
+        return response
+    body = b"".join([chunk async for chunk in response.body_iterator])
+    if b"</body>" in body and b"/hub-static/nav.js" not in body:
+        body = body.replace(b"</body>", _NAV_TAG, 1)
+    headers = {k: v for k, v in response.headers.items() if k.lower() not in ("content-length", "content-encoding")}
+    return Response(content=body, status_code=200, headers=headers, media_type="text/html")
 
 
 @app.get("/", include_in_schema=False)
