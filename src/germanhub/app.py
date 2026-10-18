@@ -26,10 +26,14 @@ from fastapi import FastAPI
 from fastapi.responses import FileResponse, RedirectResponse, Response
 from fastapi.staticfiles import StaticFiles
 
+from germanhub import seo
+
 _ROOT = Path(__file__).resolve().parents[2]
 _STATIC_DIR = Path(__file__).resolve().parent / "static"
 
 app = FastAPI(title="German Trainer Platform", description="B2 and C1 German vocabulary trainers under one roof.")
+
+seo.install(app)
 
 _MODULE_PREFIXES = ("/b2", "/c1", "/grammatik", "/schreiben")
 _NAV_TAG = b'<script src="/hub-static/nav.js" defer></script></body>'
