@@ -98,6 +98,7 @@ app.mount("/hub-static", StaticFiles(directory=str(_STATIC_DIR)), name="hub-stat
 # mounted together with a tiny rewriting shim: /schreiben/api/* -> its /api/*.
 def _mount_essay_tutor() -> None:
     # German-only module with its own German name; the standalone My Essay Tutor keeps de/en/fr.
+    os.environ.setdefault("SEO_DISABLED", "1")  # the hub owns canonical/JSON-LD for /schreiben
     os.environ.setdefault("ALLOWED_LANGUAGES", "de")
     os.environ.setdefault("APP_TITLE", "Schreibwerkstatt")
     os.environ.setdefault("APP_KICKER", "A1 → C1 · telc · Goethe · Deutsch")
