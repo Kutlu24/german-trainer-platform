@@ -13,7 +13,10 @@ def test_robots_and_sitemap():
 
 def test_pages_get_head_tags_once_and_https_behind_proxy():
     for path in ("/", "/b2/", "/c1/", "/grammatik/", "/grammatik/b2.html", "/schreiben/ui/"):
-        t = client.get(path, headers={"x-forwarded-host": "demo.onrender.com", "x-forwarded-proto": "http"}).text
+        r = client.get(path, headers={"x-forwarded-host": "demo.onrender.com", "x-forwarded-proto": "http"})
+        if r.status_code == 404 and path.startswith("/schreiben"):
+            continue  # essay tutor is optional: not mounted when its dependencies are missing
+        t = r.text
         assert t.count('rel="canonical"') == 1 and t.count("application/ld+json") == 1
         if path != "/":  # the hub page ships its own fixed canonical
             assert f'href="https://demo.onrender.com{path}"' in t
