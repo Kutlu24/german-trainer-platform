@@ -96,3 +96,16 @@ def test_every_module_page_carries_the_basic_security_headers():
         r = h.get(path)
         assert r.status_code == 200, path
         assert r.headers["x-content-type-options"] == "nosniff" and r.headers["x-frame-options"] == "SAMEORIGIN", path
+
+
+def test_pdf_pages_are_rendered_under_a_pixel_cap():
+    import pypdfium2 as pdfium
+    from essay_tutor import pdf_utils
+    assert pdf_utils.page_scale(595, 842, 2.0) == 2.0                      # A4 is untouched
+    s = pdf_utils.page_scale(14400, 14400, 2.0)                             # a "200 x 200 inch" page
+    assert s < 2.0 and (14400 * s) * (14400 * s) <= pdf_utils.MAX_PAGE_PIXELS * 1.001
+    doc = pdfium.PdfDocument.new(); doc.new_page(14400, 14400); doc.new_page(595, 842)
+    import io
+    buf = io.BytesIO(); doc.save(buf)
+    big, a4 = pdf_utils.pdf_to_images(buf.getvalue())
+    assert big.width * big.height <= pdf_utils.MAX_PAGE_PIXELS * 1.01 and a4.size == (1190, 1684)
