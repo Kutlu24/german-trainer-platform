@@ -58,6 +58,18 @@ async def _inject_nav(request, call_next):
     return Response(content=body, status_code=200, headers=headers, media_type="text/html")
 
 
+@app.middleware("http")
+async def _security_headers(request, call_next):
+    """The same basic headers on every page of the platform (the essay module sets its own; setdefault keeps those)."""
+    response = await call_next(request)
+    response.headers.setdefault("X-Content-Type-Options", "nosniff")
+    response.headers.setdefault("X-Frame-Options", "SAMEORIGIN")
+    response.headers.setdefault("Referrer-Policy", "strict-origin-when-cross-origin")
+    response.headers.setdefault("Strict-Transport-Security", "max-age=31536000; includeSubDomains")
+    response.headers.setdefault("Permissions-Policy", "camera=(), geolocation=()")
+    return response
+
+
 @app.get("/", include_in_schema=False)
 def index() -> FileResponse:
     return FileResponse(_STATIC_DIR / "index.html")
