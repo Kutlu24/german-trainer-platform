@@ -9,6 +9,7 @@ from __future__ import annotations
 import html
 import json
 import os
+import re
 
 from fastapi import FastAPI, Request
 from fastapi.responses import PlainTextResponse, Response
@@ -45,12 +46,27 @@ for _lvl in ("a1", "a2", "b1", "b2", "c1"):
 _LOCAL = ("localhost", "127.0.0.1", "testserver")
 
 
+_HOST = re.compile(r"^[A-Za-z0-9](?:[A-Za-z0-9.-]{0,251}[A-Za-z0-9])?(?::\d{1,5})?$")
+
+
+def _safe_host(request: Request) -> str:
+    """The Host / X-Forwarded-Host headers are text from the client and end up inside HTML, the sitemap and robots.txt:
+    only a plain host name (optionally with a port) is accepted, anything else falls back."""
+    for cand in (request.headers.get("x-forwarded-host", "").split(",")[0].strip(), request.url.netloc):
+        if cand and _HOST.match(cand):
+            return cand
+    return "localhost"
+
+
 def site_url(request: Request) -> str:
     env = os.environ.get("SITE_URL")
     if env:
         return env.rstrip("/")
-    host = request.headers.get("x-forwarded-host") or request.url.netloc
-    proto = request.headers.get("x-forwarded-proto") or request.url.scheme
+    render = os.environ.get("RENDER_EXTERNAL_URL")  # set by Render itself: on Render no request header decides the origin
+    if render and re.match(r"^https?://[A-Za-z0-9.-]+(:\d+)?/?$", render):
+        return render.rstrip("/")
+    host = _safe_host(request)
+    proto = "http"  # local development; everything else is https (set just below)
     if not host.split(":")[0] in _LOCAL:
         proto = "https"
     return f"{proto}://{host}"
@@ -58,8 +74,8 @@ def site_url(request: Request) -> str:
 
 def head_tags(site: str, path: str, existing: str) -> str:
     title, desc, typ, lang = PAGES[path]
-    url = site + path
     e = html.escape
+    url = e(site + path, quote=True)  # goes into attributes; the JSON-LD below is escaped separately
     tags = []
     if 'name="description"' not in existing:
         tags.append(f'<meta name="description" content="{e(desc)}">')
@@ -70,9 +86,9 @@ def head_tags(site: str, path: str, existing: str) -> str:
                  f'<meta property="og:description" content="{e(desc)}">',
                  '<meta property="og:type" content="website">', f'<meta property="og:url" content="{url}">']
     if "application/ld+json" not in existing:
-        data = {"@context": "https://schema.org", "@type": typ, "name": title, "description": desc, "url": url,
+        data = {"@context": "https://schema.org", "@type": typ, "name": title, "description": desc, "url": site + path,
                 "inLanguage": lang, "isAccessibleForFree": True}
-        tags.append('<script type="application/ld+json">' + json.dumps(data, ensure_ascii=False) + "</script>")
+        tags.append('<script type="application/ld+json">' + json.dumps(data, ensure_ascii=False).replace("<", "\\u003c") + "</script>")
     return "\n".join(tags)
 
 
@@ -107,7 +123,7 @@ def install(app: FastAPI, disallow: tuple[str, ...] = ("/docs", "/openapi.json")
     @app.get("/sitemap.xml", include_in_schema=False)
     def sitemap(request: Request) -> Response:
         site = site_url(request)
-        urls = "".join(f"<url><loc>{site}{p}</loc></url>" for p in PAGES)
+        urls = "".join(f"<url><loc>{html.escape(site + p)}</loc></url>" for p in PAGES)
         return Response('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
                         + urls + "</urlset>", media_type="application/xml")
 
